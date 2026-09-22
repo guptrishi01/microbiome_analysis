@@ -41,6 +41,19 @@ microbiome_analysis/
 │   └── 10_inspect_candidates.sh # Deep-inspect scan candidates (subject/timepoint/read length)
 ├── dataset_scan/              # Cached ENA metadata (one TSV per BioProject) + shortlist.tsv
 │                               # ranking candidate cohorts for phase 2
+├── cohorts/                   # Phase-2 per-cohort metadata, built by hand from ENA run info
+│   ├── Cholecystectomy/metaData.txt
+│   ├── IleocecalResection/metaData.txt
+│   ├── Ileostomy/metaData.txt
+│   └── SDT/metaData.txt
+├── analysis/RScripts/         # Phase-2 R scripts: this repo's own code, run inside the
+│   │                           # authors' Singularity images (never inside their cloned repo)
+│   ├── 16S_TaxaClassification/   # One script per phase-2 cohort, modeled on the closest
+│   ├── DADA2_16S/                 # matching original template (Ilhan/Afshar/Assal/BS —
+│   ├── kraken2_16S/                see CLAUDE.md's "Adding a new cohort" section)
+│   ├── combineCountTables.R      # Generalized rewrites of the 4 scripts that hardcode all
+│   ├── Heatmap.R                  # 4 phase-1 study names in the original repo — verified
+│   └── compareStudies/            # byte-identical to the real phase-1 output before trusting
 ├── results/phase1/            # Reproduction outputs (see below)
 │   ├── figures/                  # Regenerated paper figures (PDF)
 │   ├── pipeline/                 # Per-stage intermediate + final outputs (numbered 00-28,
@@ -143,7 +156,65 @@ deep-inspects specific shortlisted accessions — sample label parsing,
 subject/timepoint layout, read length — to decide which are actually usable
 and with what DADA2 `truncLen`.
 
-**Next step:** select 3 additional cohorts from the shortlist (e.g. covering
-procedures like sleeve gastrectomy, colectomy, or ileostomy) and run them
-through the same `02`–`07` pipeline to test whether the surgery-associated
-microbial signature generalizes beyond bariatric surgery specifically.
+### Cohorts selected
+
+Four cohorts (three source papers; one BioProject split into two, since it
+bundles two distinct procedures under one accession):
+
+| Cohort | Accession | Design | Subjects | Notes |
+|---|---|---|---|---|
+| Cholecystectomy | PRJNA1188648 | Baseline/6M/12M | 10 | Cleanly auto-parseable from SRA `sample_title` |
+| IleocecalResection | PRJNA514452 | 0/1/3/6 months | 54 | Fecal-only subset (189/509 runs) — 320 biopsy-specimen runs (Bp/iRs/niRs) excluded, not comparable to the other cohorts' stool samples |
+| Ileostomy | PRJNA1480144 (IL arm) | Pre/Post | 44 | Only 21/44 subjects have both timepoints — most are baseline-only |
+| SDT | PRJNA1480144 (SD arm) | Pre/Post | 34 | Only 11/34 subjects have both timepoints — most are baseline-only |
+
+The Ileostomy/SDT attrition rate (52%/68% singleton subjects) is notably
+higher than any phase-1 cohort's (BS tops out at 30%) — included regardless,
+consistent with the pipeline's existing tolerance for unbalanced subjects,
+but flagged here since it means weaker statistical power per subject than
+the phase-1 cohorts once results exist.
+
+### What's built (not yet run)
+
+- Per-cohort metadata (`cohorts/<Study>/metaData.txt`), derived by hand from
+  ENA run metadata — see `CLAUDE.md`'s "Adding a new cohort" section
+- `scripts/02-05` extended with `case`/config entries for all 4 cohorts
+  (verified additive-only — the original 4 studies' values are unchanged)
+- 12 new per-cohort R scripts (`analysis/RScripts/`), one
+  `16S_TaxaClassification`/`DADA2_16S`/`kraken2_16S` script per cohort,
+  each modeled on the closest-matching original template by timepoint shape
+- The 4 shared downstream scripts that hardcode all 4 phase-1 study names in
+  the original (`combineCountTables.R`, `compareStudies_16S.R`, `Heatmap.R`,
+  `compareStudies_SV.R`) rewritten generically in this repo and **verified
+  byte-identical to the real published phase-1 output** before being trusted
+  (see `CLAUDE.md`'s "Never assume" section for how)
+- `scripts/06_analysis.sbatch` wired with a `PHASE2_COHORTS` flag (default
+  `0`): off, it behaves exactly as it always has (verified — same module
+  numbering as the actual complete pipeline run, not just equivalent
+  content); set to `1`, it includes all 8 cohorts through the generalized
+  scripts
+
+### Status (2026-09-22)
+
+- **Downloads complete.** All 8 cohorts (4 phase-1 + 4 phase-2) downloaded
+  cleanly — zero failures across all 8 array tasks, every cohort's file
+  count matches expected exactly, and read lengths for all 4 new cohorts
+  (Cholecystectomy 301bp, IleocecalResection 314bp, Ileostomy/SDT 250bp)
+  comfortably exceed the planned `truncLen=200`.
+- **`PRIMER`/`TRIMLEFT` confirmed, not placeholders anymore.** Ran the
+  515F-anchor check against the real downloaded reads: none of the 4 new
+  cohorts show a fixed-position anchor (IleocecalResection: zero matches;
+  Cholecystectomy/Ileostomy/SDT: scattered matches at varying positions —
+  coincidental, not a real primer). `PRIMER=NONE`/`TRIMLEFT=0` is correct as
+  configured; no change needed before running `03_dada2.sbatch`.
+- `compareStudies_SV.R` still intentionally excludes all 4 phase-2 cohorts
+  by default — this same check independently confirms none of them share
+  BS/Assal's exact V4 protocol, so this stays a genuine exclusion, not just
+  an unverified one. See `CLAUDE.md`'s "SV/ASV-level comparison is
+  region-locked" section before ever adding one.
+
+### Still needed before a real run
+
+1. `03_dada2.sbatch` — DADA2 ASV inference for all 8 cohorts
+2. `04_kraken2_16s.sbatch` → `05_build_tables.sbatch` → `06_analysis.sbatch`
+   (with `PHASE2_COHORTS=1`) → `07_compare_auroc.sbatch`

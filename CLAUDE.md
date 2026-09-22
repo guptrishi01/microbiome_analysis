@@ -197,14 +197,20 @@ that can't be meaningfully intersected at the exact-sequence level.
 `compareStudies_16S.R` (genus-level) works across all 4 because genus
 classification is region-agnostic — SV/ASV identity is not.
 
-**This means a phase-2 cohort cannot default into SV comparison.** All 4
-phase-2 cohorts currently use `PRIMER=NONE`/`TRIMLEFT=0` **placeholders** in
-`03_dada2.sbatch` pending verification against real downloaded reads — none
-are confirmed to share BS/Assal's exact amplified region. The rewritten
-`analysis/RScripts/compareStudies/compareStudies_SV.R` in this repo defaults
-to BS+Assal only (matching the original exactly) for this reason; only add a
-phase-2 cohort to its `STUDIES` list after confirming its real primer/region
-matches, not just because its `truncLen` happens to also be 200.
+**This means a phase-2 cohort cannot default into SV comparison.** Verified
+(2026-09-22) against real downloaded reads for all 4 phase-2 cohorts via the
+515F-anchor check `03_dada2.sbatch` itself runs: none show a clean,
+fixed-position anchor. IleocecalResection has zero matches across 5000
+reads; Cholecystectomy/Ileostomy/SDT show scattered matches at varying
+positions (159-190bp), the signature of coincidental short-motif hits within
+the 16S sequence itself, not a real primer to strip. This confirms
+`PRIMER=NONE`/`TRIMLEFT=0` is the *correct* setting for all 4 (no change
+needed), and independently confirms none of them share BS/Assal's exact V4
+protocol. The rewritten `analysis/RScripts/compareStudies/compareStudies_SV.R`
+in this repo defaults to BS+Assal only (matching the original exactly) for
+this reason; only add a phase-2 cohort to its `STUDIES` list after
+confirming its real primer/region matches, not just because its `truncLen`
+happens to also be 200.
 
 ## 16S vs. shotgun — don't assume from `scientific_name`
 
