@@ -182,7 +182,7 @@ for study, cfg in STUDIES.items():
 print("\nDone.")
 PYEOF
 
-python3 "$DATA_ROOT/work/build_tables.py" "$DATA_ROOT" "$REPO"
+python3 "$DATA_ROOT/work/build_tables.py" "$DATA_ROOT" "$REPO" "$COHORTS"
 rc=$?
 
 echo
