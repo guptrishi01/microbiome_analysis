@@ -1,0 +1,142 @@
+=== stage 6  Tue Sep 22 02:40:47 AM EDT 2026
+pipeline root: /scratch/rgupta25/rygb/pipeline
+input tree staged: 83 files
+modules scaffolded: 34
+PHASE2_COHORTS=1: swapping in generalized combineCountTables.R/compareStudies_16S.R/Heatmap.R/compareStudies_SV.R
+convergence guard applied to: Afshar_DADA2_16S.R, Afshar_kraken2_16S.R, Assal_DADA2_16S.R, Assal_kraken2_16S.R, BS_DADA2_16S.R, Cholecystectomy_DADA2_16S.R, Cholecystectomy_kraken2_16S.R, IleocecalResection_DADA2_16S.R, IleocecalResection_kraken2_16S.R, Ileostomy_DADA2_16S.R, Ileostomy_kraken2_16S.R, Ilhan_DADA2_16S.R, Ilhan_kraken2_16S.R, SDT_DADA2_16S.R, SDT_kraken2_16S.R
+
+======================================== 00_AfsharTaxaClass  [rbase] 02:40:49  (parallel batch)
+
+======================================== 01_AssalTaxaClass  [rbase] 02:40:49  (parallel batch)
+
+======================================== 02_BSTaxaClass  [rbase] 02:40:49  (parallel batch)
+
+======================================== 03_IlhanTaxaClass  [rbase] 02:40:49  (parallel batch)
+
+======================================== 04_CholecystectomyTaxaClass  [rbase] 02:40:49  (parallel batch)
+
+======================================== 05_IleocecalResectionTaxaClass  [rbase] 02:40:49  (parallel batch)
+
+======================================== 06_IleostomyTaxaClass  [rbase] 02:40:49  (parallel batch)
+
+======================================== 07_SDTTaxaClass  [rbase] 02:40:49  (parallel batch)
+   ok   00_AfsharTaxaClass  rc=0  outputs=6
+   ok   01_AssalTaxaClass  rc=0  outputs=7
+   ok   02_BSTaxaClass  rc=0  outputs=12
+   ok   03_IlhanTaxaClass  rc=0  outputs=6
+   ok   04_CholecystectomyTaxaClass  rc=0  outputs=6
+   ok   05_IleocecalResectionTaxaClass  rc=0  outputs=6
+   ok   06_IleostomyTaxaClass  rc=0  outputs=6
+   ok   07_SDTTaxaClass  rc=0  outputs=6
+
+======================================== 08_CombineCountTableslog10  [nlme] 03:15:01
+   ok   08_CombineCountTableslog10  rc=0  outputs=2
+
+======================================== 09_CombineCountTablesrelab  [nlme] 03:15:04
+   ok   09_CombineCountTablesrelab  rc=0  outputs=2
+
+======================================== 10_PCO  [r-vegan] 03:15:06
+   ok   10_PCO  rc=0  outputs=2
+
+======================================== 11_AfsharDADA  [rbase] 03:15:19  (parallel batch)
+
+======================================== 12_AssalDADA  [rbase] 03:15:19  (parallel batch)
+
+======================================== 13_BSDADA  [rbase] 03:15:19  (parallel batch)
+
+======================================== 14_IlhanDADA  [rbase] 03:15:19  (parallel batch)
+
+======================================== 15_CholecystectomyDADA  [rbase] 03:15:19  (parallel batch)
+
+======================================== 16_IleocecalResectionDADA  [rbase] 03:15:19  (parallel batch)
+
+======================================== 17_IleostomyDADA  [rbase] 03:15:19  (parallel batch)
+
+======================================== 18_SDTDADA  [rbase] 03:15:19  (parallel batch)
+   ok   11_AfsharDADA  rc=0  outputs=6
+   ok   12_AssalDADA  rc=0  outputs=7
+   ok   13_BSDADA  rc=0  outputs=7
+   ok   14_IlhanDADA  rc=0  outputs=6
+   ok   15_CholecystectomyDADA  rc=0  outputs=6
+   ok   16_IleocecalResectionDADA  rc=0  outputs=6
+   ok   17_IleostomyDADA  rc=0  outputs=6
+   ok   18_SDTDADA  rc=0  outputs=6
+
+======================================== 19_CompareStudies16S  [comparestudies] 03:21:02
+   ok   19_CompareStudies16S  rc=0  outputs=6
+
+======================================== 20_Heatmap  [complexheatmap] 03:21:17
+   ok   20_Heatmap  rc=0  outputs=1
+
+======================================== 21_AfsharKraken  [nlme] 03:21:20  (parallel batch)
+
+======================================== 22_AssalKraken  [nlme] 03:21:20  (parallel batch)
+
+======================================== 23_BSKraken  [nlme] 03:21:20  (parallel batch)
+
+======================================== 24_IlhanKraken  [nlme] 03:21:20  (parallel batch)
+
+======================================== 25_CholecystectomyKraken  [nlme] 03:21:20  (parallel batch)
+
+======================================== 26_IleocecalResectionKraken  [nlme] 03:21:20  (parallel batch)
+
+======================================== 27_IleostomyKraken  [nlme] 03:21:20  (parallel batch)
+
+======================================== 28_SDTKraken  [nlme] 03:21:20  (parallel batch)
+   ok   21_AfsharKraken  rc=0  outputs=7
+   ok   22_AssalKraken  rc=0  outputs=7
+   ok   23_BSKraken  rc=0  outputs=7
+   ok   24_IlhanKraken  rc=0  outputs=7
+   ok   25_CholecystectomyKraken  rc=0  outputs=7
+   ok   26_IleocecalResectionKraken  rc=0  outputs=7
+   ok   27_IleostomyKraken  rc=0  outputs=7
+   ok   28_SDTKraken  rc=0  outputs=7
+-- skip 29_BSMetagenomics (phase 2: needs metagenomic input)
+-- skip 30_PallejaMetagenomics (phase 2: needs metagenomic input)
+-- skip 31_OppPathogens (phase 2: needs metagenomic input)
+-- skip 32_CompareStudiesMetagenomics (phase 2: needs metagenomic input)
+-- skip 33_BSpathway (phase 2: needs metagenomic input)
+-- skip 34_Pallejapathway (phase 2: needs metagenomic input)
+-- skip 35_CompareStudiesPathways (phase 2: needs metagenomic input)
+
+======================================== 36_Diversity  [r-vegan] 03:22:26
+   ok   36_Diversity  rc=0  outputs=2
+
+======================================== 37_CompareStudiesSV  [comparestudies] 03:22:29
+   ok   37_CompareStudiesSV  rc=0  outputs=6
+
+======================================== 38_SVAnalysis  [comparestudies] 03:22:32
+   ok   38_SVAnalysis  rc=0  outputs=1
+
+======================================== 39_TrainModellasso  [siamcat] 03:22:33
+   ok   39_TrainModellasso  rc=0  outputs=97
+
+======================================== 40_FigPerformlasso  [fig-perform] 04:25:38
+   ok   40_FigPerformlasso  rc=0  outputs=2
+
+=== done  Tue Sep 22 04:25:42 AM EDT 2026   modules ok: 34   failed: 0
+
+--- figures produced
+   /scratch/rgupta25/rygb/pipeline/10_PCO/output/Genus_PCO.pdf
+   /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_BoxPlotCorrelations.pdf
+   /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_coefficientsFromScatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_mainFigure1cd.pdf
+   /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_scatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/20_Heatmap/output/Genus_HeatmapAndCluster.pdf
+   /scratch/rgupta25/rygb/pipeline/36_Diversity/output/Diversity.pdf
+   /scratch/rgupta25/rygb/pipeline/37_CompareStudiesSV/output/coefficientsFromScatterPlots_compareSVandGenus.pdf
+   /scratch/rgupta25/rygb/pipeline/37_CompareStudiesSV/output/Seq_coefficientsFromScatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/37_CompareStudiesSV/output/Seq_scatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/38_SVAnalysis/output/SV_BS_Assal.pdf
+   /scratch/rgupta25/rygb/pipeline/40_FigPerformlasso/output/loso_performance_lasso.pdf
+   /scratch/rgupta25/rygb/pipeline/40_FigPerformlasso/output/performance_heatmap_lasso.pdf
+
+--- key tables vs the repo's published versions
+   Genus_PairwiseComparison.txt           ours   106 lines | repo    29 lines
+   Genus_countTable_merged_log10.txt      ours   516 lines | repo   189 lines
+   metaData_merged.txt                    ours   516 lines | repo   189 lines
+
+--- THE headline number: mean Spearman r across different-study pairs
+    the paper's abstract says 0.41 +/- 0.10; the repo's own table gives 0.410 +/- 0.098
+   ours  all pairs: r = 0.191 +/- 0.224 (n=105) | different-study: r = 0.153 +/- 0.194 (n=96)
+   repo  all pairs: r = 0.450 +/- 0.126 (n=28) | different-study: r = 0.410 +/- 0.098 (n=23)

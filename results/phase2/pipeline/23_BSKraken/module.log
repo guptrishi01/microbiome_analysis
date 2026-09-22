@@ -1,0 +1,7 @@
+INFO:    Mounting image with FUSE.
+ERROR : nlminb problem, convergence error code = 1
+  message = singular convergence (7) 
+[1] "Family Alicyclobacillaceae"
+ERROR : nlminb problem, convergence error code = 1
+  message = singular convergence (7) 
+[1] "Species Enterobacter cloacae complex sp."

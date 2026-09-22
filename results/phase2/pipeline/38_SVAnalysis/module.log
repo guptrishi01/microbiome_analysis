@@ -1,0 +1,7 @@
+INFO:    Mounting image with FUSE.
+Read table: /scratch/rgupta25/rygb/pipeline/37_CompareStudiesSV/input/Seq_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/37_CompareStudiesSV/input/Seq_Assal_MixedLinearModelResults.txt
+Warning message:
+Removed 5 rows containing missing values (geom_text_repel). 
+null device 
+          1 

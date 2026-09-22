@@ -1,0 +1,20 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== IleocecalResection  expecting 189 runs   Tue Sep 22 12:22:54 AM EDT 2026
+run list: 189 entries (expected 189)
+SRR13357893	SRR13357893
+SRR13358121	SRR13358121
+SRR13358010	SRR13358010
+
+=== IleocecalResection done  Tue Sep 22 12:37:00 AM EDT 2026
+downloaded now: 189 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/IleocecalResection: 189 (expected 189)
+1.8G	/scratch/rgupta25/rygb/raw/IleocecalResection
+read length check:
+   first read: 314 bp: TAGATTAGAAACCCTAGTAGTCCGGCTGACTGACTAATCAGTCTCGTATC...
+reads per sample (first 5):
+   SRR13357647_R1.fastq.gz 39134 reads
+   SRR13357655_R1.fastq.gz 35999 reads
+   SRR13357656_R1.fastq.gz 25358 reads
+   SRR13357660_R1.fastq.gz 51868 reads
+   SRR13357661_R1.fastq.gz 58586 reads

@@ -1,0 +1,23 @@
+INFO:    Mounting image with FUSE.
+Loading required package: grid
+========================================
+ComplexHeatmap version 2.2.0
+Bioconductor page: http://bioconductor.org/packages/ComplexHeatmap/
+Github page: https://github.com/jokergoo/ComplexHeatmap
+Documentation: http://jokergoo.github.io/ComplexHeatmap-reference
+
+If you use it in published research, please cite:
+Gu, Z. Complex heatmaps reveal patterns and correlations in multidimensional 
+  genomic data. Bioinformatics 2016.
+========================================
+
+Reading file: /scratch/rgupta25/rygb/pipeline/13_BSDADA/output/MixedLinearModels/Genus_BS_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/12_AssalDADA/output/MixedLinearModels/Genus_Assal_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/14_IlhanDADA/output/MixedLinearModels/Genus_Ilhan_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/11_AfsharDADA/output/MixedLinearModels/Genus_Afshar_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/15_CholecystectomyDADA/output/MixedLinearModels/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/16_IleocecalResectionDADA/output/MixedLinearModels/Genus_IleocecalResection_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/17_IleostomyDADA/output/MixedLinearModels/Genus_Ileostomy_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/18_SDTDADA/output/MixedLinearModels/Genus_SDT_MixedLinearModelResults.txt
+null device 
+          1 

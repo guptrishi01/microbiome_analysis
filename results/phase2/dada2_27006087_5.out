@@ -1,0 +1,29 @@
+=== Cholecystectomy  primer=NONE truncLen=200 trimLeft=0  expect 200bp ASVs   Tue Sep 22 12:41:43 AM EDT 2026
+raw files: 30
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       2880 179
+        573 159
+        413 161
+        409 185
+
+--- DADA2
+samples: 30 
+reads in/out — median retention: 95.8 %
+118476400 total bases in 592382 reads from 5 samples will be used for learning the error rates.
+ASVs before chimera removal: 13149 
+ASVs after chimera removal: 7880 | reads kept: 71.5 %
+ASV length distribution:
+
+ 200 
+7880 
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== Cholecystectomy done (rc=0)  Tue Sep 22 01:04:13 AM EDT 2026
+repo had 0 ASVs for this study
+   total 4.0M
+   -rw-r--r-- 1 rgupta25 rgupta25  786 Sep 22 01:04 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 2.0M Sep 22 01:04 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 2.0M Sep 22 01:04 taxForwardReads.txt
+filtered reads kept for Kraken2: 30 files, 260M

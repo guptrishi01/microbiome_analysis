@@ -1,0 +1,29 @@
+=== Ileostomy  primer=NONE truncLen=200 trimLeft=0  expect 200bp ASVs   Tue Sep 22 12:41:43 AM EDT 2026
+raw files: 65
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       1128 185
+        751 190
+        717 no-515F-anchor
+        659 165
+
+--- DADA2
+samples: 65 
+reads in/out — median retention: 95.9 %
+110842000 total bases in 554210 reads from 5 samples will be used for learning the error rates.
+ASVs before chimera removal: 41564 
+ASVs after chimera removal: 25259 | reads kept: 67.1 %
+ASV length distribution:
+
+  200 
+25259 
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== Ileostomy done (rc=0)  Tue Sep 22 01:20:20 AM EDT 2026
+repo had 0 ASVs for this study
+   total 15M
+   -rw-r--r-- 1 rgupta25 rgupta25 1.7K Sep 22 01:20 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 8.1M Sep 22 01:20 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 6.9M Sep 22 01:20 taxForwardReads.txt
+filtered reads kept for Kraken2: 65 files, 248M

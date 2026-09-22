@@ -1,0 +1,26 @@
+Loading kraken2/2.1.3
+  Loading requirement: jellyfish/2.3.1
+=== IleocecalResection  189 filtered samples (expect 189)   Tue Sep 22 01:30:44 AM EDT 2026
+db: /users/rgupta25/rygb/db/kraken2  (47G)
+first sample (includes index load): 146s
+
+=== IleocecalResection done  Tue Sep 22 01:35:08 AM EDT 2026   elapsed 264s
+classified now: 189 | already present: 0 | failures: 0
+mpa reports: 189 (expect 189)
+
+--- classification rates (from the per-sample logs)
+    min 99.88%  median 99.99%  max 100.00%
+--- a sample report, deepest lines
+    SRR13357647.mpa
+    d__Eukaryota|k__Metazoa|p__Chordata|c__Mammalia|o__Primates|f__Hominidae|g__Homo|s__Homo sapiens	30
+    d__Bacteria|p__Tenericutes|g__Candidatus Izimaplasma|s__Candidatus Izimaplasma sp. HR1	1
+    d__Bacteria|p__Tenericutes|c__Mollicutes|o__Mycoplasmatales|f__Mycoplasmataceae|g__Mycoplasma|s__Mycoplasma penetrans	2
+    d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Oceanospirillales|f__Halomonadaceae|g__Halomonas|s__Halomonas sp. 1513	17
+    d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Pectobacteriaceae|g__Pectobacterium|s__Pectobacterium parmentieri	1
+--- rank coverage in that sample (how many taxa are named at each rank)
+    p__ 11
+    c__ 20
+    o__ 37
+    f__ 65
+    g__ 129
+    s__ 187

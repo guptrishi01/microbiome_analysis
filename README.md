@@ -62,6 +62,13 @@ microbiome_analysis/
 │   ├── predictions_lasso.tsv     # Our regenerated cross-study LASSO predictions
 │   └── *.out                     # SLURM job logs for every stage (download, DADA2, Kraken2,
 │                                  #   table-building, analysis, AUROC comparison)
+├── results/phase2/            # Extension outputs, all 8 cohorts (see "Results (phase 2)" below)
+│   ├── figures/                  # Figures from the 8-cohort run (13 PDFs)
+│   ├── pipeline/                 # Per-stage outputs, numbered 00-40 (gaps = skipped
+│   │                              #   metagenomics modules) -- .RData LASSO model objects
+│   │                              #   excluded (~635MB, rebuildable, not source work)
+│   ├── predictions_lasso.tsv     # Cross-study LASSO predictions, all 8 studies
+│   └── *.out                     # SLURM job logs for every successful stage run
 ├── setup.log                  # Output of scripts/00_setup.sh (environment provenance)
 ├── versions.txt                # Tool/container/environment versions used
 └── .gitignore                  # Excludes conda_pkgs/, envs/, images/, db/, singularity_cache/

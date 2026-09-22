@@ -1,0 +1,29 @@
+=== SDT  primer=NONE truncLen=200 trimLeft=0  expect 200bp ASVs   Tue Sep 22 12:41:43 AM EDT 2026
+raw files: 45
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       1366 165
+        907 190
+        766 no-515F-anchor
+        734 185
+
+--- DADA2
+samples: 45 
+reads in/out — median retention: 95.4 %
+102313200 total bases in 511566 reads from 6 samples will be used for learning the error rates.
+ASVs before chimera removal: 31345 
+ASVs after chimera removal: 19399 | reads kept: 66.9 %
+ASV length distribution:
+
+  200 
+19399 
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== SDT done (rc=0)  Tue Sep 22 12:56:27 AM EDT 2026
+repo had 0 ASVs for this study
+   total 11M
+   -rw-r--r-- 1 rgupta25 rgupta25 1.2K Sep 22 00:56 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 5.5M Sep 22 00:56 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 5.4M Sep 22 00:56 taxForwardReads.txt
+filtered reads kept for Kraken2: 45 files, 168M

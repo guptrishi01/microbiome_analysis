@@ -1,0 +1,21 @@
+INFO:    Mounting image with FUSE.
+LME ERROR: Singularity in backsolve at level 0, block 1 
+  skipping non-converging column 1037 
+LME ERROR: Singularity in backsolve at level 0, block 1 
+  skipping non-converging column 72 
+LME ERROR: nlminb problem, convergence error code = 1
+  message = singular convergence (7) 
+  skipping non-converging column 680 
+LME ERROR: nlminb problem, convergence error code = 1
+  message = singular convergence (7) 
+  skipping non-converging column 1867 
+LME ERROR: Singularity in backsolve at level 0, block 1 
+  skipping non-converging column 1919 
+LME ERROR: nlminb problem, convergence error code = 1
+  message = singular convergence (7) 
+  skipping non-converging column 1953 
+LME ERROR: Singularity in backsolve at level 0, block 1 
+  skipping non-converging column 2299 
+LME ERROR: nlminb problem, convergence error code = 1
+  message = singular convergence (7) 
+  skipping non-converging column 2307 

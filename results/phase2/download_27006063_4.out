@@ -1,0 +1,21 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== Ilhan  expecting 82 runs   Tue Sep 22 12:22:54 AM EDT 2026
+run list exists: /scratch/rgupta25/rygb/raw/Ilhan/runs.tsv
+run list: 82 entries (expected 82)
+SRR11292124	SRR11292124
+SRR11292125	SRR11292125
+SRR11292126	SRR11292126
+
+=== Ilhan done  Tue Sep 22 12:22:54 AM EDT 2026
+downloaded now: 0 | already present: 82 | failures: 0
+files in /scratch/rgupta25/rygb/raw/Ilhan: 82 (expected 82)
+374M	/scratch/rgupta25/rygb/raw/Ilhan
+read length check:
+   first read: 151 bp: TACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGCA...
+reads per sample (first 5):
+   SRR11292124_R1.fastq.gz 67775 reads
+   SRR11292125_R1.fastq.gz 60100 reads
+   SRR11292126_R1.fastq.gz 52818 reads
+   SRR11292127_R1.fastq.gz 27006 reads
+   SRR11292128_R1.fastq.gz 55376 reads

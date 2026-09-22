@@ -1,0 +1,21 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== Assal  expecting 71 runs   Tue Sep 22 12:22:54 AM EDT 2026
+run list exists: /scratch/rgupta25/rygb/raw/Assal/runs.tsv
+run list: 71 entries (expected 71)
+SRR5865065	SRR5865065
+SRR5865066	SRR5865066
+SRR5865067	SRR5865067
+
+=== Assal done  Tue Sep 22 12:22:54 AM EDT 2026
+downloaded now: 0 | already present: 71 | failures: 0
+files in /scratch/rgupta25/rygb/raw/Assal: 71 (expected 71)
+2.3G	/scratch/rgupta25/rygb/raw/Assal
+read length check:
+   first read: 251 bp: GTGCCGGCCGCCGCGGTAATACGGAAGGTCCGGGCGTTATCCGGATTTAT...
+reads per sample (first 5):
+   SRR5865065_R1.fastq.gz 272642 reads
+   SRR5865066_R1.fastq.gz 224408 reads
+   SRR5865067_R1.fastq.gz 235306 reads
+   SRR5865068_R1.fastq.gz 211410 reads
+   SRR5865069_R1.fastq.gz 508517 reads

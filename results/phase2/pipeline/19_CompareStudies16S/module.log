@@ -1,0 +1,481 @@
+INFO:    Mounting image with FUSE.
+Input tables will collected into an input folder: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input
+Grabbing input file: Genus_BS_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/13_BSDADA
+Grabbing input file: Genus_Assal_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/12_AssalDADA
+Grabbing input file: Genus_Ilhan_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/14_IlhanDADA
+Grabbing input file: Genus_Afshar_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/11_AfsharDADA
+Grabbing input file: Genus_Cholecystectomy_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/15_CholecystectomyDADA
+Grabbing input file: Genus_IleocecalResection_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/16_IleocecalResectionDADA
+Grabbing input file: Genus_Ileostomy_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/17_IleostomyDADA
+Grabbing input file: Genus_SDT_MixedLinearModelResults.txt from module: /scratch/rgupta25/rygb/pipeline/18_SDTDADA
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Warning messages:
+1: In cor.test.default(df[, "pval1"], df[, "pval2"], method = "spearman") :
+  Cannot compute exact p-value with ties
+2: In cor.test.default(df[, "pval1"], df[, "pval2"], method = "spearman") :
+  Cannot compute exact p-value with ties
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_BS_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Assal_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ilhan_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Afshar_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Cholecystectomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_IleocecalResection_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_Ileostomy_MixedLinearModelResults.txt
+Read table: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/input/Genus_SDT_MixedLinearModelResults.txt
+Saving table of pairwise comparisons: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_PairwiseComparison.txt
+Creating output file: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_wilcoxResults.txt
+Saving scatter plots to file: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_scatterPlots.pdf
+null device 
+          1 
+Saving specific plots to individual file to compare to figure 1, see file: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_mainFigure1cd.pdf
+null device 
+          1 
+Saving coefficients from scatter plots: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_coefficientsFromScatterPlots.pdf
+null device 
+          1 
+Saving box plots to file: /scratch/rgupta25/rygb/pipeline/19_CompareStudies16S/output/Genus_BoxPlotCorrelations.pdf
+null device 
+          1 
+
+All done!
+
+R version 3.6.3 (2020-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Debian GNU/Linux bullseye/sid
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.9.0
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.9.0
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] stringr_1.4.0  ggrepel_0.8.2  ggsignif_0.6.0 gridExtra_2.3  ggplot2_3.3.2 
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.5       digest_0.6.26    withr_2.3.0      crayon_1.3.4    
+ [5] grid_3.6.3       R6_2.4.1         lifecycle_0.2.0  gtable_0.3.0    
+ [9] magrittr_1.5     scales_1.1.1     pillar_1.4.6     stringi_1.5.3   
+[13] rlang_0.4.8      farver_2.0.3     vctrs_0.3.4      ellipsis_0.3.1  
+[17] labeling_0.4.2   tools_3.6.3      glue_1.4.2       munsell_0.5.0   
+[21] compiler_3.6.3   pkgconfig_2.0.3  colorspace_1.4-1 tibble_3.0.4    

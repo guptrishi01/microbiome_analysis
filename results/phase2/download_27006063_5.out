@@ -1,0 +1,20 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== Cholecystectomy  expecting 30 runs   Tue Sep 22 12:22:54 AM EDT 2026
+run list: 30 entries (expected 30)
+SRR31418698	SRR31418698
+SRR31418709	SRR31418709
+SRR31418710	SRR31418710
+
+=== Cholecystectomy done  Tue Sep 22 12:27:03 AM EDT 2026
+downloaded now: 30 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/Cholecystectomy: 30 (expected 30)
+550M	/scratch/rgupta25/rygb/raw/Cholecystectomy
+read length check:
+   first read: 301 bp: CCTACGGGTGGCAGCAGTGAGGAATATTGGTCAATGGACGAGAGTCTGAA...
+reads per sample (first 5):
+   SRR31418681_R1.fastq.gz 109442 reads
+   SRR31418682_R1.fastq.gz 135350 reads
+   SRR31418683_R1.fastq.gz 117324 reads
+   SRR31418684_R1.fastq.gz 126745 reads
+   SRR31418685_R1.fastq.gz 152737 reads

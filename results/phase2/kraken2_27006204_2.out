@@ -1,0 +1,25 @@
+Loading kraken2/2.1.3
+  Loading requirement: jellyfish/2.3.1
+=== Assal  71 filtered samples (expect 71)   Tue Sep 22 01:30:44 AM EDT 2026
+db: /users/rgupta25/rygb/db/kraken2  (47G)
+
+=== Assal done  Tue Sep 22 01:30:44 AM EDT 2026   elapsed 0s
+classified now: 0 | already present: 71 | failures: 0
+mpa reports: 71 (expect 71)
+
+--- classification rates (from the per-sample logs)
+    min 99.96%  median 99.99%  max 100.00%
+--- a sample report, deepest lines
+    SRR5865065.mpa
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Verrucomicrobiaceae|g__Verrucomicrobium|s__Verrucomicrobium sp. GAS474	2
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Verrucomicrobiaceae|g__Luteolibacter|s__Luteolibacter sp. G-1-1-1	2
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Akkermansiaceae|g__Akkermansia|s__Akkermansia muciniphila	1145
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Akkermansiaceae|g__Akkermansia|s__Akkermansia glycaniphila	6
+    d__Bacteria|p__Verrucomicrobia|c__Spartobacteria|g__Candidatus Xiphinematobacter|s__Candidatus Xiphinematobacter sp. Idaho Grape	1
+--- rank coverage in that sample (how many taxa are named at each rank)
+    p__ 29
+    c__ 57
+    o__ 109
+    f__ 201
+    g__ 410
+    s__ 554

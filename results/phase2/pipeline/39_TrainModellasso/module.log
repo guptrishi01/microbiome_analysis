@@ -1,0 +1,1212 @@
+INFO:    Mounting image with FUSE.
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.0     ✔ purrr   0.3.4
+✔ tibble  3.0.1     ✔ dplyr   0.8.5
+✔ tidyr   1.0.2     ✔ stringr 1.4.0
+✔ readr   1.3.1     ✔ forcats 0.5.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: mlr
+Loading required package: ParamHelpers
+'mlr' is in maintenance mode since July 2019. Future development
+efforts will go into its successor 'mlr3' (<https://mlr3.mlr-org.com>).
+Loading required package: phyloseq
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.017 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.018 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 1210 features with no variation across samples
+                        (retaining 230)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 68.22%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.006 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study BS 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.003 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 454 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.025 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 121 features with no variation across samples
+                        (retaining 1319)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization:  94.7%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.044 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study BS 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.013 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 1136 features with no variation across samples
+                        (retaining 304)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 64.25%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.004 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study Assal 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 448 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.02 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 131 features with no variation across samples
+                        (retaining 1309)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 95.07%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.034 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study Assal 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in    0 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++++ checking sample number per class
+Data set has only 9 training examples of class 0 .
+Note that a dataset this small/skewed is not necessarily suitable for analysis in this pipeline.
++++ checking overlap between samples and metadata
++ finished validate.data in 0.012 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 1240 features with no variation across samples
+                        (retaining 200)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 65.48%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.002 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study Ilhan 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 493 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.019 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 124 features with no variation across samples
+                        (retaining 1316)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 94.66%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.037 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study Ilhan 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.012 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 1256 features with no variation across samples
+                        (retaining 184)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 63.57%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.002 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study Afshar 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 477 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.02 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 121 features with no variation across samples
+                        (retaining 1319)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 94.65%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.036 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study Afshar 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.012 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 1283 features with no variation across samples
+                        (retaining 157)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 66.45%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.001 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study Cholecystectomy 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 485 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.019 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 122 features with no variation across samples
+                        (retaining 1318)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 94.58%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.036 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study Cholecystectomy 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.015 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 1189 features with no variation across samples
+                        (retaining 251)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 85.53%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.006 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls > cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls > cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls > cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls > cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study IleocecalResection 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 328 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.017 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 125 features with no variation across samples
+                        (retaining 1315)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 93.18%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.026 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study IleocecalResection 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.013 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 404 features with no variation across samples
+                        (retaining 1036)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 89.91%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.005 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study Ileostomy 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 450 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.019 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 398 features with no variation across samples
+                        (retaining 1042)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 93.73%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.029 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study Ileostomy 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.032 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 474 features with no variation across samples
+                        (retaining 966)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 87.98%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.004 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a single study model for study SDT 
++ starting create.label
+Label used as case:
+   1
+Label used as control:
+   0
++ finished create.label.from.metadata in 0.001 s
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 470 sample(s).
++++ checking sample number per class
++++ checking overlap between samples and metadata
++ finished validate.data in 0.022 s
++ starting normalize.features
++ normalizing original features
++++ performing de novo normalization using the  log.std  method
++++ removed 330 features with no variation across samples
+                        (retaining 1110)
++++ checking if parameters are compatible with each other
++ feature sparsity before normalization: 94.06%
++++ performing normalization
++++ feature sparsity after normalization:      0 %
++ finished normalize.features in 0.031 s
+Features splitted for cross-validation successfully.
+Trained lasso models successfully.
+Made predictions successfully.
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Setting levels: control = -1, case = 1
+Setting direction: controls < cases
+Evaluated predictions successfully.
+Successfully trained a LOSO model for study SDT 
+There were 50 or more warnings (use warnings() to see the first 50)
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.007 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.007 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.006 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.015 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.007 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.007 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.006 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.007 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
+There were 50 or more warnings (use warnings() to see the first 50)
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 61 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 67 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 22 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 38 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 30 sample(s).
++ finished validate.data in 0.004 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 187 sample(s).
++ finished validate.data in 0.006 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 65 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
++ starting validate.data
++++ checking overlap between labels and features
++ Keeping labels of 45 sample(s).
++ finished validate.data in 0.005 s
+Features normalized successfully.
+Made predictions successfully.
+Warning messages:
+1: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+2: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+3: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+4: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+5: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+6: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+7: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+8: In validate.label(label, feat, meta, case, verbose) :
+  No label information given! Generating SIAMCAT object with placeholder label!
+	This SIAMCAT object is not suitable for the complete workflow...
+Successfully build models in 3749.409 second...

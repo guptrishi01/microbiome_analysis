@@ -1,0 +1,21 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== BS16S  expecting 61 runs   Tue Sep 22 12:22:54 AM EDT 2026
+run list exists: /scratch/rgupta25/rygb/raw/BS16S/runs.tsv
+run list: 61 entries (expected 61)
+SRR12806193	SAMPLE-1
+SRR12806192	SAMPLE-2
+SRR12806181	SAMPLE-3
+
+=== BS16S done  Tue Sep 22 12:22:54 AM EDT 2026
+downloaded now: 0 | already present: 61 | failures: 0
+files in /scratch/rgupta25/rygb/raw/BS16S: 61 (expected 61)
+243M	/scratch/rgupta25/rygb/raw/BS16S
+read length check:
+   first read: 250 bp: GTTTGCTGGAGTGCCAGCCGCCGCGGTAATACGTAGGGGGCAAGCGTTAT...
+reads per sample (first 5):
+   SAMPLE-10_R1.fastq.gz 24925 reads
+   SAMPLE-11_R1.fastq.gz 46583 reads
+   SAMPLE-12_R1.fastq.gz 30330 reads
+   SAMPLE-13_R1.fastq.gz 22794 reads
+   SAMPLE-14_R1.fastq.gz 12935 reads

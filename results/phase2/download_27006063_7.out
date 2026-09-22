@@ -1,0 +1,20 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== Ileostomy  expecting 65 runs   Tue Sep 22 12:22:54 AM EDT 2026
+run list: 65 entries (expected 65)
+SRR39238554	SRR39238554
+SRR39238457	SRR39238457
+SRR39238553	SRR39238553
+
+=== Ileostomy done  Tue Sep 22 12:28:33 AM EDT 2026
+downloaded now: 65 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/Ileostomy: 65 (expected 65)
+395M	/scratch/rgupta25/rygb/raw/Ileostomy
+read length check:
+   first read: 250 bp: GATCAGCCTATGGGGTGCAGCAGTGAGGAATATTGGTCAATGGAGGAAAC...
+reads per sample (first 5):
+   SRR39238445_R1.fastq.gz 114512 reads
+   SRR39238446_R1.fastq.gz 133815 reads
+   SRR39238447_R1.fastq.gz 111605 reads
+   SRR39238448_R1.fastq.gz 113331 reads
+   SRR39238449_R1.fastq.gz 112808 reads

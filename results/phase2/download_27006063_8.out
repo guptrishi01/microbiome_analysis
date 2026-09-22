@@ -1,0 +1,20 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== SDT  expecting 45 runs   Tue Sep 22 12:22:54 AM EDT 2026
+run list: 45 entries (expected 45)
+SRR39238494	SRR39238494
+SRR39238509	SRR39238509
+SRR39238493	SRR39238493
+
+=== SDT done  Tue Sep 22 12:28:22 AM EDT 2026
+downloaded now: 45 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/SDT: 45 (expected 45)
+271M	/scratch/rgupta25/rygb/raw/SDT
+read length check:
+   first read: 250 bp: ATGTCACCTACGGGATGCACCAGTGGGGGATATTGCACAATGGGGGAAAC...
+reads per sample (first 5):
+   SRR39238458_R1.fastq.gz 112255 reads
+   SRR39238459_R1.fastq.gz 102233 reads
+   SRR39238460_R1.fastq.gz 102879 reads
+   SRR39238461_R1.fastq.gz 80905 reads
+   SRR39238462_R1.fastq.gz 106144 reads

@@ -1,0 +1,29 @@
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  df$r[df$compariosn == "Different study" & df$compariosnTime ==  and df$r[df$compariosn == "Different study" & df$compariosnTime ==     "Different timepoint"] and     "Same timepoint"]
+W = 285, p-value = 0.378
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  df$r[df$compariosn == "Different study" & df$compariosnTime ==  and df$r[df$compariosn == "Same study" & df$compariosnTime == "Different timepoint"]    "Different timepoint"] and df$r[df$compariosn == "Same study" & df$compariosnTime == "Different timepoint"]
+W = 18, p-value = 2.681e-06
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test
+
+data:  df$r[df$compariosn == "Different study" & df$compariosnTime ==  and df$r[df$compariosn == "Same study" & df$compariosnTime == "Different timepoint"]    "Same timepoint"] and df$r[df$compariosn == "Same study" & df$compariosnTime == "Different timepoint"]
+W = 2, p-value = 0.0003291
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  df$r[df$compariosn == "Different study"] and df$r[df$compariosn == "Same study" & df$compariosnTime == "Different timepoint"]
+W = 20, p-value = 2.473e-06
+alternative hypothesis: true location shift is not equal to 0
+
+[1] 3.780278e-01 5.361436e-06 4.387769e-04 5.361436e-06
