@@ -196,9 +196,9 @@ the phase-1 cohorts once results exist.
 
 ### Status (2026-09-22)
 
-`02_download` → `03_dada2` → `04_kraken2_16s` → `05_build_tables` all
-complete for all 8 cohorts. `06_analysis.sbatch` (with `PHASE2_COHORTS=1`)
-is next.
+`02_download` → `03_dada2` → `04_kraken2_16s` → `05_build_tables` →
+`06_analysis` (`PHASE2_COHORTS=1`) → `07_compare_auroc` all complete for
+all 8 cohorts. Phase 2's core analysis is done — see "Results" below.
 
 - **Downloads:** all 8 cohorts, zero failures, every file count matches
   expected exactly. Read lengths for the 4 new cohorts (Cholecystectomy
@@ -253,8 +253,82 @@ is next.
 None of the above are corrupting or blocking anything — they're real,
 verified properties of specific cohorts' data, not open problems, and
 they're recorded here so they inform how phase-2 results get interpreted
-once `06_analysis.sbatch` runs, not overlooked.
+below.
 
-### Still needed before a real run
+- **`06_analysis.sbatch`:** first submission crashed immediately —
+  IleocecalResection's TaxaClassification module hit a row-count mismatch
+  (`arguments imply differing number of rows: 187, 189`) in
+  `cbind(t1_norm, meta)`. Root cause: `norm()` correctly drops the 2
+  already-flagged sub-1000-read samples, but the original authors'
+  `cbind(t1_norm, meta)` pattern (copied into all 4 new cohort scripts)
+  assumes the row counts always match — true for all 4 phase-1 cohorts
+  (none of them ever hit this), false here. Fixed in all 4 new scripts
+  (subset `meta`/`meta1` to `rownames(t1_norm)` per rank, immediately
+  before each `cbind`) rather than just the one that happened to trigger
+  it. Verified against the real data that crashed (187/187 rows,
+  consistent across all 6 ranks) and against a cohort where nothing gets
+  dropped (byte-identical output before/after the fix, confirming it's a
+  true no-op elsewhere). Resubmitted, completed clean: **all 34 modules
+  succeeded, zero failures**, ~1h45m total runtime (`TrainModellasso`
+  alone took ~63 min, training/testing LASSO across 8 studies instead of
+  4).
+- **`07_compare_auroc.sbatch`:** completed in 12s, no changes needed — the
+  script derives its study list dynamically from `metaData_merged.txt`,
+  so it handled all 8 studies without modification.
 
-`06_analysis.sbatch` with `PHASE2_COHORTS=1` → `07_compare_auroc.sbatch`
+## Results (phase 2)
+
+**Genus-level cross-study correlation** (the same metric behind the
+paper's headline 0.41 ± 0.10): the full 8-cohort, 105-pair comparison came
+back at **r = 0.191 ± 0.224**, far below the paper's number. Before
+treating that as a finding, this was checked for a pipeline bug: the 23
+phase-1-only pairs *within* this same 105-pair table give **r = 0.397 ±
+0.097** — essentially identical to the already-verified phase-1-only
+result (0.396 ± 0.097) — confirming `compareStudies_16S.R`'s
+generalization is correct and the drop is coming entirely from the new
+cohorts, not from anything broken in the shared code.
+
+Breaking the new cohorts' cross-study correlation down individually:
+
+| Cohort | r (different-study pairs) |
+|---|---|
+| IleocecalResection | 0.188 ± 0.113 (n=30) — weak positive |
+| Ileostomy | 0.093 ± 0.136 (n=9) — near zero |
+| Cholecystectomy | -0.010 ± 0.097 (n=26) — no signal |
+| SDT | -0.078 ± 0.065 (n=8) — slightly negative |
+
+**Cross-study LASSO AUROC** tells a consistent story, with an additional
+finding of its own. Within-study performance varies sharply by cohort —
+Afshar 0.717, Assal 0.954, BS 0.984, Cholecystectomy 0.745,
+**IleocecalResection 0.533** (barely above chance), Ileostomy 0.892, Ilhan
+0.744, SDT 0.783 — and pooled cross-study transfer drops from the
+phase-1-only run's 0.778 to **0.619**, with LOSO mean dropping from 0.845
+to **0.683**.
+
+The additional finding: **pooling the noisier phase-2 cohorts into the
+same LASSO training set measurably hurt the phase-1 cohorts' own LOSO
+performance**, not just the new cohorts' transfer numbers:
+
+| Phase-1 cohort | LOSO AUROC, phase-1-only | LOSO AUROC, pooled with all 8 | Δ |
+|---|---|---|---|
+| Afshar | 0.828 | 0.659 | -0.169 |
+| Assal | 0.836 | 0.813 | -0.023 |
+| BS | 0.946 | 0.585 | -0.361 |
+| Ilhan | 0.769 | 0.650 | -0.120 |
+
+**Interpretation.** The bariatric-surgery microbial signature does not
+straightforwardly generalize to the other GI-surgery types tested here —
+IleocecalResection shows a real but much weaker signal, and
+Cholecystectomy/SDT show essentially none. IleocecalResection's own
+within-study AUROC (0.533) being little better than chance, despite
+comparable data quality to the phase-1 cohorts (90.6% chimera retention,
+a complete repeat-sampling design), is evidence this reflects a real
+procedural/biological difference rather than only the data-quality caveats
+already documented above — a fundamentally different patient population
+(Crohn's disease) and a 4-level, gradual timepoint design (0/1/3/6 months,
+collapsed to a single pre/post split for LASSO) plausibly make the
+surgical signature itself harder to detect, not just harder to measure.
+That said, the documented noise caveats for Cholecystectomy/Ileostomy/SDT
+(lower chimera retention, mostly-unpaired subjects) mean their near-zero
+numbers shouldn't be read as definitive proof of *no* signal, only that
+none was detected at this sample size and data quality.
