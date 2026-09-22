@@ -196,25 +196,65 @@ the phase-1 cohorts once results exist.
 
 ### Status (2026-09-22)
 
-- **Downloads complete.** All 8 cohorts (4 phase-1 + 4 phase-2) downloaded
-  cleanly — zero failures across all 8 array tasks, every cohort's file
-  count matches expected exactly, and read lengths for all 4 new cohorts
-  (Cholecystectomy 301bp, IleocecalResection 314bp, Ileostomy/SDT 250bp)
-  comfortably exceed the planned `truncLen=200`.
-- **`PRIMER`/`TRIMLEFT` confirmed, not placeholders anymore.** Ran the
-  515F-anchor check against the real downloaded reads: none of the 4 new
-  cohorts show a fixed-position anchor (IleocecalResection: zero matches;
-  Cholecystectomy/Ileostomy/SDT: scattered matches at varying positions —
-  coincidental, not a real primer). `PRIMER=NONE`/`TRIMLEFT=0` is correct as
-  configured; no change needed before running `03_dada2.sbatch`.
-- `compareStudies_SV.R` still intentionally excludes all 4 phase-2 cohorts
-  by default — this same check independently confirms none of them share
-  BS/Assal's exact V4 protocol, so this stays a genuine exclusion, not just
-  an unverified one. See `CLAUDE.md`'s "SV/ASV-level comparison is
-  region-locked" section before ever adding one.
+`02_download` → `03_dada2` → `04_kraken2_16s` → `05_build_tables` all
+complete for all 8 cohorts. `06_analysis.sbatch` (with `PHASE2_COHORTS=1`)
+is next.
+
+- **Downloads:** all 8 cohorts, zero failures, every file count matches
+  expected exactly. Read lengths for the 4 new cohorts (Cholecystectomy
+  301bp, IleocecalResection 314bp, Ileostomy/SDT 250bp) comfortably exceed
+  `truncLen=200`.
+- **`PRIMER`/`TRIMLEFT` confirmed against real reads**, no longer
+  placeholders: none of the 4 new cohorts show a fixed-position 515F
+  anchor, confirming `PRIMER=NONE`/`TRIMLEFT=0` is correct. Independently
+  confirms none share BS/Assal's exact V4 protocol — `compareStudies_SV.R`
+  correctly excludes all 4 by default (see `CLAUDE.md`'s "SV/ASV-level
+  comparison is region-locked").
+- **DADA2 (`03`):** all 8 succeeded, every ASV length matches its
+  configured `EXPECT_LEN`. **Two samples dropped below 1000 reads** in
+  IleocecalResection (`SRR13357992`, `SRR13358126`) — the script's own
+  printed warning caught these; they'll be silently excluded later by
+  `norm()`'s `rowSums(table)>1000` filter (~1% of that cohort's 189
+  samples, not corrected for, just noted).
+- **Lower chimera-removal read retention** for Cholecystectomy (71.5%),
+  Ileostomy (67.1%), SDT (66.9%) vs. 90-99% for every other cohort. Checked
+  directly, not assumed: every sample in all 3 has tens of thousands of
+  reads of margin above the 1000-read cutoff, so no sample-dropout risk.
+  The real effect is reduced per-taxon estimation precision for these 3
+  cohorts specifically — not a bug (chimera detection ran identically
+  across all 8; this reflects real differences in the underlying labs'
+  protocols), but a genuine interpretation caveat: if these 3 cohorts show
+  weaker cross-study correlation or LASSO transfer later, that could be
+  measurement noise rather than a true biological negative, and should be
+  read that way rather than as a clean result.
+- **Kraken2 (`04`):** all 8 succeeded, every mpa-report count matches
+  expected. Three cohorts (Afshar, Ileostomy, SDT) each had one isolated
+  low-classification-rate sample (80.88%/78.25%/87.79%) — confirmed single
+  outliers, not systemic (the next-lowest sample in each recovers to
+  91-95%+).
+- **Table-building (`05`):** all 8 succeeded; genus-level correlation
+  against the original repo's published tables for the 4 phase-1 cohorts
+  is r=0.82-0.85, consistent with the already-documented Kraken2-database-
+  substitution pattern (see "Cluster environment" in `CLAUDE.md`), not a
+  new discrepancy. Hit and fixed one real bug along the way: the first
+  submission crashed immediately (a missing `COHORTS` argument to
+  `build_tables.py`, introduced when wiring phase-2 metadata but never
+  passed at the call site) — fixed, verified the regenerated phase-1
+  tables are still byte-identical to the already-published output, then
+  re-ran successfully.
+- **Human/Eukaryota read contamination** (present in several samples,
+  expected background in 16S data) is not a residual concern — it's
+  actively filtered by design: `05_build_tables.sbatch` keeps only
+  `d__Bacteria`/`d__Archaea` before normalization, dropping Eukaryota/
+  Viruses reads before any per-sample totals are computed. This is the one
+  "noise" item that's genuinely handled by the pipeline itself, rather
+  than just documented for later interpretation.
+
+None of the above are corrupting or blocking anything — they're real,
+verified properties of specific cohorts' data, not open problems, and
+they're recorded here so they inform how phase-2 results get interpreted
+once `06_analysis.sbatch` runs, not overlooked.
 
 ### Still needed before a real run
 
-1. `03_dada2.sbatch` — DADA2 ASV inference for all 8 cohorts
-2. `04_kraken2_16s.sbatch` → `05_build_tables.sbatch` → `06_analysis.sbatch`
-   (with `PHASE2_COHORTS=1`) → `07_compare_auroc.sbatch`
+`06_analysis.sbatch` with `PHASE2_COHORTS=1` → `07_compare_auroc.sbatch`
