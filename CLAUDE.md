@@ -28,6 +28,44 @@ must remain intact through every phase-2 change:
   just before committing. A phase-2 addition should only ever add lines, never
   edit an existing phase-1 value.
 
+## Never assume — verify and prove it
+
+This is the working principle for every change in this repo, not just the two
+rules above. A claim that a rewrite "should behave the same" or "looks
+equivalent" is not sufficient — prove it, concretely, before trusting it:
+
+- **Prefer a direct comparison over reasoning about correctness.** When
+  rewriting or extending something with known-good prior output (a script, a
+  config, a data transform), run the new version against real existing data and
+  diff the result against the real existing output — don't just read the code
+  and conclude it's equivalent.
+- **Worked example already in this repo's history:** `combineCountTables.R` was
+  rewritten from 4 hardcoded study variables to a generic loop (needed to add
+  phase-2 cohorts). Rather than assuming the rewrite preserved behavior, it was
+  run directly (via `singularity exec .../nlme.sif Rscript`, no SLURM needed
+  for something this cheap) against the real phase-1 `*TaxaClass/output/`
+  directories already on disk, restricted to the original 4 studies via a
+  `PHASE2_STUDIES` env var, and the output was diffed byte-for-byte against
+  `results/phase1/pipeline/*_CombineCountTables*/output/`. This caught a real
+  discrepancy (the `ID` column) on the first attempt — silently trusting the
+  rewrite would have shipped a subtle output difference.
+- **When a "test" surfaces a difference, don't just make it disappear.**
+  Root-cause it first. In the case above, the difference traced to the
+  *original* script's own inconsistency (it wraps `timepoint` in
+  `as.character()` before combining across studies, but not `ID`, so combining
+  multiple R factors via base `c()` collapsed `ID` to integer codes) — almost
+  certainly an unintentional quirk in the original, but reproducing it exactly
+  was the correct fix, not "improving" it, because exact reproducibility was
+  the requirement.
+- **No compute cluster access needed for most of this.** Singularity and every
+  `.sif` image already exist locally (`images/*.sif`) — a quick correctness
+  check against already-generated phase-1 output can run directly, without
+  waiting on a SLURM allocation. Save `sbatch` for the real, full-scale run
+  once the logic is already proven.
+- **State what was actually verified, not what should logically follow from
+  it.** "Untouched — confirmed via `git diff`, zero output" is a claim someone
+  else can re-check. "Should be fine since nothing else changed" is not.
+
 ## Cluster environment
 
 Two roots, set as env vars everywhere (`00_setup.sh` and every `scripts/*.sbatch`):
