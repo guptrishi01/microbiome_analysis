@@ -1,0 +1,7 @@
+# Runtime: none. Every Python heredoc in scripts/09_find_datasets.sbatch,
+# scripts/10_inspect_candidates.sh, and scripts/06_analysis.sbatch's convergence-guard
+# patcher uses only the standard library (json, re, os, sys, time, glob, collections,
+# urllib.parse, urllib.request). Nothing to install to run the pipeline.
+#
+# Dev tooling only:
+ruff>=0.6
