@@ -35,7 +35,9 @@ for(t in c("Phylum","Class","Order","Family","Genus")){
 
   t1<-getTaxaTable(dada,taxa,t)
   t1_norm<-norm(t1)
-  t1_normMeta<-cbind(t1_norm,meta1)
+  #norm() drops any sample with <=1000 total reads -- meta1 must be re-subset to match per
+  #rank rather than assumed to always align.
+  t1_normMeta<-cbind(t1_norm,meta1[rownames(t1_norm), , drop=FALSE])
   write.table(t1_normMeta,paste0(output,t,"_norm_table_Ileostomy.txt"),sep = "\t",row.names = TRUE,quote = FALSE)
 }
 
@@ -45,5 +47,5 @@ num<-c(1:nrow(taxa))
 taxanomy<-apply(taxa,1,function(x){paste0(x[1],"_",x[2],"_",x[3],"_",x[4],"_",x[5],"_",x[6])})
 taxanomy<-paste0(taxanomy,"_",num)
 colnames(dada1)<-taxanomy
-dada1_meta<-cbind(dada1,meta1)
+dada1_meta<-cbind(dada1,meta1[rownames(dada1), , drop=FALSE])
 write.table(dada1_meta,paste0(output,"SV_norm_table_Ileostomy.txt"),sep="\t",row.names = TRUE,quote = FALSE)

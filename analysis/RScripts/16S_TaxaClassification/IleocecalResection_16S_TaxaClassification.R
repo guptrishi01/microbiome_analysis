@@ -31,7 +31,12 @@ for(t in c("Phylum","Class","Order","Family","Genus")){
 
   t1<-getTaxaTable(dada,taxa,t)
   t1_norm<-norm(t1)
-  t1_normMeta<-cbind(t1_norm,meta)
+  #norm() drops any sample with <=1000 total reads (confirmed real here: 2 samples flagged
+  #by 03_dada2.sbatch's own warning). meta must be subset to match, or cbind fails with a row
+  #count mismatch -- the original authors' template assumes this never happens, since it never
+  #did for their 4 cohorts; it does here, so meta is re-subset per rank rather than assumed
+  #to always align with dada's row count.
+  t1_normMeta<-cbind(t1_norm,meta[rownames(t1_norm), , drop=FALSE])
   write.table(t1_normMeta,paste0(output,t,"_norm_table_IleocecalResection.txt"),sep = "\t",row.names = TRUE,quote = FALSE)
 }
 
@@ -41,5 +46,5 @@ num<-c(1:nrow(taxa))
 taxanomy<-apply(taxa,1,function(x){paste0(x[1],"_",x[2],"_",x[3],"_",x[4],"_",x[5],"_",x[6])})
 taxanomy<-paste0(taxanomy,"_",num)
 colnames(dada1)<-taxanomy
-dada1_meta<-cbind(dada1,meta)
+dada1_meta<-cbind(dada1,meta[rownames(dada1), , drop=FALSE])
 write.table(dada1_meta,paste0(output,"SV_norm_table_IleocecalResection.txt"),sep="\t",row.names = TRUE,quote = FALSE)
