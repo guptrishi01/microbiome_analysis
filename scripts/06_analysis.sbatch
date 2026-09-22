@@ -167,40 +167,93 @@ print("convergence guard applied to:", ', '.join(sorted(patched)) if patched els
 PYEOF
 
 # ---------------------------------------------------------------- run
+# Independent per-cohort modules (name ends in TaxaClass/DADA/Kraken) are batched into groups
+# of consecutive array entries sharing the same suffix and run CONCURRENTLY (background jobs,
+# capped at SLURM_CPUS_PER_TASK), instead of one at a time. This is safe because each one only
+# ever touches its own cohort's input/output paths — confirmed by reading every one of them,
+# phase-1 and phase-2 alike — so there is no shared mutable state between concurrent runs.
+# Every other module (CombineCountTables, PCO, CompareStudies*, Heatmap, Diversity,
+# SVAnalysis, TrainModellasso, FigPerformlasso) still runs alone, exactly as before — an
+# untagged module always ends its "batch" at size 1, which is bitwise the same command as the
+# old foreground invocation, just plumbed through the same background+exit-code-file mechanism
+# for code-path uniformity.
+#
+# Why this exists: with 8 cpus-per-task requested but each MixedLinearModel R script fitting
+# one taxon at a time in a plain sequential for-loop (no parallel/foreach/mclapply), the
+# original one-module-at-a-time loop left 7 of 8 requested cores idle for nearly the whole job.
+# Batching independent per-cohort modules is the safe fix — it doesn't touch a single line of
+# R (the untouchable-clone rule and the "don't restructure someone else's stats code lightly"
+# principle both argue against parallelizing *inside* those scripts instead).
+#
+# Verified, not assumed: see CLAUDE.md's "Never assume" section — this was run against the
+# real BS/Assal/Ilhan/Afshar TaxaClass inputs already on disk and diffed byte-for-byte against
+# the published Genus_norm_table_*.txt outputs before being trusted here.
+MAXPAR=${SLURM_CPUS_PER_TASK:-8}
 i=0; ran=0; failed=0
-for entry in "${MODULES[@]}"; do
-  IFS='|' read -r name script image param phase <<< "$entry"
-  # Same skip-before-numbering order as the scaffold loop above — must match exactly, or a
-  # module's number here would disagree with the directory the scaffold loop actually created.
-  if [ "$phase" = "2c" ] && [ "$PHASE2_COHORTS" != "1" ]; then
-    echo "-- skip ${name} (phase 2 cohort: set PHASE2_COHORTS=1 to include)"
-    continue
-  fi
-  num=$(printf "%02d" $i); i=$((i+1))
-  if [ "$phase" = "2" ] && [ "$RUN_PHASE2" != "1" ]; then
-    echo "-- skip ${num}_${name} (phase 2: needs metagenomic input)"
-    continue
-  fi
-  d=$PIPE/${num}_${name}
-  base=$(basename "$script")
-  echo
-  echo "======================================== ${num}_${name}  [$image] $(date +%H:%M:%S)"
-  ( cd "$d/script" && \
-    singularity exec $BIND "$IMG/$image.sif" Rscript "./$base" $param ) \
-      > "$d/module.log" 2>&1
-  rc=$?
-  nout=$(find "$d/output" -type f 2>/dev/null | wc -l)
-  if [ $rc -eq 0 ]; then
-    echo "   ok   rc=0  outputs=$nout"
-    ran=$((ran+1))
-  else
-    echo "   FAIL rc=$rc  outputs=$nout"
-    echo "   --- last 25 lines of $d/module.log"
-    tail -25 "$d/module.log" | sed 's/^/   /'
-    failed=$((failed+1))
-    # dependencies are linear here; stop rather than cascade failures
-    break
-  fi
+n=${#MODULES[@]}
+idx=0
+while [ $idx -lt $n ]; do
+  batch_nums=(); batch_names=(); batch_dirs=(); wave_tag=""
+
+  while [ $idx -lt $n ] && [ ${#batch_dirs[@]} -lt $MAXPAR ]; do
+    entry="${MODULES[$idx]}"
+    IFS='|' read -r name script image param phase <<< "$entry"
+
+    # Same skip-before-numbering order as the scaffold loop above — must match exactly, or a
+    # module's number here would disagree with the directory the scaffold loop actually created.
+    if [ "$phase" = "2c" ] && [ "$PHASE2_COHORTS" != "1" ]; then
+      echo "-- skip ${name} (phase 2 cohort: set PHASE2_COHORTS=1 to include)"
+      idx=$((idx+1)); continue
+    fi
+
+    tag=""
+    case "$name" in
+      *TaxaClass) tag="TaxaClass" ;;
+      *DADA) tag="DADA" ;;
+      *Kraken) tag="Kraken" ;;
+    esac
+    # A later entry with a different tag ends the batch here without consuming it — the next
+    # outer-loop iteration picks it up fresh.
+    [ ${#batch_dirs[@]} -gt 0 ] && [ "$tag" != "$wave_tag" ] && break
+    wave_tag="$tag"
+
+    num=$(printf "%02d" $i); i=$((i+1))
+    if [ "$phase" = "2" ] && [ "$RUN_PHASE2" != "1" ]; then
+      echo "-- skip ${num}_${name} (phase 2: needs metagenomic input)"
+      idx=$((idx+1)); continue
+    fi
+
+    d=$PIPE/${num}_${name}
+    batch_nums+=("$num"); batch_names+=("$name"); batch_dirs+=("$d")
+    base=$(basename "$script")
+    echo
+    echo "======================================== ${num}_${name}  [$image] $(date +%H:%M:%S)$( [ -n "$tag" ] && echo '  (parallel batch)' )"
+    { ( cd "$d/script" && singularity exec $BIND "$IMG/$image.sif" Rscript "./$base" $param ) \
+        > "$d/module.log" 2>&1; echo $? > "$d/exit_code"; } &
+
+    idx=$((idx+1))
+    [ -z "$tag" ] && break   # untagged modules never batch with anything
+  done
+
+  wait
+  batch_failed=0
+  for k in "${!batch_dirs[@]}"; do
+    d="${batch_dirs[$k]}"; nm="${batch_names[$k]}"; nb="${batch_nums[$k]}"
+    rc=$(cat "$d/exit_code" 2>/dev/null || echo 1)
+    nout=$(find "$d/output" -type f 2>/dev/null | wc -l)
+    if [ "$rc" -eq 0 ]; then
+      echo "   ok   ${nb}_${nm}  rc=0  outputs=$nout"
+      ran=$((ran+1))
+    else
+      echo "   FAIL ${nb}_${nm}  rc=$rc  outputs=$nout"
+      echo "   --- last 25 lines of $d/module.log"
+      tail -25 "$d/module.log" | sed 's/^/   /'
+      failed=$((failed+1))
+      batch_failed=1
+    fi
+  done
+  # dependencies are linear across waves; stop rather than cascade failures into the next one
+  [ "$batch_failed" -eq 1 ] && break
 done
 
 # ---------------------------------------------------------------- report
