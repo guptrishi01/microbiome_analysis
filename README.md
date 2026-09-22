@@ -339,3 +339,49 @@ That said, the documented noise caveats for Cholecystectomy/Ileostomy/SDT
 (lower chimera retention, mostly-unpaired subjects) mean their near-zero
 numbers shouldn't be read as definitive proof of *no* signal, only that
 none was detected at this sample size and data quality.
+
+## Phase 3 (proposed) — a positive control: more bariatric cohorts
+
+Phase 2 tested whether the bariatric-surgery microbial signature
+generalizes to *other* GI surgeries and found that it largely doesn't
+(r drops from ~0.40 to 0.09 to -0.08 per new cohort — see "Results (phase
+2)" above). That result has an alternative, less interesting explanation
+worth ruling out directly: maybe cross-study correlation just weakens
+whenever *any* additional, independently-collected cohort gets pooled in,
+regardless of whether the surgery type matches — noisier real-world data,
+different labs/protocols, more heterogeneity in general.
+
+**The proposed test:** find additional 16S cohorts that match the
+original 4 as closely as possible — bariatric surgery specifically (RYGB,
+sleeve gastrectomy, gastric banding, duodenal switch), a genuine
+pre-surgical baseline plus ≥1 post-surgical timepoint, repeat-sampled per
+subject — and run them through the exact same pipeline. If *these*
+cohorts correlate with the existing 4 at something close to the original
+~0.40 (unlike phase 2's non-bariatric cohorts), that's direct, positive
+evidence the signature is real and bariatric-specific, not an artifact of
+"more pooled data always looks worse." Combined with phase 2's negative
+result, this would be the complete argument: the bariatric-surgery
+microbial signature is consistent *within* bariatric surgery and does
+*not* generalize to gut surgery in general.
+
+**This reuses phase 2's infrastructure almost entirely** —
+`09_find_datasets.sbatch`'s scan, `10_inspect_candidates.sh`'s
+readiness check, the `cohorts/<Study>/metaData.txt` pattern, the
+per-cohort R script templates (Ilhan/Afshar-style depending on timepoint
+shape), and the now-generalized shared scripts
+(`combineCountTables.R`/`compareStudies_16S.R`/`Heatmap.R`/
+`compareStudies_SV.R`, already proven to scale past 4 studies). Phase 3 is
+primarily a dataset-sourcing and onboarding task, not new engineering.
+
+**Concrete candidates already surfaced** by the existing scan
+(`dataset_scan/shortlist.tsv`), not yet investigated in depth:
+
+| Accession | Score | Runs | Notes |
+|---|---|---|---|
+| `PRJEB39382` | 78 | 258 | "Projection of gut microbiome pre and post bariatric surgery to predict surgery outcome" — day-level timepoints (101d-122d), MiSeq. Top candidate; needs the paper's methods to confirm baseline definition ("timepoints present but no clear baseline token" per the scan). |
+| `PRJNA727576` | 60 | 358 | "Bariatric surgery shifts human gut microbiota to improve glycemic control" — 301bp reads, good length. Subject/timepoint not in SRA metadata alone; needs the paper's supplementary table (same pattern already used for the BS cohort). |
+| `PRJEB88699` | 78 | 57 | "Multi-Omics investigation of Bariatric Surgery Outcomes" — 3/6/9 month timepoints. Currently disqualified: ~74bp reads, too short for `truncLen`. Worth a second look if a longer-read run exists. |
+| `PRJNA1118203`, `PRJNA1199984`, `PRJNA951705`, `PRJNA941111` | 50s-57 | 38-47 | Smaller bariatric cohorts, all flagged "no repeat sampling detectable from metadata" — would need each paper's own methods/supplementary table, same as BS. |
+
+Verify each with `scripts/10_inspect_candidates.sh <ACCESSION>` before
+committing to one, exactly as was done for the phase-2 cohorts.
