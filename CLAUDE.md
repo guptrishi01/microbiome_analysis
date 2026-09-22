@@ -185,6 +185,27 @@ following the closest single-procedure template — don't merge two procedures
 into one `Study` label, since that blurs exactly the surgery-type signal this
 whole project is testing for.
 
+## SV/ASV-level comparison is region-locked — genus-level isn't
+
+`compareStudies_SV.R` (exact-sequence/ASV-level cross-study comparison) only ever
+compares **BS and Assal**, never Ilhan or Afshar, even though all 4 phase-1
+studies have SV-level `MixedLinearModelResults` files. Why: BS and Assal both
+use the 515F primer with `truncLen=200`, producing directly comparable 200bp
+ASVs over the same amplified region; Ilhan (`truncLen=150`, no primer trim) and
+Afshar (`trimLeft=20`, `truncLen=200`) produce different-length/region ASVs
+that can't be meaningfully intersected at the exact-sequence level.
+`compareStudies_16S.R` (genus-level) works across all 4 because genus
+classification is region-agnostic — SV/ASV identity is not.
+
+**This means a phase-2 cohort cannot default into SV comparison.** All 4
+phase-2 cohorts currently use `PRIMER=NONE`/`TRIMLEFT=0` **placeholders** in
+`03_dada2.sbatch` pending verification against real downloaded reads — none
+are confirmed to share BS/Assal's exact amplified region. The rewritten
+`analysis/RScripts/compareStudies/compareStudies_SV.R` in this repo defaults
+to BS+Assal only (matching the original exactly) for this reason; only add a
+phase-2 cohort to its `STUDIES` list after confirming its real primer/region
+matches, not just because its `truncLen` happens to also be 200.
+
 ## 16S vs. shotgun — don't assume from `scientific_name`
 
 `AMPLICON` library strategy alone doesn't guarantee 16S (could be ITS, etc.), and

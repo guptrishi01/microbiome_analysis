@@ -25,9 +25,20 @@ SW_ROOT=${SW_ROOT:-$HOME/rygb}
 DATA_ROOT=${DATA_ROOT:-/scratch/$USER/rygb}
 REPO=$DATA_ROOT/RYGB_IntegratedAnalysis2020
 RSCRIPTS=$REPO/Analysis/RScripts
+OUR_RSCRIPTS=$SW_ROOT/analysis/RScripts
 PIPE=$DATA_ROOT/pipeline
 IMG=$SW_ROOT/images
 RUN_PHASE2=${RUN_PHASE2:-0}
+# PHASE2_COHORTS=1 adds the 4 phase-2 cohorts (Cholecystectomy, IleocecalResection, Ileostomy,
+# SDT) and switches combineCountTables.R/compareStudies_16S.R/compareStudies_SV.R/Heatmap.R to
+# this repo's generalized versions (analysis/RScripts/), which cover all 8 studies. Default (0):
+# every phase-2 module is skipped and the 4 shared scripts stay the ORIGINAL repo versions,
+# copied unmodified from $RSCRIPTS exactly as before — the new code paths below are not run at
+# all, not just "verified equivalent," when this flag is off. See CLAUDE.md's "Never assume"
+# and "Adding a new cohort" sections: this repo's combineCountTables.R/compareStudies_16S.R/
+# Heatmap.R/compareStudies_SV.R were each verified byte-identical to the real phase-1 output
+# before being wired in here.
+PHASE2_COHORTS=${PHASE2_COHORTS:-0}
 
 BIND="--bind $DATA_ROOT --bind $SW_ROOT"
 
@@ -37,6 +48,10 @@ MODULES=(
   "AssalTaxaClass|16S_TaxaClassification/Assal_16S_TaxaClassification.R|rbase||1"
   "BSTaxaClass|16S_TaxaClassification/BS_16S_TaxaClassification.R|rbase||1"
   "IlhanTaxaClass|16S_TaxaClassification/Ilhan_16S_TaxaClassification.R|rbase||1"
+  "CholecystectomyTaxaClass|16S_TaxaClassification/Cholecystectomy_16S_TaxaClassification.R|rbase||2c"
+  "IleocecalResectionTaxaClass|16S_TaxaClassification/IleocecalResection_16S_TaxaClassification.R|rbase||2c"
+  "IleostomyTaxaClass|16S_TaxaClassification/Ileostomy_16S_TaxaClassification.R|rbase||2c"
+  "SDTTaxaClass|16S_TaxaClassification/SDT_16S_TaxaClassification.R|rbase||2c"
   "CombineCountTableslog10|combineCountTables.R|nlme|log10|1"
   "CombineCountTablesrelab|combineCountTables.R|nlme|relab|1"
   "PCO|pco.R|r-vegan||1"
@@ -44,12 +59,20 @@ MODULES=(
   "AssalDADA|DADA2_16S/Assal_DADA2_16S.R|rbase||1"
   "BSDADA|DADA2_16S/BS_DADA2_16S.R|rbase||1"
   "IlhanDADA|DADA2_16S/Ilhan_DADA2_16S.R|rbase||1"
+  "CholecystectomyDADA|DADA2_16S/Cholecystectomy_DADA2_16S.R|rbase||2c"
+  "IleocecalResectionDADA|DADA2_16S/IleocecalResection_DADA2_16S.R|rbase||2c"
+  "IleostomyDADA|DADA2_16S/Ileostomy_DADA2_16S.R|rbase||2c"
+  "SDTDADA|DADA2_16S/SDT_DADA2_16S.R|rbase||2c"
   "CompareStudies16S|compareStudies/compareStudies_16S.R|comparestudies||1"
   "Heatmap|Heatmap.R|complexheatmap||1"
   "AfsharKraken|kraken2_16S/Afshar_kraken2_16S.R|nlme||1"
   "AssalKraken|kraken2_16S/Assal_kraken2_16S.R|nlme||1"
   "BSKraken|kraken2_16S/BS_kraken2_16S.R|nlme||1"
   "IlhanKraken|kraken2_16S/Ilhan_kraken2_16S.R|nlme||1"
+  "CholecystectomyKraken|kraken2_16S/Cholecystectomy_kraken2_16S.R|nlme||2c"
+  "IleocecalResectionKraken|kraken2_16S/IleocecalResection_kraken2_16S.R|nlme||2c"
+  "IleostomyKraken|kraken2_16S/Ileostomy_kraken2_16S.R|nlme||2c"
+  "SDTKraken|kraken2_16S/SDT_kraken2_16S.R|nlme||2c"
   "BSMetagenomics|kraken2_Metagenomics/BS_kraken2_Metagenomics.R|nlme||2"
   "PallejaMetagenomics|kraken2_Metagenomics/Palleja_kraken2_Metagenomics.R|nlme||2"
   "OppPathogens|OpportunisticPathogens.R|pathogens||2"
@@ -78,14 +101,46 @@ rm -rf "$PIPE"/[0-9][0-9]_*          # no stale outputs from a previous run
 i=0
 for entry in "${MODULES[@]}"; do
   IFS='|' read -r name script image param phase <<< "$entry"
+  # Skip phase-2-cohort entries BEFORE consuming a number, unlike the pre-existing phase="2"
+  # check below (which deliberately keeps its old behavior — see the run loop for why).
+  # With PHASE2_COHORTS unset/0 (default), this means every phase-1 module keeps EXACTLY the
+  # same numeric prefix already published in results/phase1/pipeline/ — zero directory-naming
+  # drift, not just zero content drift.
+  [ "$phase" = "2c" ] && [ "$PHASE2_COHORTS" != "1" ] && continue
   num=$(printf "%02d" $i); i=$((i+1))
   [ "$phase" = "2" ] && [ "$RUN_PHASE2" != "1" ] && continue
   d=$PIPE/${num}_${name}
   mkdir -p "$d/script" "$d/output" "$d/resources" "$d/temp"
-  cp "$RSCRIPTS/$script" "$d/script/"
+  if [ "$phase" = "2c" ]; then
+    cp "$OUR_RSCRIPTS/$script" "$d/script/"
+  else
+    cp "$RSCRIPTS/$script" "$d/script/"
+  fi
   cp "$RSCRIPTS/functions.R" "$d/resources/"
 done
 echo "modules scaffolded: $(ls -d "$PIPE"/[0-9][0-9]_* | wc -l)"
+
+# When phase-2 cohorts are included, swap in this repo's generalized versions of the 4 shared
+# downstream scripts that hardcode study names in the original (combineCountTables.R,
+# compareStudies_16S.R, Heatmap.R, compareStudies_SV.R) — each verified byte-identical to the
+# real phase-1 output before being wired in here (see CLAUDE.md's "Never assume" section).
+# With PHASE2_COHORTS unset/0 (default), this block does not run — those modules keep the
+# original $RSCRIPTS copy from the loop above, untouched.
+if [ "$PHASE2_COHORTS" = "1" ]; then
+  echo "PHASE2_COHORTS=1: swapping in generalized combineCountTables.R/compareStudies_16S.R/Heatmap.R/compareStudies_SV.R"
+  for d in "$PIPE"/[0-9][0-9]_CombineCountTableslog10 "$PIPE"/[0-9][0-9]_CombineCountTablesrelab; do
+    [ -d "$d" ] && cp "$OUR_RSCRIPTS/combineCountTables.R" "$d/script/"
+  done
+  for d in "$PIPE"/[0-9][0-9]_CompareStudies16S; do
+    [ -d "$d" ] && cp "$OUR_RSCRIPTS/compareStudies/compareStudies_16S.R" "$d/script/"
+  done
+  for d in "$PIPE"/[0-9][0-9]_Heatmap; do
+    [ -d "$d" ] && cp "$OUR_RSCRIPTS/Heatmap.R" "$d/script/"
+  done
+  for d in "$PIPE"/[0-9][0-9]_CompareStudiesSV; do
+    [ -d "$d" ] && cp "$OUR_RSCRIPTS/compareStudies/compareStudies_SV.R" "$d/script/"
+  done
+fi
 
 # ---------------------------------------------------------------- convergence guard
 # The authors wrapped lme() in tryCatch in BS_kraken2_16S.R ("Streptomycetales and
@@ -115,6 +170,12 @@ PYEOF
 i=0; ran=0; failed=0
 for entry in "${MODULES[@]}"; do
   IFS='|' read -r name script image param phase <<< "$entry"
+  # Same skip-before-numbering order as the scaffold loop above — must match exactly, or a
+  # module's number here would disagree with the directory the scaffold loop actually created.
+  if [ "$phase" = "2c" ] && [ "$PHASE2_COHORTS" != "1" ]; then
+    echo "-- skip ${name} (phase 2 cohort: set PHASE2_COHORTS=1 to include)"
+    continue
+  fi
   num=$(printf "%02d" $i); i=$((i+1))
   if [ "$phase" = "2" ] && [ "$RUN_PHASE2" != "1" ]; then
     echo "-- skip ${num}_${name} (phase 2: needs metagenomic input)"
