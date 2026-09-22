@@ -1,4 +1,4 @@
-# microbiome_analysis
+# Gut Microbiome Signature Correlation Analysis
 
 Fodor Lab project reproducing and extending:
 
