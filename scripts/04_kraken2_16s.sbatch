@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=rygb_k2
 #SBATCH --partition=Orion
-#SBATCH --array=1-4
+#SBATCH --array=1-8
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=80G
@@ -23,10 +23,14 @@ THREADS=${SLURM_CPUS_PER_TASK:-16}
 module load kraken2/2.1.3
 
 case $SLURM_ARRAY_TASK_ID in
-  1) STUDY=BS16S;  EXPECT=61 ;;
-  2) STUDY=Assal;  EXPECT=71 ;;
-  3) STUDY=Afshar; EXPECT=50 ;;
-  4) STUDY=Ilhan;  EXPECT=82 ;;
+  1) STUDY=BS16S;              EXPECT=61  ;;
+  2) STUDY=Assal;               EXPECT=71  ;;
+  3) STUDY=Afshar;              EXPECT=50  ;;
+  4) STUDY=Ilhan;               EXPECT=82  ;;
+  5) STUDY=Cholecystectomy;     EXPECT=30  ;;
+  6) STUDY=IleocecalResection;  EXPECT=189 ;;
+  7) STUDY=Ileostomy;           EXPECT=65  ;;
+  8) STUDY=SDT;                 EXPECT=45  ;;
   *) echo "bad array index"; exit 1 ;;
 esac
 

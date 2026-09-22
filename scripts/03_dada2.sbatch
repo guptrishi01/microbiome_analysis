@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=rygb_dada2
 #SBATCH --partition=Orion
-#SBATCH --array=1-4
+#SBATCH --array=1-8
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=64G
@@ -17,6 +17,15 @@
 #   Ilhan  no trim, truncLen 150                          -> 150 bp ASVs
 # Produces ForwardReads.txt + taxForwardReads.txt in the repo's layout, keeps the
 # filtered FASTQs (Kraken2 reads those next), and reports overlap with the repo's ASVs.
+#
+# Phase 2 studies (tasks 5-8): truncLen=200 is set from each study's own measured read
+# length (scripts/10_inspect_candidates.sh), same as BS/Assal/Afshar. PRIMER=NONE/
+# TRIMLEFT=0 are PLACEHOLDERS — unlike phase 1, we have no prior primer-trimming
+# convention for these studies. This script prints a primer-position check (grep for
+# the 515F anchor) before running DADA2; read that output on first run and set PRIMER
+# to the actual primer sequence (cutadapt path) or TRIMLEFT to the actual fixed offset
+# if the anchor is found but not at position 1. Do not trust these four rows without
+# checking that printout once real reads are downloaded.
 
 set -o pipefail
 SW_ROOT=${SW_ROOT:-$HOME/rygb}
@@ -26,10 +35,14 @@ REPO=$DATA_ROOT/RYGB_IntegratedAnalysis2020
 THREADS=${SLURM_CPUS_PER_TASK:-16}
 
 case $SLURM_ARRAY_TASK_ID in
-  1) STUDY=BS16S;  REPODIR=RYGB_BS;         PRIMER=GTGYCAGCMGCCGCGGTAA; TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=1525 ;;
-  2) STUDY=Assal;  REPODIR=RYGB_Assal2020;  PRIMER=GTGYCAGCMGCCGCGGTAA; TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=3274 ;;
-  3) STUDY=Afshar; REPODIR=RYGB_Afshar2018; PRIMER=NONE;                TRUNC=200; TRIMLEFT=20; EXPECT_LEN=180; REPO_ASVS=3613 ;;
-  4) STUDY=Ilhan;  REPODIR=RYGB_Ilhan2020;  PRIMER=NONE;                TRUNC=150; TRIMLEFT=0;  EXPECT_LEN=150; REPO_ASVS=5378 ;;
+  1) STUDY=BS16S;             REPODIR=RYGB_BS;                  PRIMER=GTGYCAGCMGCCGCGGTAA; TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=1525 ;;
+  2) STUDY=Assal;              REPODIR=RYGB_Assal2020;           PRIMER=GTGYCAGCMGCCGCGGTAA; TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=3274 ;;
+  3) STUDY=Afshar;             REPODIR=RYGB_Afshar2018;          PRIMER=NONE;                TRUNC=200; TRIMLEFT=20; EXPECT_LEN=180; REPO_ASVS=3613 ;;
+  4) STUDY=Ilhan;              REPODIR=RYGB_Ilhan2020;           PRIMER=NONE;                TRUNC=150; TRIMLEFT=0;  EXPECT_LEN=150; REPO_ASVS=5378 ;;
+  5) STUDY=Cholecystectomy;    REPODIR=RYGB_Cholecystectomy;     PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  6) STUDY=IleocecalResection; REPODIR=RYGB_IleocecalResection;  PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  7) STUDY=Ileostomy;          REPODIR=RYGB_Ileostomy;           PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  8) STUDY=SDT;                REPODIR=RYGB_SDT;                 PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   *) echo "bad array index"; exit 1 ;;
 esac
 

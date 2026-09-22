@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=rygb_dl
 #SBATCH --partition=Orion
-#SBATCH --array=1-4
+#SBATCH --array=1-8
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=16G
@@ -14,6 +14,13 @@
 #   task 2 Assal   PRJNA395660  71 runs   -> kept as SRR accessions (what the repo uses)
 #   task 3 Afshar  PRJEB14082   49 runs   -> kept as ERR accessions
 #   task 4 Ilhan   PRJNA612042  82 runs   -> kept as SRR accessions
+# Phase 2 downloads: candidate non-bariatric GI-surgery cohorts (see cohorts/<Study>/metaData.txt
+# for how each Run/ID/timepoint mapping was derived from ENA — built by hand, not from this repo).
+#   task 5 Cholecystectomy  PRJNA1188648  30 runs   Baseline/6M/12M
+#   task 6 IleocecalResect  PRJNA514452  189 runs   fecal-only subset (Bp/iRs/niRs biopsy
+#                                                    specimens excluded); 0/1/3/6 months
+#   task 7 Ileostomy        PRJNA1480144  65 runs   IL arm only; Pre/Post
+#   task 8 SDT              PRJNA1480144  45 runs   SD arm only; Pre/Post
 # Resumable: a run whose .fastq.gz already exists is skipped.
 # Submit:  sbatch 02_download.sbatch
 
@@ -21,13 +28,18 @@ set -o pipefail
 SW_ROOT=${SW_ROOT:-$HOME/rygb}
 DATA_ROOT=${DATA_ROOT:-/scratch/$USER/rygb}
 REPO=$DATA_ROOT/RYGB_IntegratedAnalysis2020
+COHORTS=$SW_ROOT/cohorts
 module load sra-tools/3.1.0
 
 case $SLURM_ARRAY_TASK_ID in
-  1) STUDY=BS16S;  EXPECT=61 ;;
-  2) STUDY=Assal;  EXPECT=71 ;;
-  3) STUDY=Afshar; EXPECT=49 ;;
-  4) STUDY=Ilhan;  EXPECT=82 ;;
+  1) STUDY=BS16S;              EXPECT=61  ;;
+  2) STUDY=Assal;               EXPECT=71  ;;
+  3) STUDY=Afshar;              EXPECT=49  ;;
+  4) STUDY=Ilhan;               EXPECT=82  ;;
+  5) STUDY=Cholecystectomy;     EXPECT=30  ;;
+  6) STUDY=IleocecalResection;  EXPECT=189 ;;
+  7) STUDY=Ileostomy;           EXPECT=65  ;;
+  8) STUDY=SDT;                 EXPECT=45  ;;
   *) echo "bad array index"; exit 1 ;;
 esac
 
@@ -60,6 +72,10 @@ else
         | cut -f1 | grep . | awk '{print $1"\t"$1}' > "$LIST" ;;
     Ilhan)   # TSV whose header is shifted; data column 1 = Run
       tail -n +2 "$REPO/input/RYGB_Ilhan2020/Metadata/metaData_Ilhan.txt" \
+        | cut -f1 | grep . | awk '{print $1"\t"$1}' > "$LIST" ;;
+    Cholecystectomy|IleocecalResection|Ileostomy|SDT)
+      # our own metaData.txt (cohorts/<Study>/), column 1 = Run; kept as SRR accessions
+      tail -n +2 "$COHORTS/$STUDY/metaData.txt" \
         | cut -f1 | grep . | awk '{print $1"\t"$1}' > "$LIST" ;;
   esac
 fi
