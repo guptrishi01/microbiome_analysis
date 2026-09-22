@@ -10,6 +10,24 @@ tables, followed by an attempt to extend the finding to non-bariatric GI-surgery
 cohorts. Phase 1 (reproduction, 4 cohorts) is done and verified against the
 original repo's own published numbers. Phase 2 (extension) is in progress.
 
+**Canonical upstream reference:**
+[FarnazFouladi/RYGB_IntegratedAnalysis2020](https://github.com/FarnazFouladi/RYGB_IntegratedAnalysis2020)
+— cloned read-only at `$DATA_ROOT/RYGB_IntegratedAnalysis2020`. Its original
+functionality (the R analysis for the 4 phase-1 cohorts, exactly as published)
+must remain intact through every phase-2 change:
+
+- **Never write into the clone.** Confirm with `git -C
+  $DATA_ROOT/RYGB_IntegratedAnalysis2020 status` before and after any session
+  that touches phase 2 — it must always read "working tree clean," matching
+  `origin/main`. Everything new (per-cohort metadata, new R scripts) belongs in
+  *this* repo (`cohorts/`, or alongside — never inside — the clone's own tree).
+- **Never change phase-1 behavior while adding phase-2 cohorts.** The 4
+  original `case` branches in `02-05_*.sbatch` and the 4 original `MODULES`
+  entries per stage in `06_analysis.sbatch` must stay byte-identical when
+  cohorts 5+ are added — confirm with `git diff` before submitting any job, not
+  just before committing. A phase-2 addition should only ever add lines, never
+  edit an existing phase-1 value.
+
 ## Cluster environment
 
 Two roots, set as env vars everywhere (`00_setup.sh` and every `scripts/*.sbatch`):
@@ -75,15 +93,26 @@ not assumed:
    statements hardcoded to exactly the 4 phase-1 studies (`array=1-4`). A new
    cohort needs its own `case` branch in both (run list source, expected count,
    `truncLen`/primer/`trimLeft` params for DADA2).
-2. **Per-cohort R scripts** (`<Study>_16S_TaxaClassification.R`,
-   `<Study>_DADA2_16S.R`, `<Study>_kraken2_16S.R` under
-   `$DATA_ROOT/RYGB_IntegratedAnalysis2020/Analysis/RScripts/`) are one
-   hand-written file per study, not templated. Pick the closest existing
-   template by timepoint shape, don't write from scratch:
+2. **Per-cohort R scripts** are one hand-written file per study, not templated.
+   The clone has **two parallel copies — do not confuse them**:
+   - `Analysis/RScripts/{16S_TaxaClassification,DADA2_16S,kraken2_16S}/` — the
+     **real, BioLockJ-style scripts**, the ones `06_analysis.sbatch`'s
+     `MODULES` array actually references and runs (`pipeRoot <-
+     dirname(dirname(getwd()))`-style path resolution). New cohort scripts
+     must live here (well — in this repo's own tree once phase 2's scripts
+     exist, mirroring this layout, then referenced by path from `MODULES`).
+   - `Rcode/RYGB_IntegratedAnalysis/` — an **older/unused legacy copy** with
+     the same filenames and near-identical logic, never invoked by anything in
+     `scripts/`. Templating off this copy by mistake produces a script that
+     looks right but is never executed. If you're reading a per-cohort script
+     for reference, confirm the path starts with `Analysis/RScripts/` first.
+   Pick the closest existing template (from `Analysis/RScripts/`) by
+   timepoint shape, don't write from scratch:
    - **Ilhan's template** (3-level `Baseline`/`6M`/`12M` factor, `env_material`
      filter) — use for cohorts with a clean baseline + 2 follow-ups.
-   - **Afshar's template** (binary `Pre`/`Post` factor) — use for cohorts with
-     one pre/post pair per subject.
+   - **Afshar's template** (binary `Pre`/`Post` factor, parses `ID`/`time` from
+     a combined title string) — use for cohorts with one pre/post pair per
+     subject.
 3. **Four shared downstream scripts hardcode all 4 study names directly in
    code** (confirmed via `grep -rl "Afshar" Analysis/RScripts`):
    `combineCountTables.R`, `compareStudies_16S.R`, `compareStudies_SV.R`,
