@@ -1,0 +1,25 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR6089372	SAMEA8920515	1	Control-1-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	27487976	2072573558	Homo sapiens
+ERR6089391	SAMEA8920534	20	LDHA-4-sgLDHB-2-2-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	39296430	2964774836	Homo sapiens
+ERR6089373	SAMEA8920516	2	Control-2-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	30617560	2309450267	Homo sapiens
+ERR6089376	SAMEA8920519	5	Control-2-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	33043478	2493323841	Homo sapiens
+ERR6089379	SAMEA8920522	8	LDHA-4-2-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	34456904	2599849987	Homo sapiens
+ERR6089381	SAMEA8920524	10	LDHA-4-1-Normox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	37923462	2861331230	Homo sapiens
+ERR6089385	SAMEA8920528	14	LDHB-2-2-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	38148178	2878674846	Homo sapiens
+ERR6089386	SAMEA8920529	15	LDHB-2-3-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	30265562	2283852834	Homo sapiens
+ERR6089387	SAMEA8920530	16	LDHB-2-1-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	28624338	2160076026	Homo sapiens
+ERR6089388	SAMEA8920531	17	LDHB-2-3-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	26831154	2024725468	Homo sapiens
+ERR6089394	SAMEA8920537	23	LDHA-4-sgLDHB-2-2-Normox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	21349998	1611408375	Homo sapiens
+ERR6089395	SAMEA8920538	24	LDHA-4-sgLDHB-2-3-Normox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	29380714	2216891705	Homo sapiens
+ERR6089374	SAMEA8920517	3	Control-3-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	32622756	2460365654	Homo sapiens
+ERR6089375	SAMEA8920518	4	Control-1-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	31176416	2352244221	Homo sapiens
+ERR6089390	SAMEA8920533	19	LDHA-4-sgLDHB-2-1-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	34501156	2603801985	Homo sapiens
+ERR6089392	SAMEA8920535	21	LDHA-4-sgLDHB-2-3-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	33733420	2545470758	Homo sapiens
+ERR6089393	SAMEA8920536	22	LDHA-4-sgLDHB-2-1-Normox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	32092968	2420822981	Homo sapiens
+ERR6089377	SAMEA8920520	6	Control-2-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	24973378	1884348674	Homo sapiens
+ERR6089382	SAMEA8920525	11	LDHA-4-2-Normox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	35886074	2707396941	Homo sapiens
+ERR6089383	SAMEA8920526	12	LDHA-4-2-Normox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	23355736	1762431121	Homo sapiens
+ERR6089378	SAMEA8920521	7	LDHA-4-1-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	29041394	2191827710	Homo sapiens
+ERR6089380	SAMEA8920523	9	LDHA-4-3-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	34634424	2613580685	Homo sapiens
+ERR6089384	SAMEA8920527	13	LDHB-2-1-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	29907674	2256902215	Homo sapiens
+ERR6089389	SAMEA8920532	18	LDHB-2-3-Hypox	unspecified	RNA-Seq	PAIRED	Illumina MiSeq	31655668	2388883860	Homo sapiens

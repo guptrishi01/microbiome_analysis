@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR172095	SAMD00165042	SAMD00165042	Melastoma_candidum_150PE3	Melastoma_candidum_150PE3	RNA-Seq	PAIRED	HiSeq X Ten	18645329	5630889358	Melastoma candidum
+DRR172097	SAMD00109246	SAMD00109246	Melastoma_candidum_150PE	Melastoma_candidum_150PE	RNA-Seq	PAIRED	Illumina HiSeq 2500	19184330	5755299000	Melastoma candidum
+DRR172092	SAMD00165039	SAMD00165039	Melastoma_tetramerum_150PE2	Melastoma_tetramerum_150PE2	RNA-Seq	PAIRED	HiSeq X Ten	17714150	5349673300	Melastoma tetramerum
+DRR172094	SAMD00165041	SAMD00165041	Melastoma_candidum_150PE2	Melastoma_candidum_150PE2	RNA-Seq	PAIRED	HiSeq X Ten	15149399	4575118498	Melastoma candidum
+DRR172093	SAMD00165040	SAMD00165040	Melastoma_tetramerum_150PE3	Melastoma_tetramerum_150PE3	RNA-Seq	PAIRED	HiSeq X Ten	22592514	6822939228	Melastoma tetramerum
+DRR172096	SAMD00109245	SAMD00109245	Melastoma_tetramerum_150PE	Melastoma_tetramerum_150PE	RNA-Seq	PAIRED	Illumina HiSeq 2500	17692424	5307727200	Melastoma tetramerum

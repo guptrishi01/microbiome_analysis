@@ -1,0 +1,41 @@
+=== Assal  primer=GTGYCAGCMGCCGCGGTAA truncLen=200 trimLeft=0  expect 200bp ASVs   Tue Sep 15 01:33:04 AM EDT 2026
+raw files: 71
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       4435 10
+        289 no-515F-anchor
+        170 11
+         53 9
+
+--- cutadapt: remove everything up to and including GTGYCAGCMGCCGCGGTAA
+    trimmed 71 samples
+    retention across samples (reads written / reads processed):
+      Reads with adapters:                   261,281 (95.8%)
+      Reads written (passing filters):       261,281 (95.8%)
+      Reads with adapters:                   208,265 (92.8%)
+      Reads written (passing filters):       208,265 (92.8%)
+      min 53.1%  median 94.6%  max 97.7%
+
+--- DADA2
+Warning message:
+package ‘Rcpp’ was built under R version 4.0.5 
+samples: 71 
+Error in filterAndTrim(fns, filts, truncLen = truncLen, trimLeft = trimLeft,  : 
+  These are the errors (up to 5) encountered in individual cores...
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the
+In addition: Warning message:
+In mclapply(seq_len(n), do_one, mc.preschedule = mc.preschedule,  :
+  all scheduled cores encountered errors in user code
+Execution halted
+
+=== Assal done (rc=1)  Tue Sep 15 01:34:12 AM EDT 2026
+repo had 3274 ASVs for this study
+   total 0
+filtered reads kept for Kraken2: 0 files, 0

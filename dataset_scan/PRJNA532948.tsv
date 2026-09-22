@@ -1,0 +1,19 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR8903689	SAMN11430777	Lynch-T9	Lynch	T7	AMPLICON	PAIRED	Illumina MiniSeq	72001	34912758	human gut metagenome
+SRR8903692	SAMN11430776	Lynch-T7	Lynch	T6	AMPLICON	PAIRED	Illumina MiniSeq	73946	35844594	human gut metagenome
+SRR8903693	SAMN11430773	Lynch-T3	Lynch	T3	AMPLICON	PAIRED	Illumina MiniSeq	66488	32224492	human gut metagenome
+SRR8903681	SAMN11430782	Healthy-CT2	Healthy	CT2	AMPLICON	PAIRED	Illumina MiniSeq	60401	29328165	human gut metagenome
+SRR8903687	SAMN11430787	Lynch-T11	Lynch	T11	AMPLICON	PAIRED	Illumina MiniSeq	62523	30362030	human gut metagenome
+SRR8903682	SAMN11430783	Healthy-CT4	Healthy	CT4	AMPLICON	PAIRED	Illumina MiniSeq	58966	28622344	human gut metagenome
+SRR8903683	SAMN11430780	Healthy-CT11	Healthy	CT11	AMPLICON	PAIRED	Illumina MiniSeq	52713	25596594	human gut metagenome
+SRR8903688	SAMN11430788	Lynch-T13	Lynch	T13	AMPLICON	PAIRED	Illumina MiniSeq	57420	27876485	human gut metagenome
+SRR8903690	SAMN11430786	Lynch-T10	Lynch	T10	AMPLICON	PAIRED	Illumina MiniSeq	53588	26010171	human gut metagenome
+SRR8903696	SAMN11430772	Lynch-T2	Lynch	T2	AMPLICON	PAIRED	Illumina MiniSeq	95305	46201726	human gut metagenome
+SRR8903684	SAMN11430781	Healthy-CT12	Healthy	CT12	AMPLICON	PAIRED	Illumina MiniSeq	44186	21453560	human gut metagenome
+SRR8903685	SAMN11430778	Healthy-CT1	Healthy	CT1	AMPLICON	PAIRED	Illumina MiniSeq	62541	30367360	human gut metagenome
+SRR8903695	SAMN11430771	Lynch-T1	Lynch	T1	AMPLICON	PAIRED	Illumina MiniSeq	91156	44190880	human gut metagenome
+SRR8903679	SAMN11430784	Healthy-CT7	Healthy	CT7	AMPLICON	PAIRED	Illumina MiniSeq	57315	27830986	human gut metagenome
+SRR8903680	SAMN11430785	Healthy-CT8	Healthy	CT8	AMPLICON	PAIRED	Illumina MiniSeq	61278	29750123	human gut metagenome
+SRR8903686	SAMN11430779	Healthy-CT10	Healthy	CT10	AMPLICON	PAIRED	Illumina MiniSeq	54156	26298990	human gut metagenome
+SRR8903691	SAMN11430775	Lynch-T5	Lynch	T5	AMPLICON	PAIRED	Illumina MiniSeq	82196	39848842	human gut metagenome
+SRR8903694	SAMN11430774	Lynch-T4	Lynch	T4	AMPLICON	PAIRED	Illumina MiniSeq	75582	36645313	human gut metagenome

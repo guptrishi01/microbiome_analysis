@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR13946479	SAMEA115599785	662690aee59130b23ed6051b	1b6d6cdb-048a-491a-97e9-0913007769a3-dtol	DTOL15027520	WGS	SINGLE	Revio	3719460	43318253013	Rhopobota ustomaculana
+ERR13947500	SAMEA115599785	662690aee59130b23ed6051b	1b6d6cdb-048a-491a-97e9-0913007769a3-dtol		Hi-C	PAIRED	Illumina NovaSeq X	581600992	87821749792	Rhopobota ustomaculana

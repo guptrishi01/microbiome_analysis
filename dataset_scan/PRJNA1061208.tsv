@@ -1,0 +1,9 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR27431286	SAMN39263338	GSM8003394	pbmc, non POD group, at Post 24h	GSM8003394	RNA-Seq	PAIRED	Illumina NovaSeq 6000	325183055	37721234380	Homo sapiens
+SRR27431287	SAMN39263339	GSM8003393	pbmc, non POD group, at Pre-grugery	GSM8003393	RNA-Seq	PAIRED	Illumina NovaSeq 6000	344246241	39932563956	Homo sapiens
+SRR27431281	SAMN39263333	GSM8003399	pbmc, at Pre-grugery, in POD group	GSM8003399	RNA-Seq	PAIRED	Illumina NovaSeq 6000	325932707	38134126719	Homo sapiens
+SRR27431283	SAMN39263335	GSM8003397	pbmc, POD group, at Pre-grugery	GSM8003397	RNA-Seq	PAIRED	Illumina NovaSeq 6000	330608775	38350617900	Homo sapiens
+SRR27431285	SAMN39263337	GSM8003395	pbmc, at Pre-grugery, in non POD group	GSM8003395	RNA-Seq	PAIRED	Illumina NovaSeq 6000	333138762	38977235154	Homo sapiens
+SRR27431280	SAMN39263332	GSM8003400	pbmc, at Post 24h, in POD group	GSM8003400	RNA-Seq	PAIRED	Illumina NovaSeq 6000	330594149	38679515433	Homo sapiens
+SRR27431284	SAMN39263336	GSM8003396	pbmc, at Post 24h, in non POD group	GSM8003396	RNA-Seq	PAIRED	Illumina NovaSeq 6000	328498945	38434376565	Homo sapiens
+SRR27431282	SAMN39263334	GSM8003398	pbmc, POD group, at Post 24h	GSM8003398	RNA-Seq	PAIRED	Illumina NovaSeq 6000	330809644	38373918704	Homo sapiens

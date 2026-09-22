@@ -1,0 +1,8 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR14483371	SAMN19101921	GSM5288875	Pancreatic islets cells db/db VSG sample 1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	510732656	51325918399	Mus musculus
+SRR14483370	SAMN19101923	GSM5288874	Pancreatic islets cells BKS WT sample 1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	376365681	37822247328	Mus musculus
+SRR14483373	SAMN19101919	GSM5288877	Pancreatic islets cells db/db VSG sample 2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	455653064	45792373370	Mus musculus
+SRR14483374	SAMN19101917	GSM5288878	Pancreatic islets cells db/db Sham sample 2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	339601731	34129402227	Mus musculus
+SRR14483369	SAMN19101924	GSM5288873	Pancreatic islets cells db/db PF sample 1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	546835971	54952319834	Mus musculus
+SRR14483372	SAMN19101920	GSM5288876	Pancreatic islets cells db/db Sham sample 1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	383004574	38486805730	Mus musculus
+SRR14483375	SAMN19101916	GSM5288879	Pancreatic islets cells BKS WT sample 2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	377566909	37948460166	Mus musculus

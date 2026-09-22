@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR14777938	SAMEA115182639	61754	61754-tol	BlaxGeNe15277144	WGS	SINGLE	Revio	3391436	43297035949	Trichostrongylus axei
+ERR14782864	SAMEA115182643	61758	61758-tol		Hi-C	PAIRED	Illumina NovaSeq X	797881866	120480161766	Trichostrongylus axei

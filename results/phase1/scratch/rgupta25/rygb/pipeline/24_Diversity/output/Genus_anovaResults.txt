@@ -1,0 +1,9 @@
+Analysis of Variance Table
+
+Response: myT2_sub$div
+                   Df Sum Sq Mean Sq F value Pr(>F)
+myT2_sub$timepoint  2 0.2578 0.12889  0.7573 0.4826
+Residuals          19 3.2338 0.17020               
+            numDF denDF  F-value p-value
+(Intercept)     1    10 510.3767  <.0001
+timepoint       2    10   1.1301   0.361

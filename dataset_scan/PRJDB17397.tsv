@@ -1,0 +1,8 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR526194	SAMD00733143			Control2	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27455270	8291491540	
+DRR526196	SAMD00733145			Pulsed radiofrequency1	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27074747	8176573594	
+DRR526199	SAMD00733148			Pulsed radiofrequency4	RNA-Seq	PAIRED	Illumina NovaSeq 6000	28746793	8681531486	
+DRR526195	SAMD00733144			Control3	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24854107	7505940314	
+DRR526197	SAMD00733146			Pulsed radiofrequency2	RNA-Seq	PAIRED	Illumina NovaSeq 6000	28005681	8457715662	
+DRR526198	SAMD00733147			Pulsed radiofrequency3	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26560467	8021261034	
+DRR526193	SAMD00733142			Control1	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24096575	7277165650	

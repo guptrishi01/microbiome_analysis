@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR17248383	SAMN24139213	GSM5738221	Lane2-mixed sample [AdiposeVSG.L2]	GSM5738221	ATAC-seq	PAIRED	NextSeq 500	170406868	12610108232	Mus musculus
+SRR17248384	SAMN24139214	GSM5738220	Lane1-mixed sample [AdiposeVSG.L1]	GSM5738220	ATAC-seq	PAIRED	NextSeq 500	176385445	13052522930	Mus musculus
+SRR17248382	SAMN24139212	GSM5738222	Lane3-mixed sample [AdiposeVSG.L3]	GSM5738222	ATAC-seq	PAIRED	NextSeq 500	179414311	13276659014	Mus musculus

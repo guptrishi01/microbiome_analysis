@@ -1,0 +1,13 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR1015319	SAMD01888036	SAMD01888036	controlPtoRSZ21-OE11-3 (SAMC3273135)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015324	SAMD01888041	SAMD01888041	droughtPtoRSZ21-OE11-2 (SAMC3273140)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015317	SAMD01888034	SAMD01888034	controlPtoRSZ21-OE11-1 (SAMC3273133)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015320	SAMD01888037	SAMD01888037	controlWT-1 (SAMC3273136)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015327	SAMD01888044	SAMD01888044	droughtWT-2 (SAMC3273143)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015328	SAMD01888045	SAMD01888045	droughtWT-3 (SAMC3273144)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	21858620	6557586000	Populus tomentosa
+DRR1015323	SAMD01888040	SAMD01888040	droughtPtoRSZ21-OE11-1 (SAMC3273139)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015326	SAMD01888043	SAMD01888043	droughtWT-1 (SAMC3273142)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015318	SAMD01888035	SAMD01888035	controlPtoRSZ21-OE11-2 (SAMC3273134)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015325	SAMD01888042	SAMD01888042	droughtPtoRSZ21-OE11-3 (SAMC3273141)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015321	SAMD01888038	SAMD01888038	controlWT-2 (SAMC3273137)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa
+DRR1015322	SAMD01888039	SAMD01888039	controlWT-3 (SAMC3273138)	missing	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Populus tomentosa

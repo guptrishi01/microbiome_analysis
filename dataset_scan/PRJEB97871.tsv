@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR15610532	SAMEA114645382	655b387afbcb208dd5510b80	c1a52946-f712-4d3f-acca-8f9266f1cb0c-dtol		Hi-C	PAIRED	Illumina NovaSeq X	841682926	127094121826	Coelostoma orbiculare
+ERR15606508	SAMEA114645382	655b387afbcb208dd5510b80	c1a52946-f712-4d3f-acca-8f9266f1cb0c-dtol	DTOL15128918	WGS	SINGLE	Revio	2678467	18590103141	Coelostoma orbiculare

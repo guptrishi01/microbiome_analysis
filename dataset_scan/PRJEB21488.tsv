@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR2014661	SAMEA104138033	SK-N-BE(2)-C1	Vehicle-treated sample (control 1) of neuroblastoma cell line SK-N-BE(2)-C	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	35577608	6057059229	Homo sapiens
+ERR2014662	SAMEA104138034	SK-N-BE(2)-C2	Vehicle-treated sample (control 2) of neuroblastoma cell line SK-N-BE(2)-C	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	36993259	6331475948	Homo sapiens
+ERR2014663	SAMEA104138035	SK-N-BE(2)-C3	Wnt3A/R-spondin2-treated sample#1 of neuroblastoma cell line SK-N-BE(2)-C (6H)	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	38339675	6527269523	Homo sapiens
+ERR2014664	SAMEA104138036	SK-N-BE(2)-C4	Wnt3A/R-spondin2-treated sample#2 of neuroblastoma cell line SK-N-BE(2)-C (6H)	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	51952303	8869770241	Homo sapiens

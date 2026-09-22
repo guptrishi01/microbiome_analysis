@@ -1,0 +1,6 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR14242248	SAMEA111426956	62743617499f3d3cf762dca7	f1531a5b-a87b-473b-846e-db482fb11657-asg		Hi-C	PAIRED	Illumina NovaSeq X	651125478	98319947178	Netrostoma setouchianum
+ERR12666658	SAMEA111426956	62743617499f3d3cf762dca7	f1531a5b-a87b-473b-846e-db482fb11657-asg	TOL_ASG13153889	WGS	SINGLE	Sequel IIe	2349338	24076074132	Netrostoma setouchianum
+ERR14242249	SAMEA111426958	62743617499f3d3cf762dca9	d30c2b3d-724f-444c-9f1a-45b7a3d6343a-asg		Hi-C	PAIRED	Illumina NovaSeq X	649416556	98061899956	Netrostoma setouchianum
+ERR12654644	SAMEA111426956	62743617499f3d3cf762dca7	f1531a5b-a87b-473b-846e-db482fb11657-asg		Hi-C	PAIRED	Illumina NovaSeq 6000	333427138	50347497838	Netrostoma setouchianum
+ERR13669967	SAMEA111426960	62743617499f3d3cf762dcab	07a37f0b-8786-4ac9-878f-0930b885f8ac-asg		RNA-Seq	PAIRED	Illumina NovaSeq X	88651514	13386378614	Netrostoma setouchianum

@@ -1,0 +1,22 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR732918	SAMEA3212997	EGO_I_24	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	12156617	2455636634	Homo sapiens
+ERR732926	SAMEA3213005	EGO_III_3	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	10846506	2190994212	Homo sapiens
+ERR732929	SAMEA3213008	EGO_III_6	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	11894437	2402676274	Homo sapiens
+ERR732910	SAMEA3212989	EGO_I_1	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	81088452	16379867304	Homo sapiens
+ERR732911	SAMEA3212990	EGO_I_10	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	13253675	2677242350	Homo sapiens
+ERR732921	SAMEA3213000	EGO_I_35	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	11624289	2348106378	Homo sapiens
+ERR732924	SAMEA3213003	EGO_III_1	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	11776960	2378945920	Homo sapiens
+ERR732915	SAMEA3212994	EGO_I_27	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	12245918	2473675436	Homo sapiens
+ERR732922	SAMEA3213001	EGO_I_38	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	12408810	2506579620	Homo sapiens
+ERR732923	SAMEA3213002	EGO_I_81	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	11901276	2404057752	Homo sapiens
+ERR732912	SAMEA3212991	EGO_I_16	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	12452886	2515482972	Homo sapiens
+ERR732914	SAMEA3212993	EGO_I_26	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	13365279	2699786358	Homo sapiens
+ERR732917	SAMEA3212996	EGO_I_4	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	10690169	2159414138	Homo sapiens
+ERR732913	SAMEA3212992	EGO_I_19	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	13476960	2722345920	Homo sapiens
+ERR732916	SAMEA3212995	EGO_I_47	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	12397930	2504381860	Homo sapiens
+ERR732919	SAMEA3212998	EGO_I_29	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	12849521	2595603242	Homo sapiens
+ERR732920	SAMEA3212999	EGO_I_34	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	7786892	1572952184	Homo sapiens
+ERR732925	SAMEA3213004	EGO_III_2	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	9474654	1913880108	Homo sapiens
+ERR732927	SAMEA3213006	EGO_III_4	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	10985600	2219091200	Homo sapiens
+ERR732928	SAMEA3213007	EGO_III_5	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	12301462	2484895324	Homo sapiens
+ERR732930	SAMEA3213009	EGO_III_7	Study of microbiome after bariatric surgery	unspecified	WGS	PAIRED	Illumina HiSeq 2000	11280195	2278599390	Homo sapiens

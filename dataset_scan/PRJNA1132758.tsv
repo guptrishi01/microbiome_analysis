@@ -1,0 +1,23 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR29765354	SAMN42357862	healthy liver	healthy liver	PUF-23	AMPLICON	PAIRED	Illumina MiSeq	45897	27591486	human gut metagenome
+SRR29765361	SAMN42357862	healthy liver	healthy liver	PUF-08	AMPLICON	PAIRED	Illumina MiSeq	40209	24184557	human gut metagenome
+SRR29765349	SAMN42357861	fatty liver	fatty liver	PUF-11	AMPLICON	PAIRED	Illumina MiSeq	41710	25070852	human gut metagenome
+SRR29765350	SAMN42357861	fatty liver	fatty liver	PUF-09	AMPLICON	PAIRED	Illumina MiSeq	34023	20452410	human gut metagenome
+SRR29765355	SAMN42357861	fatty liver	fatty liver	PUF-04	AMPLICON	PAIRED	Illumina MiSeq	40020	24059268	human gut metagenome
+SRR29765357	SAMN42357862	healthy liver	healthy liver	PUF-21	AMPLICON	PAIRED	Illumina MiSeq	43520	26162832	human gut metagenome
+SRR29765359	SAMN42357862	healthy liver	healthy liver	PUF-16	AMPLICON	PAIRED	Illumina MiSeq	33711	20258039	human gut metagenome
+SRR29765367	SAMN42357861	fatty liver	fatty liver	PUF-01	AMPLICON	PAIRED	Illumina MiSeq	42949	25825566	human gut metagenome
+SRR29765346	SAMN42357861	fatty liver	fatty liver	PUF-14	AMPLICON	PAIRED	Illumina MiSeq	41113	24720634	human gut metagenome
+SRR29765353	SAMN42357862	healthy liver	healthy liver	PUF-24	AMPLICON	PAIRED	Illumina MiSeq	38783	23322328	human gut metagenome
+SRR29765360	SAMN42357862	healthy liver	healthy liver	PUF-10	AMPLICON	PAIRED	Illumina MiSeq	41924	25209116	human gut metagenome
+SRR29765362	SAMN42357862	healthy liver	healthy liver	PUF-06	AMPLICON	PAIRED	Illumina MiSeq	41460	24927800	human gut metagenome
+SRR29765366	SAMN42357861	fatty liver	fatty liver	PUF-02	AMPLICON	PAIRED	Illumina MiSeq	45197	27179461	human gut metagenome
+SRR29765347	SAMN42357861	fatty liver	fatty liver	PUF-13	AMPLICON	PAIRED	Illumina MiSeq	39211	23577064	human gut metagenome
+SRR29765351	SAMN42357861	fatty liver	fatty liver	PUF-07	AMPLICON	PAIRED	Illumina MiSeq	41554	24985998	human gut metagenome
+SRR29765363	SAMN42357862	healthy liver	healthy liver	PUF-03	AMPLICON	PAIRED	Illumina MiSeq	43783	26327139	human gut metagenome
+SRR29765364	SAMN42357861	fatty liver	fatty liver	PUF-19	AMPLICON	PAIRED	Illumina MiSeq	36620	22015298	human gut metagenome
+SRR29765348	SAMN42357861	fatty liver	fatty liver	PUF-12	AMPLICON	PAIRED	Illumina MiSeq	36325	21841095	human gut metagenome
+SRR29765352	SAMN42357861	fatty liver	fatty liver	PUF-05	AMPLICON	PAIRED	Illumina MiSeq	43250	25998572	human gut metagenome
+SRR29765356	SAMN42357862	healthy liver	healthy liver	PUF-22	AMPLICON	PAIRED	Illumina MiSeq	28503	17136313	human gut metagenome
+SRR29765358	SAMN42357862	healthy liver	healthy liver	PUF-17	AMPLICON	PAIRED	Illumina MiSeq	40839	24559053	human gut metagenome
+SRR29765365	SAMN42357861	fatty liver	fatty liver	PUF-18	AMPLICON	PAIRED	Illumina MiSeq	40775	24516923	human gut metagenome

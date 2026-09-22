@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR071072	SAMD00061311	SAMD00061311	Matrin3_PAR-CLIP		RNA-Seq	SINGLE	Illumina HiSeq 2000	193798031	6163189985	Homo sapiens
+DRR093363	SAMD00061311	SAMD00061311	Matrin3_PAR-CLIP		RNA-Seq	SINGLE	Illumina HiSeq 2500	278640634	14210672334	Homo sapiens
+DRR071073	SAMD00061312	SAMD00061312	PTBP1_PAR-CLIP		RNA-Seq	SINGLE	Illumina HiSeq 2000	202953476	9944720324	Homo sapiens
+DRR093364	SAMD00061312	SAMD00061312	PTBP1_PAR-CLIP		RNA-Seq	SINGLE	Illumina HiSeq 2500	247390487	12616914837	Homo sapiens

@@ -1,0 +1,136 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR024028	SAMD00020677	SAMD00020677	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203235	human metagenome
+DRR024032	SAMD00020681	SAMD00020681	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1235610	human metagenome
+DRR024044	SAMD00020693	SAMD00020693	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206245	human metagenome
+DRR024053	SAMD00020730	SAMD00020730	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1227458	human metagenome
+DRR024060	SAMD00020737	SAMD00020737	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1236107	human metagenome
+DRR024061	SAMD00020738	SAMD00020738	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1230252	human metagenome
+DRR024069	SAMD00020746	SAMD00020746	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206213	human metagenome
+DRR024084	SAMD00020710	SAMD00020710	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207505	human metagenome
+DRR024090	SAMD00020716	SAMD00020716	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208826	human metagenome
+DRR024094	SAMD00020720	SAMD00020720	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1198986	human metagenome
+DRR024095	SAMD00020721	SAMD00020721	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1199669	human metagenome
+DRR024098	SAMD00020724	SAMD00020724	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206187	human metagenome
+DRR024103	SAMD00020729	SAMD00020729	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208097	human metagenome
+DRR024107	SAMD00020751	SAMD00020751	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1235895	human metagenome
+DRR024108	SAMD00020752	SAMD00020752	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1200776	human metagenome
+DRR024113	SAMD00020757	SAMD00020757	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1199890	human metagenome
+DRR024120	SAMD00020764	SAMD00020764	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1210218	human metagenome
+DRR024129	SAMD00020773	SAMD00020773	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203119	human metagenome
+DRR024131	SAMD00020775	SAMD00020775	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208084	human metagenome
+DRR024141	SAMD00020785	SAMD00020785	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1211391	human metagenome
+DRR024146	SAMD00020790	SAMD00020790	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1216600	human metagenome
+DRR024026	SAMD00020675	SAMD00020675	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207451	human metagenome
+DRR024030	SAMD00020679	SAMD00020679	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1221504	human metagenome
+DRR024035	SAMD00020684	SAMD00020684	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1213032	human metagenome
+DRR024036	SAMD00020685	SAMD00020685	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1197661	human metagenome
+DRR024046	SAMD00020695	SAMD00020695	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1212688	human metagenome
+DRR024047	SAMD00020696	SAMD00020696	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1209563	human metagenome
+DRR024050	SAMD00020699	SAMD00020699	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1200283	human metagenome
+DRR024056	SAMD00020733	SAMD00020733	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1245869	human metagenome
+DRR024064	SAMD00020741	SAMD00020741	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1195203	human metagenome
+DRR024068	SAMD00020745	SAMD00020745	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1200400	human metagenome
+DRR024087	SAMD00020713	SAMD00020713	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1202570	human metagenome
+DRR024093	SAMD00020719	SAMD00020719	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1228081	human metagenome
+DRR024096	SAMD00020722	SAMD00020722	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1209806	human metagenome
+DRR024101	SAMD00020727	SAMD00020727	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207839	human metagenome
+DRR024104	SAMD00020748	SAMD00020748	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1226395	human metagenome
+DRR024114	SAMD00020758	SAMD00020758	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207940	human metagenome
+DRR024119	SAMD00020763	SAMD00020763	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1204756	human metagenome
+DRR024122	SAMD00020766	SAMD00020766	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1223840	human metagenome
+DRR024127	SAMD00020771	SAMD00020771	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207314	human metagenome
+DRR024128	SAMD00020772	SAMD00020772	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208845	human metagenome
+DRR024145	SAMD00020789	SAMD00020789	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1222674	human metagenome
+DRR024154	SAMD00020798	SAMD00020798	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207292	human metagenome
+DRR024155	SAMD00020799	SAMD00020799	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1202004	human metagenome
+DRR024158	SAMD00020802	SAMD00020802	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1199844	human metagenome
+DRR024166	SAMD00020810	SAMD00020810	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203350	human metagenome
+DRR024027	SAMD00020676	SAMD00020676	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1218901	human metagenome
+DRR024031	SAMD00020680	SAMD00020680	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1219609	human metagenome
+DRR024038	SAMD00020687	SAMD00020687	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206676	human metagenome
+DRR024040	SAMD00020689	SAMD00020689	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1217108	human metagenome
+DRR024048	SAMD00020697	SAMD00020697	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207544	human metagenome
+DRR024049	SAMD00020698	SAMD00020698	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208528	human metagenome
+DRR024057	SAMD00020734	SAMD00020734	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1215122	human metagenome
+DRR024062	SAMD00020739	SAMD00020739	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206704	human metagenome
+DRR024070	SAMD00020747	SAMD00020747	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1252245	human metagenome
+DRR024077	SAMD00020703	SAMD00020703	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207803	human metagenome
+DRR024080	SAMD00020706	SAMD00020706	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1221166	human metagenome
+DRR024086	SAMD00020712	SAMD00020712	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205831	human metagenome
+DRR024089	SAMD00020715	SAMD00020715	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205953	human metagenome
+DRR024091	SAMD00020717	SAMD00020717	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207203	human metagenome
+DRR024092	SAMD00020718	SAMD00020718	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1213014	human metagenome
+DRR024097	SAMD00020723	SAMD00020723	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206513	human metagenome
+DRR024100	SAMD00020726	SAMD00020726	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205086	human metagenome
+DRR024102	SAMD00020728	SAMD00020728	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203882	human metagenome
+DRR024105	SAMD00020749	SAMD00020749	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1222121	human metagenome
+DRR024110	SAMD00020754	SAMD00020754	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208055	human metagenome
+DRR024115	SAMD00020759	SAMD00020759	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206701	human metagenome
+DRR024118	SAMD00020762	SAMD00020762	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205608	human metagenome
+DRR024121	SAMD00020765	SAMD00020765	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1239900	human metagenome
+DRR024123	SAMD00020767	SAMD00020767	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205060	human metagenome
+DRR024124	SAMD00020768	SAMD00020768	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1219099	human metagenome
+DRR024136	SAMD00020780	SAMD00020780	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203266	human metagenome
+DRR024143	SAMD00020787	SAMD00020787	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206213	human metagenome
+DRR024147	SAMD00020791	SAMD00020791	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206484	human metagenome
+DRR024150	SAMD00020794	SAMD00020794	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1197394	human metagenome
+DRR024160	SAMD00020804	SAMD00020804	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1200111	human metagenome
+DRR024163	SAMD00020807	SAMD00020807	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207214	human metagenome
+DRR024165	SAMD00020809	SAMD00020809	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203640	human metagenome
+DRR024037	SAMD00020686	SAMD00020686	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1197770	human metagenome
+DRR024039	SAMD00020688	SAMD00020688	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1256854	human metagenome
+DRR024042	SAMD00020691	SAMD00020691	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208153	human metagenome
+DRR024043	SAMD00020692	SAMD00020692	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203890	human metagenome
+DRR024051	SAMD00020700	SAMD00020700	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1201375	human metagenome
+DRR024052	SAMD00020702	SAMD00020702	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1215152	human metagenome
+DRR024054	SAMD00020731	SAMD00020731	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1242722	human metagenome
+DRR024055	SAMD00020732	SAMD00020732	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1232048	human metagenome
+DRR024059	SAMD00020736	SAMD00020736	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1212125	human metagenome
+DRR024063	SAMD00020740	SAMD00020740	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208238	human metagenome
+DRR024065	SAMD00020742	SAMD00020742	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207664	human metagenome
+DRR024078	SAMD00020704	SAMD00020704	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1261045	human metagenome
+DRR024081	SAMD00020707	SAMD00020707	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1200639	human metagenome
+DRR024082	SAMD00020708	SAMD00020708	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1219287	human metagenome
+DRR024085	SAMD00020711	SAMD00020711	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208665	human metagenome
+DRR024099	SAMD00020725	SAMD00020725	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203249	human metagenome
+DRR024106	SAMD00020750	SAMD00020750	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1223002	human metagenome
+DRR024111	SAMD00020755	SAMD00020755	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206622	human metagenome
+DRR024117	SAMD00020761	SAMD00020761	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203589	human metagenome
+DRR024132	SAMD00020776	SAMD00020776	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206698	human metagenome
+DRR024134	SAMD00020778	SAMD00020778	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206337	human metagenome
+DRR024135	SAMD00020779	SAMD00020779	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1196832	human metagenome
+DRR024137	SAMD00020781	SAMD00020781	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203218	human metagenome
+DRR024138	SAMD00020782	SAMD00020782	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203311	human metagenome
+DRR024139	SAMD00020783	SAMD00020783	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1239587	human metagenome
+DRR024144	SAMD00020788	SAMD00020788	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205626	human metagenome
+DRR024148	SAMD00020792	SAMD00020792	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1208057	human metagenome
+DRR024152	SAMD00020796	SAMD00020796	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1202856	human metagenome
+DRR024153	SAMD00020797	SAMD00020797	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1201596	human metagenome
+DRR024159	SAMD00020803	SAMD00020803	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205724	human metagenome
+DRR024162	SAMD00020806	SAMD00020806	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206060	human metagenome
+DRR024164	SAMD00020808	SAMD00020808	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207704	human metagenome
+DRR024029	SAMD00020678	SAMD00020678	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1227336	human metagenome
+DRR024033	SAMD00020682	SAMD00020682	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1215053	human metagenome
+DRR024034	SAMD00020683	SAMD00020683	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203679	human metagenome
+DRR024041	SAMD00020690	SAMD00020690	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1203245	human metagenome
+DRR024045	SAMD00020694	SAMD00020694	Human metagenome isolated from feces of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1217810	human metagenome
+DRR024058	SAMD00020735	SAMD00020735	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1209544	human metagenome
+DRR024066	SAMD00020743	SAMD00020743	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1209205	human metagenome
+DRR024067	SAMD00020744	SAMD00020744	Human metagenome isolated from feces of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1246477	human metagenome
+DRR024079	SAMD00020705	SAMD00020705	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1195369	human metagenome
+DRR024083	SAMD00020709	SAMD00020709	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1215185	human metagenome
+DRR024088	SAMD00020714	SAMD00020714	Human metagenome isolated from gastric juice of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1207582	human metagenome
+DRR024109	SAMD00020753	SAMD00020753	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205054	human metagenome
+DRR024112	SAMD00020756	SAMD00020756	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1204912	human metagenome
+DRR024116	SAMD00020760	SAMD00020760	Human metagenome isolated from gastric juice of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1201554	human metagenome
+DRR024125	SAMD00020769	SAMD00020769	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1227088	human metagenome
+DRR024126	SAMD00020770	SAMD00020770	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1199413	human metagenome
+DRR024130	SAMD00020774	SAMD00020774	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205233	human metagenome
+DRR024133	SAMD00020777	SAMD00020777	Human metagenome isolated from saliva of PPI supplemented Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206329	human metagenome
+DRR024140	SAMD00020784	SAMD00020784	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1199335	human metagenome
+DRR024142	SAMD00020786	SAMD00020786	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1201892	human metagenome
+DRR024149	SAMD00020793	SAMD00020793	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1205376	human metagenome
+DRR024151	SAMD00020795	SAMD00020795	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1204912	human metagenome
+DRR024156	SAMD00020800	SAMD00020800	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1206198	human metagenome
+DRR024157	SAMD00020801	SAMD00020801	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1210841	human metagenome
+DRR024161	SAMD00020805	SAMD00020805	Human metagenome isolated from saliva of Japanese individule		AMPLICON	SINGLE	454 GS FLX Titanium	3000	1210541	human metagenome

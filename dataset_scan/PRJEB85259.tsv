@@ -1,0 +1,19 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR14216921	SAMEA117629408	D+ 1-	GL261Luc2_infected_and_GFP_negative_1	GL261Luc2_infected_and_GFP_negative_1	RNA-Seq	PAIRED	Illumina HiSeq 2500	67059032	3420010632	Mus musculus
+ERR14216927	SAMEA117629414	B+ 1+	CT-2A_infected_and_GFP_positive_1	CT-2A_infected_and_GFP_positive_1	RNA-Seq	PAIRED	Illumina HiSeq 2500	62656058	3195458958	Mus musculus
+ERR14216928	SAMEA117629415	B+ 2+	CT-2A_infected_and_GFP_positive_2	CT-2A_infected_and_GFP_positive_2	RNA-Seq	PAIRED	Illumina HiSeq 2500	68085356	3472353156	Mus musculus
+ERR14216930	SAMEA117629417	B+ 1-	CT-2A_infected_and_GFP_negative_1	CT-2A_infected_and_GFP_negative_1	RNA-Seq	PAIRED	Illumina HiSeq 2500	63895052	3258647652	Mus musculus
+ERR14216932	SAMEA117629419	B+ 3-	CT-2A_infected_and_GFP_negative_3	CT-2A_infected_and_GFP_negative_3	RNA-Seq	PAIRED	Illumina HiSeq 2500	53561356	2731629156	Mus musculus
+ERR14216935	SAMEA117629422	A3	CT-2A_uninfected_3	CT-2A_uninfected_3	RNA-Seq	PAIRED	Illumina HiSeq 2500	61982550	3161110050	Mus musculus
+ERR14216923	SAMEA117629410	D+ 3-	GL261Luc2_infected_and_GFP_negative_3	GL261Luc2__infected_and_GFP_negative_3	RNA-Seq	PAIRED	Illumina HiSeq 2500	62788584	3202217784	Mus musculus
+ERR14216926	SAMEA117629413	C3	GL261Luc2_uninfected_3	GL261Luc2_uninfected_3	RNA-Seq	PAIRED	Illumina HiSeq 2500	53738488	2740662888	Mus musculus
+ERR14216929	SAMEA117629416	B+ 3+	CT-2A_infected_and_GFP_positive_3	CT-2A_infected_and_GFP_positive_3	RNA-Seq	PAIRED	Illumina HiSeq 2500	59889788	3054379188	Mus musculus
+ERR14216934	SAMEA117629421	A2	CT-2A_uninfected_2	CT-2A_uninfected_2	RNA-Seq	PAIRED	Illumina HiSeq 2500	63823766	3255012066	Mus musculus
+ERR14216924	SAMEA117629411	C1	GL261Luc2_uninfected_1	GL261Luc2_uninfected_1	RNA-Seq	PAIRED	Illumina HiSeq 2500	53821788	2744911188	Mus musculus
+ERR14216931	SAMEA117629418	B+ 2-	CT-2A_infected_and_GFP_negative_2	CT-2A_infected_and_GFP_negative_2	RNA-Seq	PAIRED	Illumina HiSeq 2500	55830516	2847356316	Mus musculus
+ERR14216918	SAMEA117629405	D+ 1+	GL261Luc2__infected_and_GFP_positive_1	GL261Luc2__infected_and_GFP_positive_1	RNA-Seq	PAIRED	Illumina HiSeq 2500	68373940	3487070940	Mus musculus
+ERR14216922	SAMEA117629409	D+ 2-	GL261Luc2_infected_and_GFP_negative_2	GL261Luc2_infected_and_GFP_negative_2	RNA-Seq	PAIRED	Illumina HiSeq 2500	66518376	3392437176	Mus musculus
+ERR14216925	SAMEA117629412	C2	GL261Luc2_uninfected_2	GL261Luc2_uninfected_2	RNA-Seq	PAIRED	Illumina HiSeq 2500	48173884	2456868084	Mus musculus
+ERR14216919	SAMEA117629406	D+ 2+	GL261Luc2__infected_and_GFP_positive_2	GL261Luc2_infected_and_GFP_positive_2	RNA-Seq	PAIRED	Illumina HiSeq 2500	54925160	2801183160	Mus musculus
+ERR14216920	SAMEA117629407	D+ 3+	GL261Luc2__infected_and_GFP_positive_3	GL261Luc2_infected_and_GFP_positive_3	RNA-Seq	PAIRED	Illumina HiSeq 2500	70544940	3597791940	Mus musculus
+ERR14216933	SAMEA117629420	A1	CT-2A_uninfected_1	CT-2A_uninfected_1	RNA-Seq	PAIRED	Illumina HiSeq 2500	65858202	3358768302	Mus musculus

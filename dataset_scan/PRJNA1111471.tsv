@@ -1,0 +1,26 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR29020409	SAMN41392450	G7	Human sample from Homo sapiens	LRA126684	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26970210	8145003420	Homo sapiens
+SRR29020410	SAMN41392449	G6	Human sample from Homo sapiens	LRA126683	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24357953	7356101806	Homo sapiens
+SRR29020419	SAMN41392432	P2	Human sample from Homo sapiens	LRA126670	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27577147	8328298394	Homo sapiens
+SRR29020425	SAMN41392435	P5	Human sample from Homo sapiens	LRA126673	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27865481	8415375262	Homo sapiens
+SRR29020415	SAMN41392444	G1	Human sample from Homo sapiens	LRA126678	RNA-Seq	PAIRED	Illumina NovaSeq 6000	29094697	8786598494	Homo sapiens
+SRR29020422	SAMN41392438	P8	Human sample from Homo sapiens	LRA126676	RNA-Seq	PAIRED	Illumina NovaSeq 6000	25543189	7714043078	Homo sapiens
+SRR29020405	SAMN41392453	S2	Human sample from Homo sapiens	LRA126687	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24994208	7548250816	Homo sapiens
+SRR29020407	SAMN41392451	G8	Human sample from Homo sapiens	LRA126685	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26339717	7954594534	Homo sapiens
+SRR29020408	SAMN41392433	P3	Human sample from Homo sapiens	LRA126671	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24324202	7345909004	Homo sapiens
+SRR29020413	SAMN41392446	G3	Human sample from Homo sapiens	LRA126680	RNA-Seq	PAIRED	Illumina NovaSeq 6000	31019552	9367904704	Homo sapiens
+SRR29020428	SAMN41392431	P1	Human sample from Homo sapiens	LRA126669	RNA-Seq	PAIRED	Illumina NovaSeq 6000	29062497	8776874094	Homo sapiens
+SRR29020406	SAMN41392452	S1	Human sample from Homo sapiens	LRA126686	RNA-Seq	PAIRED	Illumina NovaSeq 6000	23899501	7217649302	Homo sapiens
+SRR29020414	SAMN41392445	G2	Human sample from Homo sapiens	LRA126679	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26032157	7861711414	Homo sapiens
+SRR29020417	SAMN41392442	P12	Human sample from Homo sapiens	LRA134736	RNA-Seq	PAIRED	Illumina NovaSeq 6000	21410550	6465986100	Homo sapiens
+SRR29020418	SAMN41392441	P11	Human sample from Homo sapiens	LRA134735	RNA-Seq	PAIRED	Illumina NovaSeq 6000	22545921	6808868142	Homo sapiens
+SRR29020421	SAMN41392439	P9	Human sample from Homo sapiens	LRA126677	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27557400	8322334800	Homo sapiens
+SRR29020423	SAMN41392437	P7	Human sample from Homo sapiens	LRA126675	RNA-Seq	PAIRED	Illumina NovaSeq 6000	25117625	7585522750	Homo sapiens
+SRR29020426	SAMN41392434	P4	Human sample from Homo sapiens	LRA126672	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26757088	8080640576	Homo sapiens
+SRR29020427	SAMN41392455	S4	Human sample from Homo sapiens	LRA126689	RNA-Seq	PAIRED	Illumina NovaSeq 6000	30717465	9276674430	Homo sapiens
+SRR29020404	SAMN41392454	S3	Human sample from Homo sapiens	LRA126688	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27268031	8234945362	Homo sapiens
+SRR29020411	SAMN41392448	G5	Human sample from Homo sapiens	LRA126682	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26860871	8111983042	Homo sapiens
+SRR29020412	SAMN41392447	G4	Human sample from Homo sapiens	LRA126681	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27089026	8180885852	Homo sapiens
+SRR29020416	SAMN41392443	P13	Human sample from Homo sapiens	LRA134737	RNA-Seq	PAIRED	Illumina NovaSeq 6000	19406530	5860772060	Homo sapiens
+SRR29020420	SAMN41392440	P10	Human sample from Homo sapiens	LRA134734	RNA-Seq	PAIRED	Illumina NovaSeq 6000	18538179	5598530058	Homo sapiens
+SRR29020424	SAMN41392436	P6	Human sample from Homo sapiens	LRA126674	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26012483	7855769866	Homo sapiens

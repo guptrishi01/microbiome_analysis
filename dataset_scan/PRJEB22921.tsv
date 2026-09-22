@@ -1,0 +1,9 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR2163352	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool single end_s	RNA-Seq	SINGLE	Illumina HiSeq 2000	35747359	2681051925	Ambystoma mexicanum
+ERR2163351	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool single end_s	RNA-Seq	SINGLE	Illumina HiSeq 2000	36544494	2740837050	Ambystoma mexicanum
+ERR2163355	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool pair end_p	RNA-Seq	PAIRED	Illumina HiSeq 2000	39458042	5918706300	Ambystoma mexicanum
+ERR2163356	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool pair end_p	RNA-Seq	PAIRED	Illumina HiSeq 2000	37739122	5660868300	Ambystoma mexicanum
+ERR2163353	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool pair end_p	RNA-Seq	PAIRED	Illumina HiSeq 2000	38633732	5795059800	Ambystoma mexicanum
+ERR2163354	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool pair end_p	RNA-Seq	PAIRED	Illumina HiSeq 2000	37423771	5613565650	Ambystoma mexicanum
+ERR2163349	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool single end_s	RNA-Seq	SINGLE	Illumina HiSeq 2000	37996731	2849754825	Ambystoma mexicanum
+ERR2163350	SAMEA104337969	E-MTAB-6092:ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool	ambystoma mexicanum tissue pool single end_s	RNA-Seq	SINGLE	Illumina HiSeq 2000	36959928	2771994600	Ambystoma mexicanum

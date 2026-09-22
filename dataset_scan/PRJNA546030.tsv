@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR10003923	SAMN11950605	GSM3847621	CX3CR1_pos dendritic cells (Sample_2046)		RNA-Seq	SINGLE	Illumina HiSeq 1500	11371071	852830325	Mus musculus
+SRR10003921	SAMN11950607	GSM3847619	CX3CR1_neg dendritic cells (Sample_2043)		RNA-Seq	SINGLE	Illumina HiSeq 1500	10498014	787351050	Mus musculus
+SRR10003919	SAMN11950609	GSM3847617	CX3CR1_pos dendritic cells (Sample_2040)		RNA-Seq	SINGLE	Illumina HiSeq 1500	33047818	2478586350	Mus musculus
+SRR10003922	SAMN11950606	GSM3847620	CX3CR1_pos dendritic cells (Sample_2044)		RNA-Seq	SINGLE	Illumina HiSeq 1500	19390823	1454311725	Mus musculus
+SRR10003920	SAMN11950608	GSM3847618	CX3CR1_neg dendritic cells (Sample_2041)		RNA-Seq	SINGLE	Illumina HiSeq 1500	18069861	1355239575	Mus musculus
+SRR10003924	SAMN11950604	GSM3847622	CX3CR1_neg dendritic cells (Sample_2047)		RNA-Seq	SINGLE	Illumina HiSeq 1500	17812340	1335925500	Mus musculus

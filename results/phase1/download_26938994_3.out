@@ -1,0 +1,21 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== Afshar  expecting 49 runs   Tue Sep 15 01:17:01 AM EDT 2026
+run list: 50 entries (expected 49)
+!! WARNING: count mismatch — check /scratch/rgupta25/rygb/raw/Afshar/runs.tsv before trusting downstream output
+ERR1624539	ERR1624539
+ERR1624542	ERR1624542
+ERR1624545	ERR1624545
+
+=== Afshar done  Tue Sep 15 01:20:00 AM EDT 2026
+downloaded now: 50 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/Afshar: 50 (expected 49)
+144M	/scratch/rgupta25/rygb/raw/Afshar
+read length check:
+   first read: 250 bp: GATGAACGCTGGCGGCGCGCCTAACACATGCAAGTCGAACGGCACCTATC...
+reads per sample (first 5):
+   ERR1624536_R1.fastq.gz 24527 reads
+   ERR1624537_R1.fastq.gz 16285 reads
+   ERR1624538_R1.fastq.gz 18228 reads
+   ERR1624539_R1.fastq.gz 21187 reads
+   ERR1624540_R1.fastq.gz 18254 reads

@@ -1,0 +1,17 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR9851253	SAMEA110137883	E-MTAB-11720:Palbo_rep2	Palbo_rep2	Palbo_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851262	SAMEA110137885	E-MTAB-11720:Control_rep2	Control_rep2	Control_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851251	SAMEA110137882	E-MTAB-11720:Palbo_rep1	Palbo_rep1	Palbo_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851263	SAMEA110137885	E-MTAB-11720:Control_rep2	Control_rep2	Control_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851254	SAMEA110137883	E-MTAB-11720:Palbo_rep2	Palbo_rep2	Palbo_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851256	SAMEA110137883	E-MTAB-11720:Palbo_rep2	Palbo_rep2	Palbo_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851258	SAMEA110137884	E-MTAB-11720:Control_rep1	Control_rep1	Control_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851252	SAMEA110137882	E-MTAB-11720:Palbo_rep1	Palbo_rep1	Palbo_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851255	SAMEA110137883	E-MTAB-11720:Palbo_rep2	Palbo_rep2	Palbo_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851259	SAMEA110137884	E-MTAB-11720:Control_rep1	Control_rep1	Control_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851261	SAMEA110137885	E-MTAB-11720:Control_rep2	Control_rep2	Control_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851250	SAMEA110137882	E-MTAB-11720:Palbo_rep1	Palbo_rep1	Palbo_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851257	SAMEA110137884	E-MTAB-11720:Control_rep1	Control_rep1	Control_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851264	SAMEA110137885	E-MTAB-11720:Control_rep2	Control_rep2	Control_rep2_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851249	SAMEA110137882	E-MTAB-11720:Palbo_rep1	Palbo_rep1	Palbo_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens
+ERR9851260	SAMEA110137884	E-MTAB-11720:Control_rep1	Control_rep1	Control_rep1_p	ssRNA-seq	PAIRED	NextSeq 500	0	0	Homo sapiens

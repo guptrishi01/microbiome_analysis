@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR16839129	SAMEA118640738	682f223939ff65f8c6295d71	f44873ab-262f-4048-bdcf-f5df85bb92ef-dtol		Hi-C	PAIRED	Illumina NovaSeq X	842161082	127166323382	Ceratinostoma ostiorum
+ERR17358681	SAMEA118640738	682f223939ff65f8c6295d71	f44873ab-262f-4048-bdcf-f5df85bb92ef-dtol	DTOL16008051	WGS	SINGLE	Revio	4537017	43110540847	Ceratinostoma ostiorum

@@ -1,0 +1,6 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR125554	SAMEA1690526	NB1141	neuroblastoma primary tumor NB1141	unspecified	OTHER	PAIRED	Illumina Genome Analyzer II	79727107	11640157622	Homo sapiens
+ERR125551	SAMEA1690523	CLB-Ga	Neuroblastoma cell line CLB-Ga	unspecified	OTHER	PAIRED	Illumina Genome Analyzer II	70905689	6093370208	Homo sapiens
+ERR125552	SAMEA1690524	CLB-Re	Neuroblastoma cell line CLB-Re	unspecified	OTHER	PAIRED	Illumina Genome Analyzer II	69021650	5914501848	Homo sapiens
+ERR125553	SAMEA1690522	LL-Ga	Lymphoblastoid cell line LL-Ga	unspecified	OTHER	PAIRED	Illumina Genome Analyzer II	71603080	10454049680	Homo sapiens
+ERR125555	SAMEA1690525	NB1142	neuroblastoma primary tumor NB1142	unspecified	OTHER	PAIRED	Illumina Genome Analyzer II	69415514	10134665044	Homo sapiens

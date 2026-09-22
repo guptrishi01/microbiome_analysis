@@ -1,0 +1,93 @@
+Loading python/3.12.3
+  Loading requirement: miniforge/25.9
+
+==================== BS16S
+mpa reports: 61 (expect 61)
+non-bacterial/archaeal reads dropped before normalization: 176
+  Phylum      31 taxa  mean depth     34331  | repo    33 taxa, shared    30 | r=0.928 (nonzero-only r=0.892, n=863)
+  Class       60 taxa  mean depth     34100  | repo    70 taxa, shared    50 | r=0.936 (nonzero-only r=0.896, n=1,443)
+  Order      123 taxa  mean depth     33890  | repo   150 taxa, shared   106 | r=0.906 (nonzero-only r=0.860, n=2,660)
+  Family     234 taxa  mean depth     31246  | repo   264 taxa, shared   176 | r=0.909 (nonzero-only r=0.858, n=4,195)
+  Genus      527 taxa  mean depth     30160  | repo   508 taxa, shared   311 | r=0.851 (nonzero-only r=0.757, n=6,581)
+  Species    780 taxa  mean depth     23229  | repo   806 taxa, shared   400 | r=0.836 (nonzero-only r=0.730, n=7,182)
+  metadata copied: Metadata/16S_metadata.txt
+
+==================== Assal
+mpa reports: 71 (expect 71)
+non-bacterial/archaeal reads dropped before normalization: 377
+  Phylum      34 taxa  mean depth    197461  | repo    38 taxa, shared    33 | r=0.910 (nonzero-only r=0.901, n=2,123)
+  Class       71 taxa  mean depth    196125  | repo    92 taxa, shared    68 | r=0.911 (nonzero-only r=0.890, n=3,798)
+  Order      156 taxa  mean depth    194950  | repo   185 taxa, shared   141 | r=0.866 (nonzero-only r=0.837, n=7,976)
+  Family     342 taxa  mean depth    167336  | repo   381 taxa, shared   292 | r=0.854 (nonzero-only r=0.813, n=14,655)
+  Genus     1035 taxa  mean depth    174358  | repo  1025 taxa, shared   768 | r=0.825 (nonzero-only r=0.761, n=28,390)
+  Species   1765 taxa  mean depth    135990  | repo  1851 taxa, shared  1093 | r=0.771 (nonzero-only r=0.672, n=33,880)
+  metadata copied: Metadata/SraRunTable_Assal.txt, Kraken2/SraRunTable_Assal.txt
+
+==================== Afshar
+mpa reports: 50 (expect 50)
+non-bacterial/archaeal reads dropped before normalization: 128
+  Phylum      24 taxa  mean depth     16922  | repo    20 taxa, shared    18 | r=0.924 (nonzero-only r=0.898, n=604)
+  Class       45 taxa  mean depth     16828  | repo    45 taxa, shared    35 | r=0.949 (nonzero-only r=0.916, n=1,092)
+  Order       98 taxa  mean depth     16770  | repo   109 taxa, shared    82 | r=0.869 (nonzero-only r=0.805, n=2,221)
+  Family     193 taxa  mean depth     14973  | repo   215 taxa, shared   154 | r=0.882 (nonzero-only r=0.811, n=3,611)
+  Genus      427 taxa  mean depth     14400  | repo   439 taxa, shared   300 | r=0.841 (nonzero-only r=0.729, n=6,042)
+  Species    727 taxa  mean depth     11164  | repo   814 taxa, shared   461 | r=0.845 (nonzero-only r=0.713, n=7,797)
+  metadata copied: Metadata/metaData.txt, Kraken2/SraRunTable_Afshar.txt
+
+==================== Ilhan
+mpa reports: 82 (expect 82)
+non-bacterial/archaeal reads dropped before normalization: 1,124,536
+  Phylum      37 taxa  mean depth     62889  | repo    38 taxa, shared    36 | r=0.920 (nonzero-only r=0.889, n=1,789)
+  Class       77 taxa  mean depth     62322  | repo    90 taxa, shared    71 | r=0.907 (nonzero-only r=0.855, n=3,139)
+  Order      167 taxa  mean depth     61821  | repo   188 taxa, shared   147 | r=0.866 (nonzero-only r=0.808, n=6,587)
+  Family     368 taxa  mean depth     48201  | repo   401 taxa, shared   317 | r=0.864 (nonzero-only r=0.798, n=11,444)
+  Genus     1114 taxa  mean depth     56937  | repo  1096 taxa, shared   840 | r=0.822 (nonzero-only r=0.726, n=19,518)
+  Species   1926 taxa  mean depth     41777  | repo  2004 taxa, shared  1200 | r=0.822 (nonzero-only r=0.717, n=20,749)
+  metadata copied: Metadata/metaData_Ilhan.txt, Kraken2/metaData.txt
+
+Done.
+
+=== regenerated input tree
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/DADA2/filter_track.txt
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/DADA2/ForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/DADA2/taxForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Kraken2/RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_Class.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Kraken2/RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_Family.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Kraken2/RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_Genus.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Kraken2/RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_Order.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Kraken2/RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_Phylum.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Kraken2/RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_Species.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Kraken2/SraRunTable_Afshar.txt
+   /scratch/rgupta25/rygb/input/RYGB_Afshar2018/Metadata/metaData.txt
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/DADA2/filter_track.txt
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/DADA2/ForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/DADA2/taxForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Kraken2/RYGB_Assal_2020Apr23_taxaCount_norm_Log10_Class.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Kraken2/RYGB_Assal_2020Apr23_taxaCount_norm_Log10_Family.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Kraken2/RYGB_Assal_2020Apr23_taxaCount_norm_Log10_Genus.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Kraken2/RYGB_Assal_2020Apr23_taxaCount_norm_Log10_Order.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Kraken2/RYGB_Assal_2020Apr23_taxaCount_norm_Log10_Phylum.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Kraken2/RYGB_Assal_2020Apr23_taxaCount_norm_Log10_Species.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Kraken2/SraRunTable_Assal.txt
+   /scratch/rgupta25/rygb/input/RYGB_Assal2020/Metadata/SraRunTable_Assal.txt
+   /scratch/rgupta25/rygb/input/RYGB_BS/DADA2/filter_track.txt
+   /scratch/rgupta25/rygb/input/RYGB_BS/DADA2/ForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_BS/DADA2/taxForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_BS/Kraken2/RYGB_BS_2020Oct04_taxaCount_norm_Log10_Class.tsv
+   /scratch/rgupta25/rygb/input/RYGB_BS/Kraken2/RYGB_BS_2020Oct04_taxaCount_norm_Log10_Family.tsv
+   /scratch/rgupta25/rygb/input/RYGB_BS/Kraken2/RYGB_BS_2020Oct04_taxaCount_norm_Log10_Genus.tsv
+   /scratch/rgupta25/rygb/input/RYGB_BS/Kraken2/RYGB_BS_2020Oct04_taxaCount_norm_Log10_Order.tsv
+   /scratch/rgupta25/rygb/input/RYGB_BS/Kraken2/RYGB_BS_2020Oct04_taxaCount_norm_Log10_Phylum.tsv
+   /scratch/rgupta25/rygb/input/RYGB_BS/Kraken2/RYGB_BS_2020Oct04_taxaCount_norm_Log10_Species.tsv
+   /scratch/rgupta25/rygb/input/RYGB_BS/Metadata/16S_metadata.txt
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/DADA2/filter_track.txt
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/DADA2/ForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/DADA2/taxForwardReads.txt
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Kraken2/metaData.txt
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Kraken2/RYGB_Ilhan_2020Apr23_taxaCount_norm_Log10_Class.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Kraken2/RYGB_Ilhan_2020Apr23_taxaCount_norm_Log10_Family.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Kraken2/RYGB_Ilhan_2020Apr23_taxaCount_norm_Log10_Genus.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Kraken2/RYGB_Ilhan_2020Apr23_taxaCount_norm_Log10_Order.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Kraken2/RYGB_Ilhan_2020Apr23_taxaCount_norm_Log10_Phylum.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Kraken2/RYGB_Ilhan_2020Apr23_taxaCount_norm_Log10_Species.tsv
+   /scratch/rgupta25/rygb/input/RYGB_Ilhan2020/Metadata/metaData_Ilhan.txt

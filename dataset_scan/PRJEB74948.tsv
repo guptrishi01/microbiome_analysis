@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR12921304	SAMEA111562385	63628eb8d5510f4f9955e8d9	3f729f1f-04ea-402e-a255-6986b6f3d86d-dtol	DTOL14550016	WGS	SINGLE	Revio	2966311	35024861441	Branchiostoma lanceolatum
+ERR12945456	SAMEA111562383	63628eb8d5510f4f9955e8d7	12352c19-5b29-49c8-9980-18d797a70b06-dtol		Hi-C	PAIRED	Illumina NovaSeq 6000	687579974	103824576074	Branchiostoma lanceolatum
+ERR13493941	SAMEA111562386	63628eb8d5510f4f9955e8da	aac10e95-6230-4612-b93a-535b1aa2f048-dtol		RNA-Seq	PAIRED	Illumina NovaSeq X	88834420	13413997420	Branchiostoma lanceolatum

@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR6110540	SAMEA9253519	E-MTAB-10620:Sample 1	Sample 1	Sample 1_s	ChIP-Seq	SINGLE	NextSeq 500	58244152	4368311400	Homo sapiens
+ERR6110541	SAMEA9253520	E-MTAB-10620:Sample 2	Sample 2	Sample 2_s	ChIP-Seq	SINGLE	NextSeq 500	41272172	3095412900	Homo sapiens

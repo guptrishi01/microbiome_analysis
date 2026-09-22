@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR061914	SAMD00052690	SAMD00052690	Eustoma grandiflorum 10B-620	Insert_170bp	WGS	PAIRED	Illumina HiSeq 2000	170123820	34024764000	Eustoma russellianum
+DRR061915	SAMD00052690	SAMD00052690	Eustoma grandiflorum 10B-620	Insert_500bp	WGS	PAIRED	Illumina HiSeq 2000	151179911	30235982200	Eustoma russellianum

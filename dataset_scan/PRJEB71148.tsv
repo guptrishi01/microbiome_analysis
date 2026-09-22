@@ -1,0 +1,10 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR12379745	SAMEA115044772	MH_004	Mobula hypostoma kidney sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	71877034	10781555100	Mobula hypostoma
+ERR12379746	SAMEA115044773	MH_005	Mobula hypostoma liver sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	91547710	13732156500	Mobula hypostoma
+ERR12379743	SAMEA115044770	MH_002	Mobula hypostoma gonad sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	60393974	9059096100	Mobula hypostoma
+ERR12379747	SAMEA115044774	MH_006	Mobula hypostoma muscle sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	71799330	10769899500	Mobula hypostoma
+ERR12379749	SAMEA115044776	MH_008	Mobula hypostoma intestine sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	193173842	28976076300	Mobula hypostoma
+ERR12379750	SAMEA115044777	MH_009	Mobula hypostoma gill sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	62610064	9391509600	Mobula hypostoma
+ERR12379742	SAMEA115044769	MH_001	Mobula hypostoma heart sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	65475934	9821390100	Mobula hypostoma
+ERR12379744	SAMEA115044771	MH_003	Mobula hypostoma spleen sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	71221574	10683236100	Mobula hypostoma
+ERR12379748	SAMEA115044775	MH_007	Mobula hypostoma brain sample	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	63269018	9490352700	Mobula hypostoma

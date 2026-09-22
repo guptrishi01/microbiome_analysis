@@ -1,0 +1,18 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR210956	SAMEA1574069	nb1.4.NB18985	Neuroblastoma nb1.4.NB18985	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	9397537	640132334	Homo sapiens
+ERR210960	SAMEA1574074	nb1.4S.NB15303	Neuroblastoma nb1.4S.NB15303	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	8947523	611368497	Homo sapiens
+ERR210966	SAMEA1574072	nb2.4.NB19388	Neuroblastoma nb2.4.NB19388	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	56547876	10587645938	Homo sapiens
+ERR210968	SAMEA1574066	pos.EBV.EBV_1	Neuroblastoma pos.EBV.EBV_1	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	55365135	3880772590	Homo sapiens
+ERR210955	SAMEA1574078	nb1.4.NB18281	Neuroblastoma nb1.4.NB18281	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	10091118	697738549	Homo sapiens
+ERR210958	SAMEA1574077	nb1.4.NB19388	Neuroblastoma nb1.4.NB19388	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	15952511	1125737596	Homo sapiens
+ERR210959	SAMEA1574081	nb1.4S.NB15005	Neuroblastoma nb1.4S.NB15005	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	11234991	771749592	Homo sapiens
+ERR210962	SAMEA1574067	nb1.4S.NB17000	Neuroblastoma nb1.4S.NB17000	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	16652051	1170348353	Homo sapiens
+ERR210963	SAMEA1574068	nb1.4S.NB17809	Neuroblastoma nb1.4S.NB17809	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	15340819	1079047121	Homo sapiens
+ERR210952	SAMEA1574065	nb1.4.NB15475	Neuroblastoma nb1.4.NB15475	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	11606292	793644608	Homo sapiens
+ERR210954	SAMEA1574079	nb1.4.NB17871	Neuroblastoma nb1.4.NB17871	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	16297856	1148628678	Homo sapiens
+ERR210957	SAMEA1574076	nb1.4.NB19142	Neuroblastoma nb1.4.NB19142	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	8517516	583385744	Homo sapiens
+ERR210953	SAMEA1574075	nb1.4.NB17861	Neuroblastoma nb1.4.NB17861	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	15909565	1121027705	Homo sapiens
+ERR210961	SAMEA1574071	nb1.4S.NB16063	Neuroblastoma nb1.4S.NB16063	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	16340179	1151655668	Homo sapiens
+ERR210964	SAMEA1574080	nb1.4S.NB19696	Neuroblastoma nb1.4S.NB19696	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	8435914	575917900	Homo sapiens
+ERR210965	SAMEA1574070	nb1.4S.NB20080	Neuroblastoma nb1.4S.NB20080	unspecified	RNA-Seq	PAIRED	Illumina Genome Analyzer IIx	16190096	1140091778	Homo sapiens
+ERR210967	SAMEA1574073	nb2.4S.NB19696	Neuroblastoma nb2.4S.NB19696	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	52556048	9847571145	Homo sapiens

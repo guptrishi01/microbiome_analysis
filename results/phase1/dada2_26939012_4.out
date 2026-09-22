@@ -1,0 +1,29 @@
+=== Ilhan  primer=NONE truncLen=150 trimLeft=0  expect 150bp ASVs   Tue Sep 15 01:33:04 AM EDT 2026
+raw files: 82
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       5000 no-515F-anchor
+
+--- DADA2
+Warning message:
+package ‘Rcpp’ was built under R version 4.0.5 
+samples: 82 
+Error in filterAndTrim(fns, filts, truncLen = truncLen, trimLeft = trimLeft,  : 
+  These are the errors (up to 5) encountered in individual cores...
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the
+In addition: Warning message:
+In mclapply(seq_len(n), do_one, mc.preschedule = mc.preschedule,  :
+  all scheduled cores encountered errors in user code
+Execution halted
+
+=== Ilhan done (rc=1)  Tue Sep 15 01:33:21 AM EDT 2026
+repo had 5378 ASVs for this study
+   total 0
+filtered reads kept for Kraken2: 0 files, 0

@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR984826	SAMD01878501	SAMD01878501	X13 (SAMC6000554)	missing	OTHER	PAIRED	HiSeq X Ten	0	0	Mus musculus
+DRR984828	SAMD01878503	SAMD01878503	X15 (SAMC6000556)	missing	OTHER	PAIRED	HiSeq X Ten	0	0	Mus musculus
+DRR984827	SAMD01878502	SAMD01878502	X14 (SAMC6000555)	missing	OTHER	PAIRED	HiSeq X Ten	0	0	Mus musculus

@@ -1,0 +1,28 @@
+=== Ilhan  primer=NONE truncLen=150 trimLeft=0  expect 150bp ASVs   Tue Sep 15 02:01:32 AM EDT 2026
+raw files: 82
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       5000 no-515F-anchor
+
+--- DADA2
+samples: 82 
+reads in/out — median retention: 98.4 %
+108653550 total bases in 724357 reads from 13 samples will be used for learning the error rates.
+ASVs before chimera removal: 10536 
+ASVs after chimera removal: 5931 | reads kept: 90.2 %
+ASV length distribution:
+
+ 150 
+5931 
+
+repo ASVs: 5378 | ours: 5931 | shared: 5344 (99.4% of repo, 90.1% of ours)
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== Ilhan done (rc=0)  Tue Sep 15 02:13:50 AM EDT 2026
+repo had 5378 ASVs for this study
+   total 3.2M
+   -rw-r--r-- 1 rgupta25 rgupta25 2.0K Sep 15 02:13 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 1.9M Sep 15 02:13 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 1.4M Sep 15 02:13 taxForwardReads.txt
+filtered reads kept for Kraken2: 82 files, 334M

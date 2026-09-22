@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR550406	SAMEA2613884	Rb_pos	Retinoblastoma_pos	unspecified	WGS	SINGLE	Illumina Genome Analyzer IIx	31019035	1116685260	Homo sapiens
+ERR550407	SAMEA2613885	Rb_neg	Retinoblastoma_neg	unspecified	WGS	SINGLE	Illumina Genome Analyzer IIx	33895793	1220248548	Homo sapiens
+ERR550408	SAMEA2613886	Mb	Medulloblastoma	unspecified	WGS	SINGLE	Illumina Genome Analyzer IIx	31976350	1151148600	Homo sapiens

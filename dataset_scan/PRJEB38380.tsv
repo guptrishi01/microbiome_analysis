@@ -1,0 +1,57 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR4170612	SAMEA6848498	1_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	30028393	1519924261	Homo sapiens
+ERR4170613	SAMEA6848499	2_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	26040202	1319074316	Homo sapiens
+ERR4170617	SAMEA6848503	6_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	32532538	1648225443	Homo sapiens
+ERR4170619	SAMEA6848505	8_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	53020035	2685402128	Homo sapiens
+ERR4170624	SAMEA6848510	13_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	42478491	2152923812	Homo sapiens
+ERR4170637	SAMEA6848523	2R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	22942472	1162082156	Homo sapiens
+ERR4170650	SAMEA6848536	15R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	51484452	2609355027	Homo sapiens
+ERR4170655	SAMEA6848541	20R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	27241157	1382837854	Homo sapiens
+ERR4170659	SAMEA6848545	24R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	574555	29136457	Homo sapiens
+ERR4170622	SAMEA6848508	11_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	25624949	1298460706	Homo sapiens
+ERR4170628	SAMEA6848514	17_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418204	21178035	Homo sapiens
+ERR4170634	SAMEA6848520	23_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	52711016	2670238900	Homo sapiens
+ERR4170636	SAMEA6848522	1R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	15710049	795722104	Homo sapiens
+ERR4170640	SAMEA6848526	5R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	31375535	1590060685	Homo sapiens
+ERR4170642	SAMEA6848528	7R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	489929	24822481	Homo sapiens
+ERR4170643	SAMEA6848529	8R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418107	21180868	Homo sapiens
+ERR4170646	SAMEA6848532	11R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	46674048	2364454010	Homo sapiens
+ERR4170647	SAMEA6848533	12R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	53195350	2693434534	Homo sapiens
+ERR4170649	SAMEA6848535	14R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	36095272	1830295704	Homo sapiens
+ERR4170654	SAMEA6848540	19R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	25751004	1305447190	Homo sapiens
+ERR4170657	SAMEA6848543	22R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418009	21183067	Homo sapiens
+ERR4170620	SAMEA6848506	9_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	43719478	2215647620	Homo sapiens
+ERR4170625	SAMEA6848511	14_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	496525	25149768	Homo sapiens
+ERR4170629	SAMEA6848515	18_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	18442686	934817871	Homo sapiens
+ERR4170630	SAMEA6848516	19_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	38358880	1945792817	Homo sapiens
+ERR4170631	SAMEA6848517	20_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418380	21174426	Homo sapiens
+ERR4170641	SAMEA6848527	6R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	23648429	1197481489	Homo sapiens
+ERR4170644	SAMEA6848530	9R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	44696696	2263815131	Homo sapiens
+ERR4170652	SAMEA6848538	17R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	23630936	1196855104	Homo sapiens
+ERR4170653	SAMEA6848539	18R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418065	21181214	Homo sapiens
+ERR4170656	SAMEA6848542	21R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	7145173	362738513	Homo sapiens
+ERR4170660	SAMEA6848546	1_CG1	postmortem normal FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	54256698	2741949258	Homo sapiens
+ERR4170661	SAMEA6848547	2_CG1	postmortem normal FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418379	21172837	Homo sapiens
+ERR4170616	SAMEA6848502	5_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	209072	10591568	Homo sapiens
+ERR4170618	SAMEA6848504	7_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	607791	30772036	Homo sapiens
+ERR4170626	SAMEA6848512	15_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	34906268	1767999737	Homo sapiens
+ERR4170633	SAMEA6848519	22_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	235274	11914470	Homo sapiens
+ERR4170635	SAMEA6848521	24_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	417807	21195907	Homo sapiens
+ERR4170638	SAMEA6848524	3R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	23926057	1211861778	Homo sapiens
+ERR4170639	SAMEA6848525	4R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	55863161	2828920466	Homo sapiens
+ERR4170645	SAMEA6848531	10R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	16295300	825675237	Homo sapiens
+ERR4170648	SAMEA6848534	13R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	417767	21188271	Homo sapiens
+ERR4170665	SAMEA6848551	9_CG1	postmortem tumor FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	562072	28452695	Homo sapiens
+ERR4170614	SAMEA6848500	3_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	215613	10921868	Homo sapiens
+ERR4170615	SAMEA6848501	4_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	18545695	939375928	Homo sapiens
+ERR4170621	SAMEA6848507	10_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	71569943	3625351420	Homo sapiens
+ERR4170623	SAMEA6848509	12_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	41642571	2108604652	Homo sapiens
+ERR4170627	SAMEA6848513	16_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418254	21177794	Homo sapiens
+ERR4170632	SAMEA6848518	21_RRBS	initial (GBM1) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	417942	21184569	Homo sapiens
+ERR4170651	SAMEA6848537	16R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418072	21181963	Homo sapiens
+ERR4170658	SAMEA6848544	23R_RRBS	recurrent (GBM2) FFPE tumor block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418099	21181667	Homo sapiens
+ERR4170662	SAMEA6848548	3_CG1	postmortem normal FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	418396	21175165	Homo sapiens
+ERR4170663	SAMEA6848549	4_CG1	postmortem normal FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	562032	28457180	Homo sapiens
+ERR4170664	SAMEA6848550	5_CG1	postmortem tumor FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	29708356	1505105551	Homo sapiens
+ERR4170666	SAMEA6848552	11_CG1	postmortem normal FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	25925086	1311675264	Homo sapiens
+ERR4170667	SAMEA6848553	12_CG1	postmortem normal FFPE block	unspecified	Bisulfite-Seq	SINGLE	NextSeq 550	16161405	817247797	Homo sapiens

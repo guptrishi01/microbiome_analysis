@@ -1,0 +1,13 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR2824906	SAMEA4956195	obese1	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	31596183	6319236600	Homo sapiens
+ERR2824914	SAMEA4956203	obese9	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	28871794	5774358800	Homo sapiens
+ERR2824907	SAMEA4956196	obese2	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2000	28948073	5789614600	Homo sapiens
+ERR2824908	SAMEA4956197	obese3	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	31161809	6232361800	Homo sapiens
+ERR2824911	SAMEA4956200	obese6	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	40648433	8129686600	Homo sapiens
+ERR2824913	SAMEA4956202	obese8	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	28284438	5656887600	Homo sapiens
+ERR2824915	SAMEA4956204	obese10	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	33076046	6615209200	Homo sapiens
+ERR2824916	SAMEA4956205	obese11	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	36379128	7275825600	Homo sapiens
+ERR2824909	SAMEA4956198	obese4	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	37670443	7534088600	Homo sapiens
+ERR2824910	SAMEA4956199	obese5	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	24041252	4808250400	Homo sapiens
+ERR2824912	SAMEA4956201	obese7	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	34043715	6808743000	Homo sapiens
+ERR2824917	SAMEA4956206	obese12	human gut metagenome from obese chilean subjects	unspecified	WGS	PAIRED	Illumina HiSeq 2500	30616696	6123339200	Homo sapiens

@@ -1,0 +1,29 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR412142	SAMD00523910	SAMD00523910	CF4_SKNSH transcriptome after DHRS3 transfection	CF4_SKNSH transcriptome after DHRS3 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	19168847	3872107094	Homo sapiens
+DRR412147	SAMD00523915	SAMD00523915	CF25_NH12 transcriptome after CYP26A1 transfection	CF25_NH12 transcriptome after CYP26A1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	16612365	3355697730	Homo sapiens
+DRR412149	SAMD00523917	SAMD00523917	Mock_SKNSH transcriptome after vector transfection	Mock_SKNSH transcriptome after vector transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	18874337	3812616074	Homo sapiens
+DRR412153	SAMD00523921	SAMD00523921	CF20_TGW transcriptome after siDHRS3 transfection_incomplete	CF20_TGW transcriptome after siDHRS3 transfection_incomplete	RNA-Seq	PAIRED	Illumina HiSeq 2500	19456952	3930304304	Homo sapiens
+DRR412156	SAMD00523924	SAMD00523924	CF22_TGW transcriptome after CYP26A1 transfection	CF22_TGW transcriptome after CYP26A1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2000	14952590	3020423180	Homo sapiens
+DRR412143	SAMD00523911	SAMD00523911	CF5_SKNSH transcriptome after CYP26A1 transfection	CF5_SKNSH transcriptome after CYP26A1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	15527649	3136585098	Homo sapiens
+DRR412148	SAMD00523916	SAMD00523916	Mock_TGW transcriptome after vector transfection	Mock_TGW transcriptome after vector transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	18868938	3811525476	Homo sapiens
+DRR412151	SAMD00523919	SAMD00523919	CF19_TGW transcriptome after siNR0B1 transfection_incomplete	CF19_TGW transcriptome after siNR0B1 transfection_incomplete	RNA-Seq	PAIRED	Illumina HiSeq 2500	19037041	3845482282	Homo sapiens
+DRR412154	SAMD00523922	SAMD00523922	C20_SKNSH transcriptome after siDHRS3 transfection	C20_SKNSH transcriptome after siDHRS3 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	17112722	3456769844	Homo sapiens
+DRR412165	SAMD00523933	SAMD00523933	PD2__NH12 transcriptome after DHRS3 transfection	PD2__NH12 transcriptome after DHRS3 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	30888289	6239434378	Homo sapiens
+DRR412166	SAMD00523934	SAMD00523934	Batch_NH12 transcriptome after CYP26A1 transfection	Batch_NH12 transcriptome after CYP26A1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	28349425	5726583850	Homo sapiens
+DRR412169	SAMD00523937	SAMD00523937	PD18_TGW transcriptome after DHRS3 transfection	PD18_TGW transcriptome after DHRS3 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	32181811	6500725822	Homo sapiens
+DRR412157	SAMD00523925	SAMD00523925	CF12_TGW transcriptome after NR0B1 transfection	CF12_TGW transcriptome after NR0B1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	18848236	3807343672	Homo sapiens
+DRR412161	SAMD00523929	SAMD00523929	CF28_TGW transcriptome after siCYP26A1 transfection	CF28_TGW transcriptome after siCYP26A1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	20332674	4107200148	Homo sapiens
+DRR412162	SAMD00523930	SAMD00523930	PD15_TGW transcriptome at 1 day after DHRS3 transfection	PD15_TGW transcriptome at 1 day after DHRS3 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	27812298	5618084196	Homo sapiens
+DRR412163	SAMD00523931	SAMD00523931	PF5_SKNSH transcriptome after DHRS3 transfection	PF5_SKNSH transcriptome after DHRS3 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	31205962	6303604324	Homo sapiens
+DRR412144	SAMD00523912	SAMD00523912	CF14_SKNSH transcriptome after NR0B1 transfection	CF14_SKNSH transcriptome after NR0B1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	18548613	3746819826	Homo sapiens
+DRR412146	SAMD00523914	SAMD00523914	CF16_NH12 transcriptome after DHRS3 transfection	CF16_NH12 transcriptome after DHRS3 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	14668694	2963076188	Homo sapiens
+DRR412152	SAMD00523920	SAMD00523920	CF18_TGW transcriptome after siNegative transfection	CF18_TGW transcriptome after siNegative transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	18095994	3655390788	Homo sapiens
+DRR412155	SAMD00523923	SAMD00523923	Mock2_NH12 transcriptome after vector transfection	Mock2_NH12 transcriptome after vector transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	16527010	3338456020	Homo sapiens
+DRR412160	SAMD00523928	SAMD00523928	CF39_NH12 transcriptome after siNR0B1 transfection	CF39_NH12 transcriptome after siNR0B1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	21036500	4249373000	Homo sapiens
+DRR412164	SAMD00523932	SAMD00523932	PD2_SKNSH transcriptome after CYP26A1 transfection	PD2_SKNSH transcriptome after CYP26A1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	27414370	5537702740	Homo sapiens
+DRR412167	SAMD00523935	SAMD00523935	CF24_NH12 transcriptome after NR0B1 transfection	CF24_NH12 transcriptome after NR0B1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	30064212	6072970824	Homo sapiens
+DRR412145	SAMD00523913	SAMD00523913	CF14_NH12 transcriptome after CYP26A1 transfection	CF14_NH12 transcriptome after CYP26A1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	20779253	4197409106	Homo sapiens
+DRR412150	SAMD00523918	SAMD00523918	Mock_NH12 transcriptome after vector transfection	Mock_NH12 transcriptome after vector transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	18263049	3689135898	Homo sapiens
+DRR412158	SAMD00523926	SAMD00523926	CF38_SKNSH transcriptome after NR0B1 transfection	CF38_SKNSH transcriptome after NR0B1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	19165139	3871358078	Homo sapiens
+DRR412159	SAMD00523927	SAMD00523927	CF25_NH12 transcriptome after siNR0B1 transfection	CF25_NH12 transcriptome after siNR0B1 transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	17117627	3457760654	Homo sapiens
+DRR412168	SAMD00523936	SAMD00523936	Mock3_NH12 transcriptome after vector transfection	Mock3_NH12 transcriptome after vector transfection	RNA-Seq	PAIRED	Illumina HiSeq 2500	29290637	5916708674	Homo sapiens

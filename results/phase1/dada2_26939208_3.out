@@ -1,0 +1,28 @@
+=== Afshar  primer=NONE truncLen=200 trimLeft=20  expect 180bp ASVs   Tue Sep 15 02:01:32 AM EDT 2026
+raw files: 50
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       5000 no-515F-anchor
+
+--- DADA2
+samples: 50 
+reads in/out — median retention: 85.5 %
+100895760 total bases in 560532 reads from 31 samples will be used for learning the error rates.
+ASVs before chimera removal: 3744 
+ASVs after chimera removal: 3621 | reads kept: 99.1 %
+ASV length distribution:
+
+ 180 
+3621 
+
+repo ASVs: 3613 | ours: 3621 | shared: 3602 (99.7% of repo, 99.5% of ours)
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== Afshar done (rc=0)  Tue Sep 15 02:07:17 AM EDT 2026
+repo had 3613 ASVs for this study
+   total 2.0M
+   -rw-r--r-- 1 rgupta25 rgupta25  1.2K Sep 15 02:07 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 1012K Sep 15 02:07 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25  972K Sep 15 02:07 taxForwardReads.txt
+filtered reads kept for Kraken2: 50 files, 80M

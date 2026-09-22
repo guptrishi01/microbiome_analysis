@@ -1,0 +1,19 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== slice 2/10   Tue Sep 15 12:58:37 PM EDT 2026
+BS metagenomics runs: 135 (expect 135)
+Palleja paired runs:  33 (expect 33)
+free on scratch: 5112 GB (floor 500 GB)
+
+--- BSmeta (slice 2)
+   FAIL SRR12803170: expected paired output
+   FAIL SRR12803158: expected paired output
+   FAIL SRR12803122: expected paired output
+   FAIL SRR12803111: expected paired output
+   FAIL SRR12803100: expected paired output
+   FAIL SRR12803089: expected paired output
+   FAIL SRR12803078: expected paired output
+   FAIL SRR12803060: expected paired output
+   FAIL SRR12803049: expected paired output
+   FAIL SRR12803038: expected paired output
+   FAIL SRR12803167: expected paired output

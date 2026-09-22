@@ -1,0 +1,33 @@
+=== BS16S  primer=GTGYCAGCMGCCGCGGTAA truncLen=200 trimLeft=0  expect 200bp ASVs   Tue Sep 15 01:40:31 AM EDT 2026
+raw files: 61
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       1016 20
+        998 21
+        895 25
+        762 22
+
+--- cutadapt: remove everything up to and including GTGYCAGCMGCCGCGGTAA
+    trimmed 61 samples
+    retention across samples (reads written / reads processed):
+      Reads with adapters:                    23,609 (94.7%)
+      Reads written (passing filters):        23,609 (94.7%)
+      Reads with adapters:                    44,568 (95.7%)
+      Reads written (passing filters):        44,568 (95.7%)
+      min 64.6%  median 94.6%  max 96.4%
+
+--- DADA2
+Warning message:
+package ‘Rcpp’ was built under R version 4.0.5 
+Warning message:
+package ‘matrixStats’ was built under R version 4.0.5 
+samples: 61 
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Calls: filterAndTrim ... SRFilterResult -> new -> initialize -> initialize -> validObject
+Execution halted
+
+=== BS16S done (rc=1)  Tue Sep 15 01:40:38 AM EDT 2026
+repo had 1525 ASVs for this study
+   total 0
+filtered reads kept for Kraken2: 0 files, 0

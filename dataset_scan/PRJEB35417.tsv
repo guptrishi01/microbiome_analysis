@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR3664776	SAMEA6228548	LAN-1 Control-1	LAN-1_DMSO_1	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	25322728	4291784057	Homo sapiens
+ERR3664779	SAMEA6228551	LAN-1 BIX01294-2	LAN-1_BIX_2	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	26104895	4422609142	Homo sapiens
+ERR3664778	SAMEA6228550	LAN-1 BIX01294-1	LAN-1_BIX_1	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	28457118	4816361489	Homo sapiens
+ERR3664777	SAMEA6228549	LAN-1 Control-2	LAN-1_DMSO_2	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	34191450	5833220024	Homo sapiens

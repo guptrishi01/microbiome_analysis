@@ -1,0 +1,10 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR277177	SAMD00282199	SAMD00282199	Shrew brainstem 1 in naive group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	94269722	28182502950	Suncus murinus murinus
+DRR277178	SAMD00282200	SAMD00282200	Shrew brainstem 2 in naive group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	87750098	26153259790	Suncus murinus murinus
+DRR277183	SAMD00282205	SAMD00282205	Shrew brainstem 1 in surgery group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	96774819	28885081956	Suncus murinus murinus
+DRR277181	SAMD00282203	SAMD00282203	Shrew brainstem 2 in isoflurane group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	114826886	34364871355	Suncus murinus murinus
+DRR277184	SAMD00282206	SAMD00282206	Shrew brainstem 2 in surgery group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	78475185	23499892575	Suncus murinus murinus
+DRR277180	SAMD00282202	SAMD00282202	Shrew brainstem 1 in isoflurane group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	97094258	28976503270	Suncus murinus murinus
+DRR277185	SAMD00282207	SAMD00282207	Shrew brainstem 3 in surgery group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	107148417	31970614678	Suncus murinus murinus
+DRR277182	SAMD00282204	SAMD00282204	Shrew brainstem 3 in isoflurane group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	110274759	31743959616	Suncus murinus murinus
+DRR277179	SAMD00282201	SAMD00282201	Shrew brainstem 3 in naive group	cDNA libraries from the NTS	RNA-Seq	PAIRED	Illumina HiSeq 2500	111975694	33466199373	Suncus murinus murinus

@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR253098	SAMD00255750	SAMD00255750	Suncus_vomiting after surgery	Suncus_vomiting after surgery	RNA-Seq	SINGLE	Illumina NovaSeq 6000	364144818	46246391886	Suncus murinus murinus
+DRR253099	SAMD00255751	SAMD00255751	Suncus_No surgery	Suncus_No surgery	RNA-Seq	SINGLE	Illumina NovaSeq 6000	620030352	78743854704	Suncus murinus murinus

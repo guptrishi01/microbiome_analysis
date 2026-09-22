@@ -1,0 +1,23 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR10572152	SAMN13426726	LIT06P	Patient06_SGB2	Patient06_SGB2	AMPLICON	PAIRED	Illumina MiSeq	103906	62412548	human gut metagenome
+SRR10572157	SAMN13426739	LIT26R	Control26_inhouserelative	Control26_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	74708	44895790	human gut metagenome
+SRR10572161	SAMN13426737	LIT19R	Control19_inhouserelative	Control19_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	84098	50547363	human gut metagenome
+SRR10572163	SAMN13426735	LIT17P	Patient17_SGB2	Patient17_SGB2	AMPLICON	PAIRED	Illumina MiSeq	95326	57270403	human gut metagenome
+SRR10572167	SAMN13426730	LIT12P	Patient12_SGB2	Patient12_SGB2	AMPLICON	PAIRED	Illumina MiSeq	94352	56683864	human gut metagenome
+SRR10572168	SAMN13426733	LIT14R	Control14_inhouserelative	Control14_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	71747	43110274	human gut metagenome
+SRR10572170	SAMN13426728	LIT08P	Patient08_SGB2	Patient08_SGB2	AMPLICON	PAIRED	Illumina MiSeq	100138	60169678	human gut metagenome
+SRR10572165	SAMN13426732	LIT14P	Patient14_SGB2	Patient14_SGB2	AMPLICON	PAIRED	Illumina MiSeq	94232	56615714	human gut metagenome
+SRR10572166	SAMN13426731	LIT13P	Patient13_SGB2	Patient13_SGB2	AMPLICON	PAIRED	Illumina MiSeq	64898	38981435	human gut metagenome
+SRR10572172	SAMN13426718	LIT01P	Patient01_SGB2	Patient01_SGB2	AMPLICON	PAIRED	Illumina MiSeq	94598	56831788	human gut metagenome
+SRR10572162	SAMN13426736	LIT19P	Patient19_SGB2	Patient19_SGB2	AMPLICON	PAIRED	Illumina MiSeq	72401	43487271	human gut metagenome
+SRR10572164	SAMN13426734	LIT16P	Patient16_SGB2	Patient16_SGB2	AMPLICON	PAIRED	Illumina MiSeq	82879	49791187	human gut metagenome
+SRR10572151	SAMN13426727	LIT07P	Patient07_SGB2	Patient07_SGB2	AMPLICON	PAIRED	Illumina MiSeq	78438	47127316	human gut metagenome
+SRR10572154	SAMN13426724	LIT04P	Patient04_SGB2	Patient04_SGB2	AMPLICON	PAIRED	Illumina MiSeq	95917	57629443	human gut metagenome
+SRR10572155	SAMN13426723	LIT03R	Control03_inhouserelative	Control03_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	65112	39134025	human gut metagenome
+SRR10572156	SAMN13426722	LIT03P	Patient03_SGB2	Patient03_SGB2	AMPLICON	PAIRED	Illumina MiSeq	75731	45507118	human gut metagenome
+SRR10572160	SAMN13426721	LIT02R	Control02_inhouserelative	Control02_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	60763	36515875	human gut metagenome
+SRR10572169	SAMN13426729	LIT08R	Control08_inhouserelative	Control08_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	75843	45571926	human gut metagenome
+SRR10572171	SAMN13426719	LIT01R	Control01_inhouserelative	Control01_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	69873	41991780	human gut metagenome
+SRR10572153	SAMN13426725	LIT04R	Control04_inhouserelative	Control04_inhouserelative	AMPLICON	PAIRED	Illumina MiSeq	73288	44041405	human gut metagenome
+SRR10572158	SAMN13426738	LIT26P	Patient26_SGB2	Patient26_SGB2	AMPLICON	PAIRED	Illumina MiSeq	56211	33772857	human gut metagenome
+SRR10572159	SAMN13426720	LIT02P	Patient02_SGB2	Patient02_SGB2	AMPLICON	PAIRED	Illumina MiSeq	100326	60287638	human gut metagenome

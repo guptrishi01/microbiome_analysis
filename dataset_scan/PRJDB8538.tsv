@@ -1,0 +1,83 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR205503	SAMD00178858	SAMD00178858	draft genome of strain ATCC43504 delta mutY-1	draft genome of strain ATCC43504 delta mutY-1	WGS	PAIRED	Illumina MiSeq	268634	146867929	Helicobacter pylori
+DRR205521	SAMD00178876	SAMD00178876	draft genome of strain ATCC43504 delta mutY-20	draft genome of strain ATCC43504 delta mutY-20	WGS	PAIRED	Illumina MiSeq	268356	148858046	Helicobacter pylori
+DRR205530	SAMD00178885	SAMD00178885	draft genome of strain ATCC43504 delta mutY-29	draft genome of strain ATCC43504 delta mutY-29	WGS	PAIRED	Illumina MiSeq	323980	181979116	Helicobacter pylori
+DRR205532	SAMD00178887	SAMD00178887	draft genome of strain ATCC43504 delta mutY-31	draft genome of strain ATCC43504 delta mutY-31	WGS	PAIRED	Illumina MiSeq	378563	207113725	Helicobacter pylori
+DRR205535	SAMD00178890	SAMD00178890	draft genome of strain ATCC43504 delta mutY-34	draft genome of strain ATCC43504 delta mutY-34	WGS	PAIRED	Illumina MiSeq	334502	186055537	Helicobacter pylori
+DRR205553	SAMD00178908	SAMD00178908	draft genome of strain ATCC43504 WT-12	draft genome of strain ATCC43504 WT-12	WGS	PAIRED	Illumina MiSeq	259023	149423301	Helicobacter pylori
+DRR205556	SAMD00178911	SAMD00178911	draft genome of strain ATCC43504 WT-15	draft genome of strain ATCC43504 WT-15	WGS	PAIRED	Illumina MiSeq	396322	220322497	Helicobacter pylori
+DRR205559	SAMD00178914	SAMD00178914	draft genome of strain ATCC43504 WT-18	draft genome of strain ATCC43504 WT-18	WGS	PAIRED	Illumina MiSeq	432002	243202108	Helicobacter pylori
+DRR205560	SAMD00178915	SAMD00178915	draft genome of strain ATCC43504 WT-19	draft genome of strain ATCC43504 WT-19	WGS	PAIRED	Illumina MiSeq	332061	185059047	Helicobacter pylori
+DRR205567	SAMD00178922	SAMD00178922	draft genome of strain ATCC43504 WT-27	draft genome of strain ATCC43504 WT-27	WGS	PAIRED	Illumina MiSeq	410006	206910591	Helicobacter pylori
+DRR205572	SAMD00178927	SAMD00178927	draft genome of strain ATCC43504 WT-32	draft genome of strain ATCC43504 WT-32	WGS	PAIRED	Illumina MiSeq	422932	227305420	Helicobacter pylori
+DRR205574	SAMD00178929	SAMD00178929	draft genome of strain ATCC43504 WT-34	draft genome of strain ATCC43504 WT-34	WGS	PAIRED	Illumina MiSeq	210931	116376529	Helicobacter pylori
+DRR205577	SAMD00178932	SAMD00178932	draft genome of strain ATCC43504 WT-37	draft genome of strain ATCC43504 WT-37	WGS	PAIRED	Illumina MiSeq	313840	165631099	Helicobacter pylori
+DRR205578	SAMD00178933	SAMD00178933	draft genome of strain ATCC43504 WT-38	draft genome of strain ATCC43504 WT-38	WGS	PAIRED	Illumina MiSeq	266310	144976050	Helicobacter pylori
+DRR205505	SAMD00178860	SAMD00178860	draft genome of strain ATCC43504 delta mutY-3	draft genome of strain ATCC43504 delta mutY-3	WGS	PAIRED	Illumina MiSeq	277045	151471472	Helicobacter pylori
+DRR205507	SAMD00178862	SAMD00178862	draft genome of strain ATCC43504 delta mutY-5	draft genome of strain ATCC43504 delta mutY-5	WGS	PAIRED	Illumina MiSeq	241022	131800256	Helicobacter pylori
+DRR205512	SAMD00178867	SAMD00178867	draft genome of strain ATCC43504 delta mutY-10	draft genome of strain ATCC43504 delta mutY-10	WGS	PAIRED	Illumina MiSeq	459132	250304920	Helicobacter pylori
+DRR205514	SAMD00178869	SAMD00178869	draft genome of strain ATCC43504 delta mutY-12	draft genome of strain ATCC43504 delta mutY-12	WGS	PAIRED	Illumina MiSeq	373236	186360687	Helicobacter pylori
+DRR205524	SAMD00178879	SAMD00178879	draft genome of strain ATCC43504 delta mutY-23	draft genome of strain ATCC43504 delta mutY-23	WGS	PAIRED	Illumina MiSeq	342725	187310658	Helicobacter pylori
+DRR205542	SAMD00178897	SAMD00178897	draft genome of strain ATCC43504 WT-1	draft genome of strain ATCC43504 WT-1	WGS	PAIRED	Illumina MiSeq	325276	173523257	Helicobacter pylori
+DRR205545	SAMD00178900	SAMD00178900	draft genome of strain ATCC43504 WT-4	draft genome of strain ATCC43504 WT-4	WGS	PAIRED	Illumina MiSeq	206734	107338979	Helicobacter pylori
+DRR205561	SAMD00178916	SAMD00178916	draft genome of strain ATCC43504 WT-20	draft genome of strain ATCC43504 WT-20	WGS	PAIRED	Illumina MiSeq	387516	217362602	Helicobacter pylori
+DRR205566	SAMD00178921	SAMD00178921	draft genome of strain ATCC43504 WT-26	draft genome of strain ATCC43504 WT-26	WGS	PAIRED	Illumina MiSeq	304035	164787226	Helicobacter pylori
+DRR205576	SAMD00178931	SAMD00178931	draft genome of strain ATCC43504 WT-36	draft genome of strain ATCC43504 WT-36	WGS	PAIRED	Illumina MiSeq	248627	138236612	Helicobacter pylori
+DRR205579	SAMD00178934	SAMD00178934	draft genome of strain ATCC43504 WT-39	draft genome of strain ATCC43504 WT-39	WGS	PAIRED	Illumina MiSeq	260725	146436458	Helicobacter pylori
+DRR205582	SAMD00178937	SAMD00178937	draft genome of strain ATCC43504 WT input	draft genome of strain ATCC43504 WT input	WGS	PAIRED	Illumina MiSeq	239125	133757481	Helicobacter pylori
+DRR205584	SAMD00179460	SAMD00179460	draft genome of strain ATCC43504 WT-24	draft genome of strain ATCC43504 WT-24	WGS	PAIRED	Illumina MiSeq	364697	190447518	Helicobacter pylori
+DRR205515	SAMD00178870	SAMD00178870	draft genome of strain ATCC43504 delta mutY-13	draft genome of strain ATCC43504 delta mutY-13	WGS	PAIRED	Illumina MiSeq	226759	126938524	Helicobacter pylori
+DRR205516	SAMD00178871	SAMD00178871	draft genome of strain ATCC43504 delta mutY-15	draft genome of strain ATCC43504 delta mutY-15	WGS	PAIRED	Illumina MiSeq	219686	122795472	Helicobacter pylori
+DRR205518	SAMD00178873	SAMD00178873	draft genome of strain ATCC43504 delta mutY-17	draft genome of strain ATCC43504 delta mutY-17	WGS	PAIRED	Illumina MiSeq	340097	188625572	Helicobacter pylori
+DRR205519	SAMD00178874	SAMD00178874	draft genome of strain ATCC43504 delta mutY-18	draft genome of strain ATCC43504 delta mutY-18	WGS	PAIRED	Illumina MiSeq	289041	159137917	Helicobacter pylori
+DRR205520	SAMD00178875	SAMD00178875	draft genome of strain ATCC43504 delta mutY-19	draft genome of strain ATCC43504 delta mutY-19	WGS	PAIRED	Illumina MiSeq	227492	122128546	Helicobacter pylori
+DRR205522	SAMD00178877	SAMD00178877	draft genome of strain ATCC43504 delta mutY-21	draft genome of strain ATCC43504 delta mutY-21	WGS	PAIRED	Illumina MiSeq	293703	159351602	Helicobacter pylori
+DRR205526	SAMD00178881	SAMD00178881	draft genome of strain ATCC43504 delta mutY-25	draft genome of strain ATCC43504 delta mutY-25	WGS	PAIRED	Illumina MiSeq	253476	143815222	Helicobacter pylori
+DRR205527	SAMD00178882	SAMD00178882	draft genome of strain ATCC43504 delta mutY-26	draft genome of strain ATCC43504 delta mutY-26	WGS	PAIRED	Illumina MiSeq	246402	136894763	Helicobacter pylori
+DRR205531	SAMD00178886	SAMD00178886	draft genome of strain ATCC43504 delta mutY-30	draft genome of strain ATCC43504 delta mutY-30	WGS	PAIRED	Illumina MiSeq	270607	149196069	Helicobacter pylori
+DRR205537	SAMD00178892	SAMD00178892	draft genome of strain ATCC43504 delta mutY-36	draft genome of strain ATCC43504 delta mutY-36	WGS	PAIRED	Illumina MiSeq	332280	184810438	Helicobacter pylori
+DRR205540	SAMD00178895	SAMD00178895	draft genome of strain ATCC43504 delta mutY-39	draft genome of strain ATCC43504 delta mutY-39	WGS	PAIRED	Illumina MiSeq	267116	147269387	Helicobacter pylori
+DRR205544	SAMD00178899	SAMD00178899	draft genome of strain ATCC43504 WT-3	draft genome of strain ATCC43504 WT-3	WGS	PAIRED	Illumina MiSeq	283691	157598092	Helicobacter pylori
+DRR205548	SAMD00178903	SAMD00178903	draft genome of strain ATCC43504 WT-7	draft genome of strain ATCC43504 WT-7	WGS	PAIRED	Illumina MiSeq	476041	265126583	Helicobacter pylori
+DRR205549	SAMD00178904	SAMD00178904	draft genome of strain ATCC43504 WT-8	draft genome of strain ATCC43504 WT-8	WGS	PAIRED	Illumina MiSeq	289609	161431995	Helicobacter pylori
+DRR205550	SAMD00178905	SAMD00178905	draft genome of strain ATCC43504 WT-9	draft genome of strain ATCC43504 WT-9	WGS	PAIRED	Illumina MiSeq	191640	107338950	Helicobacter pylori
+DRR205551	SAMD00178906	SAMD00178906	draft genome of strain ATCC43504 WT-10	draft genome of strain ATCC43504 WT-10	WGS	PAIRED	Illumina MiSeq	229042	128404583	Helicobacter pylori
+DRR205552	SAMD00178907	SAMD00178907	draft genome of strain ATCC43504 WT-11	draft genome of strain ATCC43504 WT-11	WGS	PAIRED	Illumina MiSeq	217576	124935271	Helicobacter pylori
+DRR205557	SAMD00178912	SAMD00178912	draft genome of strain ATCC43504 WT-16	draft genome of strain ATCC43504 WT-16	WGS	PAIRED	Illumina MiSeq	319773	165176637	Helicobacter pylori
+DRR205569	SAMD00178924	SAMD00178924	draft genome of strain ATCC43504 WT-29	draft genome of strain ATCC43504 WT-29	WGS	PAIRED	Illumina MiSeq	361334	194544043	Helicobacter pylori
+DRR205504	SAMD00178859	SAMD00178859	draft genome of strain ATCC43504 delta mutY-2	draft genome of strain ATCC43504 delta mutY-2	WGS	PAIRED	Illumina MiSeq	284678	154997290	Helicobacter pylori
+DRR205508	SAMD00178863	SAMD00178863	draft genome of strain ATCC43504 delta mutY-6	draft genome of strain ATCC43504 delta mutY-6	WGS	PAIRED	Illumina MiSeq	224588	122961097	Helicobacter pylori
+DRR205517	SAMD00178872	SAMD00178872	draft genome of strain ATCC43504 delta mutY-16	draft genome of strain ATCC43504 delta mutY-16	WGS	PAIRED	Illumina MiSeq	282527	159042668	Helicobacter pylori
+DRR205529	SAMD00178884	SAMD00178884	draft genome of strain ATCC43504 delta mutY-28	draft genome of strain ATCC43504 delta mutY-28	WGS	PAIRED	Illumina MiSeq	201108	114204343	Helicobacter pylori
+DRR205533	SAMD00178888	SAMD00178888	draft genome of strain ATCC43504 delta mutY-32	draft genome of strain ATCC43504 delta mutY-32	WGS	PAIRED	Illumina MiSeq	332795	182547919	Helicobacter pylori
+DRR205534	SAMD00178889	SAMD00178889	draft genome of strain ATCC43504 delta mutY-33	draft genome of strain ATCC43504 delta mutY-33	WGS	PAIRED	Illumina MiSeq	267497	148432363	Helicobacter pylori
+DRR205538	SAMD00178893	SAMD00178893	draft genome of strain ATCC43504 delta mutY-37	draft genome of strain ATCC43504 delta mutY-37	WGS	PAIRED	Illumina MiSeq	232965	128713695	Helicobacter pylori
+DRR205539	SAMD00178894	SAMD00178894	draft genome of strain ATCC43504 delta mutY-38	draft genome of strain ATCC43504 delta mutY-38	WGS	PAIRED	Illumina MiSeq	254233	141078022	Helicobacter pylori
+DRR205547	SAMD00178902	SAMD00178902	draft genome of strain ATCC43504 WT-6	draft genome of strain ATCC43504 WT-6	WGS	PAIRED	Illumina MiSeq	394719	220570673	Helicobacter pylori
+DRR205555	SAMD00178910	SAMD00178910	draft genome of strain ATCC43504 WT-14	draft genome of strain ATCC43504 WT-14	WGS	PAIRED	Illumina MiSeq	318219	176994142	Helicobacter pylori
+DRR205564	SAMD00178919	SAMD00178919	draft genome of strain ATCC43504 WT-23	draft genome of strain ATCC43504 WT-23	WGS	PAIRED	Illumina MiSeq	299332	157162429	Helicobacter pylori
+DRR205565	SAMD00178920	SAMD00178920	draft genome of strain ATCC43504 WT-25	draft genome of strain ATCC43504 WT-25	WGS	PAIRED	Illumina MiSeq	410196	211684345	Helicobacter pylori
+DRR205568	SAMD00178923	SAMD00178923	draft genome of strain ATCC43504 WT-28	draft genome of strain ATCC43504 WT-28	WGS	PAIRED	Illumina MiSeq	391955	195894748	Helicobacter pylori
+DRR205573	SAMD00178928	SAMD00178928	draft genome of strain ATCC43504 WT-33	draft genome of strain ATCC43504 WT-33	WGS	PAIRED	Illumina MiSeq	232425	127497258	Helicobacter pylori
+DRR205580	SAMD00178935	SAMD00178935	draft genome of strain ATCC43504 WT-40	draft genome of strain ATCC43504 WT-40	WGS	PAIRED	Illumina MiSeq	244055	128143366	Helicobacter pylori
+DRR205581	SAMD00178936	SAMD00178936	draft genome of strain ATCC43504 delta mutY input	draft genome of strain ATCC43504 delta mutY input	WGS	PAIRED	Illumina MiSeq	260884	139548354	Helicobacter pylori
+DRR205506	SAMD00178861	SAMD00178861	draft genome of strain ATCC43504 delta mutY-4	draft genome of strain ATCC43504 delta mutY-4	WGS	PAIRED	Illumina MiSeq	233144	127328389	Helicobacter pylori
+DRR205509	SAMD00178864	SAMD00178864	draft genome of strain ATCC43504 delta mutY-7	draft genome of strain ATCC43504 delta mutY-7	WGS	PAIRED	Illumina MiSeq	349998	180916016	Helicobacter pylori
+DRR205510	SAMD00178865	SAMD00178865	draft genome of strain ATCC43504 delta mutY-8	draft genome of strain ATCC43504 delta mutY-8	WGS	PAIRED	Illumina MiSeq	283829	149801067	Helicobacter pylori
+DRR205511	SAMD00178866	SAMD00178866	draft genome of strain ATCC43504 delta mutY-9	draft genome of strain ATCC43504 delta mutY-9	WGS	PAIRED	Illumina MiSeq	259087	137675887	Helicobacter pylori
+DRR205513	SAMD00178868	SAMD00178868	draft genome of strain ATCC43504 delta mutY-11	draft genome of strain ATCC43504 delta mutY-11	WGS	PAIRED	Illumina MiSeq	424184	222290429	Helicobacter pylori
+DRR205523	SAMD00178878	SAMD00178878	draft genome of strain ATCC43504 delta mutY-22	draft genome of strain ATCC43504 delta mutY-22	WGS	PAIRED	Illumina MiSeq	292988	162618790	Helicobacter pylori
+DRR205525	SAMD00178880	SAMD00178880	draft genome of strain ATCC43504 delta mutY-24	draft genome of strain ATCC43504 delta mutY-24	WGS	PAIRED	Illumina MiSeq	309105	168788285	Helicobacter pylori
+DRR205528	SAMD00178883	SAMD00178883	draft genome of strain ATCC43504 delta mutY-27	draft genome of strain ATCC43504 delta mutY-27	WGS	PAIRED	Illumina MiSeq	223394	126487911	Helicobacter pylori
+DRR205536	SAMD00178891	SAMD00178891	draft genome of strain ATCC43504 delta mutY-35	draft genome of strain ATCC43504 delta mutY-35	WGS	PAIRED	Illumina MiSeq	271268	150189676	Helicobacter pylori
+DRR205541	SAMD00178896	SAMD00178896	draft genome of strain ATCC43504 delta mutY-40	draft genome of strain ATCC43504 delta mutY-40	WGS	PAIRED	Illumina MiSeq	294920	160189288	Helicobacter pylori
+DRR205543	SAMD00178898	SAMD00178898	draft genome of strain ATCC43504 WT-2	draft genome of strain ATCC43504 WT-2	WGS	PAIRED	Illumina MiSeq	272009	149888912	Helicobacter pylori
+DRR205546	SAMD00178901	SAMD00178901	draft genome of strain ATCC43504 WT-5	draft genome of strain ATCC43504 WT-5	WGS	PAIRED	Illumina MiSeq	258208	144079458	Helicobacter pylori
+DRR205554	SAMD00178909	SAMD00178909	draft genome of strain ATCC43504 WT-13	draft genome of strain ATCC43504 WT-13	WGS	PAIRED	Illumina MiSeq	306966	173917897	Helicobacter pylori
+DRR205558	SAMD00178913	SAMD00178913	draft genome of strain ATCC43504 WT-17	draft genome of strain ATCC43504 WT-17	WGS	PAIRED	Illumina MiSeq	321364	180241616	Helicobacter pylori
+DRR205562	SAMD00178917	SAMD00178917	draft genome of strain ATCC43504 WT-21	draft genome of strain ATCC43504 WT-21	WGS	PAIRED	Illumina MiSeq	335492	180644237	Helicobacter pylori
+DRR205563	SAMD00178918	SAMD00178918	draft genome of strain ATCC43504 WT-22	draft genome of strain ATCC43504 WT-22	WGS	PAIRED	Illumina MiSeq	356791	188319546	Helicobacter pylori
+DRR205570	SAMD00178925	SAMD00178925	draft genome of strain ATCC43504 WT-30	draft genome of strain ATCC43504 WT-30	WGS	PAIRED	Illumina MiSeq	559191	309828530	Helicobacter pylori
+DRR205571	SAMD00178926	SAMD00178926	draft genome of strain ATCC43504 WT-31	draft genome of strain ATCC43504 WT-31	WGS	PAIRED	Illumina MiSeq	344041	190227861	Helicobacter pylori
+DRR205575	SAMD00178930	SAMD00178930	draft genome of strain ATCC43504 WT-35	draft genome of strain ATCC43504 WT-35	WGS	PAIRED	Illumina MiSeq	213336	120365937	Helicobacter pylori
+DRR205583	SAMD00179459	SAMD00179459	draft genome of strain ATCC43504 delta mutY-14	draft genome of strain ATCC43504 delta mutY-14	WGS	PAIRED	Illumina MiSeq	213098	117099964	Helicobacter pylori

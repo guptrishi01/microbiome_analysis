@@ -1,0 +1,6 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR5684707	SAMEA8535722	E-MTAB-10330:Sample 2	Sample 2	Sample 2_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	181038422	18247783236	Homo sapiens
+ERR5684708	SAMEA8535723	E-MTAB-10330:Sample 3	Sample 3	Sample 3_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	244397612	24628409004	Homo sapiens
+ERR5684709	SAMEA8535724	E-MTAB-10330:Sample 4	Sample 4	Sample 4_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	277408976	27969640428	Homo sapiens
+ERR5684710	SAMEA8535725	E-MTAB-10330:Sample 5	Sample 5	Sample 5_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	228711754	23057519764	Homo sapiens
+ERR5684706	SAMEA8535721	E-MTAB-10330:Sample 1	Sample 1	Sample 1_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	221253512	22297026648	Homo sapiens

@@ -1,0 +1,111 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR33443449	SAMN48355551	US2_29	Metagenome or environmental sample from human gut metagenome	US2_29	AMPLICON	PAIRED	Illumina MiSeq	88092	44046000	human gut metagenome
+SRR33443451	SAMN48355549	US2_27	Metagenome or environmental sample from human gut metagenome	US2_27	AMPLICON	PAIRED	Illumina MiSeq	100959	50479500	human gut metagenome
+SRR33443457	SAMN48355544	US2_22	Metagenome or environmental sample from human gut metagenome	US2_22	AMPLICON	PAIRED	Illumina MiSeq	91360	45680000	human gut metagenome
+SRR33443463	SAMN48355538	US2_16	Metagenome or environmental sample from human gut metagenome	US2_16	AMPLICON	PAIRED	Illumina MiSeq	66283	33141500	human gut metagenome
+SRR33443465	SAMN48355537	US2_15	Metagenome or environmental sample from human gut metagenome	US2_15	AMPLICON	PAIRED	Illumina MiSeq	99251	49625500	human gut metagenome
+SRR33443468	SAMN48355534	US2_12	Metagenome or environmental sample from human gut metagenome	US2_12	AMPLICON	PAIRED	Illumina MiSeq	73036	36518000	human gut metagenome
+SRR33443472	SAMN48355530	US2_08	Metagenome or environmental sample from human gut metagenome	US2_08	AMPLICON	PAIRED	Illumina MiSeq	79598	39799000	human gut metagenome
+SRR33443478	SAMN48355525	US2_03	Metagenome or environmental sample from human gut metagenome	US2_03	AMPLICON	PAIRED	Illumina MiSeq	56178	28089000	human gut metagenome
+SRR33443482	SAMN48355521	US1_16	Metagenome or environmental sample from human urinary tract metagenome	US1_16	AMPLICON	PAIRED	Illumina MiSeq	119277	59638500	human urinary tract metagenome
+SRR33443483	SAMN48355520	US1_15	Metagenome or environmental sample from human urinary tract metagenome	US1_15	AMPLICON	PAIRED	Illumina MiSeq	100686	50343000	human urinary tract metagenome
+SRR33443484	SAMN48355519	US1_14	Metagenome or environmental sample from human urinary tract metagenome	US1_14	AMPLICON	PAIRED	Illumina MiSeq	91295	45647500	human urinary tract metagenome
+SRR33443485	SAMN48355518	US1_13	Metagenome or environmental sample from human urinary tract metagenome	US1_13	AMPLICON	PAIRED	Illumina MiSeq	57486	28743000	human urinary tract metagenome
+SRR33443487	SAMN48355517	US1_12	Metagenome or environmental sample from human urinary tract metagenome	US1_12	AMPLICON	PAIRED	Illumina MiSeq	68752	34376000	human urinary tract metagenome
+SRR33443488	SAMN48355516	US1_11	Metagenome or environmental sample from human urinary tract metagenome	US1_11	AMPLICON	PAIRED	Illumina MiSeq	64772	32386000	human urinary tract metagenome
+SRR33443491	SAMN48355513	US1_08	Metagenome or environmental sample from human urinary tract metagenome	US1_08	AMPLICON	PAIRED	Illumina MiSeq	49013	24506500	human urinary tract metagenome
+SRR33443499	SAMN48355506	US1_01	Metagenome or environmental sample from human urinary tract metagenome	US1_01	AMPLICON	PAIRED	Illumina MiSeq	90464	45232000	human urinary tract metagenome
+SRR33443500	SAMN48355505	Control2_26	Metagenome or environmental sample from human gut metagenome	Control2_26	AMPLICON	PAIRED	Illumina MiSeq	112235	56117500	human gut metagenome
+SRR33443510	SAMN48355496	Control2_17	Metagenome or environmental sample from human gut metagenome	Control2_17	AMPLICON	PAIRED	Illumina MiSeq	100338	50169000	human gut metagenome
+SRR33443512	SAMN48355494	Control2_15	Metagenome or environmental sample from human gut metagenome	Control2_15	AMPLICON	PAIRED	Illumina MiSeq	60705	30352500	human gut metagenome
+SRR33443513	SAMN48355493	Control2_14	Metagenome or environmental sample from human gut metagenome	Control2_14	AMPLICON	PAIRED	Illumina MiSeq	69140	34570000	human gut metagenome
+SRR33443518	SAMN48355488	Control2_09	Metagenome or environmental sample from human gut metagenome	Control2_09	AMPLICON	PAIRED	Illumina MiSeq	76236	38118000	human gut metagenome
+SRR33443521	SAMN48355486	Control2_07	Metagenome or environmental sample from human gut metagenome	Control2_07	AMPLICON	PAIRED	Illumina MiSeq	55538	27769000	human gut metagenome
+SRR33443525	SAMN48355482	Control2_03	Metagenome or environmental sample from human gut metagenome	Control2_03	AMPLICON	PAIRED	Illumina MiSeq	63887	31943500	human gut metagenome
+SRR33443532	SAMN48355476	Control1_19	Metagenome or environmental sample from human urinary tract metagenome	Control1_19	AMPLICON	PAIRED	Illumina MiSeq	91564	45782000	human urinary tract metagenome
+SRR33443536	SAMN48355472	Control1_15	Metagenome or environmental sample from human urinary tract metagenome	Control1_15	AMPLICON	PAIRED	Illumina MiSeq	42395	21197500	human urinary tract metagenome
+SRR33443540	SAMN48355567	PS2_10	Metagenome or environmental sample from human gut metagenome	PS2_10	AMPLICON	PAIRED	Illumina MiSeq	79895	39947500	human gut metagenome
+SRR33443544	SAMN48355563	PS2_06	Metagenome or environmental sample from human gut metagenome	PS2_06	AMPLICON	PAIRED	Illumina MiSeq	66498	33249000	human gut metagenome
+SRR33443551	SAMN48355459	Control1_02	Metagenome or environmental sample from human urinary tract metagenome	Control1_02	AMPLICON	PAIRED	Illumina MiSeq	69776	34888000	human urinary tract metagenome
+SRR33443443	SAMN48355557	PS1_06	Metagenome or environmental sample from human urinary tract metagenome	PS1_06	AMPLICON	PAIRED	Illumina MiSeq	69182	34591000	human urinary tract metagenome
+SRR33443444	SAMN48355556	PS1_05	Metagenome or environmental sample from human urinary tract metagenome	PS1_05	AMPLICON	PAIRED	Illumina MiSeq	63614	31807000	human urinary tract metagenome
+SRR33443448	SAMN48355552	PS1_01	Metagenome or environmental sample from human urinary tract metagenome	PS1_01	AMPLICON	PAIRED	Illumina MiSeq	45250	22625000	human urinary tract metagenome
+SRR33443454	SAMN48355547	US2_25	Metagenome or environmental sample from human gut metagenome	US2_25	AMPLICON	PAIRED	Illumina MiSeq	91781	45890500	human gut metagenome
+SRR33443462	SAMN48355539	US2_17	Metagenome or environmental sample from human gut metagenome	US2_17	AMPLICON	PAIRED	Illumina MiSeq	73827	36913500	human gut metagenome
+SRR33443466	SAMN48355536	US2_14	Metagenome or environmental sample from human gut metagenome	US2_14	AMPLICON	PAIRED	Illumina MiSeq	69325	34662500	human gut metagenome
+SRR33443470	SAMN48355532	US2_10	Metagenome or environmental sample from human gut metagenome	US2_10	AMPLICON	PAIRED	Illumina MiSeq	72426	36213000	human gut metagenome
+SRR33443477	SAMN48355526	US2_04	Metagenome or environmental sample from human gut metagenome	US2_04	AMPLICON	PAIRED	Illumina MiSeq	80159	40079500	human gut metagenome
+SRR33443480	SAMN48355523	US2_01	Metagenome or environmental sample from human gut metagenome	US2_01	AMPLICON	PAIRED	Illumina MiSeq	75303	37651500	human gut metagenome
+SRR33443496	SAMN48355508	US1_03	Metagenome or environmental sample from human urinary tract metagenome	US1_03	AMPLICON	PAIRED	Illumina MiSeq	77965	38982500	human urinary tract metagenome
+SRR33443497	SAMN48355463	Control1_06	Metagenome or environmental sample from human urinary tract metagenome	Control1_06	AMPLICON	PAIRED	Illumina MiSeq	51183	25591500	human urinary tract metagenome
+SRR33443498	SAMN48355507	US1_02	Metagenome or environmental sample from human urinary tract metagenome	US1_02	AMPLICON	PAIRED	Illumina MiSeq	83010	41505000	human urinary tract metagenome
+SRR33443507	SAMN48355498	Control2_19	Metagenome or environmental sample from human gut metagenome	Control2_19	AMPLICON	PAIRED	Illumina MiSeq	89331	44665500	human gut metagenome
+SRR33443511	SAMN48355495	Control2_16	Metagenome or environmental sample from human gut metagenome	Control2_16	AMPLICON	PAIRED	Illumina MiSeq	62845	31422500	human gut metagenome
+SRR33443514	SAMN48355492	Control2_13	Metagenome or environmental sample from human gut metagenome	Control2_13	AMPLICON	PAIRED	Illumina MiSeq	67679	33839500	human gut metagenome
+SRR33443515	SAMN48355491	Control2_12	Metagenome or environmental sample from human gut metagenome	Control2_12	AMPLICON	PAIRED	Illumina MiSeq	79480	39740000	human gut metagenome
+SRR33443516	SAMN48355490	Control2_11	Metagenome or environmental sample from human gut metagenome	Control2_11	AMPLICON	PAIRED	Illumina MiSeq	73959	36979500	human gut metagenome
+SRR33443517	SAMN48355489	Control2_10	Metagenome or environmental sample from human gut metagenome	Control2_10	AMPLICON	PAIRED	Illumina MiSeq	68510	34255000	human gut metagenome
+SRR33443519	SAMN48355461	Control1_04	Metagenome or environmental sample from human urinary tract metagenome	Control1_04	AMPLICON	PAIRED	Illumina MiSeq	62644	31322000	human urinary tract metagenome
+SRR33443524	SAMN48355483	Control2_04	Metagenome or environmental sample from human gut metagenome	Control2_04	AMPLICON	PAIRED	Illumina MiSeq	72057	36028500	human gut metagenome
+SRR33443526	SAMN48355481	Control2_02	Metagenome or environmental sample from human gut metagenome	Control2_02	AMPLICON	PAIRED	Illumina MiSeq	68477	34238500	human gut metagenome
+SRR33443528	SAMN48355479	Control1_22	Metagenome or environmental sample from human urinary tract metagenome	Control1_22	AMPLICON	PAIRED	Illumina MiSeq	96821	48410500	human urinary tract metagenome
+SRR33443531	SAMN48355477	Control1_20	Metagenome or environmental sample from human urinary tract metagenome	Control1_20	AMPLICON	PAIRED	Illumina MiSeq	93623	46811500	human urinary tract metagenome
+SRR33443533	SAMN48355475	Control1_18	Metagenome or environmental sample from human urinary tract metagenome	Control1_18	AMPLICON	PAIRED	Illumina MiSeq	93945	46972500	human urinary tract metagenome
+SRR33443539	SAMN48355469	Control1_12	Metagenome or environmental sample from human urinary tract metagenome	Control1_12	AMPLICON	PAIRED	Illumina MiSeq	49061	24530500	human urinary tract metagenome
+SRR33443545	SAMN48355562	PS2_05	Metagenome or environmental sample from human gut metagenome	PS2_05	AMPLICON	PAIRED	Illumina MiSeq	55840	27920000	human gut metagenome
+SRR33443548	SAMN48355559	PS2_02	Metagenome or environmental sample from human gut metagenome	PS2_02	AMPLICON	PAIRED	Illumina MiSeq	87504	43752000	human gut metagenome
+SRR33443552	SAMN48355458	Control1_01	Metagenome or environmental sample from human urinary tract metagenome	Control1_01	AMPLICON	PAIRED	Illumina MiSeq	69105	34552500	human urinary tract metagenome
+SRR33443445	SAMN48355555	PS1_04	Metagenome or environmental sample from human urinary tract metagenome	PS1_04	AMPLICON	PAIRED	Illumina MiSeq	65112	32556000	human urinary tract metagenome
+SRR33443452	SAMN48355548	US2_26	Metagenome or environmental sample from human gut metagenome	US2_26	AMPLICON	PAIRED	Illumina MiSeq	104118	52059000	human gut metagenome
+SRR33443458	SAMN48355543	US2_21	Metagenome or environmental sample from human gut metagenome	US2_21	AMPLICON	PAIRED	Illumina MiSeq	53215	26607500	human gut metagenome
+SRR33443460	SAMN48355541	US2_19	Metagenome or environmental sample from human gut metagenome	US2_19	AMPLICON	PAIRED	Illumina MiSeq	62339	31169500	human gut metagenome
+SRR33443464	SAMN48355466	Control1_09	Metagenome or environmental sample from human urinary tract metagenome	Control1_09	AMPLICON	PAIRED	Illumina MiSeq	142165	71082500	human urinary tract metagenome
+SRR33443467	SAMN48355535	US2_13	Metagenome or environmental sample from human gut metagenome	US2_13	AMPLICON	PAIRED	Illumina MiSeq	60842	30421000	human gut metagenome
+SRR33443474	SAMN48355528	US2_06	Metagenome or environmental sample from human gut metagenome	US2_06	AMPLICON	PAIRED	Illumina MiSeq	64272	32136000	human gut metagenome
+SRR33443479	SAMN48355524	US2_02	Metagenome or environmental sample from human gut metagenome	US2_02	AMPLICON	PAIRED	Illumina MiSeq	60639	30319500	human gut metagenome
+SRR33443481	SAMN48355522	US1_17	Metagenome or environmental sample from human urinary tract metagenome	US1_17	AMPLICON	PAIRED	Illumina MiSeq	122603	61301500	human urinary tract metagenome
+SRR33443486	SAMN48355464	Control1_07	Metagenome or environmental sample from human urinary tract metagenome	Control1_07	AMPLICON	PAIRED	Illumina MiSeq	68151	34075500	human urinary tract metagenome
+SRR33443490	SAMN48355514	US1_09	Metagenome or environmental sample from human urinary tract metagenome	US1_09	AMPLICON	PAIRED	Illumina MiSeq	63209	31604500	human urinary tract metagenome
+SRR33443492	SAMN48355512	US1_07	Metagenome or environmental sample from human urinary tract metagenome	US1_07	AMPLICON	PAIRED	Illumina MiSeq	93367	46683500	human urinary tract metagenome
+SRR33443493	SAMN48355511	US1_06	Metagenome or environmental sample from human urinary tract metagenome	US1_06	AMPLICON	PAIRED	Illumina MiSeq	48369	24184500	human urinary tract metagenome
+SRR33443495	SAMN48355509	US1_04	Metagenome or environmental sample from human urinary tract metagenome	US1_04	AMPLICON	PAIRED	Illumina MiSeq	41065	20532500	human urinary tract metagenome
+SRR33443501	SAMN48355504	Control2_25	Metagenome or environmental sample from human gut metagenome	Control2_25	AMPLICON	PAIRED	Illumina MiSeq	92650	46325000	human gut metagenome
+SRR33443504	SAMN48355501	Control2_22	Metagenome or environmental sample from human gut metagenome	Control2_22	AMPLICON	PAIRED	Illumina MiSeq	109818	54909000	human gut metagenome
+SRR33443506	SAMN48355499	Control2_20	Metagenome or environmental sample from human gut metagenome	Control2_20	AMPLICON	PAIRED	Illumina MiSeq	66541	33270500	human gut metagenome
+SRR33443520	SAMN48355487	Control2_08	Metagenome or environmental sample from human gut metagenome	Control2_08	AMPLICON	PAIRED	Illumina MiSeq	54864	27432000	human gut metagenome
+SRR33443527	SAMN48355480	Control2_01	Metagenome or environmental sample from human gut metagenome	Control2_01	AMPLICON	PAIRED	Illumina MiSeq	77281	38640500	human gut metagenome
+SRR33443543	SAMN48355564	PS2_07	Metagenome or environmental sample from human gut metagenome	PS2_07	AMPLICON	PAIRED	Illumina MiSeq	92531	46265500	human gut metagenome
+SRR33443546	SAMN48355561	PS2_04	Metagenome or environmental sample from human gut metagenome	PS2_04	AMPLICON	PAIRED	Illumina MiSeq	64545	32272500	human gut metagenome
+SRR33443549	SAMN48355558	PS2_01	Metagenome or environmental sample from human gut metagenome	PS2_01	AMPLICON	PAIRED	Illumina MiSeq	73040	36520000	human gut metagenome
+SRR33443550	SAMN48355468	Control1_11	Metagenome or environmental sample from human urinary tract metagenome	Control1_11	AMPLICON	PAIRED	Illumina MiSeq	49869	24934500	human urinary tract metagenome
+SRR33443450	SAMN48355550	US2_28	Metagenome or environmental sample from human gut metagenome	US2_28	AMPLICON	PAIRED	Illumina MiSeq	112349	56174500	human gut metagenome
+SRR33443453	SAMN48355467	Control1_10	Metagenome or environmental sample from human urinary tract metagenome	Control1_10	AMPLICON	PAIRED	Illumina MiSeq	46832	23416000	human urinary tract metagenome
+SRR33443456	SAMN48355545	US2_23	Metagenome or environmental sample from human gut metagenome	US2_23	AMPLICON	PAIRED	Illumina MiSeq	96775	48387500	human gut metagenome
+SRR33443461	SAMN48355540	US2_18	Metagenome or environmental sample from human gut metagenome	US2_18	AMPLICON	PAIRED	Illumina MiSeq	63587	31793500	human gut metagenome
+SRR33443473	SAMN48355529	US2_07	Metagenome or environmental sample from human gut metagenome	US2_07	AMPLICON	PAIRED	Illumina MiSeq	81136	40568000	human gut metagenome
+SRR33443489	SAMN48355515	US1_10	Metagenome or environmental sample from human urinary tract metagenome	US1_10	AMPLICON	PAIRED	Illumina MiSeq	68914	34457000	human urinary tract metagenome
+SRR33443503	SAMN48355502	Control2_23	Metagenome or environmental sample from human gut metagenome	Control2_23	AMPLICON	PAIRED	Illumina MiSeq	101283	50641500	human gut metagenome
+SRR33443522	SAMN48355485	Control2_06	Metagenome or environmental sample from human gut metagenome	Control2_06	AMPLICON	PAIRED	Illumina MiSeq	59165	29582500	human gut metagenome
+SRR33443529	SAMN48355478	Control1_21	Metagenome or environmental sample from human urinary tract metagenome	Control1_21	AMPLICON	PAIRED	Illumina MiSeq	89712	44856000	human urinary tract metagenome
+SRR33443530	SAMN48355460	Control1_03	Metagenome or environmental sample from human urinary tract metagenome	Control1_03	AMPLICON	PAIRED	Illumina MiSeq	50260	25130000	human urinary tract metagenome
+SRR33443535	SAMN48355473	Control1_16	Metagenome or environmental sample from human urinary tract metagenome	Control1_16	AMPLICON	PAIRED	Illumina MiSeq	55347	27673500	human urinary tract metagenome
+SRR33443537	SAMN48355471	Control1_14	Metagenome or environmental sample from human urinary tract metagenome	Control1_14	AMPLICON	PAIRED	Illumina MiSeq	43411	21705500	human urinary tract metagenome
+SRR33443541	SAMN48355566	PS2_09	Metagenome or environmental sample from human gut metagenome	PS2_09	AMPLICON	PAIRED	Illumina MiSeq	105901	52950500	human gut metagenome
+SRR33443542	SAMN48355565	PS2_08	Metagenome or environmental sample from human gut metagenome	PS2_08	AMPLICON	PAIRED	Illumina MiSeq	71656	35828000	human gut metagenome
+SRR33443547	SAMN48355560	PS2_03	Metagenome or environmental sample from human gut metagenome	PS2_03	AMPLICON	PAIRED	Illumina MiSeq	71075	35537500	human gut metagenome
+SRR33443446	SAMN48355554	PS1_03	Metagenome or environmental sample from human urinary tract metagenome	PS1_03	AMPLICON	PAIRED	Illumina MiSeq	74349	37174500	human urinary tract metagenome
+SRR33443447	SAMN48355553	PS1_02	Metagenome or environmental sample from human urinary tract metagenome	PS1_02	AMPLICON	PAIRED	Illumina MiSeq	59873	29936500	human urinary tract metagenome
+SRR33443455	SAMN48355546	US2_24	Metagenome or environmental sample from human gut metagenome	US2_24	AMPLICON	PAIRED	Illumina MiSeq	79543	39771500	human gut metagenome
+SRR33443459	SAMN48355542	US2_20	Metagenome or environmental sample from human gut metagenome	US2_20	AMPLICON	PAIRED	Illumina MiSeq	75510	37755000	human gut metagenome
+SRR33443469	SAMN48355533	US2_11	Metagenome or environmental sample from human gut metagenome	US2_11	AMPLICON	PAIRED	Illumina MiSeq	70852	35426000	human gut metagenome
+SRR33443471	SAMN48355531	US2_09	Metagenome or environmental sample from human gut metagenome	US2_09	AMPLICON	PAIRED	Illumina MiSeq	71706	35853000	human gut metagenome
+SRR33443475	SAMN48355465	Control1_08	Metagenome or environmental sample from human urinary tract metagenome	Control1_08	AMPLICON	PAIRED	Illumina MiSeq	61214	30607000	human urinary tract metagenome
+SRR33443476	SAMN48355527	US2_05	Metagenome or environmental sample from human gut metagenome	US2_05	AMPLICON	PAIRED	Illumina MiSeq	79027	39513500	human gut metagenome
+SRR33443494	SAMN48355510	US1_05	Metagenome or environmental sample from human urinary tract metagenome	US1_05	AMPLICON	PAIRED	Illumina MiSeq	47059	23529500	human urinary tract metagenome
+SRR33443502	SAMN48355503	Control2_24	Metagenome or environmental sample from human gut metagenome	Control2_24	AMPLICON	PAIRED	Illumina MiSeq	103476	51738000	human gut metagenome
+SRR33443505	SAMN48355500	Control2_21	Metagenome or environmental sample from human gut metagenome	Control2_21	AMPLICON	PAIRED	Illumina MiSeq	76304	38152000	human gut metagenome
+SRR33443508	SAMN48355462	Control1_05	Metagenome or environmental sample from human urinary tract metagenome	Control1_05	AMPLICON	PAIRED	Illumina MiSeq	72698	36349000	human urinary tract metagenome
+SRR33443509	SAMN48355497	Control2_18	Metagenome or environmental sample from human gut metagenome	Control2_18	AMPLICON	PAIRED	Illumina MiSeq	76019	38009500	human gut metagenome
+SRR33443523	SAMN48355484	Control2_05	Metagenome or environmental sample from human gut metagenome	Control2_05	AMPLICON	PAIRED	Illumina MiSeq	63839	31919500	human gut metagenome
+SRR33443534	SAMN48355474	Control1_17	Metagenome or environmental sample from human urinary tract metagenome	Control1_17	AMPLICON	PAIRED	Illumina MiSeq	51434	25717000	human urinary tract metagenome
+SRR33443538	SAMN48355470	Control1_13	Metagenome or environmental sample from human urinary tract metagenome	Control1_13	AMPLICON	PAIRED	Illumina MiSeq	44051	22025500	human urinary tract metagenome

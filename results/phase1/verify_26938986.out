@@ -1,0 +1,66 @@
+
+==================== node
+str-c6.charlotte.edu
+8
+Tue Sep 15 01:06:29 AM EDT 2026
+
+==================== 2. DADA2 conda env (binaries called directly, no activation)
+   PASS  package ‘Rcpp’ was built under R version 4.0.5 
+R version 4.0.3 (2020-10-10) | dada2 1.16.0
+   PASS  cutadapt 3.4
+
+==================== 3. Kraken2 — load the 47 GB index, classify two real V4 sequences
+Loading kraken2/2.1.3
+  Loading requirement: jellyfish/2.3.1
+   Loading database information... done.
+   2 sequences (0.00 Mbp) processed in 0.010s (12.5 Kseq/m, 2.50 Mbp/m).
+     2 sequences classified (100.00%)
+     0 sequences unclassified (0.00%)
+   index load + classify: 109s
+   PASS  kraken2 classified
+         C	asv1_expect_Collinsella	Collinsella aerofaciens (taxid 74426)
+         C	asv2_expect_Enterobacteriaceae	Bacteria (taxid 2)
+   --- mpa-style report (format the table builder must parse)
+         d__Bacteria	2
+         d__Bacteria|p__Actinobacteria	1
+         d__Bacteria|p__Actinobacteria|c__Coriobacteriia	1
+         d__Bacteria|p__Actinobacteria|c__Coriobacteriia|o__Coriobacteriales	1
+         d__Bacteria|p__Actinobacteria|c__Coriobacteriia|o__Coriobacteriales|f__Coriobacteriaceae	1
+         d__Bacteria|p__Actinobacteria|c__Coriobacteriia|o__Coriobacteriales|f__Coriobacteriaceae|g__Collinsella	1
+         d__Bacteria|p__Actinobacteria|c__Coriobacteriia|o__Coriobacteriales|f__Coriobacteriaceae|g__Collinsella|s__Collinsella aerofaciens	1
+   --- standard report
+         100.00	2	0	R	1	root
+         100.00	2	0	R1	131567	  cellular organisms
+         100.00	2	1	D	2	    Bacteria
+          50.00	1	0	D1	1783272	      Terrabacteria group
+          50.00	1	0	P	201174	        Actinobacteria
+          50.00	1	0	C	84998	          Coriobacteriia
+          50.00	1	0	O	84999	            Coriobacteriales
+          50.00	1	0	F	84107	              Coriobacteriaceae
+
+==================== 4. Network from this compute node
+   200 https://www.ebi.ac.uk
+   403 https://sra-download.ncbi.nlm.nih.gov
+   200 https://sra-pub-run-odp.s3.amazonaws.com
+   --- which BS BioProject is the 16S set?
+   PRJNA668357: 135 runs | strategy: WGS,
+        SRR12803040	SAMPLE-10	MIMS Environmental/Metagenome sample from gut metagenome
+        SRR12803041	SAMPLE-90	MIMS Environmental/Metagenome sample from gut metagenome
+        SRR12803044	SAMPLE-87	MIMS Environmental/Metagenome sample from gut metagenome
+   PRJNA668472: 61 runs | strategy: AMPLICON,
+        SRR12806133	Sample10	MIMARKS Specimen sample from gut metagenome
+        SRR12806135	Sample8	MIMARKS Specimen sample from gut metagenome
+        SRR12806137	Sample7	MIMARKS Specimen sample from gut metagenome
+
+==================== 5. SRA download path — one small Ilhan run
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+   PASS  prefetch + fasterq-dump
+         -rw-r--r-- 1 rgupta25 rgupta25 25M Sep 15 01:10 /scratch/rgupta25/rygb/work/verify.26938986/SRR11292124_1.fastq
+         -rw-r--r-- 1 rgupta25 rgupta25 25M Sep 15 01:10 /scratch/rgupta25/rygb/work/verify.26938986/SRR11292124_2.fastq
+         @SRR11292124.1 1 length=151
+         TACGGAGGATCCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGAGCGCAGGCGGATCGTTAAGTCGGTTGTGAAAGATT
+
+==================== summary
+   aqu-fs3:/exports/disk/vol1/scratch/rgupta25  5.0T  973M  5.0T   1% /scratch/rgupta25
+   sacct -j 26938986 --format=JobID,State,Elapsed,MaxRSS,ReqMem

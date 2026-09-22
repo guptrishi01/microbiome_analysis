@@ -1,0 +1,25 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR4157939	SAMEA6824537	a6	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	185216254	55564876200	metagenome
+ERR4157944	SAMEA6824542	a11	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	185113177	55533953100	metagenome
+ERR4157947	SAMEA6824545	a14	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	191113683	57334104900	metagenome
+ERR4157949	SAMEA6824547	a16	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	219963493	65989047900	metagenome
+ERR4157956	SAMEA6824554	a23	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	167576093	50272827900	metagenome
+ERR4157957	SAMEA6824555	a24	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	184791965	55437589500	metagenome
+ERR4157936	SAMEA6824534	a3	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	162929263	48878778900	metagenome
+ERR4157945	SAMEA6824543	a12	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	198739987	59621996100	metagenome
+ERR4157946	SAMEA6824544	a13	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	199231221	59769366300	metagenome
+ERR4157941	SAMEA6824539	a8	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	151861438	45558431400	metagenome
+ERR4157942	SAMEA6824540	a9	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	167280395	50184118500	metagenome
+ERR4157951	SAMEA6824549	a18	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	183813540	55144062000	metagenome
+ERR4157952	SAMEA6824550	a19	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	192198118	57659435400	metagenome
+ERR4157954	SAMEA6824552	a21	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	163520434	49056130200	metagenome
+ERR4157935	SAMEA6824533	a2	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	175365037	52609511100	metagenome
+ERR4157937	SAMEA6824535	a4	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	173714373	52114311900	metagenome
+ERR4157943	SAMEA6824541	a10	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	190604622	57181386600	metagenome
+ERR4157948	SAMEA6824546	a15	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	175710419	52713125700	metagenome
+ERR4157950	SAMEA6824548	a17	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	175547862	52664358600	metagenome
+ERR4157953	SAMEA6824551	a20	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	195814545	58744363500	metagenome
+ERR4157955	SAMEA6824553	a22	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	170736694	51221008200	metagenome
+ERR4157934	SAMEA6824532	a1	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	172136988	51641096400	metagenome
+ERR4157938	SAMEA6824536	a5	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	176242952	52872885600	metagenome
+ERR4157940	SAMEA6824538	a7	Faecal metagenome	unspecified	WGS	PAIRED	Illumina NovaSeq 6000	186791525	56037457500	metagenome

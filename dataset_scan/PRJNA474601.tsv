@@ -1,0 +1,2 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR7266835	SAMN09356045	H group	Metagenome or environmental sample from human gut metagenome	WGS030026-3	WGS	PAIRED	Illumina HiSeq 2500	2256665	1358512330	human gut metagenome

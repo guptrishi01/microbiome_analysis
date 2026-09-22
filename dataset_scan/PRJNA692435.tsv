@@ -1,0 +1,16 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR13443668	SAMN17329808	GSM5022843	ES1, treated by electrical stimulation-rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	50290692	15087207600	Mus musculus
+SRR13443672	SAMN17329800	GSM5022847	IM2, intestinal manipulation model-rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	59526141	17857842300	Mus musculus
+SRR13443666	SAMN17329811	GSM5022841	EA4, treated by electroacupuncture-rep4		RNA-Seq	PAIRED	Illumina NovaSeq 6000	41354571	12406371300	Mus musculus
+SRR13443675	SAMN17329795	GSM5022850	SEA2, treated by sham electroacupuncture-rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	64763978	19429193400	Mus musculus
+SRR13443677	SAMN17329792	GSM5022852	SS1, Sham surgery-rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	45785823	13735746900	Mus musculus
+SRR13443667	SAMN17329809	GSM5022842	EA5, treated by electroacupuncture-rep5		RNA-Seq	PAIRED	Illumina NovaSeq 6000	50725685	15217705500	Mus musculus
+SRR13443673	SAMN17329798	GSM5022848	IM3, intestinal manipulation model-rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	61465986	18439795800	Mus musculus
+SRR13443676	SAMN17329794	GSM5022851	SEA6, treated by sham electroacupuncture-rep6		RNA-Seq	PAIRED	Illumina NovaSeq 6000	54606504	16381951200	Mus musculus
+SRR13443665	SAMN17329812	GSM5022840	EA3, treated by electroacupuncture-rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	53872438	16161731400	Mus musculus
+SRR13443671	SAMN17329802	GSM5022846	IM1, intestinal manipulation model-rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	46293346	13888003800	Mus musculus
+SRR13443674	SAMN17329797	GSM5022849	SEA1, treated by sham electroacupuncture-rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	65636403	19690920900	Mus musculus
+SRR13443669	SAMN17329806	GSM5022844	ES2, treated by electrical stimulation-rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	41082537	12324761100	Mus musculus
+SRR13443670	SAMN17329804	GSM5022845	ES4, treated by electrical stimulation-rep4		RNA-Seq	PAIRED	Illumina NovaSeq 6000	57952706	17385811800	Mus musculus
+SRR13443678	SAMN17329791	GSM5022853	SS3, Sham surgery-rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	51768179	15530453700	Mus musculus
+SRR13443679	SAMN17329789	GSM5022854	SS4, Sham surgery-rep4		RNA-Seq	PAIRED	Illumina NovaSeq 6000	44603146	13380943800	Mus musculus

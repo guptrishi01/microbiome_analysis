@@ -1,0 +1,24 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR11312806	SAMN14381324	MQ190618-72	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-35	AMPLICON	PAIRED	Illumina MiSeq	25668	15452136	human gut metagenome
+SRR11312816	SAMN14381335	MQ190618-106	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-69	AMPLICON	PAIRED	Illumina MiSeq	26467	15933134	human gut metagenome
+SRR11312818	SAMN14381333	MQ190618-98	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-61	AMPLICON	PAIRED	Illumina MiSeq	21338	12845476	human gut metagenome
+SRR11312821	SAMN14381330	MQ190618-87	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-50	AMPLICON	PAIRED	Illumina MiSeq	27572	16598344	human gut metagenome
+SRR11312807	SAMN14381323	MQ190618-71	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-34	AMPLICON	PAIRED	Illumina MiSeq	21071	12684742	human gut metagenome
+SRR11312808	SAMN14381322	MQ190618-68	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-31	AMPLICON	PAIRED	Illumina MiSeq	27700	16675400	human gut metagenome
+SRR11312809	SAMN14381321	MQ190618-67	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-30	AMPLICON	PAIRED	Illumina MiSeq	24098	14506996	human gut metagenome
+SRR11312812	SAMN14381338	MQ190618-110	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-73	AMPLICON	PAIRED	Illumina MiSeq	23130	13924260	human gut metagenome
+SRR11312817	SAMN14381334	MQ190618-99	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-62	AMPLICON	PAIRED	Illumina MiSeq	21417	12893034	human gut metagenome
+SRR11312827	SAMN14381316	MQ190618-56	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-19	AMPLICON	PAIRED	Illumina MiSeq	27499	16554398	human gut metagenome
+SRR11312819	SAMN14381332	MQ190618-95	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-58	AMPLICON	PAIRED	Illumina MiSeq	22603	13607006	human gut metagenome
+SRR11312822	SAMN14381329	MQ190618-86	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-49	AMPLICON	PAIRED	Illumina MiSeq	32071	19306742	human gut metagenome
+SRR11312811	SAMN14381319	MQ190618-59	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-22	AMPLICON	PAIRED	Illumina MiSeq	28958	17432716	human gut metagenome
+SRR11312813	SAMN14381337	MQ190618-109	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-72	AMPLICON	PAIRED	Illumina MiSeq	27579	16602558	human gut metagenome
+SRR11312814	SAMN14381336	MQ190618-107	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-70	AMPLICON	PAIRED	Illumina MiSeq	33956	20441512	human gut metagenome
+SRR11312820	SAMN14381331	MQ190618-94	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-57	AMPLICON	PAIRED	Illumina MiSeq	19232	11577664	human gut metagenome
+SRR11312826	SAMN14381317	MQ190618-57	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-20	AMPLICON	PAIRED	Illumina MiSeq	25533	15370866	human gut metagenome
+SRR11312805	SAMN14381325	MQ190618-74	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-37	AMPLICON	PAIRED	Illumina MiSeq	22238	13387276	human gut metagenome
+SRR11312810	SAMN14381320	MQ190618-60	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-23	AMPLICON	PAIRED	Illumina MiSeq	26292	15827784	human gut metagenome
+SRR11312815	SAMN14381318	MQ190618-58	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-21	AMPLICON	PAIRED	Illumina MiSeq	27390	16488780	human gut metagenome
+SRR11312823	SAMN14381328	MQ190618-83	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-46	AMPLICON	PAIRED	Illumina MiSeq	31364	18881128	human gut metagenome
+SRR11312824	SAMN14381327	MQ190618-82	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-45	AMPLICON	PAIRED	Illumina MiSeq	31374	18887148	human gut metagenome
+SRR11312825	SAMN14381326	MQ190618-75	MIMS Environmental/Metagenome sample from human gut metagenome	LIB-JB-AUH-38	AMPLICON	PAIRED	Illumina MiSeq	27348	16463496	human gut metagenome

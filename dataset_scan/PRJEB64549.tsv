@@ -1,0 +1,10 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR11758145	SAMEA114191866	E-MTAB-13161:Sample 1	Sample 1	Sample 1_s	RNA-Seq	SINGLE	Ion Torrent Proton	11101075	1058498408	Homo sapiens
+ERR11758148	SAMEA114191869	E-MTAB-13161:Sample 4	Sample 4	Sample 4_s	RNA-Seq	SINGLE	Ion Torrent Proton	12673901	1131594878	Homo sapiens
+ERR11758152	SAMEA114191873	E-MTAB-13161:Sample 8	Sample 8	Sample 8_s	RNA-Seq	SINGLE	Ion Torrent Proton	17217716	1352919882	Homo sapiens
+ERR11758147	SAMEA114191868	E-MTAB-13161:Sample 3	Sample 3	Sample 3_s	RNA-Seq	SINGLE	Ion Torrent Proton	10909853	1066939739	Homo sapiens
+ERR11758153	SAMEA114191874	E-MTAB-13161:Sample 9	Sample 9	Sample 9_s	RNA-Seq	SINGLE	Ion Torrent Proton	15259029	1008140941	Homo sapiens
+ERR11758146	SAMEA114191867	E-MTAB-13161:Sample 2	Sample 2	Sample 2_s	RNA-Seq	SINGLE	Ion Torrent Proton	10762650	1148046023	Homo sapiens
+ERR11758149	SAMEA114191870	E-MTAB-13161:Sample 5	Sample 5	Sample 5_s	RNA-Seq	SINGLE	Ion Torrent Proton	9894778	881166218	Homo sapiens
+ERR11758151	SAMEA114191872	E-MTAB-13161:Sample 7	Sample 7	Sample 7_s	RNA-Seq	SINGLE	Ion Torrent Proton	15354223	1231560154	Homo sapiens
+ERR11758150	SAMEA114191871	E-MTAB-13161:Sample 6	Sample 6	Sample 6_s	RNA-Seq	SINGLE	Ion Torrent Proton	15003413	1101608451	Homo sapiens

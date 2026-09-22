@@ -1,0 +1,16 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR35423101	SAMN51396003	GSM9240333	Untreated non-SP GL261 cells, Day 6, rep1	GSM9240333	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26193787	7858136100	Mus musculus
+SRR35423103	SAMN51396005	GSM9240331	Hoechst-CD133+ GL261 cells, PBS + cytokine cocktail treament, Day 6, rep2	GSM9240331	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27394646	8218393800	Mus musculus
+SRR35423106	SAMN51396009	GSM9240327	Hoechst-CD133+ GL261 cells, LGSNP + cytokine cocktail treament, Day 6, rep1	GSM9240327	RNA-Seq	PAIRED	Illumina NovaSeq 6000	22655837	6796751100	Mus musculus
+SRR35423107	SAMN51396010	GSM9240326	Hoechst-CD133+ GL261 cells, DNP + cytokine cocktail treament, Day 6, rep3	GSM9240326	RNA-Seq	PAIRED	Illumina NovaSeq 6000	25824531	7747359300	Mus musculus
+SRR35423113	SAMN51396015	GSM9240321	Hoechst-CD133+ GL261 cells, DGSNP + cytokine cocktail treament, Day 6, rep1	GSM9240321	RNA-Seq	PAIRED	Illumina NovaSeq 6000	10670406	3201121800	Mus musculus
+SRR35423100	SAMN51396002	GSM9240334	Untreated non-SP GL261 cells, Day 6, rep2	GSM9240334	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24495303	7348590900	Mus musculus
+SRR35423102	SAMN51396004	GSM9240332	Hoechst-CD133+ GL261 cells, PBS + cytokine cocktail treament, Day 6, rep3	GSM9240332	RNA-Seq	PAIRED	Illumina NovaSeq 6000	25445995	7633798500	Mus musculus
+SRR35423109	SAMN51396008	GSM9240328	Hoechst-CD133+ GL261 cells, LGSNP + cytokine cocktail treament, Day 6, rep2	GSM9240328	RNA-Seq	PAIRED	Illumina NovaSeq 6000	28289692	8486907600	Mus musculus
+SRR35423099	SAMN51396001	GSM9240335	Untreated non-SP GL261 cells, Day 6, rep3	GSM9240335	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26000989	7800296700	Mus musculus
+SRR35423104	SAMN51396006	GSM9240330	Hoechst-CD133+ GL261 cells, PBS + cytokine cocktail treament, Day 6, rep1	GSM9240330	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24705179	7411553700	Mus musculus
+SRR35423112	SAMN51396014	GSM9240322	Hoechst-CD133+ GL261 cells, DGSNP + cytokine cocktail treament, Day 6, rep2	GSM9240322	RNA-Seq	PAIRED	Illumina NovaSeq 6000	34348945	10304683500	Mus musculus
+SRR35423108	SAMN51396011	GSM9240325	Hoechst-CD133+ GL261 cells, DNP + cytokine cocktail treament, Day 6, rep2	GSM9240325	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24841267	7452380100	Mus musculus
+SRR35423110	SAMN51396012	GSM9240324	Hoechst-CD133+ GL261 cells, DNP + cytokine cocktail treament, Day 6, rep1	GSM9240324	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27899007	8369702100	Mus musculus
+SRR35423111	SAMN51396013	GSM9240323	Hoechst-CD133+ GL261 cells, DGSNP + cytokine cocktail treament, Day 6, rep3	GSM9240323	RNA-Seq	PAIRED	Illumina NovaSeq 6000	27803137	8340941100	Mus musculus
+SRR35423105	SAMN51396007	GSM9240329	Hoechst-CD133+ GL261 cells, LGSNP + cytokine cocktail treament, Day 6, rep3	GSM9240329	RNA-Seq	PAIRED	Illumina NovaSeq 6000	63745861	19123758300	Mus musculus

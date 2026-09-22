@@ -1,0 +1,37 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR12406863	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	6540159	69783401771	Mobula hypostoma
+ERR12406864	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	3372066	57212923958	Mobula hypostoma
+ERR12406866	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	3042053	51129506455	Mobula hypostoma
+ERR12406870	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	0	0	Mobula hypostoma
+ERR12406872	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	0	0	Mobula hypostoma
+ERR12406886	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	60732110	9170548610	Mobula hypostoma
+ERR12406897	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	2050710	309657210	Mobula hypostoma
+ERR12406867	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	3133508	39981666891	Mobula hypostoma
+ERR12406869	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	0	0	Mobula hypostoma
+ERR12406873	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	0	0	Mobula hypostoma
+ERR12406875	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	188893788	28522961988	Mobula hypostoma
+ERR12406879	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	200929290	30340322790	Mobula hypostoma
+ERR12406881	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	203979370	30800884870	Mobula hypostoma
+ERR12406882	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	198286790	29941305290	Mobula hypostoma
+ERR12406890	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	7108198	1073337898	Mobula hypostoma
+ERR12406898	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	2152152	324974952	Mobula hypostoma
+ERR12406865	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	2722410	48765123242	Mobula hypostoma
+ERR12406874	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	0	0	Mobula hypostoma
+ERR12406876	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	193993744	29293055344	Mobula hypostoma
+ERR12406878	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	187737596	28348376996	Mobula hypostoma
+ERR12406887	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	7520538	1135601238	Mobula hypostoma
+ERR12406891	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	624300548	94269382748	Mobula hypostoma
+ERR12406893	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	625974852	94522202652	Mobula hypostoma
+ERR12406868	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	4864131	65280736640	Mobula hypostoma
+ERR12406880	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	202644668	30599344868	Mobula hypostoma
+ERR12406883	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	60986690	9208990190	Mobula hypostoma
+ERR12406884	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	61868592	9342157392	Mobula hypostoma
+ERR12406885	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	61535906	9291921806	Mobula hypostoma
+ERR12406888	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	7601122	1147769422	Mobula hypostoma
+ERR12406892	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	620445532	93687275332	Mobula hypostoma
+ERR12406871	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 ONT WGS	WGS	SINGLE	PromethION	0	0	Mobula hypostoma
+ERR12406877	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Illumina WGS	WGS	PAIRED	Illumina NovaSeq 6000	189339654	28590287754	Mobula hypostoma
+ERR12406889	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	7521366	1135726266	Mobula hypostoma
+ERR12406894	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	621655226	93869939126	Mobula hypostoma
+ERR12406895	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	2033384	307040984	Mobula hypostoma
+ERR12406896	SAMEA115045128	Mh115_2	Mobula hypostoma blood sample	AZ6427 Hi-C	Hi-C	PAIRED	Illumina NovaSeq 6000	2136264	322575864	Mobula hypostoma

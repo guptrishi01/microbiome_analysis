@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR9922280	SAMEA110278100	E-MTAB-11914:DAOY wt empty vector	DAOY wt empty vector	DAOY wt empty vector_p	RNA-Seq	PAIRED	NextSeq 500	25692472	1066237588	Homo sapiens
+ERR9922279	SAMEA110278099	E-MTAB-11914:USP13 KO empty vector	USP13 KO empty vector	USP13 KO empty vector_p	RNA-Seq	PAIRED	NextSeq 500	19491378	808892187	Homo sapiens
+ERR9922278	SAMEA110278098	E-MTAB-11914:DAOY KO empty vector	DAOY KO empty vector	DAOY KO empty vector_p	RNA-Seq	PAIRED	NextSeq 500	23186438	962237177	Homo sapiens
+ERR9922281	SAMEA110278101	E-MTAB-11914:USP13 wt empty vector	USP13 wt empty vector	USP13 wt empty vector_p	RNA-Seq	PAIRED	NextSeq 500	22828304	947374616	Homo sapiens

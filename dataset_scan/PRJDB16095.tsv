@@ -1,0 +1,14 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR487320	SAMD00625132	SAMD00625132	transcriptome-11	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	35490099	10647029700	Homo sapiens
+DRR487318	SAMD00625130	SAMD00625130	transcriptome-09	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	9311740	2793522000	Homo sapiens
+DRR487319	SAMD00625131	SAMD00625131	transcriptome-10	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	35865934	10759780200	Homo sapiens
+DRR487311	SAMD00625123	SAMD00625123	transcriptome-02	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	37230736	11169220800	Homo sapiens
+DRR487313	SAMD00625125	SAMD00625125	transcriptome-04	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	37444414	11233324200	Homo sapiens
+DRR487315	SAMD00625127	SAMD00625127	transcriptome-06	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	37061516	11118454800	Homo sapiens
+DRR487317	SAMD00625129	SAMD00625129	transcriptome-08	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	37043900	11113170000	Homo sapiens
+DRR487322	SAMD00625134	SAMD00625134	transcriptome-13	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	31738232	9521469600	Homo sapiens
+DRR487312	SAMD00625124	SAMD00625124	transcriptome-03	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	37672859	11301857700	Homo sapiens
+DRR487314	SAMD00625126	SAMD00625126	transcriptome-05	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	36745720	11023716000	Homo sapiens
+DRR487316	SAMD00625128	SAMD00625128	transcriptome-07	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	37533646	11260093800	Homo sapiens
+DRR487310	SAMD00625122	SAMD00625122	transcriptome-01	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	37370846	11211253800	Homo sapiens
+DRR487321	SAMD00625133	SAMD00625133	transcriptome-12	NEBNext Ultra II RNA Library Prep Kit for Illumina	RNA-Seq	PAIRED	Illumina NovaSeq 6000	36304294	10891288200	Homo sapiens

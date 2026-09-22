@@ -1,0 +1,40 @@
+=== Assal  primer=GTGYCAGCMGCCGCGGTAA truncLen=200 trimLeft=0  expect 200bp ASVs   Tue Sep 15 02:01:32 AM EDT 2026
+raw files: 71
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       4435 10
+        289 no-515F-anchor
+        170 11
+         53 9
+
+--- cutadapt: remove everything up to and including GTGYCAGCMGCCGCGGTAA
+    trimmed 71 samples
+    retention across samples (reads written / reads processed):
+      Reads with adapters:                   261,281 (95.8%)
+      Reads written (passing filters):       261,281 (95.8%)
+      Reads with adapters:                   208,265 (92.8%)
+      Reads written (passing filters):       208,265 (92.8%)
+      min 53.1%  median 94.6%  max 97.7%
+
+--- DADA2
+samples: 71 
+reads in/out — median retention: 86.9 %
+123210600 total bases in 616053 reads from 3 samples will be used for learning the error rates.
+ASVs before chimera removal: 7896 
+ASVs after chimera removal: 3591 | reads kept: 98.2 %
+ASV length distribution:
+
+ 200 
+3591 
+
+repo ASVs: 3274 | ours: 3591 | shared: 3191 (97.5% of repo, 88.9% of ours)
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== Assal done (rc=0)  Tue Sep 15 02:32:34 AM EDT 2026
+repo had 3274 ASVs for this study
+   total 2.3M
+   -rw-r--r-- 1 rgupta25 rgupta25  1.8K Sep 15 02:32 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25  1.3M Sep 15 02:32 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 1019K Sep 15 02:32 taxForwardReads.txt
+filtered reads kept for Kraken2: 71 files, 1.4G

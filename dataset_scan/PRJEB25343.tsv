@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR2360220	SAMEA104664386	E-MTAB-6562:Sample 1	Sample 1	Sample 1_p	ATAC-seq	PAIRED	NextSeq 500	18648393	2834555736	Homo sapiens
+ERR2360219	SAMEA104664386	E-MTAB-6562:Sample 1	Sample 1	Sample 1_p	ATAC-seq	PAIRED	NextSeq 500	17799785	2705567320	Homo sapiens
+ERR2360221	SAMEA104664386	E-MTAB-6562:Sample 1	Sample 1	Sample 1_p	ATAC-seq	PAIRED	NextSeq 500	18678926	2839196752	Homo sapiens
+ERR2360222	SAMEA104664386	E-MTAB-6562:Sample 1	Sample 1	Sample 1_p	ATAC-seq	PAIRED	NextSeq 500	18582399	2824524648	Homo sapiens

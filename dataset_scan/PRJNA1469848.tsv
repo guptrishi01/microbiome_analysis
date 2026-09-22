@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR38810487	SAMN60385255			Ra2_lib	RNA-Seq	PAIRED	Illumina NovaSeq 6000	25050654	7495899046	
+SRR38810486	SAMN60385256			Ra3_lib	RNA-Seq	PAIRED	Illumina NovaSeq 6000	22627183	6770875472	
+SRR38810488	SAMN60385254			Ra1_lib	RNA-Seq	PAIRED	Illumina NovaSeq 6000	22838682	6834755070	
+SRR38810489	SAMN60385253			NC3_lib	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26544155	7942388164	
+SRR38810490	SAMN60385252			NC2_lib	RNA-Seq	PAIRED	Illumina NovaSeq 6000	22214842	6648452588	
+SRR38810491	SAMN60385251			NC1_lib	RNA-Seq	PAIRED	Illumina NovaSeq 6000	20787248	6220629660	

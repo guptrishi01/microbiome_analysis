@@ -1,0 +1,2 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR150048	SAMEA1501488	Transcriptome E. caproni	Adult mRNA from mice	E. caproni mRNA adult 4w	OTHER	SINGLE	454 GS FLX Titanium	314679	138658471	Echinostoma caproni

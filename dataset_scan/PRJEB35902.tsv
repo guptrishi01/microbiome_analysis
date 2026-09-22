@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR3772423	SAMEA6428704	E-MTAB-8620:U-343 MGa	U-343 MGa	U-343 MGa_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	69799174	14099433148	Homo sapiens
+ERR3772424	SAMEA6428705	E-MTAB-8620:U-343 MGa 31L	U-343 MGa 31L	U-343 MGa 31L_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	40528999	8186857798	Homo sapiens
+ERR3772425	SAMEA6428706	E-MTAB-8620:U-343 MGa Cl2:6	U-343 MGa Cl2:6	U-343 MGa Cl2:6_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	58262975	11769120950	Homo sapiens
+ERR3772422	SAMEA6428703	E-MTAB-8620:U-343 MG	U-343 MG	U-343 MG_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	58342598	11785204796	Homo sapiens

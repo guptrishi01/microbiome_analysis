@@ -1,0 +1,6 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR16828730	SAMEA114771622	648ffad7b330615326e1ba79	7bdf7c3a-509f-44c1-a249-357154bfd05d-asg		RNA-Seq	PAIRED	Illumina NovaSeq X	13543742	2045105042	Rhizostoma pulmo
+ERR16728389	SAMEA114771624	648ffad7b330615326e1ba7b	9aa5e63a-5d21-4a73-a044-1abcdabf9f10-asg		Hi-C	PAIRED	Illumina NovaSeq X	782862970	118212308470	Rhizostoma pulmo
+ERR16728388	SAMEA114771622	648ffad7b330615326e1ba79	7bdf7c3a-509f-44c1-a249-357154bfd05d-asg		Hi-C	PAIRED	Illumina NovaSeq X	620103464	93635623064	Rhizostoma pulmo
+ERR16828728	SAMEA114771624	648ffad7b330615326e1ba7b	9aa5e63a-5d21-4a73-a044-1abcdabf9f10-asg		RNA-Seq	PAIRED	Illumina NovaSeq X	3630018	548132718	Rhizostoma pulmo
+ERR16828729	SAMEA114771622	648ffad7b330615326e1ba79	7bdf7c3a-509f-44c1-a249-357154bfd05d-asg		RNA-Seq	PAIRED	Illumina NovaSeq X	12082216	1824414616	Rhizostoma pulmo

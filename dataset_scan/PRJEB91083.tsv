@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR15170374	SAMEA111426904	62c4f15086eb2e0eb5ebf44a	fd76c965-9d69-42ec-858a-370d56f6daa3-asg	TOL_ASG15596915	WGS	SINGLE	Revio	2083508	15069860680	Chrysaora pentastoma
+ERR15164879	SAMEA111426909	62c4f15186eb2e0eb5ebf44f	7c1fb08b-6cf1-4dfc-be60-5d73e1421e38-asg		Hi-C	PAIRED	Illumina NovaSeq 6000	299117024	45166670624	Chrysaora pentastoma
+ERR15165730	SAMEA111426909	62c4f15186eb2e0eb5ebf44f	7c1fb08b-6cf1-4dfc-be60-5d73e1421e38-asg		WGS	PAIRED	Illumina NovaSeq X	135976516	20532453916	Chrysaora pentastoma
+ERR15170373	SAMEA111426904	62c4f15086eb2e0eb5ebf44a	fd76c965-9d69-42ec-858a-370d56f6daa3-asg	TOL_ASG15596920	WGS	SINGLE	Revio	2818248	19894393606	Chrysaora pentastoma

@@ -1,0 +1,25 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR7456340	SAMN09519345	primate_metagenome_C006	Metagenome or environmental sample from gut metagenome	C006	WGS	PAIRED	Illumina MiSeq	697858	420110516	gut metagenome
+SRR7456353	SAMN09519354	primate_metagenome_C015	Metagenome or environmental sample from gut metagenome	C015	WGS	PAIRED	Illumina MiSeq	1128936	679619472	gut metagenome
+SRR7456355	SAMN09519352	primate_metagenome_C013	Metagenome or environmental sample from gut metagenome	C013	WGS	PAIRED	Illumina MiSeq	887195	534091390	gut metagenome
+SRR7456341	SAMN09519344	primate_metagenome_C005	Metagenome or environmental sample from gut metagenome	C005	WGS	PAIRED	Illumina MiSeq	824421	496301442	gut metagenome
+SRR7456343	SAMN09519346	primate_metagenome_C007	Metagenome or environmental sample from gut metagenome	C007	WGS	PAIRED	Illumina MiSeq	712875	429150750	gut metagenome
+SRR7456345	SAMN09519340	primate_metagenome_C001	Metagenome or environmental sample from gut metagenome	C001	WGS	PAIRED	Illumina MiSeq	837665	504274330	gut metagenome
+SRR7456346	SAMN09519343	primate_metagenome_C004	Metagenome or environmental sample from gut metagenome	C004	WGS	PAIRED	Illumina MiSeq	1002774	603669948	gut metagenome
+SRR7456350	SAMN09519357	primate_metagenome_C018	Metagenome or environmental sample from gut metagenome	C018	WGS	PAIRED	Illumina MiSeq	798493	480692786	gut metagenome
+SRR7456354	SAMN09519353	primate_metagenome_C014	Metagenome or environmental sample from gut metagenome	C014	WGS	PAIRED	Illumina MiSeq	968884	583268168	gut metagenome
+SRR7456357	SAMN09519350	primate_metagenome_C011	Metagenome or environmental sample from gut metagenome	C011	WGS	PAIRED	Illumina MiSeq	1015774	611495948	gut metagenome
+SRR7456336	SAMN09519362	primate_metagenome_C023	Metagenome or environmental sample from gut metagenome	C023	WGS	PAIRED	Illumina MiSeq	1164434	700989268	gut metagenome
+SRR7456339	SAMN09519361	primate_metagenome_C022	Metagenome or environmental sample from gut metagenome	C022	WGS	PAIRED	Illumina MiSeq	1017795	612712590	gut metagenome
+SRR7456348	SAMN09519349	primate_metagenome_C010	Metagenome or environmental sample from gut metagenome	C010	WGS	PAIRED	Illumina MiSeq	956802	575994804	gut metagenome
+SRR7456352	SAMN09519355	primate_metagenome_C016	Metagenome or environmental sample from gut metagenome	C016	WGS	PAIRED	Illumina MiSeq	909725	547654450	gut metagenome
+SRR7456359	SAMN09519358	primate_metagenome_C019	Metagenome or environmental sample from gut metagenome	C019	WGS	PAIRED	Illumina MiSeq	802192	482919584	gut metagenome
+SRR7456338	SAMN09519360	primate_metagenome_C021	Metagenome or environmental sample from gut metagenome	C021	WGS	PAIRED	Illumina MiSeq	1102382	663633964	gut metagenome
+SRR7456342	SAMN09519347	primate_metagenome_C008	Metagenome or environmental sample from gut metagenome	C008	WGS	PAIRED	Illumina MiSeq	816594	491589588	gut metagenome
+SRR7456344	SAMN09519341	primate_metagenome_C002	Metagenome or environmental sample from gut metagenome	C002	WGS	PAIRED	Illumina MiSeq	861164	518420728	gut metagenome
+SRR7456351	SAMN09519356	primate_metagenome_C017	Metagenome or environmental sample from gut metagenome	C017	WGS	PAIRED	Illumina MiSeq	781965	470742930	gut metagenome
+SRR7456356	SAMN09519351	primate_metagenome_C012	Metagenome or environmental sample from gut metagenome	C012	WGS	PAIRED	Illumina MiSeq	1024493	616744786	gut metagenome
+SRR7456358	SAMN09519359	primate_metagenome_C020	Metagenome or environmental sample from gut metagenome	C020	WGS	PAIRED	Illumina MiSeq	946644	569879688	gut metagenome
+SRR7456337	SAMN09519363	primate_metagenome_C024	Metagenome or environmental sample from gut metagenome	C024	WGS	PAIRED	Illumina MiSeq	1128847	679565894	gut metagenome
+SRR7456347	SAMN09519342	primate_metagenome_C003	Metagenome or environmental sample from gut metagenome	C003	WGS	PAIRED	Illumina MiSeq	917002	552035204	gut metagenome
+SRR7456349	SAMN09519348	primate_metagenome_C009	Metagenome or environmental sample from gut metagenome	C009	WGS	PAIRED	Illumina MiSeq	813716	489857032	gut metagenome

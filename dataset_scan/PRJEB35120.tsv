@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR3625080	SAMEA6127400	PDX_8254	PDX_8254	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	21022050	4246454100	Homo sapiens
+ERR3625077	SAMEA6127397	PDX_4112	PDX_4112	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	24470180	4942976360	Homo sapiens
+ERR3625078	SAMEA6127398	PDX_4667	PDX_4667	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	11130955	2248452910	Homo sapiens
+ERR3625079	SAMEA6127399	PDX_5209	PDX_5209	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	20044089	4048905978	Homo sapiens
+ERR3625081	SAMEA6127401	PDX_8	PDX_8	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	42266696	8537872592	Homo sapiens
+ERR3625082	SAMEA6127402	PDX_9	PDX_9	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	30413188	6143463976	Homo sapiens

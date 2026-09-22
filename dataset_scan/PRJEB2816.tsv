@@ -1,0 +1,9 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR065700	SAMEA1466088	MB-B-Met2	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	89199488	17839897600	Homo sapiens
+ERR065699	SAMEA1466092	MB-B-Met1	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	79981119	15996223800	Homo sapiens
+ERR065702	SAMEA1466091	MB-A-Met1	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	76488081	15297616200	Homo sapiens
+ERR065705	SAMEA1466095	MB-D-Met	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	80043593	16008718600	Homo sapiens
+ERR065701	SAMEA1466094	MB-A-Pri	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	80752312	16150462400	Homo sapiens
+ERR065704	SAMEA1466093	MB-D-Pri	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	86218221	17243644200	Homo sapiens
+ERR065698	SAMEA1466090	MB-B-Pri	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	78810368	15762073600	Homo sapiens
+ERR065703	SAMEA1466089	MB-A-Met2	MB-B-Pri	unspecified	OTHER	PAIRED	Illumina HiSeq 2000	90027527	18005505400	Homo sapiens

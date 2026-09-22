@@ -1,0 +1,194 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR36026515	SAMN53214566	C_6	Metagenome or environmental sample from human feces metagenome	C6	AMPLICON	PAIRED	Illumina NovaSeq 6000	133615	60258583	human feces metagenome
+SRR36026523	SAMN53214578	C_18	Metagenome or environmental sample from human feces metagenome	C18	AMPLICON	PAIRED	Illumina NovaSeq 6000	135760	60684193	human feces metagenome
+SRR36026525	SAMN53214576	C_16	Metagenome or environmental sample from human feces metagenome	C16	AMPLICON	PAIRED	Illumina NovaSeq 6000	133915	59859542	human feces metagenome
+SRR36026539	SAMN53214525	A_5	Metagenome or environmental sample from human feces metagenome	A5	AMPLICON	PAIRED	Illumina NovaSeq 6000	139551	62936486	human feces metagenome
+SRR36026542	SAMN53214558	B_18	Metagenome or environmental sample from human feces metagenome	B18	AMPLICON	PAIRED	Illumina NovaSeq 6000	131242	59189258	human feces metagenome
+SRR36026543	SAMN53214580	C_20	Metagenome or environmental sample from human feces metagenome	C20	AMPLICON	PAIRED	Illumina NovaSeq 6000	94578	42276136	human feces metagenome
+SRR36026546	SAMN53214555	B_15	Metagenome or environmental sample from human feces metagenome	B15	AMPLICON	PAIRED	Illumina NovaSeq 6000	144892	65345410	human feces metagenome
+SRR36026547	SAMN53214554	B_14	Metagenome or environmental sample from human feces metagenome	B14	AMPLICON	PAIRED	Illumina NovaSeq 6000	132618	59809871	human feces metagenome
+SRR36026550	SAMN53214620	E_20	Metagenome or environmental sample from human feces metagenome	E20	AMPLICON	PAIRED	Illumina NovaSeq 6000	132557	59242404	human feces metagenome
+SRR36026556	SAMN53214614	E_14	Metagenome or environmental sample from human feces metagenome	E14	AMPLICON	PAIRED	Illumina NovaSeq 6000	146605	65531635	human feces metagenome
+SRR36026560	SAMN53214530	A_10	Metagenome or environmental sample from human feces metagenome	A10	AMPLICON	PAIRED	Illumina NovaSeq 6000	125906	56782591	human feces metagenome
+SRR36026567	SAMN53214604	E_4	Metagenome or environmental sample from human feces metagenome	E4	AMPLICON	PAIRED	Illumina NovaSeq 6000	90334	40378892	human feces metagenome
+SRR36026577	SAMN53214595	D_15	Metagenome or environmental sample from human feces metagenome	D15	AMPLICON	PAIRED	Illumina NovaSeq 6000	88204	39426966	human feces metagenome
+SRR36026579	SAMN53214593	D_13	Metagenome or environmental sample from human feces metagenome	D13	AMPLICON	PAIRED	Illumina NovaSeq 6000	98002	43806566	human feces metagenome
+SRR36026580	SAMN53214592	D_12	Metagenome or environmental sample from human feces metagenome	D12	AMPLICON	PAIRED	Illumina NovaSeq 6000	67967	30381090	human feces metagenome
+SRR36026584	SAMN53214590	D_10	Metagenome or environmental sample from human feces metagenome	D10	AMPLICON	PAIRED	Illumina NovaSeq 6000	163437	73054806	human feces metagenome
+SRR36026585	SAMN53214568	C_8	Metagenome or environmental sample from human feces metagenome	C8	AMPLICON	PAIRED	Illumina NovaSeq 6000	134403	60613645	human feces metagenome
+SRR36026586	SAMN53214551	B_11	Metagenome or environmental sample from human feces metagenome	B11	AMPLICON	PAIRED	Illumina NovaSeq 6000	147675	66600371	human feces metagenome
+SRR36026590	SAMN53214548	B_8	Metagenome or environmental sample from human feces metagenome	B8	AMPLICON	PAIRED	Illumina NovaSeq 6000	130552	58878135	human feces metagenome
+SRR36026597	SAMN53214660	G_20	Metagenome or environmental sample from human feces metagenome	G20	AMPLICON	PAIRED	Illumina NovaSeq 6000	132918	59414049	human feces metagenome
+SRR36026599	SAMN53214661	G_21	Metagenome or environmental sample from human feces metagenome	G21	AMPLICON	PAIRED	Illumina NovaSeq 6000	136263	60909045	human feces metagenome
+SRR36026602	SAMN53214664	G_24	Metagenome or environmental sample from human feces metagenome	G24	AMPLICON	PAIRED	Illumina NovaSeq 6000	134598	60164671	human feces metagenome
+SRR36026614	SAMN53214540	A_20	Metagenome or environmental sample from human feces metagenome	A20	AMPLICON	PAIRED	Illumina NovaSeq 6000	124527	56159937	human feces metagenome
+SRR36026615	SAMN53214523	A_3	Metagenome or environmental sample from human feces metagenome	A3	AMPLICON	PAIRED	Illumina NovaSeq 6000	123584	55734650	human feces metagenome
+SRR36026616	SAMN53214541	B_1	Metagenome or environmental sample from human feces metagenome	B1	AMPLICON	PAIRED	Illumina NovaSeq 6000	127884	57674969	human feces metagenome
+SRR36026618	SAMN53214544	B_4	Metagenome or environmental sample from human feces metagenome	B4	AMPLICON	PAIRED	Illumina NovaSeq 6000	130612	58905469	human feces metagenome
+SRR36026621	SAMN53214655	G_15	Metagenome or environmental sample from human feces metagenome	G15	AMPLICON	PAIRED	Illumina NovaSeq 6000	132068	59033358	human feces metagenome
+SRR36026624	SAMN53214652	G_12	Metagenome or environmental sample from human feces metagenome	G12	AMPLICON	PAIRED	Illumina NovaSeq 6000	143554	64167563	human feces metagenome
+SRR36026625	SAMN53214651	G_11	Metagenome or environmental sample from human feces metagenome	G11	AMPLICON	PAIRED	Illumina NovaSeq 6000	129118	57715114	human feces metagenome
+SRR36026627	SAMN53214650	G_10	Metagenome or environmental sample from human feces metagenome	G10	AMPLICON	PAIRED	Illumina NovaSeq 6000	134103	59942916	human feces metagenome
+SRR36026628	SAMN53214649	G_9	Metagenome or environmental sample from human feces metagenome	G9	AMPLICON	PAIRED	Illumina NovaSeq 6000	140666	62876178	human feces metagenome
+SRR36026631	SAMN53214646	G_6	Metagenome or environmental sample from human feces metagenome	G6	AMPLICON	PAIRED	Illumina NovaSeq 6000	134112	59946750	human feces metagenome
+SRR36026636	SAMN53214641	G_1	Metagenome or environmental sample from human feces metagenome	G1	AMPLICON	PAIRED	Illumina NovaSeq 6000	136771	61136049	human feces metagenome
+SRR36026640	SAMN53214638	F_18	Metagenome or environmental sample from human feces metagenome	F18	AMPLICON	PAIRED	Illumina NovaSeq 6000	132382	59174197	human feces metagenome
+SRR36026641	SAMN53214637	F_17	Metagenome or environmental sample from human feces metagenome	F17	AMPLICON	PAIRED	Illumina NovaSeq 6000	143632	64201815	human feces metagenome
+SRR36026654	SAMN53214625	F_5	Metagenome or environmental sample from human feces metagenome	F5	AMPLICON	PAIRED	Illumina NovaSeq 6000	132996	59448207	human feces metagenome
+SRR36026658	SAMN53214621	F_1	Metagenome or environmental sample from human feces metagenome	F1	AMPLICON	PAIRED	Illumina NovaSeq 6000	125392	56049684	human feces metagenome
+SRR36072334	SAMN53205613	B7	NovaSeq of bacteria: faeces	B7	OTHER	PAIRED	Illumina HiSeq X	21705270	6511581000	human metagenome
+SRR36072335	SAMN53205612	A5	NovaSeq of bacteria: faeces	A5	OTHER	PAIRED	Illumina HiSeq X	19938030	5981409000	human metagenome
+SRR36072338	SAMN53205611	A20	NovaSeq of bacteria: faeces	A20	OTHER	PAIRED	Illumina HiSeq X	22603068	6780920400	human metagenome
+SRR36072339	SAMN53205646	G20	NovaSeq of bacteria: faeces	G20	OTHER	PAIRED	Illumina HiSeq X	20320641	6096192300	human metagenome
+SRR36072342	SAMN53205643	G6	NovaSeq of bacteria: faeces	G6	OTHER	PAIRED	Illumina HiSeq X	22793295	6837988500	human metagenome
+SRR36072343	SAMN53205642	F10	NovaSeq of bacteria: faeces	F10	OTHER	PAIRED	Illumina HiSeq X	19624178	5887253400	human metagenome
+SRR36072356	SAMN53205630	D17	NovaSeq of bacteria: faeces	D17	OTHER	PAIRED	Illumina HiSeq X	21614972	6484491600	human metagenome
+SRR36026511	SAMN53214608	E_8	Metagenome or environmental sample from human feces metagenome	E8	AMPLICON	PAIRED	Illumina NovaSeq 6000	75152	33592616	human feces metagenome
+SRR36026516	SAMN53214585	D_5	Metagenome or environmental sample from human feces metagenome	D5	AMPLICON	PAIRED	Illumina NovaSeq 6000	115381	51574654	human feces metagenome
+SRR36026519	SAMN53214582	D_2	Metagenome or environmental sample from human feces metagenome	D2	AMPLICON	PAIRED	Illumina NovaSeq 6000	128888	57612288	human feces metagenome
+SRR36026520	SAMN53214581	D_1	Metagenome or environmental sample from human feces metagenome	D1	AMPLICON	PAIRED	Illumina NovaSeq 6000	150266	67168321	human feces metagenome
+SRR36026527	SAMN53214574	C_14	Metagenome or environmental sample from human feces metagenome	C14	AMPLICON	PAIRED	Illumina NovaSeq 6000	134177	60510146	human feces metagenome
+SRR36026531	SAMN53214526	A_6	Metagenome or environmental sample from human feces metagenome	A6	AMPLICON	PAIRED	Illumina NovaSeq 6000	131984	59523273	human feces metagenome
+SRR36026534	SAMN53214565	C_5	Metagenome or environmental sample from human feces metagenome	C5	AMPLICON	PAIRED	Illumina NovaSeq 6000	130922	59045008	human feces metagenome
+SRR36026544	SAMN53214557	B_17	Metagenome or environmental sample from human feces metagenome	B17	AMPLICON	PAIRED	Illumina NovaSeq 6000	132252	59644376	human feces metagenome
+SRR36026551	SAMN53214619	E_19	Metagenome or environmental sample from human feces metagenome	E19	AMPLICON	PAIRED	Illumina NovaSeq 6000	110454	49372542	human feces metagenome
+SRR36026569	SAMN53214602	E_2	Metagenome or environmental sample from human feces metagenome	E2	AMPLICON	PAIRED	Illumina NovaSeq 6000	135750	60679748	human feces metagenome
+SRR36026581	SAMN53214591	D_11	Metagenome or environmental sample from human feces metagenome	D11	AMPLICON	PAIRED	Illumina NovaSeq 6000	142433	63667015	human feces metagenome
+SRR36026588	SAMN53214550	B_10	Metagenome or environmental sample from human feces metagenome	B10	AMPLICON	PAIRED	Illumina NovaSeq 6000	133077	60016476	human feces metagenome
+SRR36026595	SAMN53214658	G_18	Metagenome or environmental sample from human feces metagenome	G18	AMPLICON	PAIRED	Illumina NovaSeq 6000	134219	59995249	human feces metagenome
+SRR36026596	SAMN53214659	G_19	Metagenome or environmental sample from human feces metagenome	G19	AMPLICON	PAIRED	Illumina NovaSeq 6000	134627	60176973	human feces metagenome
+SRR36026603	SAMN53214665	G_25	Metagenome or environmental sample from human feces metagenome	G25	AMPLICON	PAIRED	Illumina NovaSeq 6000	134686	60204406	human feces metagenome
+SRR36026604	SAMN53214666	G_26	Metagenome or environmental sample from human feces metagenome	G26	AMPLICON	PAIRED	Illumina NovaSeq 6000	133357	59609665	human feces metagenome
+SRR36026607	SAMN53214669	G_29	Metagenome or environmental sample from human feces metagenome	G29	AMPLICON	PAIRED	Illumina NovaSeq 6000	134431	60090314	human feces metagenome
+SRR36026608	SAMN53214670	G_30	Metagenome or environmental sample from human feces metagenome	G30	AMPLICON	PAIRED	Illumina NovaSeq 6000	132535	59242539	human feces metagenome
+SRR36026609	SAMN53214536	A_16	Metagenome or environmental sample from human feces metagenome	A16	AMPLICON	PAIRED	Illumina NovaSeq 6000	127260	57393487	human feces metagenome
+SRR36026610	SAMN53214671	G_31	Metagenome or environmental sample from human feces metagenome	G31	AMPLICON	PAIRED	Illumina NovaSeq 6000	146909	65667382	human feces metagenome
+SRR36026637	SAMN53214533	A_13	Metagenome or environmental sample from human feces metagenome	A13	AMPLICON	PAIRED	Illumina NovaSeq 6000	129635	58464604	human feces metagenome
+SRR36026643	SAMN53214635	F_15	Metagenome or environmental sample from human feces metagenome	F15	AMPLICON	PAIRED	Illumina NovaSeq 6000	134616	60173053	human feces metagenome
+SRR36026645	SAMN53214633	F_13	Metagenome or environmental sample from human feces metagenome	F13	AMPLICON	PAIRED	Illumina NovaSeq 6000	132114	59054569	human feces metagenome
+SRR36026646	SAMN53214632	F_12	Metagenome or environmental sample from human feces metagenome	F12	AMPLICON	PAIRED	Illumina NovaSeq 6000	142541	63714881	human feces metagenome
+SRR36026647	SAMN53214631	F_11	Metagenome or environmental sample from human feces metagenome	F11	AMPLICON	PAIRED	Illumina NovaSeq 6000	124884	55822243	human feces metagenome
+SRR36026648	SAMN53214532	A_12	Metagenome or environmental sample from human feces metagenome	A12	AMPLICON	PAIRED	Illumina NovaSeq 6000	134693	60745350	human feces metagenome
+SRR36026650	SAMN53214629	F_9	Metagenome or environmental sample from human feces metagenome	F9	AMPLICON	PAIRED	Illumina NovaSeq 6000	134690	60205682	human feces metagenome
+SRR36026651	SAMN53214628	F_8	Metagenome or environmental sample from human feces metagenome	F8	AMPLICON	PAIRED	Illumina NovaSeq 6000	126224	56421488	human feces metagenome
+SRR36072347	SAMN53205638	F17	NovaSeq of bacteria: faeces	F17	OTHER	PAIRED	Illumina HiSeq X	19713238	5913971400	human metagenome
+SRR36072354	SAMN53205632	E15	NovaSeq of bacteria: faeces	E15	OTHER	PAIRED	Illumina HiSeq X	21053297	6315989100	human metagenome
+SRR36072355	SAMN53205631	E3	NovaSeq of bacteria: faeces	E3	OTHER	PAIRED	Illumina HiSeq X	21824983	6547494900	human metagenome
+SRR36072358	SAMN53205628	D15	NovaSeq of bacteria: faeces	D15	OTHER	PAIRED	Illumina HiSeq X	22767614	6830284200	human metagenome
+SRR36072362	SAMN53205625	D14	NovaSeq of bacteria: faeces	D14	OTHER	PAIRED	Illumina HiSeq X	21728898	6518669400	human metagenome
+SRR36072363	SAMN53205624	C16	NovaSeq of bacteria: faeces	C16	OTHER	PAIRED	Illumina HiSeq X	23283984	6985195200	human metagenome
+SRR36072371	SAMN53205608	A15	NovaSeq of bacteria: faeces	A15	OTHER	PAIRED	Illumina HiSeq X	21681006	6504301800	human metagenome
+SRR36026512	SAMN53214607	E_7	Metagenome or environmental sample from human feces metagenome	E7	AMPLICON	PAIRED	Illumina NovaSeq 6000	120042	53658339	human feces metagenome
+SRR36026513	SAMN53214606	E_6	Metagenome or environmental sample from human feces metagenome	E6	AMPLICON	PAIRED	Illumina NovaSeq 6000	96223	43011279	human feces metagenome
+SRR36026518	SAMN53214583	D_3	Metagenome or environmental sample from human feces metagenome	D3	AMPLICON	PAIRED	Illumina NovaSeq 6000	91091	40717479	human feces metagenome
+SRR36026526	SAMN53214575	C_15	Metagenome or environmental sample from human feces metagenome	C15	AMPLICON	PAIRED	Illumina NovaSeq 6000	134872	60824592	human feces metagenome
+SRR36026532	SAMN53214570	C_10	Metagenome or environmental sample from human feces metagenome	C10	AMPLICON	PAIRED	Illumina NovaSeq 6000	136222	61435158	human feces metagenome
+SRR36026536	SAMN53214563	C_3	Metagenome or environmental sample from human feces metagenome	C3	AMPLICON	PAIRED	Illumina NovaSeq 6000	133322	60126572	human feces metagenome
+SRR36026537	SAMN53214562	C_2	Metagenome or environmental sample from human feces metagenome	C2	AMPLICON	PAIRED	Illumina NovaSeq 6000	139569	62942972	human feces metagenome
+SRR36026540	SAMN53214560	B_20	Metagenome or environmental sample from human feces metagenome	B20	AMPLICON	PAIRED	Illumina NovaSeq 6000	133914	60394288	human feces metagenome
+SRR36026541	SAMN53214559	B_19	Metagenome or environmental sample from human feces metagenome	B19	AMPLICON	PAIRED	Illumina NovaSeq 6000	126073	56857998	human feces metagenome
+SRR36026553	SAMN53214617	E_17	Metagenome or environmental sample from human feces metagenome	E17	AMPLICON	PAIRED	Illumina NovaSeq 6000	125476	56087040	human feces metagenome
+SRR36026555	SAMN53214615	E_15	Metagenome or environmental sample from human feces metagenome	E15	AMPLICON	PAIRED	Illumina NovaSeq 6000	125264	55992714	human feces metagenome
+SRR36026564	SAMN53214587	D_7	Metagenome or environmental sample from human feces metagenome	D7	AMPLICON	PAIRED	Illumina NovaSeq 6000	86413	38626424	human feces metagenome
+SRR36026572	SAMN53214600	D_20	Metagenome or environmental sample from human feces metagenome	D20	AMPLICON	PAIRED	Illumina NovaSeq 6000	134448	60097785	human feces metagenome
+SRR36026594	SAMN53214657	G_17	Metagenome or environmental sample from human feces metagenome	G17	AMPLICON	PAIRED	Illumina NovaSeq 6000	134509	60124732	human feces metagenome
+SRR36026600	SAMN53214662	G_22	Metagenome or environmental sample from human feces metagenome	G22	AMPLICON	PAIRED	Illumina NovaSeq 6000	133642	59737679	human feces metagenome
+SRR36026605	SAMN53214667	G_27	Metagenome or environmental sample from human feces metagenome	G27	AMPLICON	PAIRED	Illumina NovaSeq 6000	132411	59186118	human feces metagenome
+SRR36026606	SAMN53214668	G_28	Metagenome or environmental sample from human feces metagenome	G28	AMPLICON	PAIRED	Illumina NovaSeq 6000	133322	59594553	human feces metagenome
+SRR36026612	SAMN53214538	A_18	Metagenome or environmental sample from human feces metagenome	A18	AMPLICON	PAIRED	Illumina NovaSeq 6000	128150	57794024	human feces metagenome
+SRR36026619	SAMN53214543	B_3	Metagenome or environmental sample from human feces metagenome	B3	AMPLICON	PAIRED	Illumina NovaSeq 6000	115497	52087698	human feces metagenome
+SRR36026620	SAMN53214542	B_2	Metagenome or environmental sample from human feces metagenome	B2	AMPLICON	PAIRED	Illumina NovaSeq 6000	129044	58197237	human feces metagenome
+SRR36026622	SAMN53214654	G_14	Metagenome or environmental sample from human feces metagenome	G14	AMPLICON	PAIRED	Illumina NovaSeq 6000	123096	55023545	human feces metagenome
+SRR36026626	SAMN53214534	A_14	Metagenome or environmental sample from human feces metagenome	A14	AMPLICON	PAIRED	Illumina NovaSeq 6000	128533	57966493	human feces metagenome
+SRR36026635	SAMN53214642	G_2	Metagenome or environmental sample from human feces metagenome	G2	AMPLICON	PAIRED	Illumina NovaSeq 6000	133646	59738607	human feces metagenome
+SRR36026649	SAMN53214630	F_10	Metagenome or environmental sample from human feces metagenome	F10	AMPLICON	PAIRED	Illumina NovaSeq 6000	126069	56351977	human feces metagenome
+SRR36026652	SAMN53214627	F_7	Metagenome or environmental sample from human feces metagenome	F7	AMPLICON	PAIRED	Illumina NovaSeq 6000	130281	58235080	human feces metagenome
+SRR36026656	SAMN53214623	F_3	Metagenome or environmental sample from human feces metagenome	F3	AMPLICON	PAIRED	Illumina NovaSeq 6000	126948	56744108	human feces metagenome
+SRR36026659	SAMN53214531	A_11	Metagenome or environmental sample from human feces metagenome	A11	AMPLICON	PAIRED	Illumina NovaSeq 6000	134913	60843917	human feces metagenome
+SRR36072332	SAMN53205615	B17	NovaSeq of bacteria: faeces	B17	OTHER	PAIRED	Illumina HiSeq X	20455490	6136647000	human metagenome
+SRR36072336	SAMN53205648	G5	NovaSeq of bacteria: faeces	G5	OTHER	PAIRED	Illumina HiSeq X	20291806	6087541800	human metagenome
+SRR36072345	SAMN53205640	F14	NovaSeq of bacteria: faeces	F14	OTHER	PAIRED	Illumina HiSeq X	22352695	6705808500	human metagenome
+SRR36072349	SAMN53205610	A6	NovaSeq of bacteria: faeces	A6	OTHER	PAIRED	Illumina HiSeq X	22513963	6754188900	human metagenome
+SRR36072351	SAMN53205635	E8	NovaSeq of bacteria: faeces	E8	OTHER	PAIRED	Illumina HiSeq X	21890354	6567106200	human metagenome
+SRR36072364	SAMN53205623	C13	NovaSeq of bacteria: faeces	C13	OTHER	PAIRED	Illumina HiSeq X	22478338	6743501400	human metagenome
+SRR36072366	SAMN53205621	C14	NovaSeq of bacteria: faeces	C14	OTHER	PAIRED	Illumina HiSeq X	21438504	6431551200	human metagenome
+SRR36072369	SAMN53205618	B15	NovaSeq of bacteria: faeces	B15	OTHER	PAIRED	Illumina HiSeq X	21815358	6544607400	human metagenome
+SRR36072370	SAMN53205617	B14	NovaSeq of bacteria: faeces	B14	OTHER	PAIRED	Illumina HiSeq X	21423419	6427025700	human metagenome
+SRR36072372	SAMN53205607	A4	NovaSeq of bacteria: faeces	A4	OTHER	PAIRED	Illumina HiSeq X	20149235	6044770500	human gut metagenome
+SRR36026517	SAMN53214584	D_4	Metagenome or environmental sample from human feces metagenome	D4	AMPLICON	PAIRED	Illumina NovaSeq 6000	87753	39225334	human feces metagenome
+SRR36026521	SAMN53214527	A_7	Metagenome or environmental sample from human feces metagenome	A7	AMPLICON	PAIRED	Illumina NovaSeq 6000	123620	55751412	human feces metagenome
+SRR36026522	SAMN53214579	C_19	Metagenome or environmental sample from human feces metagenome	C19	AMPLICON	PAIRED	Illumina NovaSeq 6000	135647	60633805	human feces metagenome
+SRR36026529	SAMN53214572	C_12	Metagenome or environmental sample from human feces metagenome	C12	AMPLICON	PAIRED	Illumina NovaSeq 6000	134625	60713050	human feces metagenome
+SRR36026530	SAMN53214571	C_11	Metagenome or environmental sample from human feces metagenome	C11	AMPLICON	PAIRED	Illumina NovaSeq 6000	134008	60436635	human feces metagenome
+SRR36026538	SAMN53214561	C_1	Metagenome or environmental sample from human feces metagenome	C1	AMPLICON	PAIRED	Illumina NovaSeq 6000	143239	64599020	human feces metagenome
+SRR36026545	SAMN53214556	B_16	Metagenome or environmental sample from human feces metagenome	B16	AMPLICON	PAIRED	Illumina NovaSeq 6000	139364	62852011	human feces metagenome
+SRR36026548	SAMN53214553	B_13	Metagenome or environmental sample from human feces metagenome	B13	AMPLICON	PAIRED	Illumina NovaSeq 6000	129709	58497944	human feces metagenome
+SRR36026549	SAMN53214552	B_12	Metagenome or environmental sample from human feces metagenome	B12	AMPLICON	PAIRED	Illumina NovaSeq 6000	140967	63574932	human feces metagenome
+SRR36026552	SAMN53214618	E_18	Metagenome or environmental sample from human feces metagenome	E18	AMPLICON	PAIRED	Illumina NovaSeq 6000	134594	60161950	human feces metagenome
+SRR36026554	SAMN53214616	E_16	Metagenome or environmental sample from human feces metagenome	E16	AMPLICON	PAIRED	Illumina NovaSeq 6000	132935	59421248	human feces metagenome
+SRR36026561	SAMN53214609	E_9	Metagenome or environmental sample from human feces metagenome	E9	AMPLICON	PAIRED	Illumina NovaSeq 6000	133039	59467959	human feces metagenome
+SRR36026565	SAMN53214586	D_6	Metagenome or environmental sample from human feces metagenome	D6	AMPLICON	PAIRED	Illumina NovaSeq 6000	66383	29672991	human feces metagenome
+SRR36026568	SAMN53214603	E_3	Metagenome or environmental sample from human feces metagenome	E3	AMPLICON	PAIRED	Illumina NovaSeq 6000	91587	40939103	human feces metagenome
+SRR36026570	SAMN53214601	E_1	Metagenome or environmental sample from human feces metagenome	E1	AMPLICON	PAIRED	Illumina NovaSeq 6000	140897	62980601	human feces metagenome
+SRR36026573	SAMN53214599	D_19	Metagenome or environmental sample from human feces metagenome	D19	AMPLICON	PAIRED	Illumina NovaSeq 6000	94117	42070043	human feces metagenome
+SRR36026575	SAMN53214597	D_17	Metagenome or environmental sample from human feces metagenome	D17	AMPLICON	PAIRED	Illumina NovaSeq 6000	124214	55522751	human feces metagenome
+SRR36026576	SAMN53214596	D_16	Metagenome or environmental sample from human feces metagenome	D16	AMPLICON	PAIRED	Illumina NovaSeq 6000	90308	40366792	human feces metagenome
+SRR36026583	SAMN53214528	A_8	Metagenome or environmental sample from human feces metagenome	A8	AMPLICON	PAIRED	Illumina NovaSeq 6000	131239	59187545	human feces metagenome
+SRR36026587	SAMN53214524	A_4	Metagenome or environmental sample from human feces metagenome	A4	AMPLICON	PAIRED	Illumina NovaSeq 6000	130006	58631833	human feces metagenome
+SRR36026591	SAMN53214547	B_7	Metagenome or environmental sample from human feces metagenome	B7	AMPLICON	PAIRED	Illumina NovaSeq 6000	128602	57998745	human feces metagenome
+SRR36026592	SAMN53214546	B_6	Metagenome or environmental sample from human feces metagenome	B6	AMPLICON	PAIRED	Illumina NovaSeq 6000	107926	48673843	human feces metagenome
+SRR36026593	SAMN53214656	G_16	Metagenome or environmental sample from human feces metagenome	G16	AMPLICON	PAIRED	Illumina NovaSeq 6000	130026	58120403	human feces metagenome
+SRR36026598	SAMN53214535	A_15	Metagenome or environmental sample from human feces metagenome	A15	AMPLICON	PAIRED	Illumina NovaSeq 6000	135229	60987442	human feces metagenome
+SRR36026601	SAMN53214663	G_23	Metagenome or environmental sample from human feces metagenome	G23	AMPLICON	PAIRED	Illumina NovaSeq 6000	132877	59394245	human feces metagenome
+SRR36026611	SAMN53214537	A_17	Metagenome or environmental sample from human feces metagenome	A17	AMPLICON	PAIRED	Illumina NovaSeq 6000	130953	59059147	human feces metagenome
+SRR36026617	SAMN53214545	B_5	Metagenome or environmental sample from human feces metagenome	B5	AMPLICON	PAIRED	Illumina NovaSeq 6000	131366	59244227	human feces metagenome
+SRR36026623	SAMN53214653	G_13	Metagenome or environmental sample from human feces metagenome	G13	AMPLICON	PAIRED	Illumina NovaSeq 6000	121551	54332360	human feces metagenome
+SRR36026634	SAMN53214643	G_3	Metagenome or environmental sample from human feces metagenome	G3	AMPLICON	PAIRED	Illumina NovaSeq 6000	132654	59295946	human feces metagenome
+SRR36026639	SAMN53214639	F_19	Metagenome or environmental sample from human feces metagenome	F19	AMPLICON	PAIRED	Illumina NovaSeq 6000	135353	60502440	human feces metagenome
+SRR36026642	SAMN53214636	F_16	Metagenome or environmental sample from human feces metagenome	F16	AMPLICON	PAIRED	Illumina NovaSeq 6000	133781	59799756	human feces metagenome
+SRR36026644	SAMN53214634	F_14	Metagenome or environmental sample from human feces metagenome	F14	AMPLICON	PAIRED	Illumina NovaSeq 6000	134030	59911095	human feces metagenome
+SRR36026653	SAMN53214626	F_6	Metagenome or environmental sample from human feces metagenome	F6	AMPLICON	PAIRED	Illumina NovaSeq 6000	127079	56803457	human feces metagenome
+SRR36026661	SAMN53214521	A_1	Metagenome or environmental sample from human feces metagenome	A1	AMPLICON	PAIRED	Illumina NovaSeq 6000	128622	58007136	human feces metagenome
+SRR36072333	SAMN53205614	B2	NovaSeq of bacteria: faeces	B2	OTHER	PAIRED	Illumina HiSeq X	21462405	6438721500	human metagenome
+SRR36072348	SAMN53205637	F18	NovaSeq of bacteria: faeces	F18	OTHER	PAIRED	Illumina HiSeq X	21543438	6463031400	human metagenome
+SRR36072350	SAMN53205636	E6	NovaSeq of bacteria: faeces	E6	OTHER	PAIRED	Illumina HiSeq X	28027942	8408382600	human metagenome
+SRR36072359	SAMN53205627	D7	NovaSeq of bacteria: faeces	D7	OTHER	PAIRED	Illumina HiSeq X	21704302	6511290600	human metagenome
+SRR36072361	SAMN53205626	D8	NovaSeq of bacteria: faeces	D8	OTHER	PAIRED	Illumina HiSeq X	19710566	5913169800	human metagenome
+SRR36026514	SAMN53214567	C_7	Metagenome or environmental sample from human feces metagenome	C7	AMPLICON	PAIRED	Illumina NovaSeq 6000	140495	63361950	human feces metagenome
+SRR36026524	SAMN53214577	C_17	Metagenome or environmental sample from human feces metagenome	C17	AMPLICON	PAIRED	Illumina NovaSeq 6000	133585	59711760	human feces metagenome
+SRR36026528	SAMN53214573	C_13	Metagenome or environmental sample from human feces metagenome	C13	AMPLICON	PAIRED	Illumina NovaSeq 6000	135014	60889713	human feces metagenome
+SRR36026533	SAMN53214569	C_9	Metagenome or environmental sample from human feces metagenome	C9	AMPLICON	PAIRED	Illumina NovaSeq 6000	138984	62680586	human feces metagenome
+SRR36026535	SAMN53214564	C_4	Metagenome or environmental sample from human feces metagenome	C4	AMPLICON	PAIRED	Illumina NovaSeq 6000	131221	59179351	human feces metagenome
+SRR36026557	SAMN53214613	E_13	Metagenome or environmental sample from human feces metagenome	E13	AMPLICON	PAIRED	Illumina NovaSeq 6000	95534	42703439	human feces metagenome
+SRR36026558	SAMN53214612	E_12	Metagenome or environmental sample from human feces metagenome	E12	AMPLICON	PAIRED	Illumina NovaSeq 6000	132064	59032192	human feces metagenome
+SRR36026559	SAMN53214611	E_11	Metagenome or environmental sample from human feces metagenome	E11	AMPLICON	PAIRED	Illumina NovaSeq 6000	133128	59507928	human feces metagenome
+SRR36026562	SAMN53214589	D_9	Metagenome or environmental sample from human feces metagenome	D9	AMPLICON	PAIRED	Illumina NovaSeq 6000	124290	55557295	human feces metagenome
+SRR36026563	SAMN53214588	D_8	Metagenome or environmental sample from human feces metagenome	D8	AMPLICON	PAIRED	Illumina NovaSeq 6000	135589	60608019	human feces metagenome
+SRR36026566	SAMN53214605	E_5	Metagenome or environmental sample from human feces metagenome	E5	AMPLICON	PAIRED	Illumina NovaSeq 6000	77419	34606069	human feces metagenome
+SRR36026571	SAMN53214529	A_9	Metagenome or environmental sample from human feces metagenome	A9	AMPLICON	PAIRED	Illumina NovaSeq 6000	130865	59019134	human feces metagenome
+SRR36026574	SAMN53214598	D_18	Metagenome or environmental sample from human feces metagenome	D18	AMPLICON	PAIRED	Illumina NovaSeq 6000	116443	52049538	human feces metagenome
+SRR36026578	SAMN53214594	D_14	Metagenome or environmental sample from human feces metagenome	D14	AMPLICON	PAIRED	Illumina NovaSeq 6000	88286	39463591	human feces metagenome
+SRR36026582	SAMN53214610	E_10	Metagenome or environmental sample from human feces metagenome	E10	AMPLICON	PAIRED	Illumina NovaSeq 6000	133767	59792974	human feces metagenome
+SRR36026589	SAMN53214549	B_9	Metagenome or environmental sample from human feces metagenome	B9	AMPLICON	PAIRED	Illumina NovaSeq 6000	128803	58089288	human feces metagenome
+SRR36026613	SAMN53214539	A_19	Metagenome or environmental sample from human feces metagenome	A19	AMPLICON	PAIRED	Illumina NovaSeq 6000	129971	58616158	human feces metagenome
+SRR36026629	SAMN53214648	G_8	Metagenome or environmental sample from human feces metagenome	G8	AMPLICON	PAIRED	Illumina NovaSeq 6000	131128	58613004	human feces metagenome
+SRR36026630	SAMN53214647	G_7	Metagenome or environmental sample from human feces metagenome	G7	AMPLICON	PAIRED	Illumina NovaSeq 6000	135478	60557534	human feces metagenome
+SRR36026632	SAMN53214645	G_5	Metagenome or environmental sample from human feces metagenome	G5	AMPLICON	PAIRED	Illumina NovaSeq 6000	128524	57449717	human feces metagenome
+SRR36026633	SAMN53214644	G_4	Metagenome or environmental sample from human feces metagenome	G4	AMPLICON	PAIRED	Illumina NovaSeq 6000	136129	60849183	human feces metagenome
+SRR36026638	SAMN53214640	F_20	Metagenome or environmental sample from human feces metagenome	F20	AMPLICON	PAIRED	Illumina NovaSeq 6000	123164	55053052	human feces metagenome
+SRR36026655	SAMN53214624	F_4	Metagenome or environmental sample from human feces metagenome	F4	AMPLICON	PAIRED	Illumina NovaSeq 6000	125863	56259819	human feces metagenome
+SRR36026657	SAMN53214622	F_2	Metagenome or environmental sample from human feces metagenome	F2	AMPLICON	PAIRED	Illumina NovaSeq 6000	122251	54645843	human feces metagenome
+SRR36026660	SAMN53214522	A_2	Metagenome or environmental sample from human feces metagenome	A2	AMPLICON	PAIRED	Illumina NovaSeq 6000	127536	57517900	human feces metagenome
+SRR36072331	SAMN53205616	B5	NovaSeq of bacteria: faeces	B5	OTHER	PAIRED	Illumina HiSeq X	21092422	6327726600	human metagenome
+SRR36072337	SAMN53205647	G22	NovaSeq of bacteria: faeces	G22	OTHER	PAIRED	Illumina HiSeq X	21733427	6520028100	human metagenome
+SRR36072340	SAMN53205645	G24	NovaSeq of bacteria: faeces	G24	OTHER	PAIRED	Illumina HiSeq X	21858284	6557485200	human metagenome
+SRR36072341	SAMN53205644	G26	NovaSeq of bacteria: faeces	G26	OTHER	PAIRED	Illumina HiSeq X	22492739	6747821700	human metagenome
+SRR36072344	SAMN53205641	F13	NovaSeq of bacteria: faeces	F13	OTHER	PAIRED	Illumina HiSeq X	22711718	6813515400	human metagenome
+SRR36072346	SAMN53205639	F7	NovaSeq of bacteria: faeces	F7	OTHER	PAIRED	Illumina HiSeq X	23873701	7162110300	human metagenome
+SRR36072352	SAMN53205634	E13	NovaSeq of bacteria: faeces	E13	OTHER	PAIRED	Illumina HiSeq X	22034598	6610379400	human metagenome
+SRR36072353	SAMN53205633	E14	NovaSeq of bacteria: faeces	E14	OTHER	PAIRED	Illumina HiSeq X	0	0	human metagenome
+SRR36072357	SAMN53205629	D3	NovaSeq of bacteria: faeces	D3	OTHER	PAIRED	Illumina HiSeq X	20792659	6237797700	human metagenome
+SRR36072360	SAMN53205609	A13	NovaSeq of bacteria: faeces	A13	OTHER	PAIRED	Illumina HiSeq X	22501300	6750390000	human metagenome
+SRR36072365	SAMN53205622	C11	NovaSeq of bacteria: faeces	C11	OTHER	PAIRED	Illumina HiSeq X	21761706	6528511800	human metagenome
+SRR36072367	SAMN53205620	C19	NovaSeq of bacteria: faeces	C19	OTHER	PAIRED	Illumina HiSeq X	22609481	6782844300	human metagenome
+SRR36072368	SAMN53205619	C20	NovaSeq of bacteria: faeces	C20	OTHER	PAIRED	Illumina HiSeq X	21591212	6477363600	human metagenome

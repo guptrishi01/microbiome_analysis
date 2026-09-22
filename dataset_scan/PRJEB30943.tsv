@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR3089099	SAMEA5240985	E-MTAB-7613:Sample 6	Sample 6	Sample 6_p	RNA-Seq	PAIRED	NextSeq 500	47829750	7174462500	Homo sapiens
+ERR3089094	SAMEA5240980	E-MTAB-7613:Sample 1	Sample 1	Sample 1_p	RNA-Seq	PAIRED	NextSeq 500	43530348	6529552200	Homo sapiens
+ERR3089097	SAMEA5240983	E-MTAB-7613:Sample 4	Sample 4	Sample 4_p	RNA-Seq	PAIRED	NextSeq 500	45605990	6840898500	Homo sapiens
+ERR3089098	SAMEA5240984	E-MTAB-7613:Sample 5	Sample 5	Sample 5_p	RNA-Seq	PAIRED	NextSeq 500	114241002	17136150300	Homo sapiens
+ERR3089095	SAMEA5240981	E-MTAB-7613:Sample 2	Sample 2	Sample 2_p	RNA-Seq	PAIRED	NextSeq 500	39390387	5908558050	Homo sapiens
+ERR3089096	SAMEA5240982	E-MTAB-7613:Sample 3	Sample 3	Sample 3_p	RNA-Seq	PAIRED	NextSeq 500	51111610	7666741500	Homo sapiens

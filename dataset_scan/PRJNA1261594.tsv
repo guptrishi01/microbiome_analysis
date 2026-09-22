@@ -1,0 +1,25 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR33546381	SAMN48429499	A4	Metagenome or environmental sample from mouse gut metagenome	A4	AMPLICON	PAIRED	Illumina NovaSeq 6000	499101	149730300	mouse gut metagenome
+SRR33546383	SAMN48429497	A2	Metagenome or environmental sample from mouse gut metagenome	A2	AMPLICON	PAIRED	Illumina NovaSeq 6000	351220	105366000	mouse gut metagenome
+SRR33546392	SAMN48429492	C3	Metagenome or environmental sample from mouse gut metagenome	C3	AMPLICON	PAIRED	Illumina NovaSeq 6000	344666	103399800	mouse gut metagenome
+SRR33546402	SAMN48429500	A5	Metagenome or environmental sample from mouse gut metagenome	A5	AMPLICON	PAIRED	Illumina NovaSeq 6000	353989	106196700	mouse gut metagenome
+SRR33546386	SAMN48429494	C5	Metagenome or environmental sample from mouse gut metagenome	C5	AMPLICON	PAIRED	Illumina NovaSeq 6000	378965	113689500	mouse gut metagenome
+SRR33546389	SAMN48429512	AE5	Metagenome or environmental sample from mouse gut metagenome	AE5	AMPLICON	PAIRED	Illumina NovaSeq 6000	422800	126840000	mouse gut metagenome
+SRR33546391	SAMN48429510	AE3	Metagenome or environmental sample from mouse gut metagenome	AE3	AMPLICON	PAIRED	Illumina NovaSeq 6000	460466	138139800	mouse gut metagenome
+SRR33546398	SAMN48429504	E3	Metagenome or environmental sample from mouse gut metagenome	E3	AMPLICON	PAIRED	Illumina NovaSeq 6000	418430	125529000	mouse gut metagenome
+SRR33546404	SAMN48429490	C1	Metagenome or environmental sample from mouse gut metagenome	C1	AMPLICON	PAIRED	Illumina NovaSeq 6000	373496	112048800	mouse gut metagenome
+SRR33546382	SAMN48429498	A3	Metagenome or environmental sample from mouse gut metagenome	A3	AMPLICON	PAIRED	Illumina NovaSeq 6000	378289	113486700	mouse gut metagenome
+SRR33546395	SAMN48429507	E6	Metagenome or environmental sample from mouse gut metagenome	E6	AMPLICON	PAIRED	Illumina NovaSeq 6000	450861	135258300	mouse gut metagenome
+SRR33546396	SAMN48429506	E5	Metagenome or environmental sample from mouse gut metagenome	E5	AMPLICON	PAIRED	Illumina NovaSeq 6000	319988	95996400	mouse gut metagenome
+SRR33546397	SAMN48429505	E4	Metagenome or environmental sample from mouse gut metagenome	E4	AMPLICON	PAIRED	Illumina NovaSeq 6000	417343	125202900	mouse gut metagenome
+SRR33546384	SAMN48429496	A1	Metagenome or environmental sample from mouse gut metagenome	A1	AMPLICON	PAIRED	Illumina NovaSeq 6000	261132	78339600	mouse gut metagenome
+SRR33546385	SAMN48429495	C6	Metagenome or environmental sample from mouse gut metagenome	C6	AMPLICON	PAIRED	Illumina NovaSeq 6000	444487	133346100	mouse gut metagenome
+SRR33546387	SAMN48429493	C4	Metagenome or environmental sample from mouse gut metagenome	C4	AMPLICON	PAIRED	Illumina NovaSeq 6000	592759	177827700	mouse gut metagenome
+SRR33546388	SAMN48429513	AE6	Metagenome or environmental sample from mouse gut metagenome	AE6	AMPLICON	PAIRED	Illumina NovaSeq 6000	411075	123322500	mouse gut metagenome
+SRR33546390	SAMN48429511	AE4	Metagenome or environmental sample from mouse gut metagenome	AE4	AMPLICON	PAIRED	Illumina NovaSeq 6000	354562	106368600	mouse gut metagenome
+SRR33546393	SAMN48429509	AE2	Metagenome or environmental sample from mouse gut metagenome	AE2	AMPLICON	PAIRED	Illumina NovaSeq 6000	376999	113099700	mouse gut metagenome
+SRR33546394	SAMN48429508	AE1	Metagenome or environmental sample from mouse gut metagenome	AE1	AMPLICON	PAIRED	Illumina NovaSeq 6000	401925	120577500	mouse gut metagenome
+SRR33546399	SAMN48429503	E2	Metagenome or environmental sample from mouse gut metagenome	E2	AMPLICON	PAIRED	Illumina NovaSeq 6000	349709	104912700	mouse gut metagenome
+SRR33546400	SAMN48429502	E1	Metagenome or environmental sample from mouse gut metagenome	E1	AMPLICON	PAIRED	Illumina NovaSeq 6000	364420	109326000	mouse gut metagenome
+SRR33546401	SAMN48429501	A6	Metagenome or environmental sample from mouse gut metagenome	A6	AMPLICON	PAIRED	Illumina NovaSeq 6000	441278	132383400	mouse gut metagenome
+SRR33546403	SAMN48429491	C2	Metagenome or environmental sample from mouse gut metagenome	C2	AMPLICON	PAIRED	Illumina NovaSeq 6000	378921	113676300	mouse gut metagenome

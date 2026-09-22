@@ -1,0 +1,2 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR12256142	SAMEA114590795	fIbeAlm1_blood01	Iberochondrostoma almacai blood	fIbeAlm1_DNA	WGS	SINGLE	PromethION	17311497	95773004889	Iberochondrostoma almacai

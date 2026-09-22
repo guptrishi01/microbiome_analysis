@@ -1,0 +1,20 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR224521	SAMD00221510	SAMD00221510	control Eustoma grandiflorum root_rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	31180615	6298484230	Eustoma russellianum
+DRR224530	SAMD00221519	SAMD00221519	control Eustoma grandiflorum shoot_rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	28235765	5703624530	Eustoma russellianum
+DRR445959	SAMD00582535	SAMD00582535	mycorrhizal roots_rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	25207879	5091991558	Eustoma russellianum
+DRR445961	SAMD00582537	SAMD00582537	mycorrhizal roots_rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	25496948	5150383496	Eustoma russellianum
+DRR224523	SAMD00221512	SAMD00221512	control Eustoma grandiflorum root_rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	28411073	5739036746	Eustoma russellianum
+DRR224525	SAMD00221514	SAMD00221514	Gibberellic acid-treated Eustoma grandiflorum root_rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	23570983	4761338566	Eustoma russellianum
+DRR224528	SAMD00221517	SAMD00221517	Uniconazole P-treated Eustoma grandiflorum root_rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	25626096	5176471392	Eustoma russellianum
+DRR224529	SAMD00221518	SAMD00221518	Uniconazole P-treated Eustoma grandiflorum root_rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	26976555	5449264110	Eustoma russellianum
+DRR445964	SAMD00582540	SAMD00582540	gibberellin-treated mycorrhizal roots_rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	24143753	4877038106	Eustoma russellianum
+DRR445966	SAMD00582542	SAMD00582542	uniconazole-treated mycorrhizal roots_rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	28837054	5825084908	Eustoma russellianum
+DRR445967	SAMD00582543	SAMD00582543	uniconazole-treated mycorrhizal roots_rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	26736778	5400829156	Eustoma russellianum
+DRR224522	SAMD00221511	SAMD00221511	control Eustoma grandiflorum root_rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	29279405	5914439810	Eustoma russellianum
+DRR224527	SAMD00221516	SAMD00221516	Uniconazole P-treated Eustoma grandiflorum root_rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	26307919	5314199638	Eustoma russellianum
+DRR445962	SAMD00582538	SAMD00582538	gibberellin-treated mycorrhizal roots_rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	27810396	5617699992	Eustoma russellianum
+DRR224524	SAMD00221513	SAMD00221513	Gibberellic acid-treated Eustoma grandiflorum root_rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	29355290	5929768580	Eustoma russellianum
+DRR224526	SAMD00221515	SAMD00221515	Gibberellic acid-treated Eustoma grandiflorum root_rep3		RNA-Seq	PAIRED	Illumina NovaSeq 6000	22546775	4554448550	Eustoma russellianum
+DRR445960	SAMD00582536	SAMD00582536	mycorrhizal roots_rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	24292882	4907162164	Eustoma russellianum
+DRR445963	SAMD00582539	SAMD00582539	gibberellin-treated mycorrhizal roots_rep2		RNA-Seq	PAIRED	Illumina NovaSeq 6000	22513683	4547763966	Eustoma russellianum
+DRR445965	SAMD00582541	SAMD00582541	uniconazole-treated mycorrhizal roots_rep1		RNA-Seq	PAIRED	Illumina NovaSeq 6000	24437114	4936297028	Eustoma russellianum

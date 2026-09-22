@@ -1,0 +1,36 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR296060	SAMD00324812	SAMD00324812	non-colonized Lotus japonicus rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	51755280	7763292000	Lotus japonicus
+DRR296062	SAMD00324814	SAMD00324814	colonized Lotus japonicus rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	59028282	8854242300	Lotus japonicus
+DRR296066	SAMD00324818	SAMD00324818	gibberellin-treated colonized Lotus japonicus rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	53677566	8051634900	Lotus japonicus
+DRR296070	SAMD00324822	SAMD00324822	non-colonized Daucus carota rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	46203756	6930563400	Daucus carota subsp. sativus
+DRR296073	SAMD00324825	SAMD00324825	non-colonized Daucus carota rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	53638430	8045764500	Daucus carota subsp. sativus
+DRR296078	SAMD00324830	SAMD00324830	gibberellin-treated colonized Daucus carota rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	47006684	7051002600	Daucus carota subsp. sativus
+DRR296082	SAMD00324834	SAMD00324834	non-colonized Eustoma grandiflorum rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	53154900	7973235000	Eustoma russellianum
+DRR296087	SAMD00324839	SAMD00324839	colonized Eustoma grandiflorum rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	52640130	7896019500	Eustoma russellianum
+DRR296059	SAMD00324811	SAMD00324811	non-colonized Lotus japonicus rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	45414592	6812188800	Lotus japonicus
+DRR296063	SAMD00324815	SAMD00324815	colonized Lotus japonicus rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	57756224	8663433600	Lotus japonicus
+DRR296068	SAMD00324820	SAMD00324820	gibberellin-treated colonized Lotus japonicus rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	52037214	7805582100	Lotus japonicus
+DRR296083	SAMD00324835	SAMD00324835	non-colonized Eustoma grandiflorum rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	55741792	8361268800	Eustoma russellianum
+DRR296085	SAMD00324837	SAMD00324837	non-colonized Eustoma grandiflorum rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	55521272	8328190800	Eustoma russellianum
+DRR296089	SAMD00324841	SAMD00324841	colonized Eustoma grandiflorum rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	59163828	8874574200	Eustoma russellianum
+DRR296090	SAMD00324842	SAMD00324842	gibberellin-treated colonized Eustoma grandiflorum rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	50253792	7538068800	Eustoma russellianum
+DRR296092	SAMD00324844	SAMD00324844	gibberellin-treated colonized Eustoma grandiflorum rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	58224378	8733656700	Eustoma russellianum
+DRR296069	SAMD00324821	SAMD00324821	gibberellin-treated colonized Lotus japonicus rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	44057936	6608690400	Lotus japonicus
+DRR296074	SAMD00324826	SAMD00324826	colonized Daucus carota rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	56564744	8484711600	Daucus carota subsp. sativus
+DRR296084	SAMD00324836	SAMD00324836	non-colonized Eustoma grandiflorum rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	52563156	7884473400	Eustoma russellianum
+DRR296086	SAMD00324838	SAMD00324838	colonized Eustoma grandiflorum rep 1		RNA-Seq	PAIRED	DNBSEQ-G400	58748868	8812330200	Eustoma russellianum
+DRR296088	SAMD00324840	SAMD00324840	colonized Eustoma grandiflorum rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	65257764	9788664600	Eustoma russellianum
+DRR296091	SAMD00324843	SAMD00324843	gibberellin-treated colonized Eustoma grandiflorum rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	56208358	8431253700	Eustoma russellianum
+DRR296065	SAMD00324817	SAMD00324817	colonized Lotus japonicus rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	55068898	8260334700	Lotus japonicus
+DRR296072	SAMD00324824	SAMD00324824	non-colonized Daucus carota rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	62263816	9339572400	Daucus carota subsp. sativus
+DRR296076	SAMD00324828	SAMD00324828	colonized Daucus carota rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	62304142	9345621300	Daucus carota subsp. sativus
+DRR296080	SAMD00324832	SAMD00324832	gibberellin-treated colonized Daucus carota rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	58982096	8847314400	Daucus carota subsp. sativus
+DRR296081	SAMD00324833	SAMD00324833	gibberellin-treated colonized Daucus carota rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	78522794	11778419100	Daucus carota subsp. sativus
+DRR296061	SAMD00324813	SAMD00324813	non-colonized Lotus japonicus rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	66789278	10018391700	Lotus japonicus
+DRR296064	SAMD00324816	SAMD00324816	colonized Lotus japonicus rep 3		RNA-Seq	PAIRED	DNBSEQ-G400	56564102	8484615300	Lotus japonicus
+DRR296067	SAMD00324819	SAMD00324819	gibberellin-treated colonized Lotus japonicus rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	51613326	7741998900	Lotus japonicus
+DRR296071	SAMD00324823	SAMD00324823	non-colonized Daucus carota rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	56754424	8513163600	Daucus carota subsp. sativus
+DRR296075	SAMD00324827	SAMD00324827	colonized Daucus carota rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	59276514	8891477100	Daucus carota subsp. sativus
+DRR296077	SAMD00324829	SAMD00324829	colonized Daucus carota rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	62600676	9390101400	Daucus carota subsp. sativus
+DRR296079	SAMD00324831	SAMD00324831	gibberellin-treated colonized Daucus carota rep 2		RNA-Seq	PAIRED	DNBSEQ-G400	66112352	9916852800	Daucus carota subsp. sativus
+DRR296093	SAMD00324845	SAMD00324845	gibberellin-treated colonized Eustoma grandiflorum rep 4		RNA-Seq	PAIRED	DNBSEQ-G400	58709584	8806437600	Eustoma russellianum

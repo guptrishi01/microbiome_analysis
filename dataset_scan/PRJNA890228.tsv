@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR21891146	SAMN31269929	GSM6635113	hippocampus, naïve, rep2	GSM6635113	RNA-Seq	PAIRED	Illumina HiSeq 4000	22395137	6718541100	Mus musculus
+SRR21891145	SAMN31269928	GSM6635114	hippocampus, surgery, day 3, rep1	GSM6635114	RNA-Seq	PAIRED	Illumina HiSeq 4000	24258951	7277685300	Mus musculus
+SRR21891144	SAMN31269927	GSM6635115	hippocampus, surgery, day 3, rep2	GSM6635115	RNA-Seq	PAIRED	Illumina HiSeq 4000	22895016	6868504800	Mus musculus
+SRR21891147	SAMN31269930	GSM6635112	hippocampus, naïve, rep1	GSM6635112	RNA-Seq	PAIRED	Illumina HiSeq 4000	24228477	7268543100	Mus musculus

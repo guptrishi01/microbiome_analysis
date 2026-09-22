@@ -1,0 +1,10 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR14995143	SAMEA117114990	NSJ_pancreas	NSJ_pancreas		RNA-Seq	PAIRED	Illumina HiSeq 2500	47582212	7137331800	Ginglymostoma cirratum
+ERR14995149	SAMEA117114989	NSJ_olfbulb	NSJ_olfbulb		RNA-Seq	PAIRED	Illumina HiSeq 2500	49941276	7491191400	Ginglymostoma cirratum
+ERR14995271	SAMEA117114995	NSJ_WBC	NSJ_WBC		RNA-Seq	PAIRED	Illumina HiSeq 2500	44058228	6608734200	Ginglymostoma cirratum
+ERR14994992	SAMEA117114988	NSJ_muscle	NSJ_muscle		RNA-Seq	PAIRED	Illumina HiSeq 2500	61527338	9229100700	Ginglymostoma cirratum
+ERR14994437	SAMEA117114985	NSJ_epigonal	NSJ_epigonal		RNA-Seq	PAIRED	Illumina HiSeq 2500	55266710	8290006500	Ginglymostoma cirratum
+ERR14995012	SAMEA117114991	NSJ_spleen	NSJ_spleen		RNA-Seq	PAIRED	Illumina HiSeq 2500	43593388	6539008200	Ginglymostoma cirratum
+ERR14994439	SAMEA117114986	NSJ_gill	NSJ_gill		RNA-Seq	PAIRED	Illumina HiSeq 2500	45376910	6806536500	Ginglymostoma cirratum
+ERR14994443	SAMEA117114987	NSJ_liver	NSJ_liver		RNA-Seq	PAIRED	Illumina HiSeq 2500	53319808	7997971200	Ginglymostoma cirratum
+ERR13994825	SAMEA117114984	NSJ_brain	NSJ_brain		RNA-Seq	PAIRED	Illumina HiSeq 2500	48024830	7203724500	Ginglymostoma cirratum

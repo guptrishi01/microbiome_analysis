@@ -1,0 +1,24 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR207371	SAMD00201755	SAMD00201755	Illumina MiSeq paired end sequencing of UMI4		AMPLICON	PAIRED	Illumina MiSeq	1729091	1040912782	feces metagenome
+DRR207372	SAMD00201756	SAMD00201756	Illumina MiSeq paired end sequencing of UMI5		AMPLICON	PAIRED	Illumina MiSeq	1354870	815631740	feces metagenome
+DRR207373	SAMD00201757	SAMD00201757	Illumina MiSeq paired end sequencing of UMI6		AMPLICON	PAIRED	Illumina MiSeq	72013	43351826	feces metagenome
+DRR207374	SAMD00201758	SAMD00201758	Illumina MiSeq paired end sequencing of UMI7		AMPLICON	PAIRED	Illumina MiSeq	59584	35869568	feces metagenome
+DRR207376	SAMD00201760	SAMD00201760	Illumina MiSeq paired end sequencing of UMI9		AMPLICON	PAIRED	Illumina MiSeq	59938	36082676	feces metagenome
+DRR207377	SAMD00201761	SAMD00201761	Illumina MiSeq paired end sequencing of UMI10		AMPLICON	PAIRED	Illumina MiSeq	72262	43501724	feces metagenome
+DRR207379	SAMD00201763	SAMD00201763	Illumina MiSeq paired end sequencing of UMI12		AMPLICON	PAIRED	Illumina MiSeq	71376	42968352	feces metagenome
+DRR207386	SAMD00201770	SAMD00201770	Illumina MiSeq paired end sequencing of UMI19		AMPLICON	PAIRED	Illumina MiSeq	77470	46636940	feces metagenome
+DRR207370	SAMD00201754	SAMD00201754	Illumina MiSeq paired end sequencing of UMI3		AMPLICON	PAIRED	Illumina MiSeq	980474	590245348	feces metagenome
+DRR207368	SAMD00201752	SAMD00201752	Illumina MiSeq paired end sequencing of UMI1		AMPLICON	PAIRED	Illumina MiSeq	226513	136360826	feces metagenome
+DRR207369	SAMD00201753	SAMD00201753	Illumina MiSeq paired end sequencing of UMI2		AMPLICON	PAIRED	Illumina MiSeq	721832	434542864	feces metagenome
+DRR207383	SAMD00201767	SAMD00201767	Illumina MiSeq paired end sequencing of UMI16		AMPLICON	PAIRED	Illumina MiSeq	58657	35311514	feces metagenome
+DRR207375	SAMD00201759	SAMD00201759	Illumina MiSeq paired end sequencing of UMI8		AMPLICON	PAIRED	Illumina MiSeq	160465	96599930	feces metagenome
+DRR207378	SAMD00201762	SAMD00201762	Illumina MiSeq paired end sequencing of UMI11		AMPLICON	PAIRED	Illumina MiSeq	97	58394	feces metagenome
+DRR207380	SAMD00201764	SAMD00201764	Illumina MiSeq paired end sequencing of UMI13		AMPLICON	PAIRED	Illumina MiSeq	283915	170916830	feces metagenome
+DRR207381	SAMD00201765	SAMD00201765	Illumina MiSeq paired end sequencing of UMI14		AMPLICON	PAIRED	Illumina MiSeq	99955	60172910	feces metagenome
+DRR207382	SAMD00201766	SAMD00201766	Illumina MiSeq paired end sequencing of UMI15		AMPLICON	PAIRED	Illumina MiSeq	69596	41896792	feces metagenome
+DRR207384	SAMD00201768	SAMD00201768	Illumina MiSeq paired end sequencing of UMI17		AMPLICON	PAIRED	Illumina MiSeq	111405	67065810	feces metagenome
+DRR207385	SAMD00201769	SAMD00201769	Illumina MiSeq paired end sequencing of UMI18		AMPLICON	PAIRED	Illumina MiSeq	46879	28221158	feces metagenome
+DRR207387	SAMD00201771	SAMD00201771	Illumina MiSeq paired end sequencing of UMI20		AMPLICON	PAIRED	Illumina MiSeq	62448	37593696	feces metagenome
+DRR207388	SAMD00201772	SAMD00201772	Illumina MiSeq paired end sequencing of UMI21		AMPLICON	PAIRED	Illumina MiSeq	125	75250	feces metagenome
+DRR207389	SAMD00201773	SAMD00201773	Illumina MiSeq paired end sequencing of UMI22		AMPLICON	PAIRED	Illumina MiSeq	221399	133282198	feces metagenome
+DRR207390	SAMD00201774	SAMD00201774	Illumina MiSeq paired end sequencing of UMI23		AMPLICON	PAIRED	Illumina MiSeq	64329	38726058	feces metagenome

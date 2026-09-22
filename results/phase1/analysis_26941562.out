@@ -1,0 +1,79 @@
+=== stage 6  Tue Sep 15 11:54:22 AM EDT 2026
+pipeline root: /scratch/rgupta25/rygb/pipeline
+input tree staged: 43 files
+modules scaffolded: 22
+
+======================================== 00_AfsharTaxaClass  [rbase] 11:54:23
+   ok   rc=0  outputs=6
+
+======================================== 01_AssalTaxaClass  [rbase] 11:54:41
+   ok   rc=0  outputs=7
+
+======================================== 02_BSTaxaClass  [rbase] 11:54:54
+   ok   rc=0  outputs=12
+
+======================================== 03_IlhanTaxaClass  [rbase] 11:54:57
+   ok   rc=0  outputs=6
+
+======================================== 04_CombineCountTableslog10  [nlme] 11:55:48
+   ok   rc=0  outputs=2
+
+======================================== 05_CombineCountTablesrelab  [nlme] 11:55:50
+   ok   rc=0  outputs=2
+
+======================================== 06_PCO  [r-vegan] 11:55:51
+   ok   rc=0  outputs=2
+
+======================================== 07_AfsharDADA  [rbase] 11:55:54
+   ok   rc=0  outputs=6
+
+======================================== 08_AssalDADA  [rbase] 11:56:13
+   ok   rc=0  outputs=7
+
+======================================== 09_BSDADA  [rbase] 11:57:05
+   ok   rc=0  outputs=7
+
+======================================== 10_IlhanDADA  [rbase] 11:57:30
+   ok   rc=0  outputs=6
+
+======================================== 11_CompareStudies16S  [comparestudies] 11:57:44
+   ok   rc=0  outputs=6
+
+======================================== 12_Heatmap  [complexheatmap] 11:57:50
+   ok   rc=0  outputs=1
+
+======================================== 13_AfsharKraken  [nlme] 11:57:52
+   FAIL rc=1  outputs=6
+   --- last 25 lines of /scratch/rgupta25/rygb/pipeline/13_AfsharKraken/module.log
+   INFO:    Mounting image with FUSE.
+   Warning message:
+   In dir.create(paste0(output, "MixedLinearModels/")) :
+     '/scratch/rgupta25/rygb/pipeline/13_AfsharKraken/output/MixedLinearModels' already exists
+   Warning message:
+   In dir.create(paste0(output, "MixedLinearModels/Kraken2/")) :
+     '/scratch/rgupta25/rygb/pipeline/13_AfsharKraken/output/MixedLinearModels/Kraken2' already exists
+   Error in lme.formula(bug ~ time, method = "REML", random = ~1 | ID, data = df) : 
+     nlminb problem, convergence error code = 1
+     message = singular convergence (7)
+   Calls: anova -> lme -> lme.formula
+   Execution halted
+
+=== done  Tue Sep 15 11:58:02 AM EDT 2026   modules ok: 13   failed: 1
+
+--- figures produced
+   /scratch/rgupta25/rygb/pipeline/06_PCO/output/Genus_PCO.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_BoxPlotCorrelations.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_coefficientsFromScatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_mainFigure1cd.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_scatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/12_Heatmap/output/Genus_HeatmapAndCluster.pdf
+
+--- key tables vs the repo's published versions
+   Genus_PairwiseComparison.txt           ours    29 lines | repo    29 lines
+   Genus_countTable_merged_log10.txt      ours   189 lines | repo   189 lines
+   metaData_merged.txt                    ours   189 lines | repo   189 lines
+
+--- THE headline number: mean Spearman r across different-study pairs
+    the paper's abstract says 0.41 +/- 0.10; the repo's own table gives 0.410 +/- 0.098
+   ours  all pairs: r = 0.436 +/- 0.126 (n=28) | different-study: r = 0.396 +/- 0.097 (n=23)
+   repo  all pairs: r = 0.450 +/- 0.126 (n=28) | different-study: r = 0.410 +/- 0.098 (n=23)

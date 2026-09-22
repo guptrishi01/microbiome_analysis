@@ -1,0 +1,16 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR34534790	SAMN49963866	SG-1	Metagenome or environmental sample from metagenome	library 7	AMPLICON	SINGLE	PacBio RS II	45728	68298795	metagenome
+SRR34534791	SAMN49963865	SADI-S-6	Metagenome or environmental sample from metagenome	library 6	AMPLICON	SINGLE	PacBio RS II	68602	103292494	metagenome
+SRR34534793	SAMN49963863	SADI-S-4	Metagenome or environmental sample from metagenome	library 4	AMPLICON	SINGLE	PacBio RS II	66528	100124711	metagenome
+SRR34534801	SAMN49963860	SADI-S-1	Metagenome or environmental sample from metagenome	library 1	AMPLICON	SINGLE	PacBio RS II	60888	91216364	metagenome
+SRR34534789	SAMN49963867	SG-2	Metagenome or environmental sample from metagenome	library 8	AMPLICON	SINGLE	PacBio RS II	60427	90308977	metagenome
+SRR34534788	SAMN49963868	SG-3	Metagenome or environmental sample from metagenome	library 9	AMPLICON	SINGLE	PacBio RS II	59254	88670262	metagenome
+SRR34534794	SAMN49963862	SADI-S-3	Metagenome or environmental sample from metagenome	library 3	AMPLICON	SINGLE	PacBio RS II	65607	98367673	metagenome
+SRR34534795	SAMN49963874	SO-4	Metagenome or environmental sample from metagenome	library 15	AMPLICON	SINGLE	PacBio RS II	66159	99871056	metagenome
+SRR34534796	SAMN49963873	SO-3	Metagenome or environmental sample from metagenome	library 14	AMPLICON	SINGLE	PacBio RS II	54294	81334173	metagenome
+SRR34534797	SAMN49963872	SO-2	Metagenome or environmental sample from metagenome	library 13	AMPLICON	SINGLE	PacBio RS II	58579	87628797	metagenome
+SRR34534798	SAMN49963871	SO-1	Metagenome or environmental sample from metagenome	library 12	AMPLICON	SINGLE	PacBio RS II	68247	103172390	metagenome
+SRR34534800	SAMN49963861	SADI-S-2	Metagenome or environmental sample from metagenome	library 2	AMPLICON	SINGLE	PacBio RS II	57714	86545332	metagenome
+SRR34534787	SAMN49963869	SG-4	Metagenome or environmental sample from metagenome	library 10	AMPLICON	SINGLE	PacBio RS II	64065	95819013	metagenome
+SRR34534792	SAMN49963864	SADI-S-5	Metagenome or environmental sample from metagenome	library 5	AMPLICON	SINGLE	PacBio RS II	61634	92506629	metagenome
+SRR34534799	SAMN49963870	SG-5	Metagenome or environmental sample from metagenome	library 11	AMPLICON	SINGLE	PacBio RS II	63391	94830514	metagenome

@@ -1,0 +1,25 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR15172327	SAMEA118628028	E-MTAB-15292:Sample 8	Sample 8	Sample 8_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172329	SAMEA118628021	E-MTAB-15292:Sample 12	Sample 12	Sample 12_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172335	SAMEA118628023	E-MTAB-15292:Sample 3	Sample 3	Sample 3_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172342	SAMEA118628018	E-MTAB-15292:Sample 1	Sample 1	Sample 1_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172322	SAMEA118628018	E-MTAB-15292:Sample 1	Sample 1	Sample 1_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172325	SAMEA118628029	E-MTAB-15292:Sample 9	Sample 9	Sample 9_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172326	SAMEA118628029	E-MTAB-15292:Sample 9	Sample 9	Sample 9_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172331	SAMEA118628025	E-MTAB-15292:Sample 5	Sample 5	Sample 5_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172338	SAMEA118628026	E-MTAB-15292:Sample 6	Sample 6	Sample 6_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172334	SAMEA118628023	E-MTAB-15292:Sample 3	Sample 3	Sample 3_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172343	SAMEA118628026	E-MTAB-15292:Sample 6	Sample 6	Sample 6_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172330	SAMEA118628021	E-MTAB-15292:Sample 12	Sample 12	Sample 12_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172333	SAMEA118628024	E-MTAB-15292:Sample 4	Sample 4	Sample 4_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172336	SAMEA118628028	E-MTAB-15292:Sample 8	Sample 8	Sample 8_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172337	SAMEA118628024	E-MTAB-15292:Sample 4	Sample 4	Sample 4_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172339	SAMEA118628027	E-MTAB-15292:Sample 7	Sample 7	Sample 7_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172320	SAMEA118628022	E-MTAB-15292:Sample 2	Sample 2	Sample 2_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172321	SAMEA118628025	E-MTAB-15292:Sample 5	Sample 5	Sample 5_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172323	SAMEA118628020	E-MTAB-15292:Sample 11	Sample 11	Sample 11_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172324	SAMEA118628022	E-MTAB-15292:Sample 2	Sample 2	Sample 2_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172328	SAMEA118628027	E-MTAB-15292:Sample 7	Sample 7	Sample 7_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172332	SAMEA118628019	E-MTAB-15292:Sample 10	Sample 10	Sample 10_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172340	SAMEA118628019	E-MTAB-15292:Sample 10	Sample 10	Sample 10_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus
+ERR15172341	SAMEA118628020	E-MTAB-15292:Sample 11	Sample 11	Sample 11_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	0	0	Mus musculus

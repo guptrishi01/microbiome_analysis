@@ -1,0 +1,15 @@
+Tue Sep 15 12:03:16 AM EDT 2026
+SW_ROOT=/users/rgupta25/rygb  DATA_ROOT=/scratch/rgupta25/rygb
+kraken2: Kraken version 2.1.3
+sra-tools: fasterq-dump : 3.1.0
+singularity: singularity-ce version 4.4.1-1.el9
+K2_URL=https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20201202.tar.gz
+env: /users/rgupta25/rygb/envs/rygb-16s/
+img: /users/rgupta25/rygb/images/comparestudies.sif
+img: /users/rgupta25/rygb/images/complexheatmap.sif
+img: /users/rgupta25/rygb/images/fig-perform.sif
+img: /users/rgupta25/rygb/images/nlme.sif
+img: /users/rgupta25/rygb/images/pathogens.sif
+img: /users/rgupta25/rygb/images/rbase.sif
+img: /users/rgupta25/rygb/images/r-vegan.sif
+img: /users/rgupta25/rygb/images/siamcat.sif

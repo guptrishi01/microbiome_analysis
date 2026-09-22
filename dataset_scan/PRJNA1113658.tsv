@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR29089913	SAMN41463842	GSM8281759	Hippocampus_Control_rep2	GSM8281759	RNA-Seq	PAIRED	Illumina HiSeq 2500	0	0	Mus musculus
+SRR29089909	SAMN41463838	GSM8281763	Hippocampus_Surgery_rep3	GSM8281763	RNA-Seq	PAIRED	Illumina HiSeq 2500	423159635	63473945250	Mus musculus
+SRR29089910	SAMN41463839	GSM8281762	Hippocampus_Surgery_rep2	GSM8281762	RNA-Seq	PAIRED	Illumina HiSeq 2500	606186168	90927925200	Mus musculus
+SRR29089914	SAMN41463843	GSM8281758	Hippocampus_Control_rep1	GSM8281758	RNA-Seq	PAIRED	Illumina HiSeq 2500	0	0	Mus musculus
+SRR29089911	SAMN41463840	GSM8281761	Hippocampus_Surgery_rep1	GSM8281761	RNA-Seq	PAIRED	Illumina HiSeq 2500	0	0	Mus musculus
+SRR29089912	SAMN41463841	GSM8281760	Hippocampus_Control_rep3	GSM8281760	RNA-Seq	PAIRED	Illumina HiSeq 2500	0	0	Mus musculus

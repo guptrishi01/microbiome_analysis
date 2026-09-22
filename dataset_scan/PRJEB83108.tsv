@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR14051249	SAMEA117483176	MFG_STOM_BEAGLE	Stomatocytosis Beagle		WGS	PAIRED	unspecified	0	0	Canis lupus familiaris
+ERR14051266	SAMEA117483177	MFG_STOM_ACD	Stomatocytosis Australian cattle dog		WGS	PAIRED	unspecified	0	0	Canis lupus familiaris

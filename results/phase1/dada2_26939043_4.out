@@ -1,0 +1,21 @@
+=== Ilhan  primer=NONE truncLen=150 trimLeft=0  expect 150bp ASVs   Tue Sep 15 01:40:31 AM EDT 2026
+raw files: 82
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       5000 no-515F-anchor
+
+--- DADA2
+Warning message:
+package ‘Rcpp’ was built under R version 4.0.5 
+Warning message:
+package ‘matrixStats’ was built under R version 4.0.5 
+samples: 82 
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'i' in selecting a method for function '[': invalid class “SRFilterResult” object: superclass "Mnumeric" not defined in the environment of the object's class
+Calls: filterAndTrim ... SRFilterResult -> new -> initialize -> initialize -> validObject
+Execution halted
+
+=== Ilhan done (rc=1)  Tue Sep 15 01:40:38 AM EDT 2026
+repo had 5378 ASVs for this study
+   total 0
+filtered reads kept for Kraken2: 0 files, 0

@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR239286	SAMD00238175	SAMD00238175	Eustoma grandiflorum Shihai genome		WGS	SINGLE	454 GS FLX Titanium	716958	382165891	Eustoma russellianum
+DRR239287	SAMD00238175	SAMD00238175	Eustoma grandiflorum Shihai genome		WGS	SINGLE	454 GS FLX Titanium	698553	373484774	Eustoma russellianum

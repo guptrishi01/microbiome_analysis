@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR3255136	SAMEA5539177	run_1	multiplexed_16S_gastric_surgery (run #1)	unspecified	AMPLICON	PAIRED	Illumina MiSeq	0	0	Homo sapiens
+ERR3255137	SAMEA5539178	run_2	multiplexed_16S_gastric_surgery (run #2)	unspecified	AMPLICON	PAIRED	Illumina MiSeq	8111405	4583898468	Homo sapiens
+ERR3255138	SAMEA5539179	run_3	multiplexed_16S_gastric_surgery (run #3)	unspecified	AMPLICON	PAIRED	Illumina MiSeq	0	0	Homo sapiens

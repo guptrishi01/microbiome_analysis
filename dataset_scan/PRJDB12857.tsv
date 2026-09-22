@@ -1,0 +1,42 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR346034	SAMD00438634	SAMD00438634	The human metagenome sample is 32279-16	44_7272195S.I	WGA	PAIRED	Illumina MiSeq	53483	30378344	human gut metagenome
+DRR346035	SAMD00438635	SAMD00438635	The human metagenome sample is 32279-17	47 7847342 F.M	WGA	PAIRED	Illumina MiSeq	53446	30357328	human gut metagenome
+DRR346049	SAMD00438649	SAMD00438649	The human metagenome sample is 32279-37	85	WGA	PAIRED	Illumina MiSeq	48341	27457688	human gut metagenome
+DRR346050	SAMD00438650	SAMD00438650	The human metagenome sample is 32279-38	86	WGA	PAIRED	Illumina MiSeq	44063	25027784	human gut metagenome
+DRR346055	SAMD00438655	SAMD00438655	The human metagenome sample is 32279-48	106	WGA	PAIRED	Illumina MiSeq	55598	31579664	human gut metagenome
+DRR346026	SAMD00438626	SAMD00438626	The human metagenome sample is 32279-03	18_5220174C.T	WGA	PAIRED	Illumina MiSeq	62584	35547712	human gut metagenome
+DRR346027	SAMD00438627	SAMD00438627	The human metagenome sample is 32279-04	23_ 5893401K.M	WGA	PAIRED	Illumina MiSeq	77214	43857552	human gut metagenome
+DRR346030	SAMD00438630	SAMD00438630	The human metagenome sample is 32279-10	35_5997825M.S	WGA	PAIRED	Illumina MiSeq	81026	46022768	human gut metagenome
+DRR346031	SAMD00438631	SAMD00438631	The human metagenome sample is 32279-12	38_5135436T.O	WGA	PAIRED	Illumina MiSeq	57969	32926392	human gut metagenome
+DRR346039	SAMD00438639	SAMD00438639	The human metagenome sample is 32279-22	56 8000110 T.O	WGA	PAIRED	Illumina MiSeq	70130	39833840	human gut metagenome
+DRR346042	SAMD00438642	SAMD00438642	The human metagenome sample is 32279-25	60 7632617 Y.H	WGA	PAIRED	Illumina MiSeq	60482	34353776	human gut metagenome
+DRR346048	SAMD00438648	SAMD00438648	The human metagenome sample is 32279-34	80	WGA	PAIRED	Illumina MiSeq	63168	35879424	human gut metagenome
+DRR346056	SAMD00438656	SAMD00438656	The human metagenome sample is 32279-49	107	WGA	PAIRED	Illumina MiSeq	66235	37621480	human gut metagenome
+DRR346059	SAMD00438659	SAMD00438659	The human metagenome sample is 32279-52	111	WGA	PAIRED	Illumina MiSeq	61280	34807040	human gut metagenome
+DRR346024	SAMD00438624	SAMD00438624	The human metagenome sample is 32279-01	6_7897822Y.O	WGA	PAIRED	Illumina MiSeq	65146	37002928	human gut metagenome
+DRR346025	SAMD00438625	SAMD00438625	The human metagenome sample is 32279-02	7_7811852H.N	WGA	PAIRED	Illumina MiSeq	83648	47512064	human gut metagenome
+DRR346028	SAMD00438628	SAMD00438628	The human metagenome sample is 32279-06	27_5015770M.T	WGA	PAIRED	Illumina MiSeq	105473	59908664	human gut metagenome
+DRR346032	SAMD00438632	SAMD00438632	The human metagenome sample is 32279-14	41_7746013T.T	WGA	PAIRED	Illumina MiSeq	67181	38158808	human gut metagenome
+DRR346037	SAMD00438637	SAMD00438637	The human metagenome sample is 32279-20	54 1424943 T.F	WGA	PAIRED	Illumina MiSeq	62499	35499432	human gut metagenome
+DRR346041	SAMD00438641	SAMD00438641	The human metagenome sample is 32279-24	59 5429672 T.S	WGA	PAIRED	Illumina MiSeq	51261	29116248	human gut metagenome
+DRR346044	SAMD00438644	SAMD00438644	The human metagenome sample is 32279-28	69	WGA	PAIRED	Illumina MiSeq	56769	32244792	human gut metagenome
+DRR346053	SAMD00438653	SAMD00438653	The human metagenome sample is 32279-44	97	WGA	PAIRED	Illumina MiSeq	52057	29568376	human gut metagenome
+DRR346060	SAMD00438660	SAMD00438660	The human metagenome sample is 32279-53	113	WGA	PAIRED	Illumina MiSeq	59247	33652296	human gut metagenome
+DRR346063	SAMD00438663	SAMD00438663	The human metagenome sample is 32279-58	121	WGA	PAIRED	Illumina MiSeq	63671	36165128	human gut metagenome
+DRR346033	SAMD00438633	SAMD00438633	The human metagenome sample is 32279-15	43_7983391M.T	WGA	PAIRED	Illumina MiSeq	45168	25655424	human gut metagenome
+DRR346046	SAMD00438646	SAMD00438646	The human metagenome sample is 32279-32	75 K.H	WGA	PAIRED	Illumina MiSeq	53969	30654392	human gut metagenome
+DRR346051	SAMD00438651	SAMD00438651	The human metagenome sample is 32279-39	88	WGA	PAIRED	Illumina MiSeq	35064	19916352	human gut metagenome
+DRR346052	SAMD00438652	SAMD00438652	The human metagenome sample is 32279-41	90	WGA	PAIRED	Illumina MiSeq	56300	31978400	human gut metagenome
+DRR346057	SAMD00438657	SAMD00438657	The human metagenome sample is 32279-50	109	WGA	PAIRED	Illumina MiSeq	76463	43430984	human gut metagenome
+DRR346061	SAMD00438661	SAMD00438661	The human metagenome sample is 32279-55	115	WGA	PAIRED	Illumina MiSeq	59132	33586976	human gut metagenome
+DRR346064	SAMD00438664	SAMD00438664	The human metagenome sample is 32279-59	122	WGA	PAIRED	Illumina MiSeq	66582	37818576	human gut metagenome
+DRR346029	SAMD00438629	SAMD00438629	The human metagenome sample is 32279-07	30_3366958S.I	WGA	PAIRED	Illumina MiSeq	83216	47266688	human gut metagenome
+DRR346036	SAMD00438636	SAMD00438636	The human metagenome sample is 32279-19	51 7975471 Y.M	WGA	PAIRED	Illumina MiSeq	74662	42408016	human gut metagenome
+DRR346038	SAMD00438638	SAMD00438638	The human metagenome sample is 32279-21	55 2917892 K.O	WGA	PAIRED	Illumina MiSeq	65670	37300560	human gut metagenome
+DRR346040	SAMD00438640	SAMD00438640	The human metagenome sample is 32279-23	58 7797869 M.I	WGA	PAIRED	Illumina MiSeq	71095	40381960	human gut metagenome
+DRR346043	SAMD00438643	SAMD00438643	The human metagenome sample is 32279-26	61 7850774 E.I	WGA	PAIRED	Illumina MiSeq	50845	28879960	human gut metagenome
+DRR346045	SAMD00438645	SAMD00438645	The human metagenome sample is 32279-29	71	WGA	PAIRED	Illumina MiSeq	54905	31186040	human gut metagenome
+DRR346047	SAMD00438647	SAMD00438647	The human metagenome sample is 32279-33	76 E.I	WGA	PAIRED	Illumina MiSeq	51682	29355376	human gut metagenome
+DRR346054	SAMD00438654	SAMD00438654	The human metagenome sample is 32279-47	105	WGA	PAIRED	Illumina MiSeq	118527	67323336	human gut metagenome
+DRR346058	SAMD00438658	SAMD00438658	The human metagenome sample is 32279-51	110	WGA	PAIRED	Illumina MiSeq	65444	37172192	human gut metagenome
+DRR346062	SAMD00438662	SAMD00438662	The human metagenome sample is 32279-57	119	WGA	PAIRED	Illumina MiSeq	56488	32085184	human gut metagenome

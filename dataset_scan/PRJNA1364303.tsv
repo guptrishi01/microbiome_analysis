@@ -1,0 +1,221 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR36103277	SAMN53250106	m24	Metagenome or environmental sample from metagenome	230613151615.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	186177	112637085	metagenome
+SRR36103281	SAMN53250291	GSR 3 LEAN	Metagenome or environmental sample from metagenome	220615129622.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	284858	145277580	metagenome
+SRR36103297	SAMN53250275	KRSO 26- T2 - RYGB	Metagenome or environmental sample from metagenome	220615129606.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	229906	117252060	metagenome
+SRR36103311	SAMN53250162	m21pos	Metagenome or environmental sample from metagenome	220615129718.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	207166	125335430	metagenome
+SRR36103316	SAMN53250157	m15pos	Metagenome or environmental sample from metagenome	230613151669.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	130834	79154570	metagenome
+SRR36103327	SAMN53250144	m2pos	Metagenome or environmental sample from metagenome	230613151656.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	120067	72640535	metagenome
+SRR36103333	SAMN53250105	m23	Metagenome or environmental sample from metagenome	230613151614.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	159979	96787295	metagenome
+SRR36103341	SAMN53250278	LSS 29 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129609.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	241916	123377160	metagenome
+SRR36103344	SAMN53250255	APM 9 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129586.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	67418	34383180	metagenome
+SRR36103347	SAMN53250273	ACP 23 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129604.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	205194	104648940	metagenome
+SRR36103350	SAMN53250270	JFCD 11 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129601.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	107631	54891810	metagenome
+SRR36103351	SAMN53250269	ADMM 25 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129600.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	118552	60461520	metagenome
+SRR36103356	SAMN53250103	m21	Metagenome or environmental sample from metagenome	230613151612.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	221778	134175690	metagenome
+SRR36103362	SAMN53250137	m61	Metagenome or environmental sample from metagenome	230613151649.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	298046	180317830	metagenome
+SRR36103373	SAMN53250112	m30	Metagenome or environmental sample from metagenome	230613151621.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	260412	157549260	metagenome
+SRR36103375	SAMN53250127	m51	Metagenome or environmental sample from metagenome	230613151639.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	143885	87050425	metagenome
+SRR36103392	SAMN53250221	SCMAC 10 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129552.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	111147	56684970	metagenome
+SRR36103400	SAMN53250228	HAR 21 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129559.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	119045	60712950	metagenome
+SRR36103401	SAMN53250229	HAR 21 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129560.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	123478	62973780	metagenome
+SRR36103422	SAMN53250181	m41pos	Metagenome or environmental sample from metagenome	220615129737.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	152829	92461545	metagenome
+SRR36103423	SAMN53250180	m40pos	Metagenome or environmental sample from metagenome	220615129736.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	239829	145096545	metagenome
+SRR36103430	SAMN53250174	m33pos	Metagenome or environmental sample from metagenome	220615129730.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	139300	84276500	metagenome
+SRR36103438	SAMN53250150	m8pos	Metagenome or environmental sample from metagenome	230613151662.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	239823	145092915	metagenome
+SRR36103440	SAMN53250261	SET 17 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129592.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	190710	97262100	metagenome
+SRR36103441	SAMN53250260	SET 17 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129591.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	196549	100239990	metagenome
+SRR36103445	SAMN53250254	MCSB 4 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129585.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	137675	70214250	metagenome
+SRR36103446	SAMN53250238	JVD 32 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129569.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	52861	26959110	metagenome
+SRR36103451	SAMN53250250	SSS 12 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129581.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	137098	69919980	metagenome
+SRR36103460	SAMN53250242	GSA 14 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129573.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	117213	59778630	metagenome
+SRR36103472	SAMN53250204	LRA 3 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129535.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	185391	94549410	metagenome
+SRR36103485	SAMN53250192	m54pos	Metagenome or environmental sample from metagenome	220615129748.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	393808	238253840	metagenome
+SRR36103492	SAMN53250185	m47pos	Metagenome or environmental sample from metagenome	220615129741.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	329249	199195645	metagenome
+SRR36103280	SAMN53250292	CSTG 4 LEAN	Metagenome or environmental sample from metagenome	220615129623.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	125082	63791820	metagenome
+SRR36103286	SAMN53250107	m25	Metagenome or environmental sample from metagenome	230613151616.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	222164	134409220	metagenome
+SRR36103290	SAMN53250301	KPS 13 LEAN	Metagenome or environmental sample from metagenome	220615129632.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	52064	26552640	metagenome
+SRR36103293	SAMN53250298	FTG 10 LEAN	Metagenome or environmental sample from metagenome	220615129629.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	158802	80989020	metagenome
+SRR36103296	SAMN53250276	KRSO 26- T3 - RYGB	Metagenome or environmental sample from metagenome	220615129607.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	221196	112809960	metagenome
+SRR36103307	SAMN53250165	m24pos	Metagenome or environmental sample from metagenome	220615129721.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	155837	94281385	metagenome
+SRR36103308	SAMN53250093	m10	Metagenome or environmental sample from metagenome	230613151602.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	212678	128670190	metagenome
+SRR36103313	SAMN53250160	m19pos	Metagenome or environmental sample from metagenome	230613151672.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	117829	71286545	metagenome
+SRR36103315	SAMN53250158	m16pos	Metagenome or environmental sample from metagenome	230613151670.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	125693	76044265	metagenome
+SRR36103320	SAMN53250134	m58	Metagenome or environmental sample from metagenome	230613151646.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	261347	158114935	metagenome
+SRR36103321	SAMN53250133	m57	Metagenome or environmental sample from metagenome	230613151645.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	249180	150753900	metagenome
+SRR36103332	SAMN53250285	VPF 34 T3 RYGB	Metagenome or environmental sample from metagenome	220615129616.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	226792	115663920	metagenome
+SRR36103337	SAMN53250282	APHF 28 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129613.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	134875	68786250	metagenome
+SRR36103338	SAMN53250281	APHF 28 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129612.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	192886	98371860	metagenome
+SRR36103353	SAMN53250267	LLC 24 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129598.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	126968	64753680	metagenome
+SRR36103355	SAMN53250265	LLC 24 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129596.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	205090	104595900	metagenome
+SRR36103368	SAMN53250114	m32	Metagenome or environmental sample from metagenome	230613151623.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	298158	180385590	metagenome
+SRR36103371	SAMN53250129	m53	Metagenome or environmental sample from metagenome	230613151641.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	225760	136584800	metagenome
+SRR36103374	SAMN53250128	m52	Metagenome or environmental sample from metagenome	230613151640.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	118971	71977455	metagenome
+SRR36103379	SAMN53250124	m47	Metagenome or environmental sample from metagenome	230613151635.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	182693	110529265	metagenome
+SRR36103386	SAMN53250117	m35	Metagenome or environmental sample from metagenome	230613151626.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	319131	193074255	metagenome
+SRR36103390	SAMN53250217	ASS 6 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129548.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	124663	63578130	metagenome
+SRR36103288	SAMN53250303	LLN 15 LEAN	Metagenome or environmental sample from metagenome	220615129634.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	140953	71886030	metagenome
+SRR36103289	SAMN53250302	COM 14 LEAN	Metagenome or environmental sample from metagenome	220615129633.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	141959	72399090	metagenome
+SRR36103292	SAMN53250299	TOS 11 LEAN	Metagenome or environmental sample from metagenome	220615129630.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	169791	86593410	metagenome
+SRR36103295	SAMN53250296	AML 8 LEAN	Metagenome or environmental sample from metagenome	220615129627.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	309028	157604280	metagenome
+SRR36103398	SAMN53250226	EFR 13 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129557.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	14080	7180800	metagenome
+SRR36103299	SAMN53250290	LLV 2 LEAN	Metagenome or environmental sample from metagenome	220615129621.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	257011	131075610	metagenome
+SRR36103399	SAMN53250227	EFR 13 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129558.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	77769	39662190	metagenome
+SRR36103300	SAMN53250289	JFG 1 LEAN	Metagenome or environmental sample from metagenome	220615129620.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	325724	166119240	metagenome
+SRR36103405	SAMN53250233	PVS 22 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129564.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	46649	23790990	metagenome
+SRR36103301	SAMN53250288	PGS 36 T3 RYGB	Metagenome or environmental sample from metagenome	220615129619.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	213448	108858480	metagenome
+SRR36103416	SAMN53250170	m29pos	Metagenome or environmental sample from metagenome	220615129726.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	162426	98267730	metagenome
+SRR36103419	SAMN53250184	m46pos	Metagenome or environmental sample from metagenome	220615129740.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	181117	109575785	metagenome
+SRR36103420	SAMN53250183	m44pos	Metagenome or environmental sample from metagenome	220615129739.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	150109	90815945	metagenome
+SRR36103302	SAMN53250287	PGS 36 T2 RYGB	Metagenome or environmental sample from metagenome	220615129618.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	185931	94824810	metagenome
+SRR36103424	SAMN53250179	m38pos	Metagenome or environmental sample from metagenome	220615129735.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	253295	153243475	metagenome
+SRR36103304	SAMN53250148	m6pos	Metagenome or environmental sample from metagenome	230613151660.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	284520	172134600	metagenome
+SRR36103427	SAMN53250176	m35pos	Metagenome or environmental sample from metagenome	220615129732.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	256175	154985875	metagenome
+SRR36103306	SAMN53250166	m25pos	Metagenome or environmental sample from metagenome	220615129722.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	162788	98486740	metagenome
+SRR36103432	SAMN53250172	m31pos	Metagenome or environmental sample from metagenome	220615129728.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	140526	85018230	metagenome
+SRR36103314	SAMN53250159	m18pos	Metagenome or environmental sample from metagenome	230613151671.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	134546	81400330	metagenome
+SRR36103443	SAMN53250258	SSS 15 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129589.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	205610	104861100	metagenome
+SRR36103319	SAMN53250092	m9	Metagenome or environmental sample from metagenome	230613151601.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	206716	125063180	metagenome
+SRR36103448	SAMN53250253	MCSB 4 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129584.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	71280	36352800	metagenome
+SRR36103322	SAMN53250132	m56	Metagenome or environmental sample from metagenome	230613151644.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	256079	154927795	metagenome
+SRR36103449	SAMN53250252	MCSB 4 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129583.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	127848	65202480	metagenome
+SRR36103324	SAMN53250146	m4pos	Metagenome or environmental sample from metagenome	230613151658.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	128575	77787875	metagenome
+SRR36103450	SAMN53250251	SSS 12 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129582.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	161369	82298190	metagenome
+SRR36103339	SAMN53250280	APHF 28 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129611.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	317562	161956620	metagenome
+SRR36103454	SAMN53250247	VPP 35 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129578.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	142325	72585750	metagenome
+SRR36103345	SAMN53250102	m20	Metagenome or environmental sample from metagenome	230613151611.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	167825	101534125	metagenome
+SRR36103455	SAMN53250246	VPP 35 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129577.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	172419	87933690	metagenome
+SRR36103357	SAMN53250264	PMV 19 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129595.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	291206	148515060	metagenome
+SRR36103461	SAMN53250241	GSA 14 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129572.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	135323	69014730	metagenome
+SRR36103358	SAMN53250263	PMV 19 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129594.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	234279	119482290	metagenome
+SRR36103468	SAMN53250207	RPV 7 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129538.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	212355	108301050	metagenome
+SRR36103359	SAMN53250262	SET 17 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129593.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	214588	109439880	metagenome
+SRR36103471	SAMN53250097	m14	Metagenome or environmental sample from metagenome	230613151606.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	259324	156891020	metagenome
+SRR36103364	SAMN53250135	m59	Metagenome or environmental sample from metagenome	230613151647.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	189218	114476890	metagenome
+SRR36103473	SAMN53250203	MAN 2 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129534.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	221042	112731420	metagenome
+SRR36103366	SAMN53250115	m33	Metagenome or environmental sample from metagenome	230613151624.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	390889	236487845	metagenome
+SRR36103486	SAMN53250191	m53pos	Metagenome or environmental sample from metagenome	220615129747.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	321682	194617610	metagenome
+SRR36103369	SAMN53250131	m55	Metagenome or environmental sample from metagenome	230613151643.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	97729	59126045	metagenome
+SRR36103487	SAMN53250190	m52pos	Metagenome or environmental sample from metagenome	220615129746.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	353294	213742870	metagenome
+SRR36103378	SAMN53250089	m6	Metagenome or environmental sample from metagenome	230613151598.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	234011	141576655	metagenome
+SRR36103489	SAMN53250188	m50pos	Metagenome or environmental sample from metagenome	220615129744.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	304561	184259405	metagenome
+SRR36103382	SAMN53250121	m40	Metagenome or environmental sample from metagenome	230613151630.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	203613	123185865	metagenome
+SRR36103491	SAMN53250186	m48pos	Metagenome or environmental sample from metagenome	220615129742.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	277321	167779205	metagenome
+SRR36103384	SAMN53250119	m37	Metagenome or environmental sample from metagenome	230613151628.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	218259	132046695	metagenome
+SRR36103388	SAMN53250215	ACBS 8-T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129546.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	142339	72592890	metagenome
+SRR36103389	SAMN53250216	ASS 6 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129547.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	144967	73933170	metagenome
+SRR36103394	SAMN53250223	SRA 18 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129554.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	54838	27967380	metagenome
+SRR36103395	SAMN53250224	SRA 18 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129555.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	72260	36852600	metagenome
+SRR36103396	SAMN53250099	m16	Metagenome or environmental sample from metagenome	230613151608.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	306194	185247370	metagenome
+SRR36103397	SAMN53250225	EFR 13 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129556.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	113650	57961500	metagenome
+SRR36103406	SAMN53250234	MPB 27 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129565.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	82019	41829690	metagenome
+SRR36103410	SAMN53250213	ACBS 8-T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129544.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	78307	39936570	metagenome
+SRR36103414	SAMN53250209	RPV 7 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129540.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	75141	38321910	metagenome
+SRR36103428	SAMN53250175	m34pos	Metagenome or environmental sample from metagenome	220615129731.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	164085	99271425	metagenome
+SRR36103429	SAMN53250094	m11	Metagenome or environmental sample from metagenome	230613151603.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	293463	177545115	metagenome
+SRR36103433	SAMN53250171	m30pos	Metagenome or environmental sample from metagenome	220615129727.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	113215	68495075	metagenome
+SRR36103434	SAMN53250154	m12pos	Metagenome or environmental sample from metagenome	230613151666.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	358239	216734595	metagenome
+SRR36103437	SAMN53250151	m9pos	Metagenome or environmental sample from metagenome	230613151663.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	321264	194364720	metagenome
+SRR36103442	SAMN53250259	SSS 15 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129590.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	173013	88236630	metagenome
+SRR36103447	SAMN53250237	JVD 32 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129568.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	83379	42523290	metagenome
+SRR36103452	SAMN53250249	AN 1 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129580.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	111705	56969550	metagenome
+SRR36103456	SAMN53250245	COG 31 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129576.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	104995	53547450	metagenome
+SRR36103457	SAMN53250101	m19	Metagenome or environmental sample from metagenome	230613151610.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	267155	161628775	metagenome
+SRR36103459	SAMN53250243	COG 31 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129574.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	149886	76441860	metagenome
+SRR36103462	SAMN53250240	GSA 14 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129571.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	159652	81422520	metagenome
+SRR36103463	SAMN53250239	JVD 32 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129570.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	88878	45327780	metagenome
+SRR36103464	SAMN53250100	m18	Metagenome or environmental sample from metagenome	230613151609.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	293229	177403545	metagenome
+SRR36103466	SAMN53250236	MPB 27 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129567.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	91145	46483950	metagenome
+SRR36103467	SAMN53250098	m15	Metagenome or environmental sample from metagenome	230613151607.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	277708	168013340	metagenome
+SRR36103476	SAMN53250200	m62pos	Metagenome or environmental sample from metagenome	220615129756.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	292899	177203895	metagenome
+SRR36103477	SAMN53250199	m61pos	Metagenome or environmental sample from metagenome	220615129755.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	246226	148966730	metagenome
+SRR36103478	SAMN53250198	m60pos	Metagenome or environmental sample from metagenome	220615129754.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	204174	123525270	metagenome
+SRR36103481	SAMN53250195	m57pos	Metagenome or environmental sample from metagenome	220615129751.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	153379	92794295	metagenome
+SRR36103484	SAMN53250193	m55pos	Metagenome or environmental sample from metagenome	220615129749.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	148048	89569040	metagenome
+SRR36103488	SAMN53250189	m51pos	Metagenome or environmental sample from metagenome	220615129745.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	332740	201307700	metagenome
+SRR36103495	SAMN53250085	m1	Metagenome or environmental sample from metagenome	230613151593.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	144163	87218615	metagenome
+SRR36103276	SAMN53250295	KPM 7 LEAN	Metagenome or environmental sample from metagenome	220615129626.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	272906	139182060	metagenome
+SRR36103278	SAMN53250294	CC 6 LEAN	Metagenome or environmental sample from metagenome	220615129625.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	180725	92169750	metagenome
+SRR36103282	SAMN53250111	m29	Metagenome or environmental sample from metagenome	230613151620.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	238947	144562935	metagenome
+SRR36103284	SAMN53250109	m27	Metagenome or environmental sample from metagenome	230613151618.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	264460	159998300	metagenome
+SRR36103285	SAMN53250108	m26	Metagenome or environmental sample from metagenome	230613151617.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	217166	131385430	metagenome
+SRR36103291	SAMN53250300	BDF 12 LEAN	Metagenome or environmental sample from metagenome	220615129631.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	27955	14257050	metagenome
+SRR36103294	SAMN53250297	MAS 9 LEAN	Metagenome or environmental sample from metagenome	220615129628.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	146717	74825670	metagenome
+SRR36103305	SAMN53250167	m26pos	Metagenome or environmental sample from metagenome	220615129723.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	228076	137985980	metagenome
+SRR36103309	SAMN53250164	m23pos	Metagenome or environmental sample from metagenome	220615129720.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	193102	116826710	metagenome
+SRR36103312	SAMN53250161	m20pos	Metagenome or environmental sample from metagenome	220615129717.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	179526	108613230	metagenome
+SRR36103329	SAMN53250142	CTRL	Metagenome or environmental sample from metagenome	230613151654.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	104761	63380405	metagenome
+SRR36103330	SAMN53250141	RYGB+TF	Metagenome or environmental sample from metagenome	230613151653.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	105129	63603045	metagenome
+SRR36103334	SAMN53250087	m3	Metagenome or environmental sample from metagenome	230613151595.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	377428	228343940	metagenome
+SRR36103335	SAMN53250284	VPF 34 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129615.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	209729	106961790	metagenome
+SRR36103343	SAMN53250256	APM 9 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129587.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	74470	37979700	metagenome
+SRR36103346	SAMN53250274	KRSO 26- T1 - RYGB	Metagenome or environmental sample from metagenome	220615129605.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	191460	97644600	metagenome
+SRR36103349	SAMN53250271	JFCD 11 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129602.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	124490	63489900	metagenome
+SRR36103352	SAMN53250268	ADMM 25 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129599.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	31795	16215450	metagenome
+SRR36103354	SAMN53250266	LLC 24 - T2 - RYGB	Metagenome or environmental sample from metagenome	220615129597.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	161225	82224750	metagenome
+SRR36103361	SAMN53250138	m62	Metagenome or environmental sample from metagenome	230613151650.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	262830	159012150	metagenome
+SRR36103365	SAMN53250090	m7	Metagenome or environmental sample from metagenome	230613151599.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	249473	150931165	metagenome
+SRR36103367	SAMN53250088	m4	Metagenome or environmental sample from metagenome	230613151596.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	214780	129941900	metagenome
+SRR36103370	SAMN53250130	m54	Metagenome or environmental sample from metagenome	230613151642.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	163869	99140745	metagenome
+SRR36103376	SAMN53250126	m50	Metagenome or environmental sample from metagenome	230613151638.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	200104	121062920	metagenome
+SRR36103377	SAMN53250125	m49	Metagenome or environmental sample from metagenome	230613151637.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	195983	118569715	metagenome
+SRR36103381	SAMN53250122	m41	Metagenome or environmental sample from metagenome	230613151631.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	323032	195434360	metagenome
+SRR36103383	SAMN53250120	m38	Metagenome or environmental sample from metagenome	230613151629.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	247091	149490055	metagenome
+SRR36103387	SAMN53250116	m34	Metagenome or environmental sample from metagenome	230613151625.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	177664	107486720	metagenome
+SRR36103404	SAMN53250232	PVS 22 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129563.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	74116	37799160	metagenome
+SRR36103408	SAMN53250219	SCMAC 10 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129550.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	43682	22277820	metagenome
+SRR36103409	SAMN53250214	ACBS 8-T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129545.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	131224	66924240	metagenome
+SRR36103411	SAMN53250212	VRM 16 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129543.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	149698	76345980	metagenome
+SRR36103417	SAMN53250169	m28pos	Metagenome or environmental sample from metagenome	220615129725.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	152657	92357485	metagenome
+SRR36103426	SAMN53250177	m36pos	Metagenome or environmental sample from metagenome	220615129733.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	199784	120869320	metagenome
+SRR36103465	SAMN53250235	MPB 27 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129566.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	119894	61145940	metagenome
+SRR36103474	SAMN53250202	MAN 2 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129533.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	238921	121849710	metagenome
+SRR36103475	SAMN53250201	MAN 2 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129532.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	217576	110963760	metagenome
+SRR36103480	SAMN53250196	m58pos	Metagenome or environmental sample from metagenome	220615129752.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	175966	106459430	metagenome
+SRR36103482	SAMN53250096	m13	Metagenome or environmental sample from metagenome	230613151605.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	283304	171398920	metagenome
+SRR36103490	SAMN53250187	m49pos	Metagenome or environmental sample from metagenome	220615129743.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	357153	216077565	metagenome
+SRR36103279	SAMN53250293	LLC 5 LEAN	Metagenome or environmental sample from metagenome	220615129624.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	122105	62273550	metagenome
+SRR36103283	SAMN53250110	m28	Metagenome or environmental sample from metagenome	230613151619.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	272433	164821965	metagenome
+SRR36103287	SAMN53250304	JCRS 16 LEAN	Metagenome or environmental sample from metagenome	220615129635.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	125981	64250310	metagenome
+SRR36103298	SAMN53250104	m22	Metagenome or environmental sample from metagenome	230613151613.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	197271	119348955	metagenome
+SRR36103303	SAMN53250286	PGS 36 T1 RYGB	Metagenome or environmental sample from metagenome	220615129617.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	265201	135252510	metagenome
+SRR36103310	SAMN53250163	m22pos	Metagenome or environmental sample from metagenome	220615129719.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	166501	100733105	metagenome
+SRR36103317	SAMN53250156	m14pos	Metagenome or environmental sample from metagenome	230613151668.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	121674	73612770	metagenome
+SRR36103318	SAMN53250155	m13pos	Metagenome or environmental sample from metagenome	230613151667.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	111568	67498640	metagenome
+SRR36103323	SAMN53250147	m5pos	Metagenome or environmental sample from metagenome	230613151659.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	239717	145028785	metagenome
+SRR36103325	SAMN53250145	m3pos	Metagenome or environmental sample from metagenome	230613151657.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	128723	77877415	metagenome
+SRR36103326	SAMN53250091	m8	Metagenome or environmental sample from metagenome	230613151600.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	244543	147948515	metagenome
+SRR36103328	SAMN53250143	m1pos	Metagenome or environmental sample from metagenome	230613151655.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	110104	66612920	metagenome
+SRR36103331	SAMN53250140	RYGB	Metagenome or environmental sample from metagenome	230613151652.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	149172	90249060	metagenome
+SRR36103336	SAMN53250283	VPF 34 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129614.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	46539	23734890	metagenome
+SRR36103340	SAMN53250279	LSS 29 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129610.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	229032	116806320	metagenome
+SRR36103342	SAMN53250277	LSS 29 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129608.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	215699	110006490	metagenome
+SRR36103348	SAMN53250272	ACP 23 - T1 - RYGB	Metagenome or environmental sample from metagenome	220615129603.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	185812	94764120	metagenome
+SRR36103360	SAMN53250139	mAUT	Metagenome or environmental sample from metagenome	230613151651.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	155372	94000060	metagenome
+SRR36103363	SAMN53250136	m60	Metagenome or environmental sample from metagenome	230613151648.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	235056	142208880	metagenome
+SRR36103372	SAMN53250113	m31	Metagenome or environmental sample from metagenome	230613151622.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	355107	214839735	metagenome
+SRR36103380	SAMN53250123	m42	Metagenome or environmental sample from metagenome	230613151632.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	424129	256598045	metagenome
+SRR36103385	SAMN53250118	m36	Metagenome or environmental sample from metagenome	230613151627.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	238204	144113420	metagenome
+SRR36103391	SAMN53250220	SCMAC 10 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129551.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	101098	51559980	metagenome
+SRR36103393	SAMN53250222	SRA 18 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129553.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	74789	38142390	metagenome
+SRR36103402	SAMN53250230	HAR 21 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129561.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	88432	45100320	metagenome
+SRR36103403	SAMN53250231	PVS 22 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129562.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	114913	58605630	metagenome
+SRR36103407	SAMN53250218	ASS 6 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129549.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	112178	57210780	metagenome
+SRR36103412	SAMN53250211	VRM 16 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129542.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	41082	20951820	metagenome
+SRR36103413	SAMN53250210	VRM 16 - T1 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129541.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	88809	45292590	metagenome
+SRR36103415	SAMN53250208	RPV 7 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129539.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	11922	6080220	metagenome
+SRR36103418	SAMN53250168	m27pos	Metagenome or environmental sample from metagenome	220615129724.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	309273	187110165	metagenome
+SRR36103421	SAMN53250182	m42pos	Metagenome or environmental sample from metagenome	220615129738.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	195844	118485620	metagenome
+SRR36103425	SAMN53250178	m37pos	Metagenome or environmental sample from metagenome	220615129734.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	255774	154743270	metagenome
+SRR36103431	SAMN53250173	m32pos	Metagenome or environmental sample from metagenome	220615129729.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	187075	113180375	metagenome
+SRR36103435	SAMN53250153	m11pos	Metagenome or environmental sample from metagenome	230613151665.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	196541	118907305	metagenome
+SRR36103436	SAMN53250152	m10pos	Metagenome or environmental sample from metagenome	230613151664.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	158901	96135105	metagenome
+SRR36103439	SAMN53250149	m7pos	Metagenome or environmental sample from metagenome	230613151661.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	376186	227592530	metagenome
+SRR36103444	SAMN53250257	APM 9 - T3 - RYGB	Metagenome or environmental sample from metagenome	220615129588.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	137711	70232610	metagenome
+SRR36103453	SAMN53250248	VPP 35 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129579.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	187731	95742810	metagenome
+SRR36103458	SAMN53250244	COG 31 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129575.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	161579	82405290	metagenome
+SRR36103469	SAMN53250206	LRA 3 - T3 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129537.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	163551	83411010	metagenome
+SRR36103470	SAMN53250205	LRA 3 - T2 - RYGB+ET	Metagenome or environmental sample from metagenome	220615129536.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	180079	91840290	metagenome
+SRR36103479	SAMN53250197	m59pos	Metagenome or environmental sample from metagenome	220615129753.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	213582	129217110	metagenome
+SRR36103483	SAMN53250194	m56pos	Metagenome or environmental sample from metagenome	220615129750.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	183128	110792440	metagenome
+SRR36103493	SAMN53250095	m12	Metagenome or environmental sample from metagenome	230613151604.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	324186	196132530	metagenome
+SRR36103494	SAMN53250086	m2	Metagenome or environmental sample from metagenome	230613151594.1.1.1	AMPLICON	PAIRED	Illumina MiSeq	244762	148081010	metagenome

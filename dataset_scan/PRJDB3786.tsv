@@ -1,0 +1,9 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR031701	SAMD00028443	SAMD00028443	RNA-seq ALK R1275Q/MYCN(+) neuronal cells	neuronal cells from ALK R1275Q_MYCN(+)	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	61569116	2216488176	Mus musculus
+DRR031698	SAMD00028440	SAMD00028440	RNA-seq ALK R1275Q/MYCN tumor-2	ALK R1275Q_MYCN tumor-2	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	63460689	2284584804	Mus musculus
+DRR031702	SAMD00028444	SAMD00028444	RNA-seq ALK R1275Q/MYCN(-) neuronal cells	neuronal cells from ALK R1275Q_MYCN(-)	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	59568901	2144480436	Mus musculus
+DRR031704	SAMD00028446	SAMD00028446	RNA-seq ALK WT/MYCN(-) neuronal cells	neuronal cells from ALK WT_MYCN(-)	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	45666651	1643999436	Mus musculus
+DRR031697	SAMD00028439	SAMD00028439	RNA-seq ALK R1275Q/MYCN tumor-1	ALK R1275Q_MYCN tumor-1	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	62536947	2251330092	Mus musculus
+DRR031699	SAMD00028441	SAMD00028441	RNA-seq ALK WT/MYCN tumor-1	MYCN tumor-1	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	59598363	2145541068	Mus musculus
+DRR031703	SAMD00028445	SAMD00028445	RNA-seq ALK WT/MYCN(+) neuronal cells	neuronal cells from ALK WT_MYCN(+)	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	47526265	1710945540	Mus musculus
+DRR031700	SAMD00028442	SAMD00028442	RNA-seq ALK WT/MYCN tumor-2	MYCN tumor-2	RNA-Seq	SINGLE	Illumina Genome Analyzer IIx	63567682	2288436552	Mus musculus

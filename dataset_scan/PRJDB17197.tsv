@@ -1,0 +1,2 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR519302	SAMD00664639	SAMD00664639	SOKC/KA		AMPLICON	SINGLE	Illumina HiSeq 3000	24272064	6699384300	Homo sapiens

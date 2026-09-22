@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR7162147	SAMEA10029470	Ioli_19461	Iberochondrostoma olisiponensis from Paul das Caniceiras		WGS	SINGLE	GridION	3302199	18593133908	Iberochondrostoma olisiponense
+ERR7162148	SAMEA10029469	Ilus_19364	Iberochondrostoma lusitanicum sample number 1936 from the Trancao river in Portugal		WGS	SINGLE	GridION	3982198	22158152952	Iberochondrostoma lusitanicum
+ERR7720669	SAMEA10029470	Ioli_19461	Iberochondrostoma olisiponensis from Paul das Caniceiras		WGS	SINGLE	GridION	657564	9044686621	Iberochondrostoma olisiponense
+ERR7681423	SAMEA10029469	Ilus_19364	Iberochondrostoma lusitanicum sample number 1936 from the Trancao river in Portugal		WGS	SINGLE	GridION	392106	6577415043	Iberochondrostoma lusitanicum

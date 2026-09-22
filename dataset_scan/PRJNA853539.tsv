@@ -1,0 +1,6 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR19904958	SAMN29396849	S4T1_G1	Model organism or animal sample from mice	G1	RNA-Seq	PAIRED	HiSeq X Ten	257492884	30641653196	Mus musculus
+SRR19904954	SAMN29396872	S4T1_G6	Model organism or animal sample from mice	G6	RNA-Seq	PAIRED	HiSeq X Ten	257977988	30699380572	Mus musculus
+SRR19904955	SAMN29396871	S4T1_G4	Model organism or animal sample from mice	G4	RNA-Seq	PAIRED	HiSeq X Ten	271583529	32318439951	Mus musculus
+SRR19904956	SAMN29396870	S4T1_G3	Model organism or animal sample from mice	G3	RNA-Seq	PAIRED	HiSeq X Ten	309471190	36827071610	Mus musculus
+SRR19904957	SAMN29396869	S4T1_G2	Model organism or animal sample from mice	G2	RNA-Seq	PAIRED	HiSeq X Ten	300833843	35799227317	Mus musculus

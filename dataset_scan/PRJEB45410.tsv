@@ -1,0 +1,8 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR6000350	SAMEA8898605	PRJEB45410-5	Differential Gene Expression in Tumor vs Adjacent Normal in Stomach Adenocarcinoma Patients	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	32757710	3272109469	Homo sapiens
+ERR6000351	SAMEA8898606	PRJEB45410-6	Differential Gene Expression in Tumor vs Adjacent Normal in Stomach Adenocarcinoma Patients	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	27479884	2745081930	Homo sapiens
+ERR6000352	SAMEA8898607	PRJEB45410-7	Differential Gene Expression in Tumor vs Adjacent Normal in Stomach Adenocarcinoma Patients	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	28900386	2887080397	Homo sapiens
+ERR6000346	SAMEA8898601	PRJEB45410-1	Differential Gene Expression in Tumor vs Adjacent Normal in Stomach Adenocarcinoma Patients	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	33086580	3304810403	Homo sapiens
+ERR6000348	SAMEA8898603	PRJEB45410-3	Differential Gene Expression in Tumor vs Adjacent Normal in Stomach Adenocarcinoma Patients	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	33874802	3383912577	Homo sapiens
+ERR6000347	SAMEA8898602	PRJEB45410-2	Differential Gene Expression in Tumor vs Adjacent Normal in Stomach Adenocarcinoma Patients	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	30336208	3030134395	Homo sapiens
+ERR6000349	SAMEA8898604	PRJEB45410-4	Differential Gene Expression in Tumor vs Adjacent Normal in Stomach Adenocarcinoma Patients	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	33332842	3329632980	Homo sapiens

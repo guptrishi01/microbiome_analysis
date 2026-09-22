@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR260341	SAMD00264090	SAMD00264090	YZ01	YZ01	WGS	PAIRED	DNBSEQ-G400	14898969	4469690700	Lactobacillus nasalidis
+DRR260342	SAMD00264091	SAMD00264091	YZ02	YZ02	WGS	PAIRED	DNBSEQ-G400	14484101	4345230300	Lactobacillus nasalidis
+DRR260343	SAMD00264092	SAMD00264092	YZ03	YZ03	WGS	PAIRED	DNBSEQ-G400	15603006	4680901800	Lactobacillus nasalidis

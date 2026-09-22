@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR299200	SAMD00294419	SAMD00294419	amphioxus scRNA seq early swimming larva	amphioxus scRNA seq early swimming larva	OTHER	PAIRED	Illumina NovaSeq 6000	658772670	78393947730	Branchiostoma japonicum
+DRR299195	SAMD00294414	SAMD00294414	amphioxus scRNA seq mid gastrula	amphioxus scRNA seq mid gastrula	OTHER	PAIRED	Illumina NovaSeq 6000	352176495	41909002905	Branchiostoma japonicum
+DRR299198	SAMD00294417	SAMD00294417	amphioxus scRNA seq mid neurula	amphioxus scRNA seq mid neurula	OTHER	PAIRED	Illumina NovaSeq 6000	660749485	78629188715	Branchiostoma japonicum
+DRR299199	SAMD00294418	SAMD00294418	amphioxus scRNA seq late neurula	amphioxus scRNA seq late neurula	OTHER	PAIRED	Illumina NovaSeq 6000	619103669	73673336611	Branchiostoma japonicum
+DRR299196	SAMD00294415	SAMD00294415	amphioxus scRNA seq late gastrula	amphioxus scRNA seq late gastrula	OTHER	PAIRED	Illumina NovaSeq 6000	660981365	78656782435	Branchiostoma japonicum
+DRR299197	SAMD00294416	SAMD00294416	amphioxus scRNA seq early neurula	amphioxus scRNA seq early neurula	OTHER	PAIRED	Illumina NovaSeq 6000	681254298	81069261462	Branchiostoma japonicum

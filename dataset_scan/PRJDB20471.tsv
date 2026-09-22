@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR657054	SAMD00893961	SAMD00893961	Stomach content of Diplothrix legata from northern Okinawa Island	Diplothrix-legata-240518_COI	AMPLICON	PAIRED	NextSeq 1000	49839	28805418	stomach metagenome
+DRR657055	SAMD00893961	SAMD00893961	Stomach content of Diplothrix legata from northern Okinawa Island	Diplothrix-legata-240518_gInsect	AMPLICON	PAIRED	NextSeq 1000	47456	10752608	stomach metagenome
+DRR657056	SAMD00893961	SAMD00893961	Stomach content of Diplothrix legata from northern Okinawa Island	Diplothrix-legata-240518_gPlant	AMPLICON	PAIRED	NextSeq 1000	49226	19987099	stomach metagenome

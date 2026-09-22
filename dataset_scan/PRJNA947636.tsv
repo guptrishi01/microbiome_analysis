@@ -1,0 +1,8 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR23942849	SAMN33864748	GSM7112093	peri-tumoral brain tissue, IDHwt 2	GSM7112093	RNA-Seq	SINGLE	Illumina HiSeq 4000	59168854	2958442700	Mus musculus
+SRR23942852	SAMN33864751	GSM7112090	peri-tumoral brain tissue, IDHmut 3	GSM7112090	RNA-Seq	SINGLE	Illumina HiSeq 4000	54306901	2715345050	Mus musculus
+SRR23942854	SAMN33864753	GSM7112088	peri-tumoral brain tissue, IDHmut 1	GSM7112088	RNA-Seq	SINGLE	Illumina HiSeq 4000	56405213	2820260650	Mus musculus
+SRR23942850	SAMN33864749	GSM7112092	peri-tumoral brain tissue, IDHwt 1	GSM7112092	RNA-Seq	SINGLE	Illumina HiSeq 4000	49471282	2473564100	Mus musculus
+SRR23942853	SAMN33864752	GSM7112089	peri-tumoral brain tissue, IDHmut 2	GSM7112089	RNA-Seq	SINGLE	Illumina HiSeq 4000	47883873	2394193650	Mus musculus
+SRR23942848	SAMN33864747	GSM7112094	peri-tumoral brain tissue, IDHwt 3	GSM7112094	RNA-Seq	SINGLE	Illumina HiSeq 4000	51590113	2579505650	Mus musculus
+SRR23942851	SAMN33864750	GSM7112091	peri-tumoral brain tissue, IDHmut 4	GSM7112091	RNA-Seq	SINGLE	Illumina HiSeq 4000	57280760	2864038000	Mus musculus

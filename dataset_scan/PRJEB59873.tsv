@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR10879950	SAMEA112639086	E-MTAB-12588:IMR32	IMR32	IMR32_s	ATAC-seq	SINGLE	NextSeq 500	39452359	2998379284	Homo sapiens
+ERR10879949	SAMEA112639085	E-MTAB-12588:CLBGA	CLBGA	CLBGA_s	ATAC-seq	SINGLE	NextSeq 500	43056854	3272320904	Homo sapiens
+ERR10879951	SAMEA112639087	E-MTAB-12588:SHEP	SHEP	SHEP_p	ATAC-seq	PAIRED	NextSeq 500	76706350	5794417608	Homo sapiens

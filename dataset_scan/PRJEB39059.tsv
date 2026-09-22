@@ -1,0 +1,15 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR4292853	SAMEA7015955	GBM_021_Exome_Relapse	GBM_021_Exome_Relapse	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	31228940	5136075607	Homo sapiens
+ERR4292857	SAMEA7015959	GBM_022_Exome_Normal	GBM_022_Exome_Normal	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	27564669	4539736958	Homo sapiens
+ERR4292860	SAMEA7015962	GBM_022_Exome_Relapse	GBM_022_Exome_Relapse	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	35648637	5859418698	Homo sapiens
+ERR4292850	SAMEA7015952	GBM_021_Exome_Normal	GBM_021_Exome_Normal	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	31415054	5168398961	Homo sapiens
+ERR4292855	SAMEA7015957	GBM_021_RNA_Primary	GBM_021_RNA_Primary	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	70370326	11681474116	Homo sapiens
+ERR4292858	SAMEA7015960	GBM_022_Exome_PostRelapse	GBM_022_Exome_PostRelapse	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	49121488	8043143922	Homo sapiens
+ERR4292854	SAMEA7015956	GBM_021_RNA_PostRelapse	GBM_021_RNA_PostRelapse	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	87971578	14427338792	Homo sapiens
+ERR4292862	SAMEA7015964	GBM_022_RNA_Primary	GBM_022_RNA_Primary	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	69037506	11460225996	Homo sapiens
+ERR4292859	SAMEA7015961	GBM_022_Exome_Primary	GBM_022_Exome_Primary	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	26309060	4332045726	Homo sapiens
+ERR4292851	SAMEA7015953	GBM_021_Exome_PostRelapse	GBM_021_Exome_PostRelapse	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	81124343	13279139942	Homo sapiens
+ERR4292852	SAMEA7015954	GBM_021_Exome_Primary	GBM_021_Exome_Primary	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2500	35462324	5833910474	Homo sapiens
+ERR4292856	SAMEA7015958	GBM_021_RNA_Relapse	GBM_021_RNA_Relapse	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	75556023	12542299818	Homo sapiens
+ERR4292861	SAMEA7015963	GBM_022_RNA_PostRelapse	GBM_022_RNA_PostRelapse	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	56522830	9269744120	Homo sapiens
+ERR4292863	SAMEA7015965	GBM_022_RNA_Relapse	GBM_022_RNA_Relapse	Truseq	RNA-Seq	PAIRED	Illumina HiSeq 2500	51915152	8617915232	Homo sapiens

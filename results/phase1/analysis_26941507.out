@@ -1,0 +1,74 @@
+=== stage 6  Tue Sep 15 11:36:48 AM EDT 2026
+pipeline root: /scratch/rgupta25/rygb/pipeline
+input tree staged: 43 files
+modules scaffolded: 22
+
+======================================== 00_AfsharTaxaClass  [rbase] 11:36:49
+   ok   rc=0  outputs=6
+
+======================================== 01_AssalTaxaClass  [rbase] 11:37:03
+   ok   rc=0  outputs=7
+
+======================================== 02_BSTaxaClass  [rbase] 11:37:18
+   ok   rc=0  outputs=12
+
+======================================== 03_IlhanTaxaClass  [rbase] 11:37:21
+   ok   rc=0  outputs=6
+
+======================================== 04_CombineCountTableslog10  [nlme] 11:37:46
+   ok   rc=0  outputs=2
+
+======================================== 05_CombineCountTablesrelab  [nlme] 11:37:48
+   ok   rc=0  outputs=2
+
+======================================== 06_PCO  [r-vegan] 11:37:50
+   ok   rc=0  outputs=2
+
+======================================== 07_AfsharDADA  [rbase] 11:37:54
+   ok   rc=0  outputs=6
+
+======================================== 08_AssalDADA  [rbase] 11:38:11
+   ok   rc=0  outputs=7
+
+======================================== 09_BSDADA  [rbase] 11:39:01
+   ok   rc=0  outputs=7
+
+======================================== 10_IlhanDADA  [rbase] 11:39:23
+   ok   rc=0  outputs=6
+
+======================================== 11_CompareStudies16S  [comparestudies] 11:39:38
+   ok   rc=0  outputs=6
+
+======================================== 12_Heatmap  [complexheatmap] 11:39:44
+   ok   rc=0  outputs=1
+
+======================================== 13_AfsharKraken  [nlme] 11:39:46
+   FAIL rc=1  outputs=6
+   --- last 25 lines of /scratch/rgupta25/rygb/pipeline/13_AfsharKraken/module.log
+   INFO:    Mounting image with FUSE.
+   Error in if (mean(bug > 0) > 0.1) { : 
+     missing value where TRUE/FALSE needed
+   In addition: Warning message:
+   In read.table(paste0(input, "RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_",  :
+     incomplete final line found by readTableHeader on '/scratch/rgupta25/rygb/pipeline/input/RYGB_Afshar2018/Kraken2/RYGB_Afshar_2020Apr23_taxaCount_norm_Log10_Species.tsv'
+   Execution halted
+
+=== done  Tue Sep 15 11:39:58 AM EDT 2026   modules ok: 13   failed: 1
+
+--- figures produced
+   /scratch/rgupta25/rygb/pipeline/06_PCO/output/Genus_PCO.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_BoxPlotCorrelations.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_coefficientsFromScatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_mainFigure1cd.pdf
+   /scratch/rgupta25/rygb/pipeline/11_CompareStudies16S/output/Genus_scatterPlots.pdf
+   /scratch/rgupta25/rygb/pipeline/12_Heatmap/output/Genus_HeatmapAndCluster.pdf
+
+--- key tables vs the repo's published versions
+   Genus_PairwiseComparison.txt           ours    29 lines | repo    29 lines
+   Genus_countTable_merged_log10.txt      ours   189 lines | repo   189 lines
+   metaData_merged.txt                    ours   189 lines | repo   189 lines
+
+--- THE headline number: mean Spearman r across different-study pairs
+    the paper's abstract says 0.41 +/- 0.10; the repo's own table gives 0.410 +/- 0.098
+   ours  all pairs: r = 0.436 +/- 0.126 (n=28) | different-study: r = 0.396 +/- 0.097 (n=23)
+   repo  all pairs: r = 0.450 +/- 0.126 (n=28) | different-study: r = 0.410 +/- 0.098 (n=23)

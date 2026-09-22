@@ -1,0 +1,10 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR4383937	SAMEA7092893	H13B	KMT5B overexpression - clone #3 - replicate B	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24818600	7120230916	Homo sapiens
+ERR4383938	SAMEA7092894	H13C	KMT5B overexpression - clone #3 - replicate C	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24335559	6673876181	Homo sapiens
+ERR4383940	SAMEA7092896	H17B	KMT5B overexpression - clone #7 - replicate B	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	22383707	6400129070	Homo sapiens
+ERR4383933	SAMEA7092889	e12A	KMT5B empty clone - replicate A	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26011320	7136354631	Homo sapiens
+ERR4383934	SAMEA7092890	e12B	KMT5B empty clone - replicate B	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26747533	7336444451	Homo sapiens
+ERR4383941	SAMEA7092897	H17C	KMT5B overexpression - clone #7 - replicate C	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	26048139	7561222891	Homo sapiens
+ERR4383935	SAMEA7092891	e12C	KMT5B empty clone - replicate C	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	23065848	6348654196	Homo sapiens
+ERR4383936	SAMEA7092892	H13A	KMT5B overexpression - clone #3 - replicate A	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	25264893	6436449332	Homo sapiens
+ERR4383939	SAMEA7092895	H17A	KMT5B overexpression - clone #7 - replicate A	unspecified	RNA-Seq	PAIRED	Illumina NovaSeq 6000	29780425	8281161942	Homo sapiens

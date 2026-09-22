@@ -1,0 +1,10 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR5101165	SAMEA7819618	LAN5-luc1	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	44167362	3335024273	Homo sapiens
+ERR5101170	SAMEA7819623	LAN5-luc6	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	42065620	3176163528	Homo sapiens
+ERR5101172	SAMEA7819625	LAN5-luc8	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	50717662	3829600256	Homo sapiens
+ERR5101173	SAMEA7819626	LAN5-luc9	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	47920342	3618255074	Homo sapiens
+ERR5101166	SAMEA7819619	LAN5-luc2	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	43824270	3309092874	Homo sapiens
+ERR5101167	SAMEA7819620	LAN5-luc3	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	43364580	3274329430	Homo sapiens
+ERR5101168	SAMEA7819621	LAN5-luc4	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	47582600	3593041086	Homo sapiens
+ERR5101169	SAMEA7819622	LAN5-luc5	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	47662518	3598920413	Homo sapiens
+ERR5101171	SAMEA7819624	LAN5-luc7	LAN5-luc Sample	unspecified	RNA-Seq	PAIRED	NextSeq 500	45282664	3419047153	Homo sapiens

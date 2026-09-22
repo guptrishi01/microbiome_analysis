@@ -1,0 +1,9 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR5944601	SAMN07519201	GPS	Metagenome or environmental sample from gut metagenome	GPS	AMPLICON	PAIRED	Illumina MiSeq	2139244	1277617910	gut metagenome
+SRR5944602	SAMN07519202	GWP	Metagenome or environmental sample from gut metagenome	GWP	AMPLICON	PAIRED	Illumina MiSeq	1678932	1007775309	gut metagenome
+SRR5944603	SAMN07519203	SPS	Metagenome or environmental sample from gut metagenome	SPS	AMPLICON	PAIRED	Illumina MiSeq	2150839	1290783894	gut metagenome
+SRR5944599	SAMN07519199	ASS	Metagenome or environmental sample from gut metagenome	ASS	AMPLICON	PAIRED	Illumina MiSeq	2027351	1170540201	gut metagenome
+SRR5944600	SAMN07519200	AGS	Metagenome or environmental sample from gut metagenome	AGS	AMPLICON	PAIRED	Illumina MiSeq	2307504	1345328985	gut metagenome
+SRR5944598	SAMN07519198	BSP	Metagenome or environmental sample from gut metagenome	BSP	AMPLICON	PAIRED	Illumina MiSeq	2127347	878698460	gut metagenome
+SRR5944604	SAMN07519204	SWP	Metagenome or environmental sample from gut metagenome	SWP	AMPLICON	PAIRED	Illumina MiSeq	2590505	1552730795	gut metagenome
+SRR5944605	SAMN07519205	NWP	Metagenome or environmental sample from gut metagenome	NWP	AMPLICON	PAIRED	Illumina MiSeq	2474550	1480481401	gut metagenome

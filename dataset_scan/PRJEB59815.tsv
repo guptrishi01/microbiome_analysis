@@ -1,0 +1,5 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR10864735	SAMEA112623585	E-MTAB-12580:SKNAS_SOX11	SKNAS_SOX11	SKNAS_SOX11_p	Tethered Chromatin Conformation Capture	PAIRED	NextSeq 500	24537386	3664454125	Homo sapiens
+ERR10864734	SAMEA112623584	E-MTAB-12580:SHEP_SOX11	SHEP_SOX11	SHEP_SOX11_p	Tethered Chromatin Conformation Capture	PAIRED	NextSeq 500	18789400	2788671896	Homo sapiens
+ERR10864732	SAMEA112623582	E-MTAB-12580:CLBGA_SOX11	CLBGA_SOX11	CLBGA_SOX11_p	Tethered Chromatin Conformation Capture	PAIRED	NextSeq 500	31700868	4557767445	Homo sapiens
+ERR10864733	SAMEA112623583	E-MTAB-12580:KELLY_SOX11	KELLY_SOX11	KELLY_SOX11_p	Tethered Chromatin Conformation Capture	PAIRED	NextSeq 500	16956812	2480900075	Homo sapiens

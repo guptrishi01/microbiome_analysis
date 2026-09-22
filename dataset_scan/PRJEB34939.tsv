@@ -1,0 +1,11 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR3700260	SAMEA6265410	Ileo_sg1	Unfractioned material 3	Unfractioned material 3	WGS	PAIRED	Illumina NovaSeq 6000	6017584	914672768	human gut metagenome
+ERR3700264	SAMEA6265414	Ileo_sg5	Unfractioned material 7	Unfractioned material 7	WGS	PAIRED	Illumina NovaSeq 6000	4452153	676727256	human gut metagenome
+ERR3700262	SAMEA6265412	Ileo_sg3	Unfractioned material 5	Unfractioned material 5	WGS	PAIRED	Illumina NovaSeq 6000	7306078	1110523856	human gut metagenome
+ERR3700255	SAMEA6265405	Ileo_amp1	Unfractioned material 1	Unfractioned material 1	AMPLICON	PAIRED	Illumina MiSeq	1407501	844500600	human gut metagenome
+ERR3700257	SAMEA6265407	Ileo_amp3	First fraction	First fraction	AMPLICON	PAIRED	Illumina MiSeq	639516	383709600	human gut metagenome
+ERR3700256	SAMEA6265406	Ileo_amp2	Unfractioned material 2	Unfractioned material 2	AMPLICON	PAIRED	Illumina MiSeq	882250	529350000	human gut metagenome
+ERR3700258	SAMEA6265408	Ileo_amp4	Second fraction	Second fraction	AMPLICON	PAIRED	Illumina MiSeq	739378	443626800	human gut metagenome
+ERR3700259	SAMEA6265409	Ileo_amp5	Third fraction	Third fraction	AMPLICON	PAIRED	Illumina MiSeq	557348	334408800	human gut metagenome
+ERR3700261	SAMEA6265411	Ileo_sg2	Unfractioned material 4	Unfractioned material 4	WGS	PAIRED	Illumina NovaSeq 6000	5959889	905903128	human gut metagenome
+ERR3700263	SAMEA6265413	Ileo_sg4	Unfractioned material 6	Unfractioned material 6	WGS	PAIRED	Illumina NovaSeq 6000	6589794	1001648688	human gut metagenome

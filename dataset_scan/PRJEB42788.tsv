@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR5317410	SAMEA8100873	1_Input	RNA-Seq of VSV-infected Hek293 cells	unspecified	RNA-Seq	SINGLE	Illumina Genome Analyzer	11911879	929126562	Homo sapiens
+ERR5317411	SAMEA8100885	2_RIG-I IP	RNA-Seq of a RIG-I immunoprecipitation experiment from VSV-infected Hek293 cells	unspecified	RNA-Seq	SINGLE	Illumina Genome Analyzer	11236075	876413850	Homo sapiens
+ERR5317412	SAMEA8100887	3_Control IP	RNA-Seq of a control immunoprecipitation experiment from VSV-infected Hek293 cells	unspecified	RNA-Seq	SINGLE	Illumina Genome Analyzer	7560434	589713852	Homo sapiens

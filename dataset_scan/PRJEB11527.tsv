@@ -1,0 +1,22 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR1101094	SAMEA3638334	21	48h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11940611	2412003422	Homo sapiens
+ERR1101095	SAMEA3638335	22	48h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	12294654	2483520108	Homo sapiens
+ERR1101103	SAMEA3638343	39	72h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	10927964	2207448728	Homo sapiens
+ERR1101104	SAMEA3638344	40	72h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11925465	2408943930	Homo sapiens
+ERR1101085	SAMEA3638325	4	timepoint 0h	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	10416317	2104096034	Homo sapiens
+ERR1101089	SAMEA3638329	10	24h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	12820096	2589659392	Homo sapiens
+ERR1101091	SAMEA3638331	15	24h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	12911421	2608107042	Homo sapiens
+ERR1101093	SAMEA3638333	17	24h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	10257030	2071920060	Homo sapiens
+ERR1101099	SAMEA3638339	28	48h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	12193234	2463033268	Homo sapiens
+ERR1101101	SAMEA3638341	34	72h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11973295	2418605590	Homo sapiens
+ERR1101087	SAMEA3638327	6	timepoint 0h	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	10995270	2221044540	Homo sapiens
+ERR1101088	SAMEA3638328	9	24h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11229368	2268332336	Homo sapiens
+ERR1101096	SAMEA3638336	23	48h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11709333	2365285266	Homo sapiens
+ERR1101097	SAMEA3638337	25	48h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	9728237	1965103874	Homo sapiens
+ERR1101098	SAMEA3638338	27	48h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	9149181	1848134562	Homo sapiens
+ERR1101100	SAMEA3638340	33	72h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11578973	2338952546	Homo sapiens
+ERR1101105	SAMEA3638345	41	72h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	12868267	2599389934	Homo sapiens
+ERR1101086	SAMEA3638326	5	timepoint 0h	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	8276922	1671938244	Homo sapiens
+ERR1101090	SAMEA3638330	11	24h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11704177	2364243754	Homo sapiens
+ERR1101092	SAMEA3638332	16	24h after 4-hydroxytamoxifen (4-OHT) induction	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11398869	2302571538	Homo sapiens
+ERR1101102	SAMEA3638342	35	72h after DMSO exposure	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2000	11219054	2266248908	Homo sapiens

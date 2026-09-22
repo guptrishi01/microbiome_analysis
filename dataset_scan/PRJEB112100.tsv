@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR17072228	SAMEA122238014	E-MTAB-16963:Sample 1	Sample 1	Sample 1_p	RNA-Seq	SINGLE	NextSeq 500	1132544788	52097060248	Homo sapiens
+ERR17072230	SAMEA122238015	E-MTAB-16963:Sample 2	Sample 2	Sample 2_p	RNA-Seq	SINGLE	NextSeq 500	1063264840	48910182640	Homo sapiens
+ERR17072229	SAMEA122238016	E-MTAB-16963:Sample 3	Sample 3	Sample 3_p	RNA-Seq	SINGLE	NextSeq 500	1099302616	50567920336	Homo sapiens

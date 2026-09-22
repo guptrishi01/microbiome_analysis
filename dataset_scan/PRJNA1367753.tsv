@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR36145287	SAMN53352268	GSM9314727	Single-cell RNA sequencing of mouse tissue with WT EVs treated, B2	GSM9314727	RNA-Seq	PAIRED	Illumina NovaSeq 6000	410789944	123236983200	Mus musculus
+SRR36145286	SAMN53352269	GSM9314726	Single-cell RNA sequencing of mouse tissue with WT EVs treated, B1	GSM9314726	RNA-Seq	PAIRED	Illumina NovaSeq 6000	429903283	128970984900	Mus musculus
+SRR36145283	SAMN53352270	GSM9314725	Single-cell RNA sequencing of mouse tissue with BiTE EVs treated, A3	GSM9314725	RNA-Seq	PAIRED	Illumina NovaSeq 6000	338199300	101459790000	Mus musculus
+SRR36145284	SAMN53352272	GSM9314723	Single-cell RNA sequencing of mouse tissue with BiTE EVs treated, A1	GSM9314723	RNA-Seq	PAIRED	Illumina NovaSeq 6000	432241288	129672386400	Mus musculus
+SRR36145285	SAMN53352271	GSM9314724	Single-cell RNA sequencing of mouse tissue with BiTE EVs treated, A2	GSM9314724	RNA-Seq	PAIRED	Illumina NovaSeq 6000	394137260	118241178000	Mus musculus
+SRR36145288	SAMN53352267	GSM9314728	Single-cell RNA sequencing of mouse tissue with WT EVs treated, B3	GSM9314728	RNA-Seq	PAIRED	Illumina NovaSeq 6000	434992700	130497810000	Mus musculus

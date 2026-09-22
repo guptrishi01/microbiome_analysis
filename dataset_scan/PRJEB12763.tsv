@@ -1,0 +1,14 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR1279190	SAMEA3878802	MRI_Genetics_Patient5_Tumor_1	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	134157090	22270076940	Homo sapiens
+ERR1279192	SAMEA3878804	MRI_Genetics_Patient5_Tumor_3	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	125612846	20851732436	Homo sapiens
+ERR1279193	SAMEA3878805	MRI_Genetics_Patient5_Tumor_4	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	135733819	22531813954	Homo sapiens
+ERR1279199	SAMEA3878811	MRI_Genetics_Patient8_Tumor_5	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	232404212	38579099192	Homo sapiens
+ERR1279201	SAMEA3878813	MRI_Genetics_Patient8_Tumor_7	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	191815015	31841292490	Homo sapiens
+ERR1279189	SAMEA3878801	MRI_Genetics_Patient5_Normal	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	93262995	15481657170	Homo sapiens
+ERR1279194	SAMEA3878806	MRI_Genetics_Patient8_Normal	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	176837921	29355094886	Homo sapiens
+ERR1279197	SAMEA3878809	MRI_Genetics_Patient8_Tumor_3	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	233021447	38681560202	Homo sapiens
+ERR1279191	SAMEA3878803	MRI_Genetics_Patient5_Tumor_2	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	119772465	19882229190	Homo sapiens
+ERR1279195	SAMEA3878807	MRI_Genetics_Patient8_Tumor_1	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	273074419	45330353554	Homo sapiens
+ERR1279200	SAMEA3878812	MRI_Genetics_Patient8_Tumor_6	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	181463878	30123003748	Homo sapiens
+ERR1279196	SAMEA3878808	MRI_Genetics_Patient8_Tumor_2	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	169428021	28125051486	Homo sapiens
+ERR1279198	SAMEA3878810	MRI_Genetics_Patient8_Tumor_4	MRI genetics in GBM	Aglient_SureSelect	WXS	PAIRED	Illumina HiSeq 2000	236275576	39221745616	Homo sapiens

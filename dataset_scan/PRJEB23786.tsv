@@ -1,0 +1,17 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR2213775	SAMEA104416556	1-P3p1-Angio_mouse	1-P3p1-Angio_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	2889412	639601513	Mus musculus
+ERR2213778	SAMEA104416559	3-P3p4-Angio_human	3-P3p4-Angio_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	37429559	8285009466	Homo sapiens
+ERR2213774	SAMEA104416555	1-P3p1-Angio_human	1-P3p1-Angio_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	39989222	8966143319	Homo sapiens
+ERR2213780	SAMEA104416561	4-P3p6-Angio_human	4-P3p6-Angio_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	40225879	8992489949	Homo sapiens
+ERR2213784	SAMEA104416565	6-P3p2-Inv_human	6-P3p2-Inv_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	7969651	1780556860	Homo sapiens
+ERR2213788	SAMEA104416569	8-P3p6-Inv_human	8-P3p6-Inv_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	15125205	3410927042	Homo sapiens
+ERR2213789	SAMEA104416570	8-P3p6-Inv_mouse	8-P3p6-Inv_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	18093647	4047364972	Mus musculus
+ERR2213777	SAMEA104416558	2-P3p2-Angio_mouse	2-P3p2-Angio_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	3343121	727015560	Mus musculus
+ERR2213779	SAMEA104416560	3-P3p4-Angio_mouse	3-P3p4-Angio_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	3272045	716411383	Mus musculus
+ERR2213782	SAMEA104416563	5-P3p1-Inv_human	5-P3p1-Inv_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	9383649	2127890783	Homo sapiens
+ERR2213776	SAMEA104416557	2-P3p2-Angio_human	2-P3p2-Angio_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	32783694	7225817208	Homo sapiens
+ERR2213783	SAMEA104416564	5-P3p1-Inv_mouse	5-P3p1-Inv_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	23412828	5259152575	Mus musculus
+ERR2213785	SAMEA104416566	6-P3p2-Inv_mouse	6-P3p2-Inv_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	20515609	4522011167	Mus musculus
+ERR2213781	SAMEA104416562	4-P3p6-Angio_mouse	4-P3p6-Angio_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	2930219	644689994	Mus musculus
+ERR2213786	SAMEA104416567	7-P3p4-Inv_human	7-P3p4-Inv_human	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	15823291	3533371534	Homo sapiens
+ERR2213787	SAMEA104416568	7-P3p4-Inv_mouse	7-P3p4-Inv_mouse	unspecified	RNA-Seq	PAIRED	Illumina HiSeq 2500	19897800	4408676696	Mus musculus

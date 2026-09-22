@@ -1,0 +1,10 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR11496277	SAMEA113563481	E-MTAB-12859:Sample 7 (729_Scr_a)	Sample 7 (729_Scr_a)	Sample 7 (729_Scr_a)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	68524580	10347211580	Homo sapiens
+ERR11496279	SAMEA113563483	E-MTAB-12859:Sample 9 (729_Scr_c)	Sample 9 (729_Scr_c)	Sample 9 (729_Scr_c)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	62519704	9440475304	Homo sapiens
+ERR11496276	SAMEA113563480	E-MTAB-12859:Sample 6 (729_S3_c)	Sample 6 (729_S3_c)	Sample 6 (729_S3_c)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	69615876	10511997276	Homo sapiens
+ERR11496273	SAMEA113563477	E-MTAB-12859:Sample 3 (729_G5_c)	Sample 3 (729_G5_c)	Sample 3 (729_G5_c)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	70429204	10634809804	Homo sapiens
+ERR11496275	SAMEA113563479	E-MTAB-12859:Sample 5 (729_S3_b)	Sample 5 (729_S3_b)	Sample 5 (729_S3_b)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	80487058	12153545758	Homo sapiens
+ERR11496272	SAMEA113563476	E-MTAB-12859:Sample 2 (729_G5_b)	Sample 2 (729_G5_b)	Sample 2 (729_G5_b)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	72289100	10915654100	Homo sapiens
+ERR11496274	SAMEA113563478	E-MTAB-12859:Sample 4 (729_S3_a)	Sample 4 (729_S3_a)	Sample 4 (729_S3_a)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	91896820	13876419820	Homo sapiens
+ERR11496271	SAMEA113563475	E-MTAB-12859:Sample 1 (729_G5_a)	Sample 1 (729_G5_a)	Sample 1 (729_G5_a)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	77522976	11705969376	Homo sapiens
+ERR11496278	SAMEA113563482	E-MTAB-12859:Sample 8 (729_Scr_b)	Sample 8 (729_Scr_b)	Sample 8 (729_Scr_b)_p	RNA-Seq	PAIRED	Illumina NovaSeq 6000	97445732	14714305532	Homo sapiens

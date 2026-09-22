@@ -1,0 +1,15 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR2017547	SAMN03656363	GSM1682255	Liver from DIO mouse 8wk after no surgery 5		RNA-Seq	PAIRED	Illumina HiSeq 2500	26623165	2715562830	Mus musculus
+SRR2017542	SAMN03656358	GSM1682250	Liver from DIO mouse 8wk after gallbladder-ileum anastomosis 4		RNA-Seq	PAIRED	Illumina HiSeq 2500	31397786	3202574172	Mus musculus
+SRR2017543	SAMN03656359	GSM1682251	Liver from DIO mouse 8wk after no surgery 1		RNA-Seq	PAIRED	Illumina HiSeq 2500	23666437	2413976574	Mus musculus
+SRR2017540	SAMN03656356	GSM1682248	Liver from DIO mouse 8wk after gallbladder-ileum anastomosis 2		RNA-Seq	PAIRED	Illumina HiSeq 2500	23885251	2436295602	Mus musculus
+SRR2017545	SAMN03656361	GSM1682253	Liver from DIO mouse 8wk after no surgery 3		RNA-Seq	PAIRED	Illumina HiSeq 2500	24725055	2521955610	Mus musculus
+SRR2017546	SAMN03656362	GSM1682254	Liver from DIO mouse 8wk after no surgery 4		RNA-Seq	PAIRED	Illumina HiSeq 2500	23524625	2399511750	Mus musculus
+SRR2017548	SAMN03656364	GSM1682256	Liver from RYGB mouse 8wk after RYGB 1		RNA-Seq	PAIRED	Illumina HiSeq 2500	21983427	2242309554	Mus musculus
+SRR2017549	SAMN03656365	GSM1682257	Liver from RYGB mouse 8wk after RYGB 2		RNA-Seq	PAIRED	Illumina HiSeq 2500	36702983	3743704266	Mus musculus
+SRR2017550	SAMN03656366	GSM1682258	Liver from RYGB mouse 8wk after RYGB 3		RNA-Seq	PAIRED	Illumina HiSeq 2500	28953698	2953277196	Mus musculus
+SRR2017539	SAMN03656355	GSM1682247	Liver from DIO mouse 8wk after gallbladder-ileum anastomosis 1		RNA-Seq	PAIRED	Illumina HiSeq 2500	24497840	2498779680	Mus musculus
+SRR2017541	SAMN03656357	GSM1682249	Liver from DIO mouse 8wk after gallbladder-ileum anastomosis 3		RNA-Seq	PAIRED	Illumina HiSeq 2500	30728045	3134260590	Mus musculus
+SRR2017544	SAMN03656360	GSM1682252	Liver from DIO mouse 8wk after no surgery 2		RNA-Seq	PAIRED	Illumina HiSeq 2500	23567926	2403928452	Mus musculus
+SRR2017551	SAMN03656367	GSM1682259	Liver from RYGB mouse 8wk after RYGB 4		RNA-Seq	PAIRED	Illumina HiSeq 2500	31506253	3213637806	Mus musculus
+SRR2017552	SAMN03656368	GSM1682260	Liver from RYGB mouse 8wk after RYGB 5		RNA-Seq	PAIRED	Illumina HiSeq 2500	23656844	2412998088	Mus musculus

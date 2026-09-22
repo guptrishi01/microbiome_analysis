@@ -1,0 +1,58 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR14893388	SAMEA118011492	P63	SH4	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	701513322	104324751202	Homo sapiens
+ERR14893394	SAMEA118011503	P22	SH15	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	825337826	122587957171	Homo sapiens
+ERR14893476	SAMEA118205561	P04-9M	Patient 04_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	430150	129234486	human gut metagenome
+ERR14893477	SAMEA118205580	P13-0M	Patient 13 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	830780	249638403	human gut metagenome
+ERR14901073	SAMEA118011494	P77	SH6	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	833084980	123836609696	Homo sapiens
+ERR14886754	SAMEA118011506	P25	SH18	Illumina DNA PCR-Free library kit	WGS	SINGLE	Illumina NovaSeq 6000	815009384	120816750529	Homo sapiens
+ERR14891258	SAMEA118011498	P13	SH10	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	767331676	114071039687	Homo sapiens
+ERR14891260	SAMEA118011502	P21	SH14	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	793664792	117763926882	Homo sapiens
+ERR14893389	SAMEA118011493	P18	SH5	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	636173936	94590776614	Homo sapiens
+ERR14893391	SAMEA118011497	P17	SH9	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	725000660	107774645687	Homo sapiens
+ERR14893392	SAMEA118011499	P20	SH11	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	547627394	81409767202	Homo sapiens
+ERR14893478	SAMEA118205578	P14-0M	Patient 14 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	779780	234273156	human gut metagenome
+ERR14893480	SAMEA118205571	P18-0M	Patient 18 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	920086	276459227	human gut metagenome
+ERR14893482	SAMEA118205573	P18-6M	Patient 18_6 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	732184	220023941	human gut metagenome
+ERR14893484	SAMEA118205584	P19-0M	Patient 19 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	407022	122332262	human gut metagenome
+ERR14893486	SAMEA118205581	P20-0M	Patient 20 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	950922	285706413	human gut metagenome
+ERR14893488	SAMEA118205583	P20-9M	Patient 20_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	717518	215513373	human gut metagenome
+ERR14893502	SAMEA118205570	P63-0M	Patient 63 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	889050	266855092	human gut metagenome
+ERR14893503	SAMEA118205566	P76-0M	Patient 76 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	909992	273081956	human gut metagenome
+ERR14893504	SAMEA118205567	P76-3M	Patient 76_3 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	354292	106441992	human gut metagenome
+ERR14893506	SAMEA118205569	P76-9M	Patient 76_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	716080	215069228	human gut metagenome
+ERR14893507	SAMEA118205575	P77-0M	Patient 77 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	797656	239120432	human gut metagenome
+ERR14893511	SAMEA118205565	P88-9M	Patient 88_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	330880	99370667	human gut metagenome
+ERR14901071	SAMEA118011490	P88	SH2	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	798913344	118658999273	Homo sapiens
+ERR14886732	SAMEA118011504	P24	SH16	Illumina DNA PCR-Free library kit	WGS	SINGLE	Illumina NovaSeq 6000	858468436	127356667664	Homo sapiens
+ERR14887075	SAMEA118011489	P04	SH1	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	972183710	144349146785	Homo sapiens
+ERR14891257	SAMEA118011496	P14	SH8	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	897816912	133430453099	Homo sapiens
+ERR14893390	SAMEA118011495	P54	SH7	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	831940206	123671156144	Homo sapiens
+ERR14893393	SAMEA118011500	P19	SH12	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	626718344	93145383015	Homo sapiens
+ERR14893481	SAMEA118205572	P18-3M	Patient 18_3 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	389908	117147184	human gut metagenome
+ERR14893487	SAMEA118205582	P20-3M	Patient 20_3 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	671260	201695972	human gut metagenome
+ERR14893490	SAMEA118205587	P21-3M	Patient 21_3 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	358548	107721018	human gut metagenome
+ERR14893496	SAMEA118205593	P25-0M	Patient 25 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	450142	112959311	human gut metagenome
+ERR14893498	SAMEA118205595	P25-6M	Patient 25_6 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	405514	101761025	human gut metagenome
+ERR14893499	SAMEA118205596	P26-0M	Patient 26 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	514868	129187656	human gut metagenome
+ERR14893500	SAMEA118205576	P54-6M	Patient 54_6 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	613542	184338274	human gut metagenome
+ERR14893501	SAMEA118205577	P54-9M	Patient 54_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	435270	130727361	human gut metagenome
+ERR14893505	SAMEA118205568	P76-6M	Patient 76_6 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	1074640	322799517	human gut metagenome
+ERR14893508	SAMEA118205562	P88-0M	Patient 88 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	781932	234898692	human gut metagenome
+ERR14893509	SAMEA118205563	P88-3M	Patient 88_3 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	492096	147852320	human gut metagenome
+ERR14893510	SAMEA118205564	P88-6M	Patient 88_6 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	720472	216430003	human gut metagenome
+ERR14891259	SAMEA118011501	P15	SH13	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	671515840	99794035052	Homo sapiens
+ERR14893474	SAMEA118205559	P04-0M	Patient 04 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	903908	271591795	human gut metagenome
+ERR14893485	SAMEA118205585	P19-9M	Patient 19_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	279756	84075553	human gut metagenome
+ERR14893489	SAMEA118205586	P21-0M	Patient 21 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	766154	229570853	human gut metagenome
+ERR14893491	SAMEA118205588	P22-0M	Patient 22 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	621492	186812227	human gut metagenome
+ERR14893492	SAMEA118205590	P23-0M	Patient 23 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	411214	103190492	human gut metagenome
+ERR14893493	SAMEA118205591	P23-6M	Patient 23_6 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	586426	147156614	human gut metagenome
+ERR14893495	SAMEA118205589	P24-0M	Patient 24 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	828340	248871368	human gut metagenome
+ERR14886733	SAMEA118011505	P23	SH17	Illumina DNA PCR-Free library kit	WGS	SINGLE	Illumina NovaSeq 6000	933473850	138515710367	Homo sapiens
+ERR14886755	SAMEA118011507	P26	SH19	Illumina DNA PCR-Free library kit	WGS	SINGLE	Illumina NovaSeq 6000	837452242	124225032045	Homo sapiens
+ERR14893475	SAMEA118205560	P04-3M	Patient 04_3 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	522466	131116745	human gut metagenome
+ERR14893479	SAMEA118205579	P17-0M	Patient 17 presurgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	1036170	311376620	human gut metagenome
+ERR14893483	SAMEA118205574	P18-9M	Patient 18_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	293252	88116055	human gut metagenome
+ERR14893494	SAMEA118205592	P23-9M	Patient 23_9 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	572978	143771576	human gut metagenome
+ERR14893497	SAMEA118205594	P25-3M	Patient 25_3 months after surgery	MiSeq Reagent Kit v3	AMPLICON	PAIRED	Illumina MiSeq	651326	195712810	human gut metagenome
+ERR14901072	SAMEA118011491	P76	SH3	Illumina DNA PCR-Free library kit	WGS	PAIRED	Illumina NovaSeq 6000	615447744	91511382794	Homo sapiens

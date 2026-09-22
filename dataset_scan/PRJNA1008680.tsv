@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR25744626	SAMN37124594	MOUSE-APD-004	Model organism or animal sample from Mus musculus	MOUSE-APD-004	RNA-Seq	PAIRED	Illumina NovaSeq 6000	24807712	7423192246	Mus musculus
+SRR25744627	SAMN37124595	MOUSE-APD-005	Model organism or animal sample from Mus musculus	MOUSE-APD-005	RNA-Seq	PAIRED	Illumina NovaSeq 6000	28232134	8450500314	Mus musculus

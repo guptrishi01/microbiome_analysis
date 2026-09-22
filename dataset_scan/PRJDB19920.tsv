@@ -1,0 +1,6 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR635082	SAMD00858911	SAMD00858911	MYCN/ALK(F1174L) tumor-1	MAF-1 (MAF_5)	WXS	PAIRED	Illumina NovaSeq X	53532234	16059670200	Homo sapiens
+DRR635079	SAMD00858908	SAMD00858908	414C2 hiPSC from a healthy person	iPSC_414C2	WXS	PAIRED	Illumina NovaSeq X	63475471	19042641300	Homo sapiens
+DRR635080	SAMD00858909	SAMD00858909	MYCN/ALK(WT) tumor-1	MAW-1 (MAW_5)	WXS	PAIRED	Illumina NovaSeq X	65486433	19645929900	Homo sapiens
+DRR635081	SAMD00858910	SAMD00858910	MYCN/ALK(WT) tumor-2	MAW-2 (MAW_11)	WXS	PAIRED	Illumina NovaSeq X	61773428	18532028400	Homo sapiens
+DRR635083	SAMD00858912	SAMD00858912	MYCN/ALK(F1174L) tumor-2	MAF-2 (MAF_16)	WXS	PAIRED	Illumina NovaSeq X	55601735	16680520500	Homo sapiens

@@ -1,0 +1,13 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR24831136	SAMN35625905	GSM7453705	Crypts, High-fat diet, Sham	GSM7453705	RNA-Seq	PAIRED	Illumina NovaSeq 6000	123167913	37196709726	Mus musculus
+SRR24831131	SAMN35625903	GSM7453707	Crypts, High-fat diet, Vertical sleeve gastrectomy	GSM7453707	RNA-Seq	PAIRED	Illumina NovaSeq 6000	328935468	99338511336	Mus musculus
+SRR24831128	SAMN35625901	GSM7453709	Crypts, Low-fat diet, Sham	GSM7453709	RNA-Seq	PAIRED	Illumina NovaSeq 6000	241326932	72880733464	Mus musculus
+SRR24831129	SAMN35625902	GSM7453708	Villi, Low-fat diet, Sham	GSM7453708	RNA-Seq	PAIRED	Illumina NovaSeq 6000	440178529	132933915758	Mus musculus
+SRR24831137	SAMN35625906	GSM7453704	Villi, High-fat diet, Sham	GSM7453704	RNA-Seq	PAIRED	Illumina NovaSeq 6000	343244861	103659948022	Mus musculus
+SRR24831138	SAMN35625906	GSM7453704	Villi, High-fat diet, Sham	GSM7453704	RNA-Seq	PAIRED	Illumina NovaSeq 6000	132327733	39962975366	Mus musculus
+SRR24831127	SAMN35625901	GSM7453709	Crypts, Low-fat diet, Sham	GSM7453709	RNA-Seq	PAIRED	Illumina NovaSeq 6000	617664801	186534769902	Mus musculus
+SRR24831132	SAMN35625903	GSM7453707	Crypts, High-fat diet, Vertical sleeve gastrectomy	GSM7453707	RNA-Seq	PAIRED	Illumina NovaSeq 6000	125783479	37986610658	Mus musculus
+SRR24831133	SAMN35625904	GSM7453706	Villi, High-fat diet, Vertical sleeve gastrectomy	GSM7453706	RNA-Seq	PAIRED	Illumina NovaSeq 6000	415082613	125354949126	Mus musculus
+SRR24831134	SAMN35625904	GSM7453706	Villi, High-fat diet, Vertical sleeve gastrectomy	GSM7453706	RNA-Seq	PAIRED	Illumina NovaSeq 6000	157985420	47711596840	Mus musculus
+SRR24831135	SAMN35625905	GSM7453705	Crypts, High-fat diet, Sham	GSM7453705	RNA-Seq	PAIRED	Illumina NovaSeq 6000	315824623	95379036146	Mus musculus
+SRR24831130	SAMN35625902	GSM7453708	Villi, Low-fat diet, Sham	GSM7453708	RNA-Seq	PAIRED	Illumina NovaSeq 6000	172856399	52202632498	Mus musculus

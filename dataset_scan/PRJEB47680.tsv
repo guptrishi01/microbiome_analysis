@@ -1,0 +1,9 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR6802974	SAMEA10160203	E-MTAB-9435_fastq:GBM1_total_3p_GEX_CR3	GBM1_total_3p_GEX_CR3	GBM1_total_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens
+ERR6802975	SAMEA10160203	E-MTAB-9435_fastq:GBM1_total_3p_GEX_CR3	GBM1_total_3p_GEX_CR3	GBM1_total_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens
+ERR6802978	SAMEA10160205	E-MTAB-9435_fastq:GBM3_total_3p_GEX_CR3	GBM3_total_3p_GEX_CR3	GBM3_total_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens
+ERR6802972	SAMEA10160202	E-MTAB-9435_fastq:GBM1_CD45_3p_GEX_CR3	GBM1_CD45_3p_GEX_CR3	GBM1_CD45_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens
+ERR6802973	SAMEA10160202	E-MTAB-9435_fastq:GBM1_CD45_3p_GEX_CR3	GBM1_CD45_3p_GEX_CR3	GBM1_CD45_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens
+ERR6802976	SAMEA10160204	E-MTAB-9435_fastq:GBM2_total_3p_GEX_CR3	GBM2_total_3p_GEX_CR3	GBM2_total_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens
+ERR6802977	SAMEA10160204	E-MTAB-9435_fastq:GBM2_total_3p_GEX_CR3	GBM2_total_3p_GEX_CR3	GBM2_total_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens
+ERR6802979	SAMEA10160205	E-MTAB-9435_fastq:GBM3_total_3p_GEX_CR3	GBM3_total_3p_GEX_CR3	GBM3_total_3p_GEX_CR3_p	OTHER	PAIRED	Illumina NovaSeq 6000	0	0	Homo sapiens

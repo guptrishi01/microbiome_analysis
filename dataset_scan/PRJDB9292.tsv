@@ -1,0 +1,21 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR207616	SAMD00204505	SAMD00204505	gut metagenome, perkinson disease, appendectomy, subject one	DN01	AMPLICON	PAIRED	Illumina MiSeq	288044	173402488	human gut metagenome
+DRR207621	SAMD00204510	SAMD00204510	gut metagenome, healthy subject, no appendectomy, subject three	DN06	AMPLICON	PAIRED	Illumina MiSeq	265170	159632340	human gut metagenome
+DRR207623	SAMD00204512	SAMD00204512	gut metagenome, perkinson disease, no appendectomy, subject one	DN08	AMPLICON	PAIRED	Illumina MiSeq	294420	177240840	human gut metagenome
+DRR207617	SAMD00204506	SAMD00204506	gut metagenome, healthy subject, no appendectomy, subject one	DN02	AMPLICON	PAIRED	Illumina MiSeq	256790	154587580	human gut metagenome
+DRR207618	SAMD00204507	SAMD00204507	gut metagenome, perkinson disease, appendectomy, subject two	DN03	AMPLICON	PAIRED	Illumina MiSeq	328557	197791314	human gut metagenome
+DRR207629	SAMD00204518	SAMD00204518	gut metagenome, healthy subject, no appendectomy, subject five	DN14	AMPLICON	PAIRED	Illumina MiSeq	258751	155768102	human gut metagenome
+DRR207631	SAMD00204520	SAMD00204520	gut metagenome, healthy subject, appendectomy, subject two	DN16	AMPLICON	PAIRED	Illumina MiSeq	277533	167074866	human gut metagenome
+DRR207634	SAMD00204523	SAMD00204523	gut metagenome, healthy subject, appendectomy, subject four	DN19	AMPLICON	PAIRED	Illumina MiSeq	235692	141886584	human gut metagenome
+DRR207635	SAMD00204524	SAMD00204524	gut metagenome, healthy subject, appendectomy, subject five	DN20	AMPLICON	PAIRED	Illumina MiSeq	370845	223248690	human gut metagenome
+DRR207619	SAMD00204508	SAMD00204508	gut metagenome, healthy subject, no appendectomy, subject two	DN04	AMPLICON	PAIRED	Illumina MiSeq	317836	191337272	human gut metagenome
+DRR207622	SAMD00204511	SAMD00204511	gut metagenome, perkinson disease, appendectomy, subject four	DN07	AMPLICON	PAIRED	Illumina MiSeq	304604	183371608	human gut metagenome
+DRR207624	SAMD00204513	SAMD00204513	gut metagenome, healthy subject, appendectomy, subject one	DN09	AMPLICON	PAIRED	Illumina MiSeq	314863	189547526	human gut metagenome
+DRR207626	SAMD00204515	SAMD00204515	gut metagenome, healthy subject, no appendectomy, subject four	DN11	AMPLICON	PAIRED	Illumina MiSeq	270187	162652574	human gut metagenome
+DRR207627	SAMD00204516	SAMD00204516	gut metagenome, perkinson disease, appendectomy, subject five	DN12	AMPLICON	PAIRED	Illumina MiSeq	302147	181892494	human gut metagenome
+DRR207628	SAMD00204517	SAMD00204517	gut metagenome, perkinson disease, no appendectomy, subject three	DN13	AMPLICON	PAIRED	Illumina MiSeq	245187	147602574	human gut metagenome
+DRR207620	SAMD00204509	SAMD00204509	gut metagenome, perkinson disease, appendectomy, subject three	DN05	AMPLICON	PAIRED	Illumina MiSeq	264766	159389132	human gut metagenome
+DRR207625	SAMD00204514	SAMD00204514	gut metagenome, perkinson disease, no appendectomy, subject two	DN10	AMPLICON	PAIRED	Illumina MiSeq	264984	159520368	human gut metagenome
+DRR207630	SAMD00204519	SAMD00204519	gut metagenome, perkinson disease, no appendectomy, subject four	DN15	AMPLICON	PAIRED	Illumina MiSeq	263252	158477704	human gut metagenome
+DRR207632	SAMD00204521	SAMD00204521	gut metagenome, perkinson disease, no appendectomy, subject five	DN17	AMPLICON	PAIRED	Illumina MiSeq	299288	180171376	human gut metagenome
+DRR207633	SAMD00204522	SAMD00204522	gut metagenome, healthy subject, appendectomy, subject three	DN18	AMPLICON	PAIRED	Illumina MiSeq	445488	268183776	human gut metagenome

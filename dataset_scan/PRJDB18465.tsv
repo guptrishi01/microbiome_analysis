@@ -1,0 +1,13 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR582349	SAMD00800407	SAMD00800407	A. thaliana seedling 6-hr mock-treated rep 1	A. thaliana seedling 6-hr mock-treated rep 1	RNA-Seq	SINGLE	NextSeq 500	19388321	1442680495	Arabidopsis thaliana
+DRR582350	SAMD00800408	SAMD00800408	A. thaliana seedling 6-hr mock-treated rep 2	A. thaliana seedling 6-hr mock-treated rep 2	RNA-Seq	SINGLE	NextSeq 500	17892890	1331536936	Arabidopsis thaliana
+DRR582351	SAMD00800409	SAMD00800409	A. thaliana seedling 6-hr mock-treated rep 3	A. thaliana seedling 6-hr mock-treated rep 3	RNA-Seq	SINGLE	NextSeq 500	19781335	1471635447	Arabidopsis thaliana
+DRR582355	SAMD00800413	SAMD00800413	A. thaliana seedling 24-hr mock-treated rep 1	A. thaliana seedling 24-hr mock-treated rep 1	RNA-Seq	SINGLE	NextSeq 500	19829831	1475527440	Arabidopsis thaliana
+DRR582358	SAMD00800416	SAMD00800416	A. thaliana seedling 24-hr 50 microM kC9-treated rep 1	A. thaliana seedling 24-hr 50 microM kC9-treated rep 1	RNA-Seq	SINGLE	NextSeq 500	20065466	1493117877	Arabidopsis thaliana
+DRR582357	SAMD00800415	SAMD00800415	A. thaliana seedling 24-hr mock-treated rep 3	A. thaliana seedling 24-hr mock-treated rep 3	RNA-Seq	SINGLE	NextSeq 500	21745049	1618235660	Arabidopsis thaliana
+DRR582353	SAMD00800411	SAMD00800411	A. thaliana seedling 6-hr 50 microM kC9-treated rep 2	A. thaliana seedling 6-hr 50 microM kC9-treated rep 2	RNA-Seq	SINGLE	NextSeq 500	20230252	1504498148	Arabidopsis thaliana
+DRR582352	SAMD00800410	SAMD00800410	A. thaliana seedling 6-hr 50 microM kC9-treated rep 1	A. thaliana seedling 6-hr 50 microM kC9-treated rep 1	RNA-Seq	SINGLE	NextSeq 500	18183289	1353220520	Arabidopsis thaliana
+DRR582354	SAMD00800412	SAMD00800412	A. thaliana seedling 6-hr 50 microM kC9-treated rep 3	A. thaliana seedling 6-hr 50 microM kC9-treated rep 3	RNA-Seq	SINGLE	NextSeq 500	17829044	1326779322	Arabidopsis thaliana
+DRR582356	SAMD00800414	SAMD00800414	A. thaliana seedling 24-hr mock-treated rep 2	A. thaliana seedling 24-hr mock-treated rep 2	RNA-Seq	SINGLE	NextSeq 500	21095473	1570037432	Arabidopsis thaliana
+DRR582359	SAMD00800417	SAMD00800417	A. thaliana seedling 24-hr 50 microM kC9-treated rep 2	A. thaliana seedling 24-hr 50 microM kC9-treated rep 2	RNA-Seq	SINGLE	NextSeq 500	17897556	1331855637	Arabidopsis thaliana
+DRR582360	SAMD00800418	SAMD00800418	A. thaliana seedling 24-hr 50 microM kC9-treated rep 3	A. thaliana seedling 24-hr 50 microM kC9-treated rep 3	RNA-Seq	SINGLE	NextSeq 500	18336562	1364458218	Arabidopsis thaliana

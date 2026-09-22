@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR087467	SAMD00034984	SAMD00034984	Control3_2014_12_25		RNA-Seq	PAIRED	Illumina HiSeq 2000	41376970	8275394000	Eustoma russellianum
+DRR087470	SAMD00034987	SAMD00034987	FR3_2014_12_25		RNA-Seq	PAIRED	Illumina HiSeq 2000	38114878	7622975600	Eustoma russellianum
+DRR087465	SAMD00034982	SAMD00034982	Control1_2014_12_25		RNA-Seq	PAIRED	Illumina HiSeq 2000	30214200	6042840000	Eustoma russellianum
+DRR087466	SAMD00034983	SAMD00034983	Control2_2014_12_25		RNA-Seq	PAIRED	Illumina HiSeq 2000	35448405	7089681000	Eustoma russellianum
+DRR087469	SAMD00034986	SAMD00034986	FR2_2014_12_25		RNA-Seq	PAIRED	Illumina HiSeq 2000	33727698	6745539600	Eustoma russellianum
+DRR087468	SAMD00034985	SAMD00034985	FR1_2014_12_25		RNA-Seq	PAIRED	Illumina HiSeq 2000	33962022	6792404400	Eustoma russellianum

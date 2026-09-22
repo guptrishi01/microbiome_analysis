@@ -1,0 +1,19 @@
+# Downloaded/built infrastructure — reproducible via scripts/00_setup.sh, not source work
+conda_pkgs/
+envs/
+images/
+db/
+singularity_cache/
+
+# Raw reads / large intermediates (these live on $DATA_ROOT / scratch, not here, but ignore defensively)
+*.fastq
+*.fastq.gz
+*.fasta
+*.fasta.gz
+*.sam
+*.bam
+*.sif
+
+# OS/editor cruft
+.DS_Store
+*.swp

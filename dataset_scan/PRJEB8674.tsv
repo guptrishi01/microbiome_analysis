@@ -1,0 +1,2 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR770585	SAMEA3271077	ena-SAMPLE-DPSQ-26-02-2015-13:50:32:567-2		Axolotl_Not1S_ada_gDNA_10kb	WGS	SINGLE	MinION	0	0	Ambystoma mexicanum

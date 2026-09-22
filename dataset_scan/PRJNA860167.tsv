@@ -1,0 +1,26 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR20313814	SAMN29832615	SDH-6	Model organism or animal sample from Canis lupus familiaris	SDH-6	WGS	PAIRED	Illumina HiSeq 4000	148917401	21543804614	Canis lupus familiaris
+SRR20313829	SAMN29832623	SDH-C-12	Model organism or animal sample from Canis lupus familiaris	SDH-C-12	WGS	PAIRED	Illumina HiSeq 4000	318521561	37792209625	Canis lupus familiaris
+SRR20313832	SAMN29832612	SDH-2	Model organism or animal sample from Canis lupus familiaris	SDH-2	WGS	PAIRED	Illumina HiSeq 4000	219113041	31662222189	Canis lupus familiaris
+SRR20313810	SAMN29832619	SDH-C-1	Model organism or animal sample from Canis lupus familiaris	SDH-C-1	WGS	PAIRED	Illumina HiSeq 4000	226313808	26768751892	Canis lupus familiaris
+SRR20313811	SAMN29832618	SDH-10	Model organism or animal sample from Canis lupus familiaris	SDH-10	WGS	PAIRED	Illumina HiSeq 4000	250925059	36801196792	Canis lupus familiaris
+SRR20313815	SAMN29832614	SDH-4	Model organism or animal sample from Canis lupus familiaris	SDH-4	WGS	PAIRED	Illumina HiSeq 4000	165356868	23893055680	Canis lupus familiaris
+SRR20313816	SAMN29832635	SDH-C-61	Model organism or animal sample from Canis lupus familiaris	SDH-C-61	WGS	PAIRED	Illumina HiSeq 4000	314174905	45941404442	Canis lupus familiaris
+SRR20313820	SAMN29832631	SDH-C-57	Model organism or animal sample from Canis lupus familiaris	SDH-C-57	WGS	PAIRED	Illumina HiSeq 4000	370523223	51843423726	Canis lupus familiaris
+SRR20313828	SAMN29832624	SDH-C-24	Model organism or animal sample from Canis lupus familiaris	SDH-C-24	WGS	PAIRED	Illumina HiSeq 4000	115788347	16817284380	Canis lupus familiaris
+SRR20313809	SAMN29832620	SDH-C-3	Model organism or animal sample from Canis lupus familiaris	SDH-C-3	WGS	PAIRED	Illumina HiSeq 4000	363310347	51093109219	Canis lupus familiaris
+SRR20313812	SAMN29832617	SDH-9	Model organism or animal sample from Canis lupus familiaris	SDH-9	WGS	PAIRED	Illumina HiSeq 4000	147559052	21453638845	Canis lupus familiaris
+SRR20313819	SAMN29832632	SDH-C-58	Model organism or animal sample from Canis lupus familiaris	SDH-C-58	WGS	PAIRED	Illumina HiSeq 4000	195970546	22906684819	Canis lupus familiaris
+SRR20313822	SAMN29832630	SDH-C-46	Model organism or animal sample from Canis lupus familiaris	SDH-C-46	WGS	PAIRED	Illumina HiSeq 4000	215630356	31548787728	Canis lupus familiaris
+SRR20313823	SAMN29832629	SDH-C-44	Model organism or animal sample from Canis lupus familiaris	SDH-C-44	WGS	PAIRED	Illumina HiSeq 4000	181656013	26471544140	Canis lupus familiaris
+SRR20313824	SAMN29832628	SDH-C-42	Model organism or animal sample from Canis lupus familiaris	SDH-C-42	WGS	PAIRED	Illumina HiSeq 4000	173069338	25155103646	Canis lupus familiaris
+SRR20313826	SAMN29832626	SDH-C-40	Model organism or animal sample from Canis lupus familiaris	SDH-C-40	WGS	PAIRED	Illumina HiSeq 4000	167059517	24291247900	Canis lupus familiaris
+SRR20313813	SAMN29832616	SDH-7	Model organism or animal sample from Canis lupus familiaris	SDH-7	WGS	PAIRED	Illumina HiSeq 4000	291057762	42499860829	Canis lupus familiaris
+SRR20313818	SAMN29832633	SDH-C-59	Model organism or animal sample from Canis lupus familiaris	SDH-C-59	WGS	PAIRED	Illumina HiSeq 4000	273617097	39764663513	Canis lupus familiaris
+SRR20313825	SAMN29832627	SDH-C-41	Model organism or animal sample from Canis lupus familiaris	SDH-C-41	WGS	PAIRED	Illumina HiSeq 4000	238423925	34749920516	Canis lupus familiaris
+SRR20313830	SAMN29832622	SDH-C-8	Model organism or animal sample from Canis lupus familiaris	SDH-C-8	WGS	PAIRED	Illumina HiSeq 4000	148632874	21659684517	Canis lupus familiaris
+SRR20313833	SAMN29832611	SDH-1	Model organism or animal sample from Canis lupus familiaris	SDH-1	WGS	PAIRED	Illumina HiSeq 4000	156690993	22237144638	Canis lupus familiaris
+SRR20313817	SAMN29832634	SDH-C-60	Model organism or animal sample from Canis lupus familiaris	SDH-C-60	WGS	PAIRED	Illumina HiSeq 4000	372305201	52141488777	Canis lupus familiaris
+SRR20313821	SAMN29832613	SDH-3	Model organism or animal sample from Canis lupus familiaris	SDH-3	WGS	PAIRED	Illumina HiSeq 4000	211741248	30420336220	Canis lupus familiaris
+SRR20313827	SAMN29832625	SDH-C-26	Model organism or animal sample from Canis lupus familiaris	SDH-C-26	WGS	PAIRED	Illumina HiSeq 4000	148851080	21588494505	Canis lupus familiaris
+SRR20313831	SAMN29832621	SDH-C-7	Model organism or animal sample from Canis lupus familiaris	SDH-C-7	WGS	PAIRED	Illumina HiSeq 4000	169618773	24694546972	Canis lupus familiaris

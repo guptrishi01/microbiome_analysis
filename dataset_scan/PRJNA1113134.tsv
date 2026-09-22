@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR29107027	SAMN41446834			B2	OTHER	PAIRED	Illumina NovaSeq X Plus	23599175	7126950850	
+SRR29107029	SAMN41446832	A3		A3	OTHER	PAIRED	Illumina NovaSeq X Plus	26610449	8036355598	Oryctolagus cuniculus
+SRR29107030	SAMN41446831	A2		A2	OTHER	PAIRED	Illumina NovaSeq X Plus	24867727	7510053554	Oryctolagus cuniculus
+SRR29107031	SAMN41446830	A1		A1	OTHER	PAIRED	Illumina NovaSeq X Plus	22422854	6771701908	Oryctolagus cuniculus
+SRR29107026	SAMN41446835			B3	OTHER	PAIRED	Illumina NovaSeq X Plus	26152201	7897964702	
+SRR29107028	SAMN41446833			B1	OTHER	PAIRED	Illumina NovaSeq X Plus	25642603	7744066106	

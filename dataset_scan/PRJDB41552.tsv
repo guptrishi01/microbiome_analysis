@@ -1,0 +1,3 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+DRR1000671	SAMD01879988	SAMD01879988	WT (SAMC6042227)	missing	OTHER	PAIRED	Illumina NovaSeq 6000	401613994	120484198200	Mus musculus
+DRR1000670	SAMD01879987	SAMD01879987	CXCR6KO (SAMC6042226)	missing	OTHER	PAIRED	Illumina NovaSeq 6000	407022756	122106826800	Mus musculus

@@ -1,0 +1,7 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+SRR10913125	SAMN13880702	POCD-2	Model organism or animal sample from Rattus norvegicus	R19014887-190329-POCD-2	RNA-Seq	PAIRED	Illumina HiSeq 2500	44998246	13499473800	Rattus norvegicus
+SRR10913127	SAMN13880700	Dex-3	Model organism or animal sample from Rattus norvegicus	R19014887-190329-Dex-3	RNA-Seq	PAIRED	Illumina HiSeq 2500	48616809	14585042700	Rattus norvegicus
+SRR10913128	SAMN13880699	Dex-2	Model organism or animal sample from Rattus norvegicus	R19014887-190329-Dex-2	RNA-Seq	PAIRED	Illumina HiSeq 2500	42242405	12672721500	Rattus norvegicus
+SRR10913124	SAMN13880703	POCD-3	Model organism or animal sample from Rattus norvegicus	R19014887-190329-POCD-3	RNA-Seq	PAIRED	Illumina HiSeq 2500	44209862	13262958600	Rattus norvegicus
+SRR10913126	SAMN13880701	POCD-1	Model organism or animal sample from Rattus norvegicus	R19014887-190329-POCD-1	RNA-Seq	PAIRED	Illumina HiSeq 2500	44606454	13381936200	Rattus norvegicus
+SRR10913129	SAMN13880698	Dex-1	Model organism or animal sample from Rattus norvegicus	R19014887-190329-Dex-1	RNA-Seq	PAIRED	Illumina HiSeq 2500	47668494	14300548200	Rattus norvegicus

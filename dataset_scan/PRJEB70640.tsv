@@ -1,0 +1,4 @@
+run_accession	sample_accession	sample_alias	sample_title	library_name	library_strategy	library_layout	instrument_model	read_count	base_count	scientific_name
+ERR12340110	SAMEA113426928	645b78ec33cf76f22a67ef04	3e2500b9-3769-44d5-8b3c-174a12021d08-dtol	DTOL13807040	WGS	SINGLE	Revio	3705151	33659983248	Oxystoma pomonae
+ERR12765154	SAMEA113426941	645b78ec33cf76f22a67ef11	c88b7990-a412-4bc0-ad21-7de72fc6f271-dtol		RNA-Seq	PAIRED	Illumina NovaSeq X	67857742	10246519042	Oxystoma pomonae
+ERR12342480	SAMEA113426928	645b78ec33cf76f22a67ef04	3e2500b9-3769-44d5-8b3c-174a12021d08-dtol		Hi-C	PAIRED	Illumina NovaSeq 6000	765332838	115565258538	Oxystoma pomonae
