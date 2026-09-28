@@ -383,7 +383,10 @@ questions:
   procedures differ" (a real procedure-type effect, not disconfirmation of
   phase 1). Don't treat 3a and 3b results as equivalent evidence.
 
-Each sub-phase needs 3 papers.
+Each sub-phase targets 2 papers (revised down from an original target of 3,
+after two full search passes — see the "considered, not used" notes below
+each table for why the natural 3rd candidates were set aside rather than
+force-included).
 
 **This reuses phase 2's infrastructure almost entirely** —
 `09_find_datasets.sbatch`'s scan, `10_inspect_candidates.sh`'s
@@ -406,29 +409,40 @@ samples, matching the paper's reported split exactly when independently
 counted from the ENA filereport, not just trusted from the paper's
 aggregate n. Split into two cohorts at integration time, same as phase 2.
 
-### Phase 3b — RYGB-specific: **target met, 3/3**
+### Phase 3b — RYGB-specific: **target met, 2/2**
 
 | Accession | Paper | Paired subjects | Read length |
 |---|---|---|---|
 | `PRJNA1364303` ✅ | São Paulo, RYGB + exercise (32 women, 16 RYGB-only + 16 RYGB+exercise) | **30/31** (23 with all 3 timepoints); mixed with a mouse arm in the same BioProject — must filter on `host=Homo sapiens` AND alias containing `RYGB`, not run count alone | 285bp paired-end MiSeq → truncLen 200 |
 | `PRJNA859272` (GB arm) ✅ | Lazaro et al. 2025, *Obesity Surgery* | **10/10 paired** (0M + 6M), procedure confirmed per-sample via `sample_title` suffix "BP" | ~245bp ×2 MiSeq V4 → truncLen 200 |
-| `PRJNA1227268` ✅⚠️ | "Examining spatial microbiome variations across GI tract regions in obesity," *Sci Rep* 2025 — explicit "standardized minimally invasive RYGB... on all study participants" | **9/51** — most of the 51-subject cohort is single-timepoint or non-fecal (stomach/jejunum/peritoneum samples also collected) | ~223bp ×2 MiSeq V3-V4 → truncLen 200 |
 
-**Caveat on `PRJNA1227268`:** its post-op sample was collected **days 4-5
-after surgery** — every other cohort in this entire project (phase 1, 2,
-and 3b's other two candidates) measures weeks-to-months out; BS is the
-fastest at 1 month. Whether a surgery-associated microbial signature is
-even detectable 4-5 days out is a genuinely open question. Don't treat a
-weak result from this specific cohort as equivalent evidence to the other
-two — it may simply be too early to see the effect at all, regardless of
-whether the signature is real.
+**Considered, not used:** `PRJNA1227268` ("Examining spatial microbiome
+variations across GI tract regions in obesity," *Sci Rep* 2025) — real,
+public, confirmed RYGB via explicit paper text, but set aside rather than
+included as a 3rd entry: only 9/51 subjects paired, and its post-op sample
+was collected **days 4-5 after surgery** — every other cohort in this
+entire project measures weeks-to-months out (BS is the fastest at 1
+month), so whether a surgical signature is even detectable that early is
+a genuinely open question. Adding it would have diluted rather than
+strengthened this sub-phase's evidence.
 
-### Phase 3a — general bariatric, non-RYGB: **2/3, still need 1 more**
+### Phase 3a — general bariatric, non-RYGB: **target met, 2/2**
 
 | Accession | Paper | Procedure | Paired subjects | Read length |
 |---|---|---|---|---|
 | `PRJNA635168` ✅ | Chaudhari et al. 2021, *Cell Host & Microbe* — gut-liver axis | Sleeve gastrectomy | **17/17 (100%)** — cleanest pairing found; `sample_title` is literally `<subjectID>-Pre-SG`/`-Post-SG` | 250bp paired-end MiSeq → truncLen 200 |
 | `PRJNA859272` (SG arm) ✅ | Lazaro et al. 2025, *Obesity Surgery* (same paper as the 3b entry above) | Sleeve gastrectomy | **14/14 paired** (0M + 6M), procedure confirmed per-sample via `sample_title` suffix "S" | ~245bp ×2 MiSeq V4 → truncLen 200 |
+
+**Considered, not used:** `PRJNA1133160` (One-Anastomosis Gastric Bypass,
+La Trobe University pilot) — technically clean (7/7 paired, cleanly
+parseable metadata, public SRA, comfortably long reads) but set aside for
+two stacked reasons rather than one: no peer-reviewed paper exists for
+this specific dataset (only the depositing lab's own BioProject
+description and an unpublished thesis draft back the procedure/design
+claims), and n=7 is far smaller than every other cohort in this project.
+Either alone would be a documentable caveat; together they made this a
+meaningfully weaker addition rather than a genuine 3rd data point. Worth
+revisiting if the underlying thesis is ever published.
 
 **`OMIX009130` fully investigated and ruled out (2026-09-28)** — not just a
 tooling gap, a hard dead end for two independent reasons, confirmed
@@ -447,38 +461,37 @@ retrievable by any automated mechanism, registered or not. Not
 recommended for further pursuit unless the paper's authors are contacted
 directly for raw FASTQ files.
 
-Gastric banding, duodenal switch, and omega-loop/OAGB single-procedure
-public cohorts were searched for across two separate passes and
-consistently came up empty — every human duodenal switch/BPD 16S study
-found across both searches was either not public, cross-sectional, single-
-timepoint (no baseline), hosted on a non-SRA/ENA repository, or blocked by
-the same unresolvable-procedure-mix problem below. This appears to be a
-genuine gap in what's publicly available, not a search-effort gap.
+Gastric banding and duodenal switch single-procedure public cohorts were
+searched for across three separate passes and consistently came up empty —
+every human duodenal switch/BPD 16S study found was either not public,
+cross-sectional, single-timepoint (no baseline), hosted on a non-SRA/ENA
+repository, or blocked by the same unresolvable-procedure-mix problem
+below. This appears to be a genuine gap in what's publicly available, not
+a search-effort gap. (One omega-loop/OAGB candidate, `PRJNA1133160`, was
+found — see "considered, not used" above.)
 
-**Bottom line: Phase 3a stays at 2/3** unless the one lead below
-(`PRJEB28869`'s supplement) is manually retrieved.
+**Bottom line: both sub-phases are complete at 2/2 each.** The target was
+revised down from 3 to 2 per sub-phase after two full search passes found
+no additional candidate that didn't require either a manual/non-automatable
+retrieval step or came with stacked caveats serious enough to weaken rather
+than strengthen the evidence (see "considered, not used" above). Not
+pursuing `PRJEB28869` further (below) — its supplement requires a manual
+human-browser download, which wasn't pursued.
 
 ### Doesn't fit either bucket
 
-- **`PRJEB28869`** (Shen et al. 2019, *SOARD*, DOI
-  10.1016/j.soard.2019.05.038) — **the one actionable lead.** The paper
-  explicitly references *Supplemental Table 3: "Comparison between RYGB
-  and SG surgical groups in the Barcelona cohort"* — almost certainly the
-  exact crosswalk needed (SG patients are only in the 12-subject Barcelona
-  arm; the 14-subject NYC arm is RYGB-only). Automated retrieval failed:
-  this is an NIH-manuscript deposit gated behind a JS proof-of-work
-  challenge (`cloudpmc-viewer-pow`) that `curl`/`WebFetch` can't solve, and
-  ScienceDirect/ResearchGate both return HTTP 403 to automated fetches.
-  **A human browser does not hit this block** — manually downloading
-  `NIHMS1531476-supplement-1.pdf` from
-  `https://pmc.ncbi.nlm.nih.gov/articles/PMC6722012/` would likely resolve
-  this in one step. Note: ENA's own metadata for this BioProject is
-  separately unusable for cross-checking even once the supplement is in
-  hand — `sample_alias` is a bare sequential integer with no site/timepoint
-  encoding, and every sample's `geo_loc_name` reads identically as NYC
-  coordinates even for the true Barcelona subjects (a data-entry artifact).
-  The supplement's ID mapping would need to be matched against ENA's
-  numbering by run order/count, not by any metadata field.
+- `PRJEB28869` (Shen et al. 2019, *SOARD*, DOI 10.1016/j.soard.2019.05.038)
+  — has an explicit *Supplemental Table 3: "Comparison between RYGB and SG
+  surgical groups in the Barcelona cohort"* that would almost certainly
+  resolve its procedure-mix problem, but automated retrieval failed (an
+  NIH-manuscript deposit gated behind a JS proof-of-work challenge that
+  `curl`/`WebFetch` can't solve; ScienceDirect/ResearchGate both return
+  HTTP 403). Not pursued further — would require a human manually
+  downloading `NIHMS1531476-supplement-1.pdf` from
+  `https://pmc.ncbi.nlm.nih.gov/articles/PMC6722012/`, and even then, ENA's
+  own metadata for this BioProject is separately messy (bare sequential
+  `sample_alias`, incorrect `geo_loc_name` on every sample) and would need
+  manual cross-referencing by run order rather than a clean field match.
 - `PRJEB39382` (Ben Izhak et al. 2021, *mSystems*) — previously listed as a
   top candidate (30/86 paired, largest paired-n found at the time), but its
   patients are an unresolvable ~1/3-each mix of Sleeve/Omega Loop/RYGB with
