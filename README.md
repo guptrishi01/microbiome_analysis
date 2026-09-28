@@ -383,8 +383,7 @@ questions:
   procedures differ" (a real procedure-type effect, not disconfirmation of
   phase 1). Don't treat 3a and 3b results as equivalent evidence.
 
-Each sub-phase needs 3 papers. One clean candidate for each is already
-verified; 2 more per sub-phase are still needed.
+Each sub-phase needs 3 papers.
 
 **This reuses phase 2's infrastructure almost entirely** —
 `09_find_datasets.sbatch`'s scan, `10_inspect_candidates.sh`'s
@@ -395,36 +394,84 @@ shape), and the now-generalized shared scripts
 `compareStudies_SV.R`, already proven to scale past 4 studies). Phase 3 is
 primarily a dataset-sourcing and onboarding task, not new engineering.
 
-### Phase 3b — RYGB-specific (need 2 more)
+**One BioProject covers both sub-phases at once, same pattern as phase 2's
+`PRJNA1480144`→Ileostomy/SDT split.** `PRJNA859272` (Lazaro et al. 2025,
+*Obesity Surgery* — "Sleeve Gastrectomy and Gastric Bypass Impact in
+Patient's Metabolic, Gut Microbiome, and Immuno-inflammatory Profiles") is
+a head-to-head SG-vs-RYGB comparative study, 24 patients total, each
+sampled at 0M (1wk pre-op) and 6M post-op. Confirmed cleanly resolvable at
+the sample level — `sample_title` directly encodes subject+timepoint+
+procedure (e.g. `01BP`=post-RYGB, `04S`=post-SG) — 14 SG + 10 RYGB post-op
+samples, matching the paper's reported split exactly when independently
+counted from the ENA filereport, not just trusted from the paper's
+aggregate n. Split into two cohorts at integration time, same as phase 2.
+
+### Phase 3b — RYGB-specific: **target met, 3/3**
 
 | Accession | Paper | Paired subjects | Read length |
 |---|---|---|---|
 | `PRJNA1364303` ✅ | São Paulo, RYGB + exercise (32 women, 16 RYGB-only + 16 RYGB+exercise) | **30/31** (23 with all 3 timepoints); mixed with a mouse arm in the same BioProject — must filter on `host=Homo sapiens` AND alias containing `RYGB`, not run count alone | 285bp paired-end MiSeq → truncLen 200 |
+| `PRJNA859272` (GB arm) ✅ | Lazaro et al. 2025, *Obesity Surgery* | **10/10 paired** (0M + 6M), procedure confirmed per-sample via `sample_title` suffix "BP" | ~245bp ×2 MiSeq V4 → truncLen 200 |
+| `PRJNA1227268` ✅⚠️ | "Examining spatial microbiome variations across GI tract regions in obesity," *Sci Rep* 2025 — explicit "standardized minimally invasive RYGB... on all study participants" | **9/51** — most of the 51-subject cohort is single-timepoint or non-fecal (stomach/jejunum/peritoneum samples also collected) | ~223bp ×2 MiSeq V3-V4 → truncLen 200 |
 
-### Phase 3a — general bariatric, non-RYGB (need 2 more)
+**Caveat on `PRJNA1227268`:** its post-op sample was collected **days 4-5
+after surgery** — every other cohort in this entire project (phase 1, 2,
+and 3b's other two candidates) measures weeks-to-months out; BS is the
+fastest at 1 month. Whether a surgery-associated microbial signature is
+even detectable 4-5 days out is a genuinely open question. Don't treat a
+weak result from this specific cohort as equivalent evidence to the other
+two — it may simply be too early to see the effect at all, regardless of
+whether the signature is real.
+
+### Phase 3a — general bariatric, non-RYGB: **2/3, still need 1 more**
 
 | Accession | Paper | Procedure | Paired subjects | Read length |
 |---|---|---|---|---|
 | `PRJNA635168` ✅ | Chaudhari et al. 2021, *Cell Host & Microbe* — gut-liver axis | Sleeve gastrectomy | **17/17 (100%)** — cleanest pairing found; `sample_title` is literally `<subjectID>-Pre-SG`/`-Post-SG` | 250bp paired-end MiSeq → truncLen 200 |
+| `PRJNA859272` (SG arm) ✅ | Lazaro et al. 2025, *Obesity Surgery* (same paper as the 3b entry above) | Sleeve gastrectomy | **14/14 paired** (0M + 6M), procedure confirmed per-sample via `sample_title` suffix "S" | ~245bp ×2 MiSeq V4 → truncLen 200 |
+
+A strong-by-sample-size 3rd candidate exists but is currently blocked:
+**`OMIX009130`** (Chen et al. 2025, *Frontiers in Microbiology* — sleeve
+gastrectomy weight-loss prediction, 31/52 paired, the largest paired-n
+found in any search so far) is deposited in China's **OMIX/National
+Genomics Data Center, not SRA or ENA** — confirmed via ENA's API returning
+"Unknown accession format." This repo's download stage
+(`scripts/02_download.sbatch`, `sra-tools`) only knows how to pull SRA/ENA
+accessions — this is a real tooling gap, not a data-quality problem.
+Onboarding it would require either a new download path for OMIX/NGDC or
+requesting the data directly from the authors; not attempted here.
+
+Gastric banding, duodenal switch, and omega-loop/OAGB single-procedure
+public cohorts were specifically searched for and came up empty — the
+closest leads found were either not public, cross-sectional (different
+people per group, not the same subjects before/after), or blocked by the
+same unresolvable-procedure-mix problem as below.
 
 ### Doesn't fit either bucket
 
 - `PRJEB39382` (Ben Izhak et al. 2021, *mSystems*) — previously listed as a
-  top candidate (30/86 paired, largest paired-n found), but its patients are
-  an unresolvable ~1/3-each mix of Sleeve/Omega Loop/RYGB with no per-subject
-  procedure labels available, so subjects can't be cleanly assigned to
-  either sub-phase. Set aside unless the paper's authors can be reached for
-  a per-subject procedure breakdown.
+  top candidate (30/86 paired, largest paired-n found at the time), but its
+  patients are an unresolvable ~1/3-each mix of Sleeve/Omega Loop/RYGB with
+  no per-subject procedure labels available. Set aside unless the paper's
+  authors can be reached for a per-subject procedure breakdown.
+- `PRJEB28869` (Shen et al. 2019, *SOARD*) — same unresolvable-mix problem:
+  19 RYGB + 7 SG per the paper's aggregate count, but no per-subject
+  procedure field in BioSample metadata and no ID crosswalk in the paper.
+- `PRJNA639545` (*Gut Microbes* 2022) — structurally the best timepoint
+  design found in this whole search (26 RYGB + 14 SG, 4 clean timepoints:
+  baseline/post-diet/1mo/3mo) but blocked the same way — BioSample only
+  gives generic "patient N" IDs with no crosswalk to the paper's SG/RYGB
+  table. Worth real follow-up (contacting the authors for the ID mapping)
+  given how good the design otherwise is.
 - `PRJEB48942` (Han et al. 2022, *Diabetes, Obesity and Metabolism*) — the
   richest timepoint ladder of anything found (preop/1mo/3mo/6mo/12mo, 37/41
-  paired, 21 with all 5 timepoints), procedure not yet confirmed against
-  the paper. Worth checking which sub-phase it belongs to once its read
-  length is confirmed usable — mean sits right at ~150bp, the same
-  borderline tier as Ilhan's own truncLen, so needs a real per-FASTQ length
-  check before trusting the reported average either way.
+  paired, 21 with all 5 timepoints), procedure still not confirmed against
+  the paper. Read length also borderline (~150bp mean, same tier as
+  Ilhan's own truncLen) — needs a real per-FASTQ check either way.
 
-**Ruled out entirely** (mixed human+mouse translational studies or
-specimen-purity failures — corrects earlier versions of this list):
+**Ruled out entirely** (mixed human+mouse translational studies,
+specimen-purity failures, cross-sectional designs, or non-16S data —
+corrects earlier versions of this list):
 - `PRJNA727576` — only 6 of 358 "runs" are actually human; the rest are
   gnotobiotic mice inheriting the human donor's metadata tags. Too small.
 - `PRJNA941111` — `isolation_source` is 100% gastric tissue (biopsy), not
@@ -437,6 +484,18 @@ specimen-purity failures — corrects earlier versions of this list):
 - `PRJNA1118203`, `PRJNA1199984` — no parseable subject/timepoint
   attributes anywhere in BioSample XML; would need each paper's own
   supplementary table to use at all.
+- `PRJNA1093424` ("Pediatric Bariatric Surgery") — confirmed via its paper
+  (*Gut Microbes* 2025) that only the murine FMT-recipient samples are 16S;
+  the human samples are shotgun metagenomic.
+- `PRJNA321731` — confirmed cross-sectional per the source paper (Ilhan et
+  al. 2017, *ISME J*): RYGB-alumni, band-alumni, normal-weight, and
+  pre-surgery-obese are four different sets of people, not the same
+  subjects before/after.
+- `PRJNA885527`, `PRJNA355361` — confirmed rat/mouse via ENA project XML
+  `SCIENTIFIC_NAME`, not human.
+- `PRJNA1233226` — confirmed to be an FMT-into-mice tumor study using
+  post-surgery human stool only as a transplant source, same translational
+  pattern as `PRJNA727576`.
 
 **Methodology note for future scans:** `09_find_datasets.sbatch`/
 `10_inspect_candidates.sh` currently score off `sample_title`/`sample_alias`/
@@ -444,8 +503,9 @@ specimen-purity failures — corrects earlier versions of this list):
 translational studies above sailed through (`scientific_name` says
 `"metagenome"` for both human and mouse arms). A `host` BioSample-attribute
 check would catch this class of false positive automatically, and neither
-script currently checks the *specific surgical procedure* at all — worth
-adding both if phase 3 scans more candidates.
+script currently checks the *specific surgical procedure*, nor whether an
+accession is even hosted on SRA/ENA vs. another repository (OMIX/NGDC,
+etc.) — worth adding all three if phase 3 scans more candidates.
 
 Verify each with `scripts/10_inspect_candidates.sh <ACCESSION>` before
 committing to one, exactly as was done for the phase-2 cohorts.
