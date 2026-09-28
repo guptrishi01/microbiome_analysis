@@ -373,15 +373,52 @@ shape), and the now-generalized shared scripts
 `compareStudies_SV.R`, already proven to scale past 4 studies). Phase 3 is
 primarily a dataset-sourcing and onboarding task, not new engineering.
 
-**Concrete candidates already surfaced** by the existing scan
-(`dataset_scan/shortlist.tsv`), not yet investigated in depth:
+**Candidates verified (2026-09-27)** — went past `dataset_scan/shortlist.tsv`'s
+cached SRA metadata into each study's actual BioSample XML records
+(`host`, `Group`, `collection_date`, `isolation_source` attributes), which
+caught something the shortlist score alone missed: several
+high-scoring "bariatric" hits are mixed human+mouse translational studies
+where `scientific_name` reads as generic `"metagenome"` for both species,
+inflating the apparent human cohort size. No data downloaded, metadata-only.
 
-| Accession | Score | Runs | Notes |
+Top 3:
+
+| Accession | Paper | Paired subjects | Read length |
 |---|---|---|---|
-| `PRJEB39382` | 78 | 258 | "Projection of gut microbiome pre and post bariatric surgery to predict surgery outcome" — day-level timepoints (101d-122d), MiSeq. Top candidate; needs the paper's methods to confirm baseline definition ("timepoints present but no clear baseline token" per the scan). |
-| `PRJNA727576` | 60 | 358 | "Bariatric surgery shifts human gut microbiota to improve glycemic control" — 301bp reads, good length. Subject/timepoint not in SRA metadata alone; needs the paper's supplementary table (same pattern already used for the BS cohort). |
-| `PRJEB88699` | 78 | 57 | "Multi-Omics investigation of Bariatric Surgery Outcomes" — 3/6/9 month timepoints. Currently disqualified: ~74bp reads, too short for `truncLen`. Worth a second look if a longer-read run exists. |
-| `PRJNA1118203`, `PRJNA1199984`, `PRJNA951705`, `PRJNA941111` | 50s-57 | 38-47 | Smaller bariatric cohorts, all flagged "no repeat sampling detectable from metadata" — would need each paper's own methods/supplementary table, same as BS. |
+| `PRJNA635168` | Chaudhari et al. 2021, *Cell Host & Microbe* — sleeve gastrectomy, gut-liver axis | **17/17 (100%)** — cleanest pairing found; `sample_title` is literally `<subjectID>-Pre-SG`/`-Post-SG` | 250bp paired-end MiSeq → truncLen 200 |
+| `PRJEB39382` | Ben Izhak et al. 2021, *mSystems* — outcome prediction | **30/86** — largest paired-n. Timepoint letters (A-E) need the paper's methods to decode (same precedent as the BS cohort) | 251bp single-end MiSeq → truncLen 200 |
+| `PRJNA1364303` | São Paulo — RYGB + exercise, translational | **30/31** (23 with all 3 timepoints); mixed with a mouse arm — must filter on `host=Homo sapiens` AND alias containing `RYGB`, not run count alone | 285bp paired-end MiSeq → truncLen 200 |
+
+**Backup, not fully qualified:** `PRJEB48942` (Han et al. 2022, *Diabetes,
+Obesity and Metabolism*) — the richest timepoint ladder of anything found
+(preop/1mo/3mo/6mo/12mo, 37/41 subjects paired, 21 with all 5 timepoints),
+but mean read length sits right at ~150bp, the same borderline tier as
+Ilhan's own truncLen — needs a real per-FASTQ length check against
+downloaded reads before trusting, not just the reported average.
+
+**Ruled out** (corrects the previous version of this table):
+- `PRJNA727576` — previously listed here as a top candidate on 358 "runs."
+  BioSample XML shows only **6 are actually human** (`host=Homo sapiens`);
+  the other 352 are gnotobiotic mice inheriting the human donor's
+  `Group`/`Donor patient ID` tags. Real usable n=6, too small. Disqualified.
+- `PRJNA941111` — `isolation_source` is 100% gastric tissue (biopsy), not
+  fecal. Fails specimen-purity the same way IleocecalResection's biopsy
+  runs did in phase 2.
+- `PRJNA951705` — only 8/47 runs are actually human (rest is a mouse arm);
+  resolves to 4 real subjects, too small.
+- `PRJEB88699` — confirmed ~74bp mean read length, well under even
+  Ilhan's 150bp floor.
+- `PRJNA1118203`, `PRJNA1199984` — no parseable subject/timepoint
+  attributes anywhere in BioSample XML (just sequential aliquot IDs); would
+  need each paper's own supplementary table to use at all.
+
+**Methodology note for future scans:** `09_find_datasets.sbatch`/
+`10_inspect_candidates.sh` currently score off `sample_title`/`sample_alias`/
+`library_name`/`scientific_name` only, which both ruled-out translational
+studies above sailed through (`scientific_name` says `"metagenome"` for
+both the human and mouse arms). A `host` BioSample-attribute check would
+catch this class of false positive automatically — worth adding if phase 3
+scans more candidates beyond these three.
 
 Verify each with `scripts/10_inspect_candidates.sh <ACCESSION>` before
 committing to one, exactly as was done for the phase-2 cohorts.
