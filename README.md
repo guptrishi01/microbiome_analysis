@@ -389,6 +389,32 @@ Top 3:
 | `PRJEB39382` | Ben Izhak et al. 2021, *mSystems* — outcome prediction | **30/86** — largest paired-n. Timepoint letters (A-E) need the paper's methods to decode (same precedent as the BS cohort) | 251bp single-end MiSeq → truncLen 200 |
 | `PRJNA1364303` | São Paulo — RYGB + exercise, translational | **30/31** (23 with all 3 timepoints); mixed with a mouse arm — must filter on `host=Homo sapiens` AND alias containing `RYGB`, not run count alone | 285bp paired-end MiSeq → truncLen 200 |
 
+**Procedure check (2026-09-28) — only 1 of 3 is a true procedure match.**
+The original 4 phase-1 cohorts are not generically "bariatric" — the
+authors' own paper states all 4 underwent **RYGB specifically**
+("three smaller publicly available... datasets from patients who also
+underwent RYGB surgery"), confirmed per cohort against each source paper
+(BS, Assal, Ilhan, Afshar all RYGB). Checking the 3 candidates against
+that:
+
+| Candidate | Actual procedure | Matches phase-1 (RYGB)? |
+|---|---|---|
+| `PRJNA1364303` | RYGB (confirmed in the paper's methods) | **Yes — exact match, the true positive control** |
+| `PRJNA635168` | Sleeve gastrectomy only (confirmed in the paper's methods) | No — different procedure |
+| `PRJEB39382` | Mixed ~1/3 each Sleeve / Omega Loop / RYGB, no way to isolate RYGB-only subjects from public metadata | No — unresolvable procedure mix |
+
+This changes how results from each should be read. `PRJNA1364303` is the
+only clean test of "does another independent RYGB cohort share the
+signature" — a weak result there would be hard to explain away.
+`PRJNA635168` and `PRJEB39382` test a related but different question
+("does the signature extend across bariatric-procedure subtypes"); a weak
+result from either is ambiguous between "the signature isn't RYGB-specific"
+(still supports bariatric-specificity generally) and "the signature is
+genuinely RYGB-specific and these procedures differ" (a real
+procedure-type effect, not disconfirmation of phase 1's finding). Don't
+treat all 3 as equivalent evidence when interpreting phase 3's eventual
+results.
+
 **Backup, not fully qualified:** `PRJEB48942` (Han et al. 2022, *Diabetes,
 Obesity and Metabolism*) — the richest timepoint ladder of anything found
 (preop/1mo/3mo/6mo/12mo, 37/41 subjects paired, 21 with all 5 timepoints),
