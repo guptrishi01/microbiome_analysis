@@ -352,17 +352,39 @@ regardless of whether the surgery type matches — noisier real-world data,
 different labs/protocols, more heterogeneity in general.
 
 **The proposed test:** find additional 16S cohorts that match the
-original 4 as closely as possible — bariatric surgery specifically (RYGB,
-sleeve gastrectomy, gastric banding, duodenal switch), a genuine
-pre-surgical baseline plus ≥1 post-surgical timepoint, repeat-sampled per
-subject — and run them through the exact same pipeline. If *these*
-cohorts correlate with the existing 4 at something close to the original
-~0.40 (unlike phase 2's non-bariatric cohorts), that's direct, positive
-evidence the signature is real and bariatric-specific, not an artifact of
-"more pooled data always looks worse." Combined with phase 2's negative
-result, this would be the complete argument: the bariatric-surgery
-microbial signature is consistent *within* bariatric surgery and does
-*not* generalize to gut surgery in general.
+original 4 as closely as possible — a genuine pre-surgical baseline plus
+≥1 post-surgical timepoint, repeat-sampled per subject — and run them
+through the exact same pipeline. If these cohorts correlate with the
+existing 4 at something close to the original ~0.40 (unlike phase 2's
+non-bariatric cohorts), that's direct, positive evidence the signature is
+real, not an artifact of "more pooled data always looks worse."
+
+**Procedure check (2026-09-28) matters here.** The original 4 phase-1
+cohorts are not generically "bariatric" — the authors' own paper states
+all 4 underwent **RYGB specifically** ("three smaller publicly
+available... datasets from patients who also underwent RYGB surgery"),
+confirmed per cohort against each source paper (BS, Assal, Ilhan, Afshar
+all RYGB). "Bariatric surgery" is an umbrella term — RYGB is one specific
+procedure under it, alongside sleeve gastrectomy, gastric banding, and
+duodenal switch — so a candidate matching the *umbrella* term isn't
+automatically matching the *actual* procedure. This is why phase 3 is now
+split into two sub-phases that ask two different, deliberately separated
+questions:
+
+- **Phase 3b — RYGB-specific (the true positive control):** does another
+  independent *RYGB* cohort share the signature? A weak result here would
+  be hard to explain away — this is the cleanest possible test of phase 1's
+  actual finding.
+- **Phase 3a — general bariatric, non-RYGB:** does the signature extend to
+  *other* bariatric procedures (sleeve gastrectomy, gastric banding,
+  duodenal switch, etc.)? A weak result here is ambiguous — it could mean
+  "the signature isn't RYGB-specific" (still supports bariatric-specificity
+  generally) or "the signature is genuinely RYGB-specific and these
+  procedures differ" (a real procedure-type effect, not disconfirmation of
+  phase 1). Don't treat 3a and 3b results as equivalent evidence.
+
+Each sub-phase needs 3 papers. One clean candidate for each is already
+verified; 2 more per sub-phase are still needed.
 
 **This reuses phase 2's infrastructure almost entirely** —
 `09_find_datasets.sbatch`'s scan, `10_inspect_candidates.sh`'s
@@ -373,78 +395,57 @@ shape), and the now-generalized shared scripts
 `compareStudies_SV.R`, already proven to scale past 4 studies). Phase 3 is
 primarily a dataset-sourcing and onboarding task, not new engineering.
 
-**Candidates verified (2026-09-27)** — went past `dataset_scan/shortlist.tsv`'s
-cached SRA metadata into each study's actual BioSample XML records
-(`host`, `Group`, `collection_date`, `isolation_source` attributes), which
-caught something the shortlist score alone missed: several
-high-scoring "bariatric" hits are mixed human+mouse translational studies
-where `scientific_name` reads as generic `"metagenome"` for both species,
-inflating the apparent human cohort size. No data downloaded, metadata-only.
-
-Top 3:
+### Phase 3b — RYGB-specific (need 2 more)
 
 | Accession | Paper | Paired subjects | Read length |
 |---|---|---|---|
-| `PRJNA635168` | Chaudhari et al. 2021, *Cell Host & Microbe* — sleeve gastrectomy, gut-liver axis | **17/17 (100%)** — cleanest pairing found; `sample_title` is literally `<subjectID>-Pre-SG`/`-Post-SG` | 250bp paired-end MiSeq → truncLen 200 |
-| `PRJEB39382` | Ben Izhak et al. 2021, *mSystems* — outcome prediction | **30/86** — largest paired-n. Timepoint letters (A-E) need the paper's methods to decode (same precedent as the BS cohort) | 251bp single-end MiSeq → truncLen 200 |
-| `PRJNA1364303` | São Paulo — RYGB + exercise, translational | **30/31** (23 with all 3 timepoints); mixed with a mouse arm — must filter on `host=Homo sapiens` AND alias containing `RYGB`, not run count alone | 285bp paired-end MiSeq → truncLen 200 |
+| `PRJNA1364303` ✅ | São Paulo, RYGB + exercise (32 women, 16 RYGB-only + 16 RYGB+exercise) | **30/31** (23 with all 3 timepoints); mixed with a mouse arm in the same BioProject — must filter on `host=Homo sapiens` AND alias containing `RYGB`, not run count alone | 285bp paired-end MiSeq → truncLen 200 |
 
-**Procedure check (2026-09-28) — only 1 of 3 is a true procedure match.**
-The original 4 phase-1 cohorts are not generically "bariatric" — the
-authors' own paper states all 4 underwent **RYGB specifically**
-("three smaller publicly available... datasets from patients who also
-underwent RYGB surgery"), confirmed per cohort against each source paper
-(BS, Assal, Ilhan, Afshar all RYGB). Checking the 3 candidates against
-that:
+### Phase 3a — general bariatric, non-RYGB (need 2 more)
 
-| Candidate | Actual procedure | Matches phase-1 (RYGB)? |
-|---|---|---|
-| `PRJNA1364303` | RYGB (confirmed in the paper's methods) | **Yes — exact match, the true positive control** |
-| `PRJNA635168` | Sleeve gastrectomy only (confirmed in the paper's methods) | No — different procedure |
-| `PRJEB39382` | Mixed ~1/3 each Sleeve / Omega Loop / RYGB, no way to isolate RYGB-only subjects from public metadata | No — unresolvable procedure mix |
+| Accession | Paper | Procedure | Paired subjects | Read length |
+|---|---|---|---|---|
+| `PRJNA635168` ✅ | Chaudhari et al. 2021, *Cell Host & Microbe* — gut-liver axis | Sleeve gastrectomy | **17/17 (100%)** — cleanest pairing found; `sample_title` is literally `<subjectID>-Pre-SG`/`-Post-SG` | 250bp paired-end MiSeq → truncLen 200 |
 
-This changes how results from each should be read. `PRJNA1364303` is the
-only clean test of "does another independent RYGB cohort share the
-signature" — a weak result there would be hard to explain away.
-`PRJNA635168` and `PRJEB39382` test a related but different question
-("does the signature extend across bariatric-procedure subtypes"); a weak
-result from either is ambiguous between "the signature isn't RYGB-specific"
-(still supports bariatric-specificity generally) and "the signature is
-genuinely RYGB-specific and these procedures differ" (a real
-procedure-type effect, not disconfirmation of phase 1's finding). Don't
-treat all 3 as equivalent evidence when interpreting phase 3's eventual
-results.
+### Doesn't fit either bucket
 
-**Backup, not fully qualified:** `PRJEB48942` (Han et al. 2022, *Diabetes,
-Obesity and Metabolism*) — the richest timepoint ladder of anything found
-(preop/1mo/3mo/6mo/12mo, 37/41 subjects paired, 21 with all 5 timepoints),
-but mean read length sits right at ~150bp, the same borderline tier as
-Ilhan's own truncLen — needs a real per-FASTQ length check against
-downloaded reads before trusting, not just the reported average.
+- `PRJEB39382` (Ben Izhak et al. 2021, *mSystems*) — previously listed as a
+  top candidate (30/86 paired, largest paired-n found), but its patients are
+  an unresolvable ~1/3-each mix of Sleeve/Omega Loop/RYGB with no per-subject
+  procedure labels available, so subjects can't be cleanly assigned to
+  either sub-phase. Set aside unless the paper's authors can be reached for
+  a per-subject procedure breakdown.
+- `PRJEB48942` (Han et al. 2022, *Diabetes, Obesity and Metabolism*) — the
+  richest timepoint ladder of anything found (preop/1mo/3mo/6mo/12mo, 37/41
+  paired, 21 with all 5 timepoints), procedure not yet confirmed against
+  the paper. Worth checking which sub-phase it belongs to once its read
+  length is confirmed usable — mean sits right at ~150bp, the same
+  borderline tier as Ilhan's own truncLen, so needs a real per-FASTQ length
+  check before trusting the reported average either way.
 
-**Ruled out** (corrects the previous version of this table):
-- `PRJNA727576` — previously listed here as a top candidate on 358 "runs."
-  BioSample XML shows only **6 are actually human** (`host=Homo sapiens`);
-  the other 352 are gnotobiotic mice inheriting the human donor's
-  `Group`/`Donor patient ID` tags. Real usable n=6, too small. Disqualified.
+**Ruled out entirely** (mixed human+mouse translational studies or
+specimen-purity failures — corrects earlier versions of this list):
+- `PRJNA727576` — only 6 of 358 "runs" are actually human; the rest are
+  gnotobiotic mice inheriting the human donor's metadata tags. Too small.
 - `PRJNA941111` — `isolation_source` is 100% gastric tissue (biopsy), not
-  fecal. Fails specimen-purity the same way IleocecalResection's biopsy
-  runs did in phase 2.
-- `PRJNA951705` — only 8/47 runs are actually human (rest is a mouse arm);
-  resolves to 4 real subjects, too small.
+  fecal. Same specimen-purity failure as IleocecalResection's excluded
+  biopsy runs in phase 2.
+- `PRJNA951705` — only 8/47 runs are actually human; resolves to 4 real
+  subjects, too small.
 - `PRJEB88699` — confirmed ~74bp mean read length, well under even
   Ilhan's 150bp floor.
 - `PRJNA1118203`, `PRJNA1199984` — no parseable subject/timepoint
-  attributes anywhere in BioSample XML (just sequential aliquot IDs); would
-  need each paper's own supplementary table to use at all.
+  attributes anywhere in BioSample XML; would need each paper's own
+  supplementary table to use at all.
 
 **Methodology note for future scans:** `09_find_datasets.sbatch`/
 `10_inspect_candidates.sh` currently score off `sample_title`/`sample_alias`/
-`library_name`/`scientific_name` only, which both ruled-out translational
-studies above sailed through (`scientific_name` says `"metagenome"` for
-both the human and mouse arms). A `host` BioSample-attribute check would
-catch this class of false positive automatically — worth adding if phase 3
-scans more candidates beyond these three.
+`library_name`/`scientific_name` only, which several ruled-out
+translational studies above sailed through (`scientific_name` says
+`"metagenome"` for both human and mouse arms). A `host` BioSample-attribute
+check would catch this class of false positive automatically, and neither
+script currently checks the *specific surgical procedure* at all — worth
+adding both if phase 3 scans more candidates.
 
 Verify each with `scripts/10_inspect_candidates.sh <ACCESSION>` before
 committing to one, exactly as was done for the phase-2 cohorts.
