@@ -430,39 +430,69 @@ whether the signature is real.
 | `PRJNA635168` ✅ | Chaudhari et al. 2021, *Cell Host & Microbe* — gut-liver axis | Sleeve gastrectomy | **17/17 (100%)** — cleanest pairing found; `sample_title` is literally `<subjectID>-Pre-SG`/`-Post-SG` | 250bp paired-end MiSeq → truncLen 200 |
 | `PRJNA859272` (SG arm) ✅ | Lazaro et al. 2025, *Obesity Surgery* (same paper as the 3b entry above) | Sleeve gastrectomy | **14/14 paired** (0M + 6M), procedure confirmed per-sample via `sample_title` suffix "S" | ~245bp ×2 MiSeq V4 → truncLen 200 |
 
-A strong-by-sample-size 3rd candidate exists but is currently blocked:
-**`OMIX009130`** (Chen et al. 2025, *Frontiers in Microbiology* — sleeve
-gastrectomy weight-loss prediction, 31/52 paired, the largest paired-n
-found in any search so far) is deposited in China's **OMIX/National
-Genomics Data Center, not SRA or ENA** — confirmed via ENA's API returning
-"Unknown accession format." This repo's download stage
-(`scripts/02_download.sbatch`, `sra-tools`) only knows how to pull SRA/ENA
-accessions — this is a real tooling gap, not a data-quality problem.
-Onboarding it would require either a new download path for OMIX/NGDC or
-requesting the data directly from the authors; not attempted here.
+**`OMIX009130` fully investigated and ruled out (2026-09-28)** — not just a
+tooling gap, a hard dead end for two independent reasons, confirmed
+directly against the live OMIX entry:
+1. It's marked **controlled access** under China's Ministry of Science and
+   Technology Human Genetic Resources framework — a formal international-
+   collaboration approval process, not a simple API key or FTP credential.
+2. Even past that gate, **no raw FASTQ files are deposited under this
+   accession at all** — only an already-processed ASV taxonomy table
+   (`.xls`, 8.8MB), which wouldn't feed this repo's raw-reads pipeline
+   (`02_download.sbatch` → `03_dada2.sbatch`) regardless of access. The
+   page itself states the data "has not yet been registered" for release.
+
+No download-path engineering would fix this — the raw reads aren't
+retrievable by any automated mechanism, registered or not. Not
+recommended for further pursuit unless the paper's authors are contacted
+directly for raw FASTQ files.
 
 Gastric banding, duodenal switch, and omega-loop/OAGB single-procedure
-public cohorts were specifically searched for and came up empty — the
-closest leads found were either not public, cross-sectional (different
-people per group, not the same subjects before/after), or blocked by the
-same unresolvable-procedure-mix problem as below.
+public cohorts were searched for across two separate passes and
+consistently came up empty — every human duodenal switch/BPD 16S study
+found across both searches was either not public, cross-sectional, single-
+timepoint (no baseline), hosted on a non-SRA/ENA repository, or blocked by
+the same unresolvable-procedure-mix problem below. This appears to be a
+genuine gap in what's publicly available, not a search-effort gap.
+
+**Bottom line: Phase 3a stays at 2/3** unless the one lead below
+(`PRJEB28869`'s supplement) is manually retrieved.
 
 ### Doesn't fit either bucket
 
+- **`PRJEB28869`** (Shen et al. 2019, *SOARD*, DOI
+  10.1016/j.soard.2019.05.038) — **the one actionable lead.** The paper
+  explicitly references *Supplemental Table 3: "Comparison between RYGB
+  and SG surgical groups in the Barcelona cohort"* — almost certainly the
+  exact crosswalk needed (SG patients are only in the 12-subject Barcelona
+  arm; the 14-subject NYC arm is RYGB-only). Automated retrieval failed:
+  this is an NIH-manuscript deposit gated behind a JS proof-of-work
+  challenge (`cloudpmc-viewer-pow`) that `curl`/`WebFetch` can't solve, and
+  ScienceDirect/ResearchGate both return HTTP 403 to automated fetches.
+  **A human browser does not hit this block** — manually downloading
+  `NIHMS1531476-supplement-1.pdf` from
+  `https://pmc.ncbi.nlm.nih.gov/articles/PMC6722012/` would likely resolve
+  this in one step. Note: ENA's own metadata for this BioProject is
+  separately unusable for cross-checking even once the supplement is in
+  hand — `sample_alias` is a bare sequential integer with no site/timepoint
+  encoding, and every sample's `geo_loc_name` reads identically as NYC
+  coordinates even for the true Barcelona subjects (a data-entry artifact).
+  The supplement's ID mapping would need to be matched against ENA's
+  numbering by run order/count, not by any metadata field.
 - `PRJEB39382` (Ben Izhak et al. 2021, *mSystems*) — previously listed as a
   top candidate (30/86 paired, largest paired-n found at the time), but its
   patients are an unresolvable ~1/3-each mix of Sleeve/Omega Loop/RYGB with
   no per-subject procedure labels available. Set aside unless the paper's
   authors can be reached for a per-subject procedure breakdown.
-- `PRJEB28869` (Shen et al. 2019, *SOARD*) — same unresolvable-mix problem:
-  19 RYGB + 7 SG per the paper's aggregate count, but no per-subject
-  procedure field in BioSample metadata and no ID crosswalk in the paper.
-- `PRJNA639545` (*Gut Microbes* 2022) — structurally the best timepoint
-  design found in this whole search (26 RYGB + 14 SG, 4 clean timepoints:
-  baseline/post-diet/1mo/3mo) but blocked the same way — BioSample only
-  gives generic "patient N" IDs with no crosswalk to the paper's SG/RYGB
-  table. Worth real follow-up (contacting the authors for the ID mapping)
-  given how good the design otherwise is.
+- **`PRJNA639545`** (*Gut Microbes* 2022) — **ruled out, not just blocked.**
+  Structurally the best timepoint design found in this whole search (26
+  RYGB + 14 SG, 4 clean timepoints: baseline/post-diet/1mo/3mo), but
+  confirmed via the actual supplementary files (this journal is genuinely
+  open access, retrieved via Europe PMC's API) that the supplement contains
+  only 3 figures, no tables. The main text's Table 1 gives per-patient
+  Sex/Age (e.g. "F/58") with no numeric ID, and BioSample XML carries no
+  sex/age fields to cross-match against — there is no crosswalk anywhere
+  accessible. A genuine dead end, not just an unretrieved one.
 - `PRJEB48942` (Han et al. 2022, *Diabetes, Obesity and Metabolism*) — the
   richest timepoint ladder of anything found (preop/1mo/3mo/6mo/12mo, 37/41
   paired, 21 with all 5 timepoints), procedure still not confirmed against
