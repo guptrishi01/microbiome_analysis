@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=rygb_dl
 #SBATCH --partition=Orion
-#SBATCH --array=1-8
+#SBATCH --array=1-12
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=16G
@@ -21,6 +21,11 @@
 #                                                    specimens excluded); 0/1/3/6 months
 #   task 7 Ileostomy        PRJNA1480144  65 runs   IL arm only; Pre/Post
 #   task 8 SDT              PRJNA1480144  45 runs   SD arm only; Pre/Post
+# Phase 3 downloads: bariatric-specific positive-control cohorts (see cohorts/<Study>/metaData.txt).
+#   task 9  RYGB_SaoPaulo   PRJNA1364303  87 runs   RYGB/RYGB+ET arms; T1/T2/T3
+#   task 10 Lazaro_GB       PRJNA859272   20 runs   GB/RYGB arm only; Pre/Post
+#   task 11 Lazaro_SG       PRJNA859272   28 runs   SG arm only; Pre/Post
+#   task 12 Chaudhari_SG    PRJNA635168   34 runs   human samples only (32 mouse runs excluded); Pre/Post
 # Resumable: a run whose .fastq.gz already exists is skipped.
 # Submit:  sbatch 02_download.sbatch
 
@@ -40,6 +45,10 @@ case $SLURM_ARRAY_TASK_ID in
   6) STUDY=IleocecalResection;  EXPECT=189 ;;
   7) STUDY=Ileostomy;           EXPECT=65  ;;
   8) STUDY=SDT;                 EXPECT=45  ;;
+  9) STUDY=RYGB_SaoPaulo;       EXPECT=87  ;;
+  10) STUDY=Lazaro_GB;          EXPECT=20  ;;
+  11) STUDY=Lazaro_SG;          EXPECT=28  ;;
+  12) STUDY=Chaudhari_SG;       EXPECT=34  ;;
   *) echo "bad array index"; exit 1 ;;
 esac
 
@@ -73,7 +82,7 @@ else
     Ilhan)   # TSV whose header is shifted; data column 1 = Run
       tail -n +2 "$REPO/input/RYGB_Ilhan2020/Metadata/metaData_Ilhan.txt" \
         | cut -f1 | grep . | awk '{print $1"\t"$1}' > "$LIST" ;;
-    Cholecystectomy|IleocecalResection|Ileostomy|SDT)
+    Cholecystectomy|IleocecalResection|Ileostomy|SDT|RYGB_SaoPaulo|Lazaro_GB|Lazaro_SG|Chaudhari_SG)
       # our own metaData.txt (cohorts/<Study>/), column 1 = Run; kept as SRR accessions
       tail -n +2 "$COHORTS/$STUDY/metaData.txt" \
         | cut -f1 | grep . | awk '{print $1"\t"$1}' > "$LIST" ;;

@@ -43,6 +43,11 @@ STUDIES = {
     'IleocecalResection': dict(repodir='RYGB_IleocecalResection', prefix='RYGB_IleocecalResection_2026', n=189, own_metadata=True),
     'Ileostomy':          dict(repodir='RYGB_Ileostomy',          prefix='RYGB_Ileostomy_2026',          n=65,  own_metadata=True),
     'SDT':                dict(repodir='RYGB_SDT',                prefix='RYGB_SDT_2026',                n=45,  own_metadata=True),
+    # Phase 3 — bariatric-specific positive-control cohorts, same own_metadata=True treatment.
+    'RYGB_SaoPaulo': dict(repodir='RYGB_SaoPaulo',    prefix='RYGB_SaoPaulo_2026',    n=87, own_metadata=True),
+    'Lazaro_GB':     dict(repodir='RYGB_Lazaro_GB',    prefix='RYGB_Lazaro_GB_2026',   n=20, own_metadata=True),
+    'Lazaro_SG':     dict(repodir='RYGB_Lazaro_SG',    prefix='RYGB_Lazaro_SG_2026',   n=28, own_metadata=True),
+    'Chaudhari_SG':  dict(repodir='RYGB_Chaudhari_SG', prefix='RYGB_Chaudhari_SG_2026',n=34, own_metadata=True),
 }
 
 def parse_mpa(path):

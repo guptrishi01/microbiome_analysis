@@ -39,6 +39,23 @@ RUN_PHASE2=${RUN_PHASE2:-0}
 # Heatmap.R/compareStudies_SV.R were each verified byte-identical to the real phase-1 output
 # before being wired in here.
 PHASE2_COHORTS=${PHASE2_COHORTS:-0}
+# PHASE3_COHORTS selects which bariatric-specific positive-control cohorts (phase 3) to
+# scaffold+run: "0" (default) = none; "3a" = the non-RYGB bariatric pair (Chaudhari_SG,
+# Lazaro_SG); "3b" = the RYGB-specific pair (RYGB_SaoPaulo, Lazaro_GB); "all" = all four.
+# Combine with PHASE2_STUDIES (read directly by combineCountTables.R/compareStudies_16S.R/
+# Heatmap.R, not by this script) to control which cohorts actually feed the downstream
+# comparison — e.g. PHASE3_COHORTS=3a PHASE2_STUDIES="BS,Assal,Ilhan,Afshar,Chaudhari_SG,
+# Lazaro_SG" for the "OG+3a" run described in README's Phase 3 section. The OG-only baseline
+# needs no new run: PHASE2_COHORTS=0 PHASE3_COHORTS=0 (the default) reproduces exactly the
+# already-published results/phase1/ pipeline.
+PHASE3_COHORTS=${PHASE3_COHORTS:-0}
+phase3_included() {
+  case "$PHASE3_COHORTS" in
+    all|1) return 0 ;;
+    "$1")  return 0 ;;
+    *)     return 1 ;;
+  esac
+}
 
 BIND="--bind $DATA_ROOT --bind $SW_ROOT"
 
@@ -52,6 +69,10 @@ MODULES=(
   "IleocecalResectionTaxaClass|16S_TaxaClassification/IleocecalResection_16S_TaxaClassification.R|rbase||2c"
   "IleostomyTaxaClass|16S_TaxaClassification/Ileostomy_16S_TaxaClassification.R|rbase||2c"
   "SDTTaxaClass|16S_TaxaClassification/SDT_16S_TaxaClassification.R|rbase||2c"
+  "RYGB_SaoPauloTaxaClass|16S_TaxaClassification/RYGB_SaoPaulo_16S_TaxaClassification.R|rbase||3b"
+  "Lazaro_GBTaxaClass|16S_TaxaClassification/Lazaro_GB_16S_TaxaClassification.R|rbase||3b"
+  "Lazaro_SGTaxaClass|16S_TaxaClassification/Lazaro_SG_16S_TaxaClassification.R|rbase||3a"
+  "Chaudhari_SGTaxaClass|16S_TaxaClassification/Chaudhari_SG_16S_TaxaClassification.R|rbase||3a"
   "CombineCountTableslog10|combineCountTables.R|nlme|log10|1"
   "CombineCountTablesrelab|combineCountTables.R|nlme|relab|1"
   "PCO|pco.R|r-vegan||1"
@@ -63,6 +84,10 @@ MODULES=(
   "IleocecalResectionDADA|DADA2_16S/IleocecalResection_DADA2_16S.R|rbase||2c"
   "IleostomyDADA|DADA2_16S/Ileostomy_DADA2_16S.R|rbase||2c"
   "SDTDADA|DADA2_16S/SDT_DADA2_16S.R|rbase||2c"
+  "RYGB_SaoPauloDADA|DADA2_16S/RYGB_SaoPaulo_DADA2_16S.R|rbase||3b"
+  "Lazaro_GBDADA|DADA2_16S/Lazaro_GB_DADA2_16S.R|rbase||3b"
+  "Lazaro_SGDADA|DADA2_16S/Lazaro_SG_DADA2_16S.R|rbase||3a"
+  "Chaudhari_SGDADA|DADA2_16S/Chaudhari_SG_DADA2_16S.R|rbase||3a"
   "CompareStudies16S|compareStudies/compareStudies_16S.R|comparestudies||1"
   "Heatmap|Heatmap.R|complexheatmap||1"
   "AfsharKraken|kraken2_16S/Afshar_kraken2_16S.R|nlme||1"
@@ -73,6 +98,10 @@ MODULES=(
   "IleocecalResectionKraken|kraken2_16S/IleocecalResection_kraken2_16S.R|nlme||2c"
   "IleostomyKraken|kraken2_16S/Ileostomy_kraken2_16S.R|nlme||2c"
   "SDTKraken|kraken2_16S/SDT_kraken2_16S.R|nlme||2c"
+  "RYGB_SaoPauloKraken|kraken2_16S/RYGB_SaoPaulo_kraken2_16S.R|nlme||3b"
+  "Lazaro_GBKraken|kraken2_16S/Lazaro_GB_kraken2_16S.R|nlme||3b"
+  "Lazaro_SGKraken|kraken2_16S/Lazaro_SG_kraken2_16S.R|nlme||3a"
+  "Chaudhari_SGKraken|kraken2_16S/Chaudhari_SG_kraken2_16S.R|nlme||3a"
   "BSMetagenomics|kraken2_Metagenomics/BS_kraken2_Metagenomics.R|nlme||2"
   "PallejaMetagenomics|kraken2_Metagenomics/Palleja_kraken2_Metagenomics.R|nlme||2"
   "OppPathogens|OpportunisticPathogens.R|pathogens||2"
@@ -107,11 +136,12 @@ for entry in "${MODULES[@]}"; do
   # same numeric prefix already published in results/phase1/pipeline/ — zero directory-naming
   # drift, not just zero content drift.
   [ "$phase" = "2c" ] && [ "$PHASE2_COHORTS" != "1" ] && continue
+  { [ "$phase" = "3a" ] || [ "$phase" = "3b" ]; } && ! phase3_included "$phase" && continue
   num=$(printf "%02d" $i); i=$((i+1))
   [ "$phase" = "2" ] && [ "$RUN_PHASE2" != "1" ] && continue
   d=$PIPE/${num}_${name}
   mkdir -p "$d/script" "$d/output" "$d/resources" "$d/temp"
-  if [ "$phase" = "2c" ]; then
+  if [ "$phase" = "2c" ] || [ "$phase" = "3a" ] || [ "$phase" = "3b" ]; then
     cp "$OUR_RSCRIPTS/$script" "$d/script/"
   else
     cp "$RSCRIPTS/$script" "$d/script/"
@@ -124,10 +154,10 @@ echo "modules scaffolded: $(ls -d "$PIPE"/[0-9][0-9]_* | wc -l)"
 # downstream scripts that hardcode study names in the original (combineCountTables.R,
 # compareStudies_16S.R, Heatmap.R, compareStudies_SV.R) — each verified byte-identical to the
 # real phase-1 output before being wired in here (see CLAUDE.md's "Never assume" section).
-# With PHASE2_COHORTS unset/0 (default), this block does not run — those modules keep the
-# original $RSCRIPTS copy from the loop above, untouched.
-if [ "$PHASE2_COHORTS" = "1" ]; then
-  echo "PHASE2_COHORTS=1: swapping in generalized combineCountTables.R/compareStudies_16S.R/Heatmap.R/compareStudies_SV.R"
+# With PHASE2_COHORTS unset/0 AND PHASE3_COHORTS unset/0 (defaults), this block does not run —
+# those modules keep the original $RSCRIPTS copy from the loop above, untouched.
+if [ "$PHASE2_COHORTS" = "1" ] || [ "$PHASE3_COHORTS" != "0" ]; then
+  echo "PHASE2_COHORTS=$PHASE2_COHORTS PHASE3_COHORTS=$PHASE3_COHORTS: swapping in generalized combineCountTables.R/compareStudies_16S.R/Heatmap.R/compareStudies_SV.R"
   for d in "$PIPE"/[0-9][0-9]_CombineCountTableslog10 "$PIPE"/[0-9][0-9]_CombineCountTablesrelab; do
     [ -d "$d" ] && cp "$OUR_RSCRIPTS/combineCountTables.R" "$d/script/"
   done
@@ -203,6 +233,10 @@ while [ $idx -lt $n ]; do
     # module's number here would disagree with the directory the scaffold loop actually created.
     if [ "$phase" = "2c" ] && [ "$PHASE2_COHORTS" != "1" ]; then
       echo "-- skip ${name} (phase 2 cohort: set PHASE2_COHORTS=1 to include)"
+      idx=$((idx+1)); continue
+    fi
+    if { [ "$phase" = "3a" ] || [ "$phase" = "3b" ]; } && ! phase3_included "$phase"; then
+      echo "-- skip ${name} (phase $phase cohort: set PHASE3_COHORTS=$phase or =all to include)"
       idx=$((idx+1)); continue
     fi
 

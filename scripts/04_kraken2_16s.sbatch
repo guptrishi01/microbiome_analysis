@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=rygb_k2
 #SBATCH --partition=Orion
-#SBATCH --array=1-8
+#SBATCH --array=1-12
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=80G
@@ -31,6 +31,10 @@ case $SLURM_ARRAY_TASK_ID in
   6) STUDY=IleocecalResection;  EXPECT=189 ;;
   7) STUDY=Ileostomy;           EXPECT=65  ;;
   8) STUDY=SDT;                 EXPECT=45  ;;
+  9) STUDY=RYGB_SaoPaulo;       EXPECT=87  ;;
+  10) STUDY=Lazaro_GB;          EXPECT=20  ;;
+  11) STUDY=Lazaro_SG;          EXPECT=28  ;;
+  12) STUDY=Chaudhari_SG;       EXPECT=34  ;;
   *) echo "bad array index"; exit 1 ;;
 esac
 

@@ -33,7 +33,12 @@ STUDIES <- list(
   Cholecystectomy    = list(module="CholecystectomyTaxaClass",     timepointCol="Group",     idCol="ID"),
   IleocecalResection = list(module="IleocecalResectionTaxaClass",  timepointCol="Timepoint", idCol="PatientID"),
   Ileostomy          = list(module="IleostomyTaxaClass",           timepointCol="time",      idCol="ID"),
-  SDT                = list(module="SDTTaxaClass",                 timepointCol="time",      idCol="ID")
+  SDT                = list(module="SDTTaxaClass",                 timepointCol="time",      idCol="ID"),
+  # Phase 3 — bariatric-specific positive-control cohorts.
+  RYGB_SaoPaulo      = list(module="RYGB_SaoPauloTaxaClass",       timepointCol="Group",     idCol="ID"),
+  Lazaro_GB          = list(module="Lazaro_GBTaxaClass",           timepointCol="time",      idCol="ID"),
+  Lazaro_SG          = list(module="Lazaro_SGTaxaClass",           timepointCol="time",      idCol="ID"),
+  Chaudhari_SG       = list(module="Chaudhari_SGTaxaClass",        timepointCol="time",      idCol="ID")
 )
 #PHASE2_STUDIES env var restricts to a subset (e.g. "BS,Assal,Ilhan,Afshar" for a phase-1-only
 #verification run); unset/empty means all studies in STUDIES above.

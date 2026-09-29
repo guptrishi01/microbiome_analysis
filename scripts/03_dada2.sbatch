@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=rygb_dada2
 #SBATCH --partition=Orion
-#SBATCH --array=1-8
+#SBATCH --array=1-12
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=64G
@@ -26,6 +26,14 @@
 # to the actual primer sequence (cutadapt path) or TRIMLEFT to the actual fixed offset
 # if the anchor is found but not at position 1. Do not trust these four rows without
 # checking that printout once real reads are downloaded.
+#
+# Phase 3 studies (tasks 9-12): same PRIMER=NONE/TRIMLEFT=0 placeholder treatment.
+# truncLen=200 set from each study's own measured read length (RYGB_SaoPaulo ~285bp,
+# Lazaro_GB/SG ~245bp, Chaudhari_SG 250bp — scripts/10_inspect_candidates.sh). The
+# 515F-anchor check below has NOT yet been run against real downloaded reads for these
+# four (unlike the phase-2 cohorts, confirmed per CLAUDE.md's "SV/ASV-level comparison
+# is region-locked" section) — read that printout on first run before trusting PRIMER/
+# TRIMLEFT, same as any other placeholder row.
 
 set -o pipefail
 SW_ROOT=${SW_ROOT:-$HOME/rygb}
@@ -43,6 +51,10 @@ case $SLURM_ARRAY_TASK_ID in
   6) STUDY=IleocecalResection; REPODIR=RYGB_IleocecalResection;  PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   7) STUDY=Ileostomy;          REPODIR=RYGB_Ileostomy;           PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   8) STUDY=SDT;                REPODIR=RYGB_SDT;                 PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  9) STUDY=RYGB_SaoPaulo;      REPODIR=RYGB_SaoPaulo;            PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  10) STUDY=Lazaro_GB;         REPODIR=RYGB_Lazaro_GB;           PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  11) STUDY=Lazaro_SG;         REPODIR=RYGB_Lazaro_SG;           PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  12) STUDY=Chaudhari_SG;      REPODIR=RYGB_Chaudhari_SG;        PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   *) echo "bad array index"; exit 1 ;;
 esac
 

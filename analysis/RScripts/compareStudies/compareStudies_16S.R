@@ -40,7 +40,12 @@ STUDIES <- list(
   Cholecystectomy    = list(module="CholecystectomyDADA",    timepoints=list(c("p6M","Cholecystectomy-6 months"), c("p12M","Cholecystectomy-12 months"))),
   IleocecalResection = list(module="IleocecalResectionDADA", timepoints=list(c("p1","IleocecalResection-1 month"), c("p3","IleocecalResection-3 months"), c("p6","IleocecalResection-6 months"))),
   Ileostomy          = list(module="IleostomyDADA",          timepoints=list(c("pPost","Ileostomy-Post surgery"))),
-  SDT                = list(module="SDTDADA",                timepoints=list(c("pPost","SDT-Post surgery")))
+  SDT                = list(module="SDTDADA",                timepoints=list(c("pPost","SDT-Post surgery"))),
+  # Phase 3 — bariatric-specific positive-control cohorts.
+  RYGB_SaoPaulo = list(module="RYGB_SaoPauloDADA", timepoints=list(c("pT2","RYGB_SaoPaulo-T2"), c("pT3","RYGB_SaoPaulo-T3"))),
+  Lazaro_GB     = list(module="Lazaro_GBDADA",     timepoints=list(c("pPost","Lazaro_GB-Post surgery"))),
+  Lazaro_SG     = list(module="Lazaro_SGDADA",     timepoints=list(c("pPost","Lazaro_SG-Post surgery"))),
+  Chaudhari_SG  = list(module="Chaudhari_SGDADA",  timepoints=list(c("pPost","Chaudhari_SG-Post surgery")))
 )
 active <- Sys.getenv("PHASE2_STUDIES", unset = "")
 if (nzchar(active)) {

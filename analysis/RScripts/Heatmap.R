@@ -29,17 +29,23 @@ STUDIES <- list(
   Cholecystectomy    = list(module="CholecystectomyDADA",     suffixes=c("6M","12M")),
   IleocecalResection = list(module="IleocecalResectionDADA",  suffixes=c("1","3","6")),
   Ileostomy          = list(module="IleostomyDADA",           suffixes=c("Post")),
-  SDT                = list(module="SDTDADA",                 suffixes=c("Post"))
+  SDT                = list(module="SDTDADA",                 suffixes=c("Post")),
+  # Phase 3 — bariatric-specific positive-control cohorts.
+  RYGB_SaoPaulo = list(module="RYGB_SaoPauloDADA", suffixes=c("T2","T3")),
+  Lazaro_GB     = list(module="Lazaro_GBDADA",     suffixes=c("Post")),
+  Lazaro_SG     = list(module="Lazaro_SGDADA",     suffixes=c("Post")),
+  Chaudhari_SG  = list(module="Chaudhari_SGDADA",  suffixes=c("Post"))
 )
 #Afshar's display suffix in row names is "Post" (not "6M") even though its data columns are
 #named p6M/s6M — matches the original script's studies vector exactly.
 DISPLAY_SUFFIX <- list(Afshar = list("6M"="Post"))
 
 #8-color palette: BS/Assal/Ilhan/Afshar keep their original colors exactly (phase-1 output is
-#unaffected); phase-2 cohorts get new, distinct colors.
+#unaffected); phase-2/phase-3 cohorts get new, distinct colors.
 STUDY_COLORS <- c(
   BS="yellow", Assal="pink", Ilhan="blue", Afshar="grey",
-  Cholecystectomy="darkgreen", IleocecalResection="orange", Ileostomy="purple", SDT="brown"
+  Cholecystectomy="darkgreen", IleocecalResection="orange", Ileostomy="purple", SDT="brown",
+  RYGB_SaoPaulo="red", Lazaro_GB="cyan", Lazaro_SG="magenta", Chaudhari_SG="darkblue"
 )
 
 active <- Sys.getenv("PHASE2_STUDIES", unset = "")
