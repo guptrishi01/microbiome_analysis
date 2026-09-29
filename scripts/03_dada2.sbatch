@@ -27,13 +27,17 @@
 # if the anchor is found but not at position 1. Do not trust these four rows without
 # checking that printout once real reads are downloaded.
 #
-# Phase 3 studies (tasks 9-12): same PRIMER=NONE/TRIMLEFT=0 placeholder treatment.
-# truncLen=200 set from each study's own measured read length (RYGB_SaoPaulo ~285bp,
-# Lazaro_GB/SG ~245bp, Chaudhari_SG 250bp — scripts/10_inspect_candidates.sh). The
-# 515F-anchor check below has NOT yet been run against real downloaded reads for these
-# four (unlike the phase-2 cohorts, confirmed per CLAUDE.md's "SV/ASV-level comparison
-# is region-locked" section) — read that printout on first run before trusting PRIMER/
-# TRIMLEFT, same as any other placeholder row.
+# Phase 3 studies (tasks 9-12): truncLen=200 set from each study's own measured read length
+# (RYGB_SaoPaulo ~285-305bp, Lazaro_GB/SG ~251bp, Chaudhari_SG 250bp). UNLIKE phase 2, this
+# group is NOT uniformly PRIMER=NONE — verified 2026-09-28 against real downloaded reads:
+#   RYGB_SaoPaulo, Chaudhari_SG: no consistent anchor (scattered 163-185bp or zero matches),
+#     the same coincidental-short-motif-hit signature as phase 2 -> PRIMER=NONE is correct.
+#   Lazaro_GB, Lazaro_SG: ~90% of the first 5000 reads carry the EXACT, untrimmed degenerate
+#     515F primer (GTGYCAGCMGCCGCGGTAA) starting at position 1 (anchor "GCCGCGGTAA" found at
+#     position 10 = right after the primer's first 9 bases) -- the same situation as BS16S/
+#     Assal in phase 1, not the phase-2 pattern. Needs cutadapt-based primer removal, same as
+#     BS/Assal, not TRIMLEFT/NONE. This is why the two cohorts don't share one row's settings
+#     despite an identical Pre/Post template and near-identical raw read length.
 
 set -o pipefail
 SW_ROOT=${SW_ROOT:-$HOME/rygb}
@@ -52,8 +56,8 @@ case $SLURM_ARRAY_TASK_ID in
   7) STUDY=Ileostomy;          REPODIR=RYGB_Ileostomy;           PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   8) STUDY=SDT;                REPODIR=RYGB_SDT;                 PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   9) STUDY=RYGB_SaoPaulo;      REPODIR=RYGB_SaoPaulo;            PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
-  10) STUDY=Lazaro_GB;         REPODIR=RYGB_Lazaro_GB;           PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
-  11) STUDY=Lazaro_SG;         REPODIR=RYGB_Lazaro_SG;           PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  10) STUDY=Lazaro_GB;         REPODIR=RYGB_Lazaro_GB;           PRIMER=GTGYCAGCMGCCGCGGTAA; TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
+  11) STUDY=Lazaro_SG;         REPODIR=RYGB_Lazaro_SG;           PRIMER=GTGYCAGCMGCCGCGGTAA; TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   12) STUDY=Chaudhari_SG;      REPODIR=RYGB_Chaudhari_SG;        PRIMER=NONE;                TRUNC=200; TRIMLEFT=0;  EXPECT_LEN=200; REPO_ASVS=0 ;;
   *) echo "bad array index"; exit 1 ;;
 esac

@@ -1,0 +1,11 @@
+"studyPairs"	"compariosn"	"compariosnTime"	"pval"	"r"
+"BS-p1M_BS-p6M"	"Same study"	"Different timepoint"	0	0.54953622152608
+"BS-p1M_Assal-p3M"	"Different study"	"Different timepoint"	0	0.554003081932435
+"BS-p1M_Assal-p1Y"	"Different study"	"Different timepoint"	3.47780945870714e-07	0.309532353693965
+"BS-p1M_Assal-p2Y"	"Different study"	"Different timepoint"	3.00854559856756e-10	0.381617381254568
+"BS-p6M_Assal-p3M"	"Different study"	"Different timepoint"	0	0.49084259716135
+"BS-p6M_Assal-p1Y"	"Different study"	"Different timepoint"	6.66941657690051e-08	0.328332009615207
+"BS-p6M_Assal-p2Y"	"Different study"	"Different timepoint"	2.05874677218762e-08	0.341426264502629
+"Assal-p3M_Assal-p1Y"	"Same study"	"Different timepoint"	0	0.528738052257854
+"Assal-p3M_Assal-p2Y"	"Same study"	"Different timepoint"	0	0.524737447968495
+"Assal-p1Y_Assal-p2Y"	"Same study"	"Different timepoint"	0	0.674368345896295

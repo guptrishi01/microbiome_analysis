@@ -1,0 +1,38 @@
+=== Lazaro_GB  primer=GTGYCAGCMGCCGCGGTAA truncLen=200 trimLeft=0  expect 200bp ASVs   Mon Sep 28 10:56:51 PM EDT 2026
+raw files: 20
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       4494 10
+        321 no-515F-anchor
+        130 9
+         23 7
+
+--- cutadapt: remove everything up to and including GTGYCAGCMGCCGCGGTAA
+    trimmed 20 samples
+    retention across samples (reads written / reads processed):
+      Reads with adapters:                    31,223 (97.1%)
+      Reads written (passing filters):        31,223 (97.1%)
+      Reads with adapters:                    18,805 (96.2%)
+      Reads written (passing filters):        18,805 (96.2%)
+      min 89.7%  median 94.8%  max 97.1%
+
+--- DADA2
+samples: 20 
+reads in/out — median retention: 97.1 %
+104150600 total bases in 520753 reads from 19 samples will be used for learning the error rates.
+ASVs before chimera removal: 1836 
+ASVs after chimera removal: 1302 | reads kept: 98.1 %
+ASV length distribution:
+
+ 200 
+1302 
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== Lazaro_GB done (rc=0)  Mon Sep 28 11:00:12 PM EDT 2026
+repo had 0 ASVs for this study
+   total 692K
+   -rw-r--r-- 1 rgupta25 rgupta25  499 Sep 28 23:00 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 314K Sep 28 23:00 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 372K Sep 28 23:00 taxForwardReads.txt
+filtered reads kept for Kraken2: 20 files, 36M

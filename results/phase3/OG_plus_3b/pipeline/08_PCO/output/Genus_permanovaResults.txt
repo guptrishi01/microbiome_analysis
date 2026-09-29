@@ -1,0 +1,23 @@
+
+Call:
+adonis(formula = myT ~ factor(meta$time) * factor(meta$Study)) 
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                                      Df SumsOfSqs MeanSqs F.Model      R2
+factor(meta$time)                      1     1.388 1.38779 14.9995 0.03259
+factor(meta$Study)                     5    14.476 2.89515 31.2914 0.33992
+factor(meta$time):factor(meta$Study)   5     0.538 0.10759  1.1628 0.01263
+Residuals                            283    26.184 0.09252         0.61486
+Total                                294    42.585                 1.00000
+                                     Pr(>F)    
+factor(meta$time)                     0.001 ***
+factor(meta$Study)                    0.001 ***
+factor(meta$time):factor(meta$Study)  0.144    
+Residuals                                      
+Total                                          
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

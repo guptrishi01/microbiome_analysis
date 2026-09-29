@@ -1,0 +1,29 @@
+=== Lazaro_GB  primer=NONE truncLen=200 trimLeft=0  expect 200bp ASVs   Mon Sep 28 10:35:21 PM EDT 2026
+raw files: 20
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+       4494 10
+        321 no-515F-anchor
+        130 9
+         23 7
+
+--- DADA2
+samples: 20 
+reads in/out — median retention: 95.3 %
+101475800 total bases in 507379 reads from 18 samples will be used for learning the error rates.
+ASVs before chimera removal: 2766 
+ASVs after chimera removal: 2306 | reads kept: 91.1 %
+ASV length distribution:
+
+ 200 
+2306 
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== Lazaro_GB done (rc=0)  Mon Sep 28 10:39:54 PM EDT 2026
+repo had 0 ASVs for this study
+   total 1.2M
+   -rw-r--r-- 1 rgupta25 rgupta25  499 Sep 28 22:39 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 553K Sep 28 22:39 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 626K Sep 28 22:39 taxForwardReads.txt
+filtered reads kept for Kraken2: 20 files, 39M

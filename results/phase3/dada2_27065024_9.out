@@ -1,0 +1,29 @@
+=== RYGB_SaoPaulo  primer=NONE truncLen=200 trimLeft=0  expect 200bp ASVs   Mon Sep 28 10:35:21 PM EDT 2026
+raw files: 87
+
+--- where does the 16S conserved region sit in the raw reads? (first file, 5000 reads)
+        369 185
+        353 164
+        340 163
+        333 165
+
+--- DADA2
+samples: 87 
+reads in/out — median retention: 90.7 %
+120335800 total bases in 601679 reads from 3 samples will be used for learning the error rates.
+ASVs before chimera removal: 4888 
+ASVs after chimera removal: 3894 | reads kept: 86.1 %
+ASV length distribution:
+
+ 200 
+3894 
+
+wrote: filter_track.txt ForwardReads.txt taxForwardReads.txt 
+
+=== RYGB_SaoPaulo done (rc=0)  Mon Sep 28 11:20:15 PM EDT 2026
+repo had 0 ASVs for this study
+   total 2.6M
+   -rw-r--r-- 1 rgupta25 rgupta25 2.2K Sep 28 23:20 filter_track.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 1.5M Sep 28 23:20 ForwardReads.txt
+   -rw-r--r-- 1 rgupta25 rgupta25 1.1M Sep 28 23:20 taxForwardReads.txt
+filtered reads kept for Kraken2: 87 files, 812M

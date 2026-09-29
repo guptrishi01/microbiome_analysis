@@ -1,0 +1,20 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== RYGB_SaoPaulo  expecting 87 runs   Mon Sep 28 10:13:56 PM EDT 2026
+run list: 87 entries (expected 87)
+SRR36103410	SRR36103410
+SRR36103409	SRR36103409
+SRR36103388	SRR36103388
+
+=== RYGB_SaoPaulo done  Mon Sep 28 10:24:05 PM EDT 2026
+downloaded now: 87 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/RYGB_SaoPaulo: 87 (expected 87)
+2.0G	/scratch/rgupta25/rygb/raw/RYGB_SaoPaulo
+read length check:
+   first read: 305 bp: CTCCTACGGGGCGCAGCAGTGAGGAATATTTGTCAATGGGCGAGAGCCTG...
+reads per sample (first 5):
+   SRR36103296_R1.fastq.gz 221196 reads
+   SRR36103297_R1.fastq.gz 229906 reads
+   SRR36103301_R1.fastq.gz 213448 reads
+   SRR36103302_R1.fastq.gz 185931 reads
+   SRR36103303_R1.fastq.gz 265201 reads

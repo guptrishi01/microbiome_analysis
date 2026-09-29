@@ -21,8 +21,10 @@ Fodor Lab project reproducing and extending:
    paper never looked at — i.e. whether "gut rewiring" produces this
    signature generally, not only after bariatric procedures.
 
-Phase 1 (reproduction, below) is complete. Phase 2 (identifying and
-incorporating non-bariatric surgery cohorts) is in progress.
+Phase 1 (reproduction, below) is complete. Phase 2 (extension to
+non-bariatric GI-surgery cohorts) is complete. Phase 3 (a bariatric-specific
+positive control, split into RYGB-specific and non-RYGB-bariatric sub-phases)
+is complete.
 
 ## Repo structure
 
@@ -41,14 +43,18 @@ microbiome_analysis/
 │   └── 10_inspect_candidates.sh # Deep-inspect scan candidates (subject/timepoint/read length)
 ├── dataset_scan/              # Cached ENA metadata (one TSV per BioProject) + shortlist.tsv
 │                               # ranking candidate cohorts for phase 2
-├── cohorts/                   # Phase-2 per-cohort metadata, built by hand from ENA run info
-│   ├── Cholecystectomy/metaData.txt
-│   ├── IleocecalResection/metaData.txt
-│   ├── Ileostomy/metaData.txt
-│   └── SDT/metaData.txt
-├── analysis/RScripts/         # Phase-2 R scripts: this repo's own code, run inside the
+├── cohorts/                   # Phase-2/3 per-cohort metadata, built by hand from ENA run info
+│   ├── Cholecystectomy/metaData.txt   # phase 2
+│   ├── IleocecalResection/metaData.txt # phase 2
+│   ├── Ileostomy/metaData.txt          # phase 2
+│   ├── SDT/metaData.txt                # phase 2
+│   ├── RYGB_SaoPaulo/metaData.txt      # phase 3b (RYGB-specific)
+│   ├── Lazaro_GB/metaData.txt          # phase 3b (RYGB-specific)
+│   ├── Lazaro_SG/metaData.txt          # phase 3a (non-RYGB bariatric)
+│   └── Chaudhari_SG/metaData.txt       # phase 3a (non-RYGB bariatric)
+├── analysis/RScripts/         # Phase-2/3 R scripts: this repo's own code, run inside the
 │   │                           # authors' Singularity images (never inside their cloned repo)
-│   ├── 16S_TaxaClassification/   # One script per phase-2 cohort, modeled on the closest
+│   ├── 16S_TaxaClassification/   # One script per phase-2/3 cohort, modeled on the closest
 │   ├── DADA2_16S/                 # matching original template (Ilhan/Afshar/Assal/BS —
 │   ├── kraken2_16S/                see CLAUDE.md's "Adding a new cohort" section)
 │   ├── combineCountTables.R      # Generalized rewrites of the 4 scripts that hardcode all
@@ -69,6 +75,14 @@ microbiome_analysis/
 │   │                              #   excluded (~635MB, rebuildable, not source work)
 │   ├── predictions_lasso.tsv     # Cross-study LASSO predictions, all 8 studies
 │   └── *.out                     # SLURM job logs for every successful stage run
+├── results/phase3/            # Positive-control outputs (see "Results (phase 3)" below)
+│   ├── OG_plus_3a/                # OG + Chaudhari_SG + Lazaro_SG (non-RYGB bariatric) run
+│   │   ├── figures/, pipeline/, predictions_lasso.tsv, analysis_*.out
+│   ├── OG_plus_3b/                # OG + RYGB_SaoPaulo + Lazaro_GB (RYGB-specific) run
+│   │   ├── figures/, pipeline/, predictions_lasso.tsv, analysis_*.out
+│   │                              #   (both: .RData LASSO model objects excluded, same as phase2)
+│   └── *.out                     # Shared download/DADA2/Kraken2/table-building logs for all
+│                                  #   4 phase-3 cohorts (built once, reused by both 3a/3b runs)
 ├── setup.log                  # Output of scripts/00_setup.sh (environment provenance)
 ├── versions.txt                # Tool/container/environment versions used
 └── .gitignore                  # Excludes conda_pkgs/, envs/, images/, db/, singularity_cache/
@@ -151,7 +165,7 @@ claim. A consistent, transferable microbial signature of bariatric surgery
 is recovered independently of the original authors' precomputed tables,
 within the paper's own reported variance.
 
-## Workflow (phase 2 — extending beyond bariatric surgery, in progress)
+## Workflow (phase 2 — extending beyond bariatric surgery, complete)
 
 `scripts/09_find_datasets.sbatch` scans ENA study metadata for candidate
 non-bariatric GI-surgery 16S cohorts against explicit inclusion criteria
@@ -340,7 +354,7 @@ That said, the documented noise caveats for Cholecystectomy/Ileostomy/SDT
 numbers shouldn't be read as definitive proof of *no* signal, only that
 none was detected at this sample size and data quality.
 
-## Phase 3 (proposed) — a positive control: more bariatric cohorts
+## Phase 3 — a positive control: more bariatric cohorts (complete)
 
 Phase 2 tested whether the bariatric-surgery microbial signature
 generalizes to *other* GI surgeries and found that it largely doesn't
@@ -552,3 +566,117 @@ etc.) — worth adding all three if phase 3 scans more candidates.
 
 Verify each with `scripts/10_inspect_candidates.sh <ACCESSION>` before
 committing to one, exactly as was done for the phase-2 cohorts.
+
+### Onboarding — final dataset sizes used
+
+| Cohort | Sub-phase | Subjects | Runs |
+|---|---|---|---|
+| RYGB_SaoPaulo | 3b | 31 | 87 |
+| Lazaro_GB | 3b | 10 | 20 |
+| Lazaro_SG | 3a | 14 | 28 |
+| Chaudhari_SG | 3a | 17 | 34 |
+
+**Phase 3b total: 41 subjects. Phase 3a total: 31 subjects.**
+
+All 4 cohorts' per-cohort R scripts (`16S_TaxaClassification`/`DADA2_16S`/
+`kraken2_16S`) were written from the closest existing template by timepoint
+shape (Cholecystectomy's 3-level Baseline/6M/12M template for RYGB_SaoPaulo's
+T1/T2/T3 design; Ileostomy/Afshar's binary Pre/Post template for the other
+three). Two real bugs were caught and fixed before any job was submitted: a
+doubled `RYGB_RYGB_SaoPaulo_` Kraken2 file prefix, and a missing `prepost`
+metadata column in RYGB_SaoPaulo's TaxaClassification script that
+`combineCountTables.R` requires (present in the Cholecystectomy template it
+was based on, dropped by mistake when adapting the timepoint factor). Both
+would have produced a silent failure or crash downstream, not a wrong-but-
+plausible number — caught by review before the first submission, not by a
+failed job.
+
+`scripts/02-05_*.sbatch` extended with array tasks 9-12 for the 4 new
+cohorts; `scripts/06_analysis.sbatch` extended with a `PHASE3_COHORTS`
+selector (`3a`/`3b`/`all`, default `0`) and 12 new `MODULES` entries,
+following the same skip-before-numbering pattern already established for
+phase 2's cohort tag. Verified via a numbering simulation that default
+(OG-only) and `PHASE2_COHORTS=1` module numbering stays byte-identical to
+the already-published `results/phase1/` and `results/phase2/` pipeline
+directory listings — zero drift from the phase-3 additions.
+
+### Status (2026-09-28 – 2026-09-29)
+
+`02_download` → `03_dada2` → `04_kraken2_16s` → `05_build_tables` →
+`06_analysis` (run twice, once per sub-phase) all complete for all 4
+phase-3 cohorts. See "Results (phase 3)" below for the headline numbers.
+
+- **Downloads:** all 4 cohorts, zero failures, every run count matches
+  expected exactly (87/20/28/34). Read lengths: RYGB_SaoPaulo 305bp,
+  Lazaro_GB/SG ~251bp, Chaudhari_SG 250bp — all comfortably exceed
+  `truncLen=200`.
+- **`PRIMER`/`TRIMLEFT` check found a real, mixed result — not the uniform
+  "no primer" pattern phase 2 had.** RYGB_SaoPaulo and Chaudhari_SG show
+  the same phase-2 signature (scattered anchor matches at varying
+  positions, or none at all) — `PRIMER=NONE` confirmed correct for both.
+  **Lazaro_GB and Lazaro_SG do not**: ~90% of the first 5000 reads in each
+  carry the *exact, untrimmed* degenerate 515F primer
+  (`GTGYCAGCMGCCGCGGTAA`) starting at position 1 — the same situation as
+  BS16S/Assal in phase 1, confirmed by direct sequence inspection (the raw
+  read prefix matches the primer base-for-base, including both degenerate
+  positions). The first submission for these two cohorts ran with the
+  placeholder `PRIMER=NONE` and was discarded and rerun with
+  `PRIMER=GTGYCAGCMGCCGCGGTAA` (cutadapt-based removal, same as BS/Assal)
+  before being trusted — confirmed correct by the rerun's ASV length
+  distribution collapsing to a clean, single 200bp peak (it was not before
+  the fix). This is why Lazaro_GB and Lazaro_SG don't share one row's
+  DADA2 settings in `03_dada2.sbatch` despite an identical Pre/Post
+  template and near-identical raw read length.
+- **DADA2 (`03`):** all 4 succeeded after the primer fix above, every ASV
+  length matches `EXPECT_LEN=200`. No samples dropped below the 1000-read
+  `norm()` threshold in any of the 4 cohorts.
+- **Kraken2 (`04`):** all 4 succeeded, every mpa-report count matches
+  expected exactly, classification rates 98.3-100%.
+- **Table-building (`05`):** single job, all 12 studies (4 phase-1 + 4
+  phase-2 + 4 phase-3) processed in one pass; phase-1 repo-comparison
+  correlations (r=0.77-0.95) unchanged from the already-verified pattern,
+  confirming the phase-3 additions to `STUDIES` dicts didn't disturb
+  anything. Correct, non-doubled Kraken2 prefixes confirmed in the
+  regenerated file listing for all 4 phase-3 cohorts.
+- **`06_analysis.sbatch`**, run twice with `PHASE2_COHORTS=0` and
+  `PHASE2_STUDIES` restricted per sub-phase: OG+3a (`PHASE3_COHORTS=3a`,
+  `PHASE2_STUDIES=BS,Assal,Ilhan,Afshar,Chaudhari_SG,Lazaro_SG`) completed
+  28/28 modules ok in ~25 min; OG+3b (`PHASE3_COHORTS=3b`,
+  `PHASE2_STUDIES=BS,Assal,Ilhan,Afshar,RYGB_SaoPaulo,Lazaro_GB`) completed
+  28/28 modules ok in ~25 min. Both module-numbering sequences matched the
+  pre-submission simulation exactly. Pair counts in each run's
+  `Genus_PairwiseComparison.txt` matched the expected C(n,2) for that
+  sub-phase's total timepoint count (45 pairs / 10 timepoints for 3a; 55
+  pairs / 11 timepoints for 3b — RYGB_SaoPaulo contributes 2 timepoints,
+  T2 and T3, vs. every other new cohort's 1).
+
+## Results (phase 3)
+
+**Genus-level cross-study correlation**, same metric as phases 1 and 2:
+
+| Configuration | Cohorts added | r (different-study pairs) | n pairs |
+|---|---|---|---|
+| **OG** (phase-1 baseline) | — | **0.396 ± 0.097** | 23 |
+| **OG+3a** (non-RYGB bariatric) | Chaudhari_SG, Lazaro_SG (both SG) | **0.313 ± 0.158** | 40 |
+| **OG+3b** (RYGB-specific) | RYGB_SaoPaulo, Lazaro_GB (both RYGB) | **0.431 ± 0.110** | 49 |
+
+**Interpretation.** This is the positive-control result phase 3 was
+designed to produce, and it comes out cleanly differentiated between the
+two sub-phases. Adding two more **RYGB** cohorts (3b) does not weaken the
+signature at all — it comes back essentially at, or slightly above, the
+phase-1 baseline (0.431 vs. 0.396). Adding two more **bariatric-but-
+non-RYGB** cohorts (3a) does measurably weaken it (0.313), a real
+directional decline — but nowhere close to phase 2's collapse when
+genuinely unrelated GI surgeries were pooled in (0.191 ± 0.224).
+
+Read together, phases 2 and 3 triangulate the same conclusion from two
+directions: phase 2 showed the signature doesn't generalize to unrelated
+GI surgery; phase 3 shows it *does* generalize cleanly to more RYGB
+cohorts, and generalizes only partially to other bariatric procedures.
+That pattern — strong within-procedure transfer, partial cross-procedure
+transfer, no cross-surgery-type transfer — is most consistent with the
+signature being substantially **RYGB-specific** rather than a general
+"any bariatric surgery" or "any gut surgery" effect, though 3a's n=2
+cohorts (both sleeve gastrectomy specifically, not gastric banding or
+duodenal switch) means this is evidence toward that conclusion, not a
+final word on bariatric-procedure specificity as a whole.

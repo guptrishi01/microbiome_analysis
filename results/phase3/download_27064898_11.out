@@ -1,0 +1,20 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== Lazaro_SG  expecting 28 runs   Mon Sep 28 10:13:56 PM EDT 2026
+run list: 28 entries (expected 28)
+SRR20283928	SRR20283928
+SRR20283917	SRR20283917
+SRR20283896	SRR20283896
+
+=== Lazaro_SG done  Mon Sep 28 10:15:52 PM EDT 2026
+downloaded now: 28 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/Lazaro_SG: 28 (expected 28)
+75M	/scratch/rgupta25/rygb/raw/Lazaro_SG
+read length check:
+   first read: 251 bp: GTGTCAGCAGCTGCGGTAATACGGAAGGGCCGGGCGTTATCCGGATTTAT...
+reads per sample (first 5):
+   SRR20283893_R1.fastq.gz 42547 reads
+   SRR20283894_R1.fastq.gz 38119 reads
+   SRR20283895_R1.fastq.gz 26396 reads
+   SRR20283896_R1.fastq.gz 30467 reads
+   SRR20283900_R1.fastq.gz 35437 reads

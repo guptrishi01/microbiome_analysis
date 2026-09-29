@@ -1,0 +1,43 @@
+
+	Wilcoxon rank sum test
+
+data:  df_sub$r[df_sub$compariosn == "Different study" & df_sub$taxanomy ==  and df_sub$r[df_sub$compariosn == "Different study" & df_sub$taxanomy ==     "Genus"] and     "SV"]
+W = 27, p-value = 0.1797
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test
+
+data:  df_sub$r[df_sub$compariosn == "Different study" & df_sub$taxanomy ==  and df_sub$r[df_sub$compariosn == "Same study" & df_sub$taxanomy ==     "Genus"] and     "Genus"]
+W = 3, p-value = 0.06667
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test
+
+data:  df_sub$r[df_sub$compariosn == "Different study" & df_sub$taxanomy ==  and df_sub$r[df_sub$compariosn == "Same study" & df_sub$taxanomy ==     "Genus"] and     "SV"]
+W = 3, p-value = 0.06667
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test
+
+data:  df_sub$r[df_sub$compariosn == "Different study" & df_sub$taxanomy ==  and df_sub$r[df_sub$compariosn == "Same study" & df_sub$taxanomy ==     "SV"] and     "Genus"]
+W = 0, p-value = 0.009524
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test
+
+data:  df_sub$r[df_sub$compariosn == "Different study" & df_sub$taxanomy ==  and df_sub$r[df_sub$compariosn == "Same study" & df_sub$taxanomy ==     "SV"] and     "SV"]
+W = 3, p-value = 0.06667
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test
+
+data:  df_sub$r[df_sub$compariosn == "Same study" & df_sub$taxanomy ==  and df_sub$r[df_sub$compariosn == "Same study" & df_sub$taxanomy ==     "Genus"] and     "SV"]
+W = 13, p-value = 0.2
+alternative hypothesis: true location shift is not equal to 0
+
+[1] 0.20000000 0.10000000 0.10000000 0.05714286 0.10000000 0.20000000

@@ -1,0 +1,26 @@
+Loading kraken2/2.1.3
+  Loading requirement: jellyfish/2.3.1
+=== Lazaro_SG  28 filtered samples (expect 28)   Mon Sep 28 11:28:05 PM EDT 2026
+db: /users/rgupta25/rygb/db/kraken2  (47G)
+first sample (includes index load): 165s
+
+=== Lazaro_SG done  Mon Sep 28 11:36:25 PM EDT 2026   elapsed 500s
+classified now: 28 | already present: 0 | failures: 0
+mpa reports: 28 (expect 28)
+
+--- classification rates (from the per-sample logs)
+    min 99.49%  median 99.97%  max 100.00%
+--- a sample report, deepest lines
+    SRR20283893.mpa
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Akkermansiaceae|g__Akkermansia|s__Akkermansia muciniphila	7
+    d__Bacteria|p__Thermodesulfobacteria|c__Thermodesulfobacteria|o__Thermodesulfobacteriales|f__Thermodesulfobacteriaceae|g__Thermosulfuriphilus|s__Thermosulfuriphilus ammonigenes	1
+    d__Bacteria|p__Tenericutes|g__Candidatus Izimaplasma|s__Candidatus Izimaplasma sp. HR1	28
+    d__Bacteria|p__Tenericutes|c__Mollicutes|o__Mycoplasmatales|f__Mycoplasmataceae|g__Mycoplasma|s__Mycoplasma neurolyticum	1
+    d__Bacteria|p__Proteobacteria|c__Oligoflexia|o__Bdellovibrionales|f__Bdellovibrionaceae|g__Bdellovibrio|s__Bdellovibrio sp. NC01	7
+--- rank coverage in that sample (how many taxa are named at each rank)
+    p__ 19
+    c__ 36
+    o__ 65
+    f__ 109
+    g__ 195
+    s__ 236

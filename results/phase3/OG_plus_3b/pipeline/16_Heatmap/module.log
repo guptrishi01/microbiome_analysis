@@ -1,0 +1,21 @@
+INFO:    Mounting image with FUSE.
+Loading required package: grid
+========================================
+ComplexHeatmap version 2.2.0
+Bioconductor page: http://bioconductor.org/packages/ComplexHeatmap/
+Github page: https://github.com/jokergoo/ComplexHeatmap
+Documentation: http://jokergoo.github.io/ComplexHeatmap-reference
+
+If you use it in published research, please cite:
+Gu, Z. Complex heatmaps reveal patterns and correlations in multidimensional 
+  genomic data. Bioinformatics 2016.
+========================================
+
+Reading file: /scratch/rgupta25/rygb/pipeline/11_BSDADA/output/MixedLinearModels/Genus_BS_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/10_AssalDADA/output/MixedLinearModels/Genus_Assal_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/12_IlhanDADA/output/MixedLinearModels/Genus_Ilhan_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/09_AfsharDADA/output/MixedLinearModels/Genus_Afshar_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/13_RYGB_SaoPauloDADA/output/MixedLinearModels/Genus_RYGB_SaoPaulo_MixedLinearModelResults.txt
+Reading file: /scratch/rgupta25/rygb/pipeline/14_Lazaro_GBDADA/output/MixedLinearModels/Genus_Lazaro_GB_MixedLinearModelResults.txt
+null device 
+          1 

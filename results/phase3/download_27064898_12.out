@@ -1,0 +1,20 @@
+Loading sra-tools/3.1.0
+  Loading requirement: hdf5/1.12.3
+=== Chaudhari_SG  expecting 34 runs   Mon Sep 28 10:13:56 PM EDT 2026
+run list: 34 entries (expected 34)
+SRR11856064	SRR11856064
+SRR11856046	SRR11856046
+SRR11856063	SRR11856063
+
+=== Chaudhari_SG done  Mon Sep 28 10:16:27 PM EDT 2026
+downloaded now: 34 | already present: 0 | failures: 0
+files in /scratch/rgupta25/rygb/raw/Chaudhari_SG: 34 (expected 34)
+153M	/scratch/rgupta25/rygb/raw/Chaudhari_SG
+read length check:
+   first read: 250 bp: TACGTATGGTGCAAGCGTTATCCGGATTTACTGGGTGTAAAGGGAGCGTA...
+reads per sample (first 5):
+   SRR11856028_R1.fastq.gz 38591 reads
+   SRR11856029_R1.fastq.gz 50753 reads
+   SRR11856030_R1.fastq.gz 71367 reads
+   SRR11856031_R1.fastq.gz 57970 reads
+   SRR11856032_R1.fastq.gz 56496 reads

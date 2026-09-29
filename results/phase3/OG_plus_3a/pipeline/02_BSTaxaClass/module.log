@@ -1,0 +1,44 @@
+INFO:    Mounting image with FUSE.
+R version 4.0.2 (2020-06-22)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Debian GNU/Linux bullseye/sid
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
+LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.10.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.0.2
+Warning messages:
+1: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+2: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+3: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+4: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+5: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+Warning messages:
+1: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+2: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+3: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+4: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+5: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'

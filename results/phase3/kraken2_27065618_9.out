@@ -1,0 +1,26 @@
+Loading kraken2/2.1.3
+  Loading requirement: jellyfish/2.3.1
+=== RYGB_SaoPaulo  87 filtered samples (expect 87)   Mon Sep 28 11:28:05 PM EDT 2026
+db: /users/rgupta25/rygb/db/kraken2  (47G)
+first sample (includes index load): 193s
+
+=== RYGB_SaoPaulo done  Mon Sep 28 11:35:52 PM EDT 2026   elapsed 467s
+classified now: 87 | already present: 0 | failures: 0
+mpa reports: 87 (expect 87)
+
+--- classification rates (from the per-sample logs)
+    min 99.98%  median 100.00%  max 100.00%
+--- a sample report, deepest lines
+    SRR36103296.mpa
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Verrucomicrobiaceae|g__Verrucomicrobium|s__Verrucomicrobium spinosum	25
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Akkermansiaceae|g__Akkermansia|s__Akkermansia muciniphila	4623
+    d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Akkermansiaceae|g__Akkermansia|s__Akkermansia glycaniphila	2
+    d__Bacteria|p__Verrucomicrobia|c__Opitutae|o__Puniceicoccales|f__Puniceicoccaceae|g__Coraliomargarita|s__Coraliomargarita akajimensis	21
+    d__Bacteria|p__Verrucomicrobia|c__Opitutae|o__Opitutales|f__Opitutaceae|g__Ereboglobus|s__Ereboglobus luteus	3
+--- rank coverage in that sample (how many taxa are named at each rank)
+    p__ 25
+    c__ 46
+    o__ 96
+    f__ 177
+    g__ 324
+    s__ 465

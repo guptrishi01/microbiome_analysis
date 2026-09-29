@@ -1,0 +1,7 @@
+
+	Wilcoxon rank sum test
+
+data:  df$r[df$compariosn == "Different study" & df$compariosnTime ==  and df$r[df$compariosn == "Same study" & df$compariosnTime == "Different timepoint"]    "Different timepoint"] and df$r[df$compariosn == "Same study" & df$compariosnTime == "Different timepoint"]
+W = 3, p-value = 0.06667
+alternative hypothesis: true location shift is not equal to 0
+
