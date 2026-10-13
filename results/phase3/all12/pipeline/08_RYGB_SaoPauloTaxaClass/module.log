@@ -1,0 +1,12 @@
+INFO:    Mounting image with FUSE.
+Warning messages:
+1: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+2: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+3: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+4: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
+5: In rowsum.default(svTable, group = rownames(svTable)) :
+  missing values for 'group'
