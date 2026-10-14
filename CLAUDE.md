@@ -6,9 +6,13 @@ Project-specific context for this repo. See [README.md](README.md) for the paper
 
 A reproduction of Fouladi et al.'s cross-cohort bariatric-surgery gut-microbiome
 signature, run from raw SRA reads rather than the original repo's precomputed
-tables, followed by an attempt to extend the finding to non-bariatric GI-surgery
-cohorts. Phase 1 (reproduction, 4 cohorts) is done and verified against the
-original repo's own published numbers. Phase 2 (extension) is in progress.
+tables, extended to non-bariatric GI-surgery cohorts (phase 2), then to
+additional bariatric-specific positive-control cohorts split into RYGB-specific
+and non-RYGB-bariatric sub-phases (phase 3). All three phases are complete and
+verified against the original repo's own published numbers where ground truth
+exists. See [README.md](README.md) for how to run each phase and
+[results/README.md](results/README.md) for findings — this file is process/
+engineering guidance only, not a results summary.
 
 **Canonical upstream reference:**
 [FarnazFouladi/RYGB_IntegratedAnalysis2020](https://github.com/FarnazFouladi/RYGB_IntegratedAnalysis2020)
@@ -89,7 +93,8 @@ partition; nothing in `scripts/` should be run for real work directly on a login
 **The authors' Kraken2 database is gone.** `00_setup.sh` substitutes a public index
 of comparable vintage (`K2_URL`, default `k2_standard_20201202`) — this is the
 single biggest source of the small numeric differences between our reproduction
-and the original repo's published values (see README's results table). Don't
+and the original repo's published values (see results/README.md's phase-1
+table). Don't
 "fix" this by chasing exact number matches; the point of `07_compare_auroc.sbatch`
 is confirming the signal survives the substitution, not eliminating every delta.
 
@@ -121,8 +126,18 @@ public Kraken2 substitute index surfaces the same failure in the other studies
 too, so the patch generalizes their own fix rather than inventing a new one).
 Phase-2 modules (`*Metagenomics`, `*pathway*`, `OppPathogens`) are listed but
 skipped unless `RUN_PHASE2=1` — this repo has no metagenomic phase-2 work yet.
+A `PHASE3_COHORTS` selector (`3a`/`3b`/`all`, default `0`) works the same way
+for the 4 phase-3 cohorts, following the identical skip-before-numbering
+pattern used for phase-2's cohort tag — see README.md's "Workflow (phase 3)"
+section for the actual run invocations (OG+3a, OG+3b, OG+all-phase-3, and
+all-12-cohorts-combined). Two `06_analysis.sbatch` runs cannot run
+concurrently — each wipes the shared `$DATA_ROOT/pipeline` scratch directory
+at scaffold time, so a second run started before the first one's output is
+archived will destroy it (this happened once; recovered losslessly since
+each pairwise r/p value only depends on the two studies in that pair, not
+which others share the batch — see `results/README.md`'s phase-3 section).
 
-## Adding a new cohort (phase 2) — read this before touching 02-06
+## Adding a new cohort (phase 2/3) — read this before touching 02-06
 
 This is more than "write one new R script." Confirmed by reading the actual code,
 not assumed:
@@ -179,11 +194,14 @@ only real requirement is a recoverable pre-surgical baseline plus ≥1
 post-surgical timepoint, repeat-sampled per subject.
 
 **One study, one procedure.** If an accession bundles two different surgeries
-under one BioProject (confirmed case: PRJNA1480144, an SDT arm and an ileostomy
-arm under one accession), split it into two cohorts at integration time, each
-following the closest single-procedure template — don't merge two procedures
-into one `Study` label, since that blurs exactly the surgery-type signal this
-whole project is testing for.
+under one BioProject (confirmed cases: PRJNA1480144, an SDT arm and an
+ileostomy arm; PRJNA859272, a sleeve-gastrectomy arm and a RYGB arm), split it
+into two cohorts at integration time, each following the closest
+single-procedure template — don't merge two procedures into one `Study`
+label, since that blurs exactly the surgery-type signal this whole project
+is testing for. This is also why PRJNA859272's two cohorts (Lazaro_GB,
+Lazaro_SG) ended up in different phase-3 sub-phases despite sharing one
+source paper.
 
 ## SV/ASV-level comparison is region-locked — genus-level isn't
 
@@ -246,6 +264,20 @@ the delta rather than asserting a hardcoded expected value. Any new cohort
 integration should follow the same pattern where a ground truth exists (the
 source paper's own reported numbers), not invent unit tests for R modules that
 belong to the original authors.
+
+## Reporting scripts
+
+`analysis/RScripts/pairwiseHeatmap.R`, `crossGroupScatter.R`, and
+`titlePage.R` build combined heatmap/scatterplot reports from a completed
+run's output without recomputing any statistics — they read a
+`Genus_PairwiseComparison.txt` or an already-gathered `CompareStudies16S`
+module's `input/` directory and re-plot/re-tabulate filtered subsets. See
+README.md's "Reporting" section for usage. Keep this distinction clear in
+any future work here: these are presentation scripts over existing pipeline
+output, not a new analysis path — if a number in a report PDF looks wrong,
+the bug is almost certainly in how the subset was filtered, not in the
+underlying mixed-linear-model results, which come straight from
+`06_analysis.sbatch`'s own modules.
 
 ## ECC toolkit
 

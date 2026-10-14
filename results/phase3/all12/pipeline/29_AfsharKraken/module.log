@@ -1,0 +1,4 @@
+INFO:    Mounting image with FUSE.
+LME ERROR: nlminb problem, convergence error code = 1
+  message = singular convergence (7) 
+  skipping non-converging column 36 
