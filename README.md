@@ -7,6 +7,10 @@ Fodor Lab project reproducing and extending:
 > Medicine* (2021). Original analysis code:
 > [FarnazFouladi/RYGB_IntegratedAnalysis2020](https://github.com/FarnazFouladi/RYGB_IntegratedAnalysis2020)
 
+This README describes what the pipeline is and how to run it. **For actual
+findings, numbers, and interpretation, see [results/README.md](results/README.md)
+and the per-phase output under `results/`.**
+
 ## Objective
 
 1. **Reproduce** the paper's finding — that bariatric surgery (RYGB and
@@ -18,13 +22,15 @@ Fodor Lab project reproducing and extending:
    public 16S datasets from *other* GI-surgery contexts (colectomy,
    gastrectomy, ileostomy, etc.) and test whether a comparable
    surgery-associated microbial signature appears in cohorts the original
-   paper never looked at — i.e. whether "gut rewiring" produces this
-   signature generally, not only after bariatric procedures.
+   paper never looked at.
+3. **Positive-control** the result from (2): identify additional bariatric
+   cohorts, split into RYGB-specific and non-RYGB-bariatric sub-phases, to
+   test whether the signature is bariatric-specific, RYGB-specific, or
+   neither.
 
-Phase 1 (reproduction, below) is complete. Phase 2 (extension to
-non-bariatric GI-surgery cohorts) is complete. Phase 3 (a bariatric-specific
-positive control, split into RYGB-specific and non-RYGB-bariatric sub-phases)
-is complete.
+Phase 1 (reproduction), Phase 2 (extension to non-bariatric GI surgery), and
+Phase 3 (bariatric positive control, sub-phases 3a/3b) are all complete. See
+[results/README.md](results/README.md) for what each phase found.
 
 ## Repo structure
 
@@ -44,7 +50,7 @@ microbiome_analysis/
 ├── dataset_scan/              # Cached ENA metadata (one TSV per BioProject) + shortlist.tsv
 │                               # ranking candidate cohorts for phase 2
 ├── cohorts/                   # Phase-2/3 per-cohort metadata, built by hand from ENA run info
-│   ├── Cholecystectomy/metaData.txt   # phase 2
+│   ├── Cholecystectomy/metaData.txt    # phase 2
 │   ├── IleocecalResection/metaData.txt # phase 2
 │   ├── Ileostomy/metaData.txt          # phase 2
 │   ├── SDT/metaData.txt                # phase 2
@@ -52,37 +58,29 @@ microbiome_analysis/
 │   ├── Lazaro_GB/metaData.txt          # phase 3b (RYGB-specific)
 │   ├── Lazaro_SG/metaData.txt          # phase 3a (non-RYGB bariatric)
 │   └── Chaudhari_SG/metaData.txt       # phase 3a (non-RYGB bariatric)
-├── analysis/RScripts/         # Phase-2/3 R scripts: this repo's own code, run inside the
-│   │                           # authors' Singularity images (never inside their cloned repo)
+├── analysis/RScripts/         # This repo's own R code, run inside the authors' Singularity
+│   │                           # images (never inside their cloned repo)
 │   ├── 16S_TaxaClassification/   # One script per phase-2/3 cohort, modeled on the closest
 │   ├── DADA2_16S/                 # matching original template (Ilhan/Afshar/Assal/BS —
 │   ├── kraken2_16S/                see CLAUDE.md's "Adding a new cohort" section)
 │   ├── combineCountTables.R      # Generalized rewrites of the 4 scripts that hardcode all
 │   ├── Heatmap.R                  # 4 phase-1 study names in the original repo — verified
-│   └── compareStudies/            # byte-identical to the real phase-1 output before trusting
-├── results/phase1/            # Reproduction outputs (see below)
-│   ├── figures/                  # Regenerated paper figures (PDF)
-│   ├── pipeline/                 # Per-stage intermediate + final outputs (numbered 00-28,
-│   │                              #   matching the original repo's module numbering)
-│   ├── input/                    # Staged per-cohort input trees (BS, Assal2020, Afshar2018, Ilhan2020)
-│   ├── predictions_lasso.tsv     # Our regenerated cross-study LASSO predictions
-│   └── *.out                     # SLURM job logs for every stage (download, DADA2, Kraken2,
-│                                  #   table-building, analysis, AUROC comparison)
-├── results/phase2/            # Extension outputs, all 8 cohorts (see "Results (phase 2)" below)
-│   ├── figures/                  # Figures from the 8-cohort run (13 PDFs)
-│   ├── pipeline/                 # Per-stage outputs, numbered 00-40 (gaps = skipped
-│   │                              #   metagenomics modules) -- .RData LASSO model objects
-│   │                              #   excluded (~635MB, rebuildable, not source work)
-│   ├── predictions_lasso.tsv     # Cross-study LASSO predictions, all 8 studies
-│   └── *.out                     # SLURM job logs for every successful stage run
-├── results/phase3/            # Positive-control outputs (see "Results (phase 3)" below)
-│   ├── OG_plus_3a/                # OG + Chaudhari_SG + Lazaro_SG (non-RYGB bariatric) run
-│   │   ├── figures/, pipeline/, predictions_lasso.tsv, analysis_*.out
-│   ├── OG_plus_3b/                # OG + RYGB_SaoPaulo + Lazaro_GB (RYGB-specific) run
-│   │   ├── figures/, pipeline/, predictions_lasso.tsv, analysis_*.out
-│   │                              #   (both: .RData LASSO model objects excluded, same as phase2)
-│   └── *.out                     # Shared download/DADA2/Kraken2/table-building logs for all
-│                                  #   4 phase-3 cohorts (built once, reused by both 3a/3b runs)
+│   ├── compareStudies/             # byte-identical to the real phase-1 output before trusting
+│   ├── pairwiseHeatmap.R         # Study-timepoint x study-timepoint heatmap (r + BH-adjusted
+│   │                               # p per cell) from any run's Genus_PairwiseComparison.txt
+│   ├── crossGroupScatter.R       # Re-plots only cross-group pairwise scatterplots (e.g. new
+│   │                               # cohorts vs. OG), reusing already-gathered MLM results
+│   └── titlePage.R               # One-page section-divider generator for combined reports
+├── results/                   # All findings — see results/README.md
+│   ├── README.md                 # Findings and interpretation for every phase
+│   ├── phase1/                   # Reproduction outputs (figures/, pipeline/, predictions, logs)
+│   ├── phase2/                   # Extension outputs, all 8 cohorts
+│   └── phase3/                   # Positive-control outputs
+│       ├── OG_plus_3a/              # OG + Chaudhari_SG + Lazaro_SG (non-RYGB bariatric) run
+│       ├── OG_plus_3b/              # OG + RYGB_SaoPaulo + Lazaro_GB (RYGB-specific) run
+│       ├── all12/                   # OG + all phase-2 + all phase-3 cohorts, one combined run
+│       ├── report/                  # Combined pairwise-comparison PDF report + r/p CSVs
+│       └── *.out                    # Shared download/DADA2/Kraken2/table-building logs
 ├── setup.log                  # Output of scripts/00_setup.sh (environment provenance)
 ├── versions.txt                # Tool/container/environment versions used
 └── .gitignore                  # Excludes conda_pkgs/, envs/, images/, db/, singularity_cache/
@@ -97,7 +95,7 @@ Singularity/R containers), `db/` (SILVA 132 + Kraken2 index), `singularity_cache
 ## Workflow (phase 1 — reproduction)
 
 The four cohorts from the original paper — **BS** (the authors' own bariatric
-surgery cohort), **Assal2020**, **Afshar2018**, and **Ilhan2020** — were
+surgery cohort), **Assal2020**, **Afshar2018**, and **Ilhan2020** — are
 processed end to end from raw SRA reads rather than starting from the
 original repo's precomputed count tables:
 
@@ -105,9 +103,8 @@ original repo's precomputed count tables:
    authors' published Singularity containers (`rbase`, `nlme`, `r-vegan`,
    `comparestudies`, `complexheatmap`, `pathogens`, `siamcat`, `fig-perform`),
    SILVA 132 training sets, a Kraken2 index (the authors' original custom DB
-   no longer exists, so a public stand-in of comparable vintage was used —
-   see caveat below), and a clone of the original repo for its R modules and
-   sample metadata.
+   no longer exists, so a public stand-in of comparable vintage is used),
+   and a clone of the original repo for its R modules and sample metadata.
 2. **`01_verify.sbatch`** — confirm SRA accessions and metadata for all 4
    cohorts before committing compute to downloads.
 3. **`02_download.sbatch`** — download raw forward reads per cohort (SLURM
@@ -129,43 +126,7 @@ original repo's precomputed count tables:
    regenerated predictions and from the original repo's published
    predictions, and diff them directly.
 
-## Results: ours vs. the published reproduction
-
-**Cross-cohort genus correlation** (the paper's headline abstract number):
-
-| | Paper (abstract) | Original repo's own re-run | Our reproduction |
-|---|---|---|---|
-| Mean Spearman r, different-study pairs | 0.41 ± 0.10 | 0.410 ± 0.098 (n=23) | **0.396 ± 0.097 (n=23)** |
-
-**Cross-study LASSO AUROC matrix** (rows = training cohort, columns =
-test cohort; diagonal = within-study cross-validation):
-
-| Train \ Test | Afshar | Assal | BS | Ilhan | LOSO |
-|---|---|---|---|---|---|
-| **Afshar** — ours / repo | 0.701 / 0.670 | 0.825 / 0.845 | 0.986 / 0.983 | 0.718 / 0.701 | 0.823 / 0.828 |
-| **Assal** — ours / repo | 0.740 / 0.698 | 0.948 / 0.948 | 0.885 / 0.901 | 0.846 / 0.735 | 0.840 / 0.836 |
-| **BS** — ours / repo | 0.864 / 0.861 | 0.864 / 0.867 | 0.969 / 0.974 | 0.769 / 0.769 | 0.947 / 0.946 |
-| **Ilhan** — ours / repo | 0.612 / 0.623 | 0.706 / 0.757 | 0.569 / 0.591 | 0.718 / 0.667 | 0.803 / 0.769 |
-
-| Summary metric | Ours | Repo |
-|---|---|---|
-| Within-study (CV) mean AUROC | 0.834 | 0.815 |
-| Study-to-study transfer mean | 0.782 | 0.778 |
-| Leave-one-study-out mean | 0.853 | 0.845 |
-
-Mean absolute difference across the full matrix: **0.022**; max difference:
-**0.111** (Assal→Ilhan transfer). Differences of this size are consistent
-with normal pipeline noise — DADA2 ASV-calling stochasticity and Kraken2
-index drift (the authors' original custom database no longer exists; a
-public index of comparable vintage was substituted, see `scripts/00_setup.sh`)
-— not a breakdown of the underlying signal.
-
-**Conclusion:** the reproduction from raw reads confirms the paper's central
-claim. A consistent, transferable microbial signature of bariatric surgery
-is recovered independently of the original authors' precomputed tables,
-within the paper's own reported variance.
-
-## Workflow (phase 2 — extending beyond bariatric surgery, complete)
+## Workflow (phase 2 — extending beyond bariatric surgery)
 
 `scripts/09_find_datasets.sbatch` scans ENA study metadata for candidate
 non-bariatric GI-surgery 16S cohorts against explicit inclusion criteria
@@ -177,7 +138,7 @@ deep-inspects specific shortlisted accessions — sample label parsing,
 subject/timepoint layout, read length — to decide which are actually usable
 and with what DADA2 `truncLen`.
 
-### Cohorts selected
+### Cohorts used
 
 Four cohorts (three source papers; one BioProject split into two, since it
 bundles two distinct procedures under one accession):
@@ -185,498 +146,127 @@ bundles two distinct procedures under one accession):
 | Cohort | Accession | Design | Subjects | Notes |
 |---|---|---|---|---|
 | Cholecystectomy | PRJNA1188648 | Baseline/6M/12M | 10 | Cleanly auto-parseable from SRA `sample_title` |
-| IleocecalResection | PRJNA514452 | 0/1/3/6 months | 54 | Fecal-only subset (189/509 runs) — 320 biopsy-specimen runs (Bp/iRs/niRs) excluded, not comparable to the other cohorts' stool samples |
-| Ileostomy | PRJNA1480144 (IL arm) | Pre/Post | 44 | Only 21/44 subjects have both timepoints — most are baseline-only |
-| SDT | PRJNA1480144 (SD arm) | Pre/Post | 34 | Only 11/34 subjects have both timepoints — most are baseline-only |
+| IleocecalResection | PRJNA514452 | 0/1/3/6 months | 54 | Fecal-only subset (189/509 runs) — biopsy-specimen runs excluded, not comparable to other cohorts' stool samples |
+| Ileostomy | PRJNA1480144 (IL arm) | Pre/Post | 44 | Only 21/44 subjects have both timepoints |
+| SDT | PRJNA1480144 (SD arm) | Pre/Post | 34 | Stent-based diversion technique; only 11/34 subjects have both timepoints |
 
-The Ileostomy/SDT attrition rate (52%/68% singleton subjects) is notably
-higher than any phase-1 cohort's (BS tops out at 30%) — included regardless,
-consistent with the pipeline's existing tolerance for unbalanced subjects,
-but flagged here since it means weaker statistical power per subject than
-the phase-1 cohorts once results exist.
+### How to run
 
-### What's built (not yet run)
+Same 8-stage pipeline as phase 1, extended with array tasks 5-8 (the 4 new
+cohorts) in `02-05_*.sbatch`. `06_analysis.sbatch` takes a `PHASE2_COHORTS`
+flag — default `0` behaves exactly as the phase-1-only pipeline always has;
+set to `1` to include all 8 cohorts through the generalized
+`combineCountTables.R`/`compareStudies_16S.R`/`Heatmap.R`/`compareStudies_SV.R`:
 
-- Per-cohort metadata (`cohorts/<Study>/metaData.txt`), derived by hand from
-  ENA run metadata — see `CLAUDE.md`'s "Adding a new cohort" section
-- `scripts/02-05` extended with `case`/config entries for all 4 cohorts
-  (verified additive-only — the original 4 studies' values are unchanged)
-- 12 new per-cohort R scripts (`analysis/RScripts/`), one
-  `16S_TaxaClassification`/`DADA2_16S`/`kraken2_16S` script per cohort,
-  each modeled on the closest-matching original template by timepoint shape
-- The 4 shared downstream scripts that hardcode all 4 phase-1 study names in
-  the original (`combineCountTables.R`, `compareStudies_16S.R`, `Heatmap.R`,
-  `compareStudies_SV.R`) rewritten generically in this repo and **verified
-  byte-identical to the real published phase-1 output** before being trusted
-  (see `CLAUDE.md`'s "Never assume" section for how)
-- `scripts/06_analysis.sbatch` wired with a `PHASE2_COHORTS` flag (default
-  `0`): off, it behaves exactly as it always has (verified — same module
-  numbering as the actual complete pipeline run, not just equivalent
-  content); set to `1`, it includes all 8 cohorts through the generalized
-  scripts
+```
+PHASE2_COHORTS=1 sbatch scripts/06_analysis.sbatch
+```
 
-### Status (2026-09-22)
+## Workflow (phase 3 — bariatric positive control)
 
-`02_download` → `03_dada2` → `04_kraken2_16s` → `05_build_tables` →
-`06_analysis` (`PHASE2_COHORTS=1`) → `07_compare_auroc` all complete for
-all 8 cohorts. Phase 2's core analysis is done — see "Results" below.
-
-- **Downloads:** all 8 cohorts, zero failures, every file count matches
-  expected exactly. Read lengths for the 4 new cohorts (Cholecystectomy
-  301bp, IleocecalResection 314bp, Ileostomy/SDT 250bp) comfortably exceed
-  `truncLen=200`.
-- **`PRIMER`/`TRIMLEFT` confirmed against real reads**, no longer
-  placeholders: none of the 4 new cohorts show a fixed-position 515F
-  anchor, confirming `PRIMER=NONE`/`TRIMLEFT=0` is correct. Independently
-  confirms none share BS/Assal's exact V4 protocol — `compareStudies_SV.R`
-  correctly excludes all 4 by default (see `CLAUDE.md`'s "SV/ASV-level
-  comparison is region-locked").
-- **DADA2 (`03`):** all 8 succeeded, every ASV length matches its
-  configured `EXPECT_LEN`. **Two samples dropped below 1000 reads** in
-  IleocecalResection (`SRR13357992`, `SRR13358126`) — the script's own
-  printed warning caught these; they'll be silently excluded later by
-  `norm()`'s `rowSums(table)>1000` filter (~1% of that cohort's 189
-  samples, not corrected for, just noted).
-- **Lower chimera-removal read retention** for Cholecystectomy (71.5%),
-  Ileostomy (67.1%), SDT (66.9%) vs. 90-99% for every other cohort. Checked
-  directly, not assumed: every sample in all 3 has tens of thousands of
-  reads of margin above the 1000-read cutoff, so no sample-dropout risk.
-  The real effect is reduced per-taxon estimation precision for these 3
-  cohorts specifically — not a bug (chimera detection ran identically
-  across all 8; this reflects real differences in the underlying labs'
-  protocols), but a genuine interpretation caveat: if these 3 cohorts show
-  weaker cross-study correlation or LASSO transfer later, that could be
-  measurement noise rather than a true biological negative, and should be
-  read that way rather than as a clean result.
-- **Kraken2 (`04`):** all 8 succeeded, every mpa-report count matches
-  expected. Three cohorts (Afshar, Ileostomy, SDT) each had one isolated
-  low-classification-rate sample (80.88%/78.25%/87.79%) — confirmed single
-  outliers, not systemic (the next-lowest sample in each recovers to
-  91-95%+).
-- **Table-building (`05`):** all 8 succeeded; genus-level correlation
-  against the original repo's published tables for the 4 phase-1 cohorts
-  is r=0.82-0.85, consistent with the already-documented Kraken2-database-
-  substitution pattern (see "Cluster environment" in `CLAUDE.md`), not a
-  new discrepancy. Hit and fixed one real bug along the way: the first
-  submission crashed immediately (a missing `COHORTS` argument to
-  `build_tables.py`, introduced when wiring phase-2 metadata but never
-  passed at the call site) — fixed, verified the regenerated phase-1
-  tables are still byte-identical to the already-published output, then
-  re-ran successfully.
-- **Human/Eukaryota read contamination** (present in several samples,
-  expected background in 16S data) is not a residual concern — it's
-  actively filtered by design: `05_build_tables.sbatch` keeps only
-  `d__Bacteria`/`d__Archaea` before normalization, dropping Eukaryota/
-  Viruses reads before any per-sample totals are computed. This is the one
-  "noise" item that's genuinely handled by the pipeline itself, rather
-  than just documented for later interpretation.
-
-None of the above are corrupting or blocking anything — they're real,
-verified properties of specific cohorts' data, not open problems, and
-they're recorded here so they inform how phase-2 results get interpreted
-below.
-
-- **`06_analysis.sbatch`:** first submission crashed immediately —
-  IleocecalResection's TaxaClassification module hit a row-count mismatch
-  (`arguments imply differing number of rows: 187, 189`) in
-  `cbind(t1_norm, meta)`. Root cause: `norm()` correctly drops the 2
-  already-flagged sub-1000-read samples, but the original authors'
-  `cbind(t1_norm, meta)` pattern (copied into all 4 new cohort scripts)
-  assumes the row counts always match — true for all 4 phase-1 cohorts
-  (none of them ever hit this), false here. Fixed in all 4 new scripts
-  (subset `meta`/`meta1` to `rownames(t1_norm)` per rank, immediately
-  before each `cbind`) rather than just the one that happened to trigger
-  it. Verified against the real data that crashed (187/187 rows,
-  consistent across all 6 ranks) and against a cohort where nothing gets
-  dropped (byte-identical output before/after the fix, confirming it's a
-  true no-op elsewhere). Resubmitted, completed clean: **all 34 modules
-  succeeded, zero failures**, ~1h45m total runtime (`TrainModellasso`
-  alone took ~63 min, training/testing LASSO across 8 studies instead of
-  4).
-- **`07_compare_auroc.sbatch`:** completed in 12s, no changes needed — the
-  script derives its study list dynamically from `metaData_merged.txt`,
-  so it handled all 8 studies without modification.
-
-## Results (phase 2)
-
-**Genus-level cross-study correlation** (the same metric behind the
-paper's headline 0.41 ± 0.10): the full 8-cohort, 105-pair comparison came
-back at **r = 0.191 ± 0.224**, far below the paper's number. Before
-treating that as a finding, this was checked for a pipeline bug: the 23
-phase-1-only pairs *within* this same 105-pair table give **r = 0.397 ±
-0.097** — essentially identical to the already-verified phase-1-only
-result (0.396 ± 0.097) — confirming `compareStudies_16S.R`'s
-generalization is correct and the drop is coming entirely from the new
-cohorts, not from anything broken in the shared code.
-
-Breaking the new cohorts' cross-study correlation down individually:
-
-| Cohort | r (different-study pairs) |
-|---|---|
-| IleocecalResection | 0.188 ± 0.113 (n=30) — weak positive |
-| Ileostomy | 0.093 ± 0.136 (n=9) — near zero |
-| Cholecystectomy | -0.010 ± 0.097 (n=26) — no signal |
-| SDT | -0.078 ± 0.065 (n=8) — slightly negative |
-
-**Cross-study LASSO AUROC** tells a consistent story, with an additional
-finding of its own. Within-study performance varies sharply by cohort —
-Afshar 0.717, Assal 0.954, BS 0.984, Cholecystectomy 0.745,
-**IleocecalResection 0.533** (barely above chance), Ileostomy 0.892, Ilhan
-0.744, SDT 0.783 — and pooled cross-study transfer drops from the
-phase-1-only run's 0.778 to **0.619**, with LOSO mean dropping from 0.845
-to **0.683**.
-
-The additional finding: **pooling the noisier phase-2 cohorts into the
-same LASSO training set measurably hurt the phase-1 cohorts' own LOSO
-performance**, not just the new cohorts' transfer numbers:
-
-| Phase-1 cohort | LOSO AUROC, phase-1-only | LOSO AUROC, pooled with all 8 | Δ |
-|---|---|---|---|
-| Afshar | 0.828 | 0.659 | -0.169 |
-| Assal | 0.836 | 0.813 | -0.023 |
-| BS | 0.946 | 0.585 | -0.361 |
-| Ilhan | 0.769 | 0.650 | -0.120 |
-
-**Interpretation.** The bariatric-surgery microbial signature does not
-straightforwardly generalize to the other GI-surgery types tested here —
-IleocecalResection shows a real but much weaker signal, and
-Cholecystectomy/SDT show essentially none. IleocecalResection's own
-within-study AUROC (0.533) being little better than chance, despite
-comparable data quality to the phase-1 cohorts (90.6% chimera retention,
-a complete repeat-sampling design), is evidence this reflects a real
-procedural/biological difference rather than only the data-quality caveats
-already documented above — a fundamentally different patient population
-(Crohn's disease) and a 4-level, gradual timepoint design (0/1/3/6 months,
-collapsed to a single pre/post split for LASSO) plausibly make the
-surgical signature itself harder to detect, not just harder to measure.
-That said, the documented noise caveats for Cholecystectomy/Ileostomy/SDT
-(lower chimera retention, mostly-unpaired subjects) mean their near-zero
-numbers shouldn't be read as definitive proof of *no* signal, only that
-none was detected at this sample size and data quality.
-
-## Phase 3 — a positive control: more bariatric cohorts (complete)
-
-Phase 2 tested whether the bariatric-surgery microbial signature
-generalizes to *other* GI surgeries and found that it largely doesn't
-(r drops from ~0.40 to 0.09 to -0.08 per new cohort — see "Results (phase
-2)" above). That result has an alternative, less interesting explanation
-worth ruling out directly: maybe cross-study correlation just weakens
-whenever *any* additional, independently-collected cohort gets pooled in,
-regardless of whether the surgery type matches — noisier real-world data,
-different labs/protocols, more heterogeneity in general.
-
-**The proposed test:** find additional 16S cohorts that match the
-original 4 as closely as possible — a genuine pre-surgical baseline plus
-≥1 post-surgical timepoint, repeat-sampled per subject — and run them
-through the exact same pipeline. If these cohorts correlate with the
-existing 4 at something close to the original ~0.40 (unlike phase 2's
-non-bariatric cohorts), that's direct, positive evidence the signature is
-real, not an artifact of "more pooled data always looks worse."
-
-**Procedure check (2026-09-28) matters here.** The original 4 phase-1
-cohorts are not generically "bariatric" — the authors' own paper states
-all 4 underwent **RYGB specifically** ("three smaller publicly
-available... datasets from patients who also underwent RYGB surgery"),
-confirmed per cohort against each source paper (BS, Assal, Ilhan, Afshar
-all RYGB). "Bariatric surgery" is an umbrella term — RYGB is one specific
-procedure under it, alongside sleeve gastrectomy, gastric banding, and
-duodenal switch — so a candidate matching the *umbrella* term isn't
-automatically matching the *actual* procedure. This is why phase 3 is now
-split into two sub-phases that ask two different, deliberately separated
-questions:
+Phase 2 tested whether the signature generalizes to *other* GI surgeries.
+Phase 3 asks a narrower, more targeted question: does it generalize to
+*more bariatric surgery*, and specifically, is it tied to RYGB or to
+bariatric surgery generally? The original 4 phase-1 cohorts are not
+generically "bariatric" — the authors' own paper states all 4 underwent
+**RYGB specifically**. "Bariatric surgery" is an umbrella term covering
+RYGB, sleeve gastrectomy, gastric banding, and duodenal switch, so a
+candidate matching the umbrella term isn't automatically matching the
+actual procedure. Phase 3 is split into two sub-phases that ask
+deliberately separated questions:
 
 - **Phase 3b — RYGB-specific (the true positive control):** does another
-  independent *RYGB* cohort share the signature? A weak result here would
-  be hard to explain away — this is the cleanest possible test of phase 1's
-  actual finding.
+  independent *RYGB* cohort share the signature?
 - **Phase 3a — general bariatric, non-RYGB:** does the signature extend to
-  *other* bariatric procedures (sleeve gastrectomy, gastric banding,
-  duodenal switch, etc.)? A weak result here is ambiguous — it could mean
-  "the signature isn't RYGB-specific" (still supports bariatric-specificity
-  generally) or "the signature is genuinely RYGB-specific and these
-  procedures differ" (a real procedure-type effect, not disconfirmation of
-  phase 1). Don't treat 3a and 3b results as equivalent evidence.
+  *other* bariatric procedures (here: sleeve gastrectomy)?
 
-Each sub-phase targets 2 papers (revised down from an original target of 3,
-after two full search passes — see the "considered, not used" notes below
-each table for why the natural 3rd candidates were set aside rather than
-force-included).
+This reuses phase 2's infrastructure almost entirely —
+`09_find_datasets.sbatch`'s scan, `10_inspect_candidates.sh`'s readiness
+check, the `cohorts/<Study>/metaData.txt` pattern, the per-cohort R script
+templates, and the generalized shared scripts.
 
-**This reuses phase 2's infrastructure almost entirely** —
-`09_find_datasets.sbatch`'s scan, `10_inspect_candidates.sh`'s
-readiness check, the `cohorts/<Study>/metaData.txt` pattern, the
-per-cohort R script templates (Ilhan/Afshar-style depending on timepoint
-shape), and the now-generalized shared scripts
-(`combineCountTables.R`/`compareStudies_16S.R`/`Heatmap.R`/
-`compareStudies_SV.R`, already proven to scale past 4 studies). Phase 3 is
-primarily a dataset-sourcing and onboarding task, not new engineering.
+One BioProject covers both sub-phases at once, same pattern as phase 2's
+`PRJNA1480144`→Ileostomy/SDT split: `PRJNA859272` (Lazaro et al. 2025,
+*Obesity Surgery*) is a head-to-head SG-vs-RYGB comparative study, split
+into two cohorts at integration time.
 
-**One BioProject covers both sub-phases at once, same pattern as phase 2's
-`PRJNA1480144`→Ileostomy/SDT split.** `PRJNA859272` (Lazaro et al. 2025,
-*Obesity Surgery* — "Sleeve Gastrectomy and Gastric Bypass Impact in
-Patient's Metabolic, Gut Microbiome, and Immuno-inflammatory Profiles") is
-a head-to-head SG-vs-RYGB comparative study, 24 patients total, each
-sampled at 0M (1wk pre-op) and 6M post-op. Confirmed cleanly resolvable at
-the sample level — `sample_title` directly encodes subject+timepoint+
-procedure (e.g. `01BP`=post-RYGB, `04S`=post-SG) — 14 SG + 10 RYGB post-op
-samples, matching the paper's reported split exactly when independently
-counted from the ENA filereport, not just trusted from the paper's
-aggregate n. Split into two cohorts at integration time, same as phase 2.
+### Cohorts used
 
-### Phase 3b — RYGB-specific: **target met, 2/2**
+| Cohort | Sub-phase | Accession | Procedure | Subjects | Runs |
+|---|---|---|---|---|---|
+| RYGB_SaoPaulo | 3b | PRJNA1364303 | RYGB ± exercise | 31 | 87 |
+| Lazaro_GB | 3b | PRJNA859272 (GB arm) | RYGB | 10 | 20 |
+| Lazaro_SG | 3a | PRJNA859272 (SG arm) | Sleeve gastrectomy | 14 | 28 |
+| Chaudhari_SG | 3a | PRJNA635168 | Sleeve gastrectomy | 17 | 34 |
 
-| Accession | Paper | Paired subjects | Read length |
-|---|---|---|---|
-| `PRJNA1364303` ✅ | São Paulo, RYGB + exercise (32 women, 16 RYGB-only + 16 RYGB+exercise) | **30/31** (23 with all 3 timepoints); mixed with a mouse arm in the same BioProject — must filter on `host=Homo sapiens` AND alias containing `RYGB`, not run count alone | 285bp paired-end MiSeq → truncLen 200 |
-| `PRJNA859272` (GB arm) ✅ | Lazaro et al. 2025, *Obesity Surgery* | **10/10 paired** (0M + 6M), procedure confirmed per-sample via `sample_title` suffix "BP" | ~245bp ×2 MiSeq V4 → truncLen 200 |
+Both sub-phases targeted 2 cohorts each (revised down from an original
+target of 3 after an exhaustive search found no additional candidate that
+didn't require either a manual/non-automatable retrieval step or came with
+caveats serious enough to weaken rather than strengthen the evidence — see
+[results/README.md](results/README.md)'s dataset search log for the full
+candidate list and why each one was set aside).
 
-**Considered, not used:** `PRJNA1227268` ("Examining spatial microbiome
-variations across GI tract regions in obesity," *Sci Rep* 2025) — real,
-public, confirmed RYGB via explicit paper text, but set aside rather than
-included as a 3rd entry: only 9/51 subjects paired, and its post-op sample
-was collected **days 4-5 after surgery** — every other cohort in this
-entire project measures weeks-to-months out (BS is the fastest at 1
-month), so whether a surgical signature is even detectable that early is
-a genuinely open question. Adding it would have diluted rather than
-strengthened this sub-phase's evidence.
+### How to run
 
-### Phase 3a — general bariatric, non-RYGB: **target met, 2/2**
+`scripts/02-05_*.sbatch` extended with array tasks 9-12 for the 4 phase-3
+cohorts. `06_analysis.sbatch` takes a `PHASE3_COHORTS` selector (`3a` / `3b`
+/ `all`, default `0`), combined with the existing `PHASE2_STUDIES` env var
+(read directly by `combineCountTables.R`/`compareStudies_16S.R`/`Heatmap.R`)
+to control exactly which cohorts feed the downstream comparison:
 
-| Accession | Paper | Procedure | Paired subjects | Read length |
-|---|---|---|---|---|
-| `PRJNA635168` ✅ | Chaudhari et al. 2021, *Cell Host & Microbe* — gut-liver axis | Sleeve gastrectomy | **17/17 (100%)** — cleanest pairing found; `sample_title` is literally `<subjectID>-Pre-SG`/`-Post-SG` | 250bp paired-end MiSeq → truncLen 200 |
-| `PRJNA859272` (SG arm) ✅ | Lazaro et al. 2025, *Obesity Surgery* (same paper as the 3b entry above) | Sleeve gastrectomy | **14/14 paired** (0M + 6M), procedure confirmed per-sample via `sample_title` suffix "S" | ~245bp ×2 MiSeq V4 → truncLen 200 |
+```
+# OG + 3a (non-RYGB bariatric)
+PHASE2_COHORTS=0 PHASE3_COHORTS=3a \
+  PHASE2_STUDIES="BS,Assal,Ilhan,Afshar,Chaudhari_SG,Lazaro_SG" \
+  sbatch scripts/06_analysis.sbatch
 
-**Considered, not used:** `PRJNA1133160` (One-Anastomosis Gastric Bypass,
-La Trobe University pilot) — technically clean (7/7 paired, cleanly
-parseable metadata, public SRA, comfortably long reads) but set aside for
-two stacked reasons rather than one: no peer-reviewed paper exists for
-this specific dataset (only the depositing lab's own BioProject
-description and an unpublished thesis draft back the procedure/design
-claims), and n=7 is far smaller than every other cohort in this project.
-Either alone would be a documentable caveat; together they made this a
-meaningfully weaker addition rather than a genuine 3rd data point. Worth
-revisiting if the underlying thesis is ever published.
+# OG + 3b (RYGB-specific)
+PHASE2_COHORTS=0 PHASE3_COHORTS=3b \
+  PHASE2_STUDIES="BS,Assal,Ilhan,Afshar,RYGB_SaoPaulo,Lazaro_GB" \
+  sbatch scripts/06_analysis.sbatch
 
-**`OMIX009130` fully investigated and ruled out (2026-09-28)** — not just a
-tooling gap, a hard dead end for two independent reasons, confirmed
-directly against the live OMIX entry:
-1. It's marked **controlled access** under China's Ministry of Science and
-   Technology Human Genetic Resources framework — a formal international-
-   collaboration approval process, not a simple API key or FTP credential.
-2. Even past that gate, **no raw FASTQ files are deposited under this
-   accession at all** — only an already-processed ASV taxonomy table
-   (`.xls`, 8.8MB), which wouldn't feed this repo's raw-reads pipeline
-   (`02_download.sbatch` → `03_dada2.sbatch`) regardless of access. The
-   page itself states the data "has not yet been registered" for release.
+# OG + all 4 phase-3 cohorts together
+PHASE2_COHORTS=0 PHASE3_COHORTS=all \
+  PHASE2_STUDIES="BS,Assal,Ilhan,Afshar,RYGB_SaoPaulo,Lazaro_GB,Lazaro_SG,Chaudhari_SG" \
+  sbatch scripts/06_analysis.sbatch
 
-No download-path engineering would fix this — the raw reads aren't
-retrievable by any automated mechanism, registered or not. Not
-recommended for further pursuit unless the paper's authors are contacted
-directly for raw FASTQ files.
+# All 12 cohorts (OG + phase 2 + phase 3) in one run
+PHASE2_COHORTS=1 PHASE3_COHORTS=all sbatch scripts/06_analysis.sbatch
+```
 
-Gastric banding and duodenal switch single-procedure public cohorts were
-searched for across three separate passes and consistently came up empty —
-every human duodenal switch/BPD 16S study found was either not public,
-cross-sectional, single-timepoint (no baseline), hosted on a non-SRA/ENA
-repository, or blocked by the same unresolvable-procedure-mix problem
-below. This appears to be a genuine gap in what's publicly available, not
-a search-effort gap. (One omega-loop/OAGB candidate, `PRJNA1133160`, was
-found — see "considered, not used" above.)
+The OG-only baseline needs no new run — `PHASE2_COHORTS=0 PHASE3_COHORTS=0`
+(the default) reproduces exactly the phase-1 pipeline.
 
-**Bottom line: both sub-phases are complete at 2/2 each.** The target was
-revised down from 3 to 2 per sub-phase after two full search passes found
-no additional candidate that didn't require either a manual/non-automatable
-retrieval step or came with stacked caveats serious enough to weaken rather
-than strengthen the evidence (see "considered, not used" above). Not
-pursuing `PRJEB28869` further (below) — its supplement requires a manual
-human-browser download, which wasn't pursued.
+**Note on parallel runs:** each `06_analysis.sbatch` invocation scaffolds
+into a shared scratch pipeline directory (`$DATA_ROOT/pipeline`) and wipes
+it at the start of the run. Submitting two of these runs back-to-back is
+safe sequentially, but a second run's scaffold step will delete the first
+run's raw output before it can be archived — either archive a completed
+run's output before submitting the next one, or use a SLURM
+`--dependency=afterok:<jobid>` chain and check completion before the
+dependent job starts wiping the directory.
 
-### Doesn't fit either bucket
+## Reporting — pairwise comparison heatmaps and scatterplots
 
-- `PRJEB28869` (Shen et al. 2019, *SOARD*, DOI 10.1016/j.soard.2019.05.038)
-  — has an explicit *Supplemental Table 3: "Comparison between RYGB and SG
-  surgical groups in the Barcelona cohort"* that would almost certainly
-  resolve its procedure-mix problem, but automated retrieval failed (an
-  NIH-manuscript deposit gated behind a JS proof-of-work challenge that
-  `curl`/`WebFetch` can't solve; ScienceDirect/ResearchGate both return
-  HTTP 403). Not pursued further — would require a human manually
-  downloading `NIHMS1531476-supplement-1.pdf` from
-  `https://pmc.ncbi.nlm.nih.gov/articles/PMC6722012/`, and even then, ENA's
-  own metadata for this BioProject is separately messy (bare sequential
-  `sample_alias`, incorrect `geo_loc_name` on every sample) and would need
-  manual cross-referencing by run order rather than a clean field match.
-- `PRJEB39382` (Ben Izhak et al. 2021, *mSystems*) — previously listed as a
-  top candidate (30/86 paired, largest paired-n found at the time), but its
-  patients are an unresolvable ~1/3-each mix of Sleeve/Omega Loop/RYGB with
-  no per-subject procedure labels available. Set aside unless the paper's
-  authors can be reached for a per-subject procedure breakdown.
-- **`PRJNA639545`** (*Gut Microbes* 2022) — **ruled out, not just blocked.**
-  Structurally the best timepoint design found in this whole search (26
-  RYGB + 14 SG, 4 clean timepoints: baseline/post-diet/1mo/3mo), but
-  confirmed via the actual supplementary files (this journal is genuinely
-  open access, retrieved via Europe PMC's API) that the supplement contains
-  only 3 figures, no tables. The main text's Table 1 gives per-patient
-  Sex/Age (e.g. "F/58") with no numeric ID, and BioSample XML carries no
-  sex/age fields to cross-match against — there is no crosswalk anywhere
-  accessible. A genuine dead end, not just an unretrieved one.
-- `PRJEB48942` (Han et al. 2022, *Diabetes, Obesity and Metabolism*) — the
-  richest timepoint ladder of anything found (preop/1mo/3mo/6mo/12mo, 37/41
-  paired, 21 with all 5 timepoints), procedure still not confirmed against
-  the paper. Read length also borderline (~150bp mean, same tier as
-  Ilhan's own truncLen) — needs a real per-FASTQ check either way.
+Three small R scripts in `analysis/RScripts/` build a combined
+heatmap+scatterplot report across any set of completed runs, without
+re-running any statistics:
 
-**Ruled out entirely** (mixed human+mouse translational studies,
-specimen-purity failures, cross-sectional designs, or non-16S data —
-corrects earlier versions of this list):
-- `PRJNA727576` — only 6 of 358 "runs" are actually human; the rest are
-  gnotobiotic mice inheriting the human donor's metadata tags. Too small.
-- `PRJNA941111` — `isolation_source` is 100% gastric tissue (biopsy), not
-  fecal. Same specimen-purity failure as IleocecalResection's excluded
-  biopsy runs in phase 2.
-- `PRJNA951705` — only 8/47 runs are actually human; resolves to 4 real
-  subjects, too small.
-- `PRJEB88699` — confirmed ~74bp mean read length, well under even
-  Ilhan's 150bp floor.
-- `PRJNA1118203`, `PRJNA1199984` — no parseable subject/timepoint
-  attributes anywhere in BioSample XML; would need each paper's own
-  supplementary table to use at all.
-- `PRJNA1093424` ("Pediatric Bariatric Surgery") — confirmed via its paper
-  (*Gut Microbes* 2025) that only the murine FMT-recipient samples are 16S;
-  the human samples are shotgun metagenomic.
-- `PRJNA321731` — confirmed cross-sectional per the source paper (Ilhan et
-  al. 2017, *ISME J*): RYGB-alumni, band-alumni, normal-weight, and
-  pre-surgery-obese are four different sets of people, not the same
-  subjects before/after.
-- `PRJNA885527`, `PRJNA355361` — confirmed rat/mouse via ENA project XML
-  `SCIENTIFIC_NAME`, not human.
-- `PRJNA1233226` — confirmed to be an FMT-into-mice tumor study using
-  post-surgery human stool only as a transplant source, same translational
-  pattern as `PRJNA727576`.
+- **`pairwiseHeatmap.R <Genus_PairwiseComparison.txt> <out_prefix>`** — reads
+  a run's pairwise comparison table and renders a study-timepoint ×
+  study-timepoint heatmap (cell = Spearman r + BH-adjusted p), plus r/p CSV
+  matrices. Same-study pairs are shaded separately since they're excluded
+  from the headline correlation metric.
+- **`crossGroupScatter.R <CompareStudies16S module dir> <groupA> <groupB> <title> <out_prefix>`**
+  — re-plots only the scatterplots between two named groups of studies
+  (e.g. "new cohorts" vs. "OG"), reusing the already-gathered
+  `MixedLinearModelResults` files and `compareStudies()`/
+  `plotPairwiseStudies()` from `functions.R` — a filtered re-plot, not a
+  new statistical computation.
+- **`titlePage.R <out.pdf> <title> <subtitle lines...>`** — a one-page
+  section divider for assembling multiple PDFs into one report (merge with
+  `gs -sDEVICE=pdfwrite -dBATCH -sOutputFile=out.pdf page1.pdf page2.pdf ...`).
 
-**Methodology note for future scans:** `09_find_datasets.sbatch`/
-`10_inspect_candidates.sh` currently score off `sample_title`/`sample_alias`/
-`library_name`/`scientific_name` only, which several ruled-out
-translational studies above sailed through (`scientific_name` says
-`"metagenome"` for both human and mouse arms). A `host` BioSample-attribute
-check would catch this class of false positive automatically, and neither
-script currently checks the *specific surgical procedure*, nor whether an
-accession is even hosted on SRA/ENA vs. another repository (OMIX/NGDC,
-etc.) — worth adding all three if phase 3 scans more candidates.
-
-Verify each with `scripts/10_inspect_candidates.sh <ACCESSION>` before
-committing to one, exactly as was done for the phase-2 cohorts.
-
-### Onboarding — final dataset sizes used
-
-| Cohort | Sub-phase | Subjects | Runs |
-|---|---|---|---|
-| RYGB_SaoPaulo | 3b | 31 | 87 |
-| Lazaro_GB | 3b | 10 | 20 |
-| Lazaro_SG | 3a | 14 | 28 |
-| Chaudhari_SG | 3a | 17 | 34 |
-
-**Phase 3b total: 41 subjects. Phase 3a total: 31 subjects.**
-
-All 4 cohorts' per-cohort R scripts (`16S_TaxaClassification`/`DADA2_16S`/
-`kraken2_16S`) were written from the closest existing template by timepoint
-shape (Cholecystectomy's 3-level Baseline/6M/12M template for RYGB_SaoPaulo's
-T1/T2/T3 design; Ileostomy/Afshar's binary Pre/Post template for the other
-three). Two real bugs were caught and fixed before any job was submitted: a
-doubled `RYGB_RYGB_SaoPaulo_` Kraken2 file prefix, and a missing `prepost`
-metadata column in RYGB_SaoPaulo's TaxaClassification script that
-`combineCountTables.R` requires (present in the Cholecystectomy template it
-was based on, dropped by mistake when adapting the timepoint factor). Both
-would have produced a silent failure or crash downstream, not a wrong-but-
-plausible number — caught by review before the first submission, not by a
-failed job.
-
-`scripts/02-05_*.sbatch` extended with array tasks 9-12 for the 4 new
-cohorts; `scripts/06_analysis.sbatch` extended with a `PHASE3_COHORTS`
-selector (`3a`/`3b`/`all`, default `0`) and 12 new `MODULES` entries,
-following the same skip-before-numbering pattern already established for
-phase 2's cohort tag. Verified via a numbering simulation that default
-(OG-only) and `PHASE2_COHORTS=1` module numbering stays byte-identical to
-the already-published `results/phase1/` and `results/phase2/` pipeline
-directory listings — zero drift from the phase-3 additions.
-
-### Status (2026-09-28 – 2026-09-29)
-
-`02_download` → `03_dada2` → `04_kraken2_16s` → `05_build_tables` →
-`06_analysis` (run twice, once per sub-phase) all complete for all 4
-phase-3 cohorts. See "Results (phase 3)" below for the headline numbers.
-
-- **Downloads:** all 4 cohorts, zero failures, every run count matches
-  expected exactly (87/20/28/34). Read lengths: RYGB_SaoPaulo 305bp,
-  Lazaro_GB/SG ~251bp, Chaudhari_SG 250bp — all comfortably exceed
-  `truncLen=200`.
-- **`PRIMER`/`TRIMLEFT` check found a real, mixed result — not the uniform
-  "no primer" pattern phase 2 had.** RYGB_SaoPaulo and Chaudhari_SG show
-  the same phase-2 signature (scattered anchor matches at varying
-  positions, or none at all) — `PRIMER=NONE` confirmed correct for both.
-  **Lazaro_GB and Lazaro_SG do not**: ~90% of the first 5000 reads in each
-  carry the *exact, untrimmed* degenerate 515F primer
-  (`GTGYCAGCMGCCGCGGTAA`) starting at position 1 — the same situation as
-  BS16S/Assal in phase 1, confirmed by direct sequence inspection (the raw
-  read prefix matches the primer base-for-base, including both degenerate
-  positions). The first submission for these two cohorts ran with the
-  placeholder `PRIMER=NONE` and was discarded and rerun with
-  `PRIMER=GTGYCAGCMGCCGCGGTAA` (cutadapt-based removal, same as BS/Assal)
-  before being trusted — confirmed correct by the rerun's ASV length
-  distribution collapsing to a clean, single 200bp peak (it was not before
-  the fix). This is why Lazaro_GB and Lazaro_SG don't share one row's
-  DADA2 settings in `03_dada2.sbatch` despite an identical Pre/Post
-  template and near-identical raw read length.
-- **DADA2 (`03`):** all 4 succeeded after the primer fix above, every ASV
-  length matches `EXPECT_LEN=200`. No samples dropped below the 1000-read
-  `norm()` threshold in any of the 4 cohorts.
-- **Kraken2 (`04`):** all 4 succeeded, every mpa-report count matches
-  expected exactly, classification rates 98.3-100%.
-- **Table-building (`05`):** single job, all 12 studies (4 phase-1 + 4
-  phase-2 + 4 phase-3) processed in one pass; phase-1 repo-comparison
-  correlations (r=0.77-0.95) unchanged from the already-verified pattern,
-  confirming the phase-3 additions to `STUDIES` dicts didn't disturb
-  anything. Correct, non-doubled Kraken2 prefixes confirmed in the
-  regenerated file listing for all 4 phase-3 cohorts.
-- **`06_analysis.sbatch`**, run twice with `PHASE2_COHORTS=0` and
-  `PHASE2_STUDIES` restricted per sub-phase: OG+3a (`PHASE3_COHORTS=3a`,
-  `PHASE2_STUDIES=BS,Assal,Ilhan,Afshar,Chaudhari_SG,Lazaro_SG`) completed
-  28/28 modules ok in ~25 min; OG+3b (`PHASE3_COHORTS=3b`,
-  `PHASE2_STUDIES=BS,Assal,Ilhan,Afshar,RYGB_SaoPaulo,Lazaro_GB`) completed
-  28/28 modules ok in ~25 min. Both module-numbering sequences matched the
-  pre-submission simulation exactly. Pair counts in each run's
-  `Genus_PairwiseComparison.txt` matched the expected C(n,2) for that
-  sub-phase's total timepoint count (45 pairs / 10 timepoints for 3a; 55
-  pairs / 11 timepoints for 3b — RYGB_SaoPaulo contributes 2 timepoints,
-  T2 and T3, vs. every other new cohort's 1).
-
-## Results (phase 3)
-
-**Genus-level cross-study correlation**, same metric as phases 1 and 2:
-
-| Configuration | Cohorts added | r (different-study pairs) | n pairs |
-|---|---|---|---|
-| **OG** (phase-1 baseline) | — | **0.396 ± 0.097** | 23 |
-| **OG+3a** (non-RYGB bariatric) | Chaudhari_SG, Lazaro_SG (both SG) | **0.313 ± 0.158** | 40 |
-| **OG+3b** (RYGB-specific) | RYGB_SaoPaulo, Lazaro_GB (both RYGB) | **0.431 ± 0.110** | 49 |
-
-**Interpretation.** This is the positive-control result phase 3 was
-designed to produce, and it comes out cleanly differentiated between the
-two sub-phases. Adding two more **RYGB** cohorts (3b) does not weaken the
-signature at all — it comes back essentially at, or slightly above, the
-phase-1 baseline (0.431 vs. 0.396). Adding two more **bariatric-but-
-non-RYGB** cohorts (3a) does measurably weaken it (0.313), a real
-directional decline — but nowhere close to phase 2's collapse when
-genuinely unrelated GI surgeries were pooled in (0.191 ± 0.224).
-
-Read together, phases 2 and 3 triangulate the same conclusion from two
-directions: phase 2 showed the signature doesn't generalize to unrelated
-GI surgery; phase 3 shows it *does* generalize cleanly to more RYGB
-cohorts, and generalizes only partially to other bariatric procedures.
-That pattern — strong within-procedure transfer, partial cross-procedure
-transfer, no cross-surgery-type transfer — is most consistent with the
-signature being substantially **RYGB-specific** rather than a general
-"any bariatric surgery" or "any gut surgery" effect, though 3a's n=2
-cohorts (both sleeve gastrectomy specifically, not gastric banding or
-duodenal switch) means this is evidence toward that conclusion, not a
-final word on bariatric-procedure specificity as a whole.
+`results/phase3/report/pairwise_comparison_report.pdf` is the combined
+report built this way, covering every phase plus a taxon-level "top movers"
+analysis — see [results/README.md](results/README.md) for what it found.
