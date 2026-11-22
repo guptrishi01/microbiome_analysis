@@ -56,15 +56,49 @@ else
 fi
 
 if [ "$SETUP_METAGENOMICS" = "1" ]; then
-  sec "3a. Conda env: rygb-kneaddata"
+  sec "3a. Conda env: rygb-kneaddata (QC + human-read removal, plus Bracken for the taxonomy-only WGS comparison track — see section 6b below)"
   if have "$ENV_DIR/rygb-kneaddata/bin/kneaddata"; then
     echo "  exists, skipping"
   else
     mamba create -y -p "$ENV_DIR/rygb-kneaddata" $CH \
-      kneaddata=0.12.0 bowtie2 trimmomatic
+      kneaddata=0.12.0 bowtie2 trimmomatic bracken=2.9 || \
+      echo "  !! solve failed — tell me the error; bracken=2.9 may conflict with kneaddata=0.12.0's pinned deps"
+  fi
+  if have "$ENV_DIR/rygb-kneaddata/bin/bracken"; then
+    echo "  bracken present"
+  else
+    echo "  !! bracken missing from an existing rygb-kneaddata env — installing into it"
+    mamba install -y -p "$ENV_DIR/rygb-kneaddata" $CH bracken=2.9
+  fi
+
+  # kneaddata's --trimmomatic expects a DIRECTORY it globs "trimmomatic*" in via Python's
+  # os.listdir() + fnmatch, taking found_paths[0] — bioconda's trimmomatic package ships
+  # both a Python wrapper script named "trimmomatic" and the real "trimmomatic.jar" in the
+  # same share/ dir, and os.listdir() order (not alphabetical) can return the wrapper
+  # first, so kneaddata tries to `java -jar` the wrapper script itself and fails ("Invalid
+  # or corrupt jarfile"). Confirmed via kneaddata's own source
+  # (kneaddata/utilities.py:find_dependency). Fix: a clean directory containing ONLY the
+  # real jar (symlinked), so there's no ambiguity — 03b_kneaddata.sbatch points
+  # --trimmomatic at this instead of the raw share/ dir.
+  TRIMMOMATIC_SHARE=$(ls -d "$ENV_DIR/rygb-kneaddata"/share/trimmomatic*/ 2>/dev/null | head -1)
+  TRIMMOMATIC_JAR_DIR=$DB_DIR/trimmomatic_jar_only
+  if [ -n "$TRIMMOMATIC_SHARE" ] && [ -e "$TRIMMOMATIC_SHARE/trimmomatic.jar" ]; then
+    if have "$TRIMMOMATIC_JAR_DIR/trimmomatic.jar"; then
+      echo "  trimmomatic_jar_only/ already set up"
+    else
+      mkdir -p "$TRIMMOMATIC_JAR_DIR"
+      ln -sf "$TRIMMOMATIC_SHARE/trimmomatic.jar" "$TRIMMOMATIC_JAR_DIR/trimmomatic.jar"
+      echo "  built $TRIMMOMATIC_JAR_DIR (symlink to $TRIMMOMATIC_SHARE/trimmomatic.jar)"
+    fi
+  else
+    echo "  !! no trimmomatic.jar found under $ENV_DIR/rygb-kneaddata/share — check the env"
   fi
 
   sec "3b. Conda env: rygb-humann2  (Python 2.7 — the fragile one)"
+  # Only needed for pathway/functional profiling, which is OUT OF SCOPE for the current
+  # taxonomy-only WGS comparison (see section 6b below) — this block and the HUMAnN2
+  # database download in section 7 are left as-is from the original setup but are not
+  # required by scripts/03b_kneaddata.sbatch, 04b_kraken2_wgs.sbatch, or 05b_build_tables_wgs.sbatch.
   # HUMAnN2 2.8.1 needs diamond 0.8.36 exactly; the cluster's diamond module (2.x) will not work.
   if have "$ENV_DIR/rygb-humann2/bin/humann2"; then
     echo "  exists, skipping"
@@ -118,6 +152,24 @@ else
 fi
 
 if [ "$SETUP_METAGENOMICS" = "1" ]; then
+  sec "6b. Bracken build (companion to the Kraken2 index, WGS taxonomy track only)"
+  # bracken-build re-uses the Kraken2 index built in section 6 — it does NOT need its own
+  # database download, just a one-time k-mer distribution pass over that same index, once
+  # per read length actually used by 04b_kraken2_wgs.sbatch's per-study READLEN map: 150bp
+  # (Penney, Oseberg, COCKTAIL_GBP — all ~150bp/NovaSeq 2x150) and 300bp (Hayashi_LSG,
+  # MiSeq 2x300 — far enough from 150bp to need its own distribution; Bracken's own
+  # guidance is ~50bp tolerance).
+  BRACKEN_READLENS=${BRACKEN_READLENS:-"150 300"}
+  for BRACKEN_READLEN in $BRACKEN_READLENS; do
+    if have "$DB_DIR/kraken2/database${BRACKEN_READLEN}mers.kmer_distrib"; then
+      echo "  exists for ${BRACKEN_READLEN}bp, skipping"
+    else
+      "$ENV_DIR/rygb-kneaddata/bin/bracken-build" -d "$DB_DIR/kraken2" \
+        -t "$(nproc)" -l "$BRACKEN_READLEN" -k 35 \
+        || echo "  !! bracken-build failed for ${BRACKEN_READLEN}bp — needs rygb-kneaddata env built first (section 3a)"
+    fi
+  done
+
   sec "7. KneadData human index + HUMAnN2 databases (~30 GB)"
   source "$(dirname "$(dirname "$(which mamba)")")/etc/profile.d/conda.sh"
   if have "$ENV_DIR/rygb-kneaddata/bin/kneaddata_database"; then
