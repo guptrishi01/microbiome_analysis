@@ -46,7 +46,10 @@ while IFS=$'\t' read -r run; do
 
   target1=$OUT/${run}_R1.fastq.gz
   target2=$OUT/${run}_R2.fastq.gz
-  if [ -s "$target1" ] && [ -s "$target2" ]; then skip=$((skip+1)); continue; fi
+  # gzip -t, not just non-empty — see 02b_download_wgs.sbatch's comment on this same check.
+  if [ -s "$target1" ] && [ -s "$target2" ] && gzip -t "$target1" 2>/dev/null && gzip -t "$target2" 2>/dev/null; then
+    skip=$((skip+1)); continue
+  fi
 
   if ! prefetch --max-size 100G -O "$TMP" "$run" >"$TMP/$run.prefetch.log" 2>&1; then
     echo "FAIL prefetch $run"; tail -3 "$TMP/$run.prefetch.log"; fail=$((fail+1)); continue

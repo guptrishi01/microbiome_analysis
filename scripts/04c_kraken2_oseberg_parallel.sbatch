@@ -43,6 +43,30 @@ echo "db: $KDB  ($(du -sh "$KDB" | cut -f1))"
 declare -A RANK_NAME=( [P]=Phylum [C]=Class [O]=Order [F]=Family [G]=Genus [S]=Species )
 
 n=0; skip=0; fail=0; t0=$SECONDS
+
+# Pass 0: backfill any sample THIS CHUNK owns that already has a Kraken2 report but is
+# missing one or more Bracken rank outputs — mirrors 04b_kraken2_wgs.sbatch's same fix
+# (a prior Bracken failure for just some ranks used to be permanently invisible, since
+# only .k2report gated the "already done" skip and $d gets deleted regardless of
+# Bracken's outcome). Hashed the same way as the main loop below so concurrent chunks
+# never race on the same k2out file's missing ranks.
+for k2out in "$OUT"/*.k2report; do
+  [ -s "$k2out" ] || continue
+  run=$(basename "$k2out" .k2report)
+  h=$(printf '%s' "$run" | cksum | awk '{print $1}')
+  [ $(( h % N_CHUNKS + 1 )) -eq "$CHUNK" ] || continue
+  bracken_ok=1
+  for code in P C O F G S; do
+    rank=${RANK_NAME[$code]}
+    [ -s "$OUT/$run.$rank.bracken" ] && continue
+    "$BRACKEN" -d "$KDB" -i "$k2out" \
+      -o "$OUT/$run.$rank.bracken" -w "$OUT/$run.$rank.breport" \
+      -r "$RLEN" -l "$code" > "$OUT/$run.$rank.bracken.log" 2>&1 \
+      || { echo "  !! bracken backfill failed for $run at rank $rank"; bracken_ok=0; }
+  done
+  [ "$bracken_ok" -eq 1 ] || fail=$((fail+1))
+done
+
 for d in "$KNEAD"/*/; do
   run=$(basename "$d")
   # Hash the stable run name rather than its position in a live directory listing — see
@@ -62,15 +86,20 @@ for d in "$KNEAD"/*/; do
   if kraken2 --db "$KDB" --threads "$THREADS" --memory-mapping --paired \
              --report "$k2out" --output "$OUT/$run.kraken2.out" \
              "$r1" "$r2" > "$OUT/$run.log" 2>&1; then
-    n=$((n+1))
-    [ "$n" -eq 1 ] && echo "first sample (includes index load): $((SECONDS-t0))s"
+    bracken_ok=1
     for code in P C O F G S; do
       rank=${RANK_NAME[$code]}
       "$BRACKEN" -d "$KDB" -i "$k2out" \
         -o "$OUT/$run.$rank.bracken" -w "$OUT/$run.$rank.breport" \
         -r "$RLEN" -l "$code" > "$OUT/$run.$rank.bracken.log" 2>&1 \
-        || echo "  !! bracken failed for $run at rank $rank"
+        || { echo "  !! bracken failed for $run at rank $rank"; bracken_ok=0; }
     done
+    if [ "$bracken_ok" -eq 1 ]; then
+      n=$((n+1))
+      [ "$n" -eq 1 ] && echo "first sample (includes index load): $((SECONDS-t0))s"
+    else
+      fail=$((fail+1))
+    fi
     # kneaddata's cleaned FASTQs are never needed again once Kraken2 has classified them
     # — mirrors 04b_kraken2_wgs.sbatch's cleanup. $d (work/kneaddata/) is entirely
     # separate from $OUT (work/kraken_wgs/), so this never touches .k2report/.bracken.

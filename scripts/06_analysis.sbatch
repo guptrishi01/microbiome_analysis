@@ -23,8 +23,14 @@
 # Phase 4 (PHASE4_WGS=1) adds this session's new WGS-taxonomy-track cohorts (Penney,
 # Oseberg, COCKTAIL_GBP, Hayashi_LSG) on top of BS/Palleja, through THIS repo's
 # generalized compareStudies_Metagenomics.R ($OUR_RSCRIPTS) — same relative path as the
-# phase-2 entry, different script content, see that file's own header comment. Most
-# phase-4 cohorts are not runnable yet; see cohorts/<Study>/NEEDS_METADATA.md.
+# phase-2 entry, different script content, see that file's own header comment.
+# Penney_RYGB/SG and Oseberg_RYGB/SG (4 of 6) are fully resolved and proven runnable —
+# verified via scripts/06c_phase4_real_run.sbatch's real run against real data (see
+# results/phase4/), not yet through this script itself, which scaffolds into the SHARED
+# $DATA_ROOT/pipeline rather than an isolated one. COCKTAIL_GBP and Hayashi_LSG (2 of 6)
+# remain blocked on unresolved Arm metadata and will stop() as designed; set
+# PHASE4_ALLOW_PARTIAL=1 (below) so that doesn't block CompareStudiesMetagenomicsWGS from
+# running on whichever cohorts did succeed. See cohorts/<Study>/NEEDS_METADATA.md.
 
 set -o pipefail
 SW_ROOT=${SW_ROOT:-$HOME/rygb}
@@ -79,6 +85,15 @@ PHASE4_WGS=${PHASE4_WGS:-0}
 # phase-4 cohorts have real metadata, so a still-unresolved cohort's expected stop()
 # doesn't block CompareStudiesMetagenomicsWGS from running on whichever cohorts did
 # succeed — that module already skips any cohort it can't find output for.
+# Known limitation: this tolerates ANY phase-4 module failure, not just the specific
+# documented stop() on unresolved metadata — a genuine crash (OOM, a real regression) in
+# one of the cohorts already marked "fully resolved" would print the same generic
+# "not aborting the run for this one" as an expected gap, with nothing in the log
+# distinguishing the two. Not hardened further here (would need checking the module's own
+# log for the specific stop() message rather than just its exit code); in practice this
+# flag has not yet been exercised for real — the actual phase-4 run so far used the
+# isolated scripts/06c_phase4_real_run.sbatch instead, which prints each module's
+# individual rc against its own EXPECT table, not just a pass/fail-the-whole-run signal.
 PHASE4_ALLOW_PARTIAL=${PHASE4_ALLOW_PARTIAL:-0}
 
 BIND="--bind $DATA_ROOT --bind $SW_ROOT"
@@ -272,8 +287,9 @@ while [ $idx -lt $n ]; do
       idx=$((idx+1)); continue
     fi
     if [ "$phase" = "4" ] && [ "$PHASE4_WGS" != "1" ]; then
-      echo "-- skip ${name} (phase 4 WGS-taxonomy cohort: set PHASE4_WGS=1 to include — most"
-      echo "   are not runnable yet, see cohorts/<Study>/NEEDS_METADATA.md)"
+      echo "-- skip ${name} (phase 4 WGS-taxonomy cohort: set PHASE4_WGS=1 to include — 4 of 6"
+      echo "   are proven runnable (Penney_RYGB/SG, Oseberg_RYGB/SG); COCKTAIL_GBP/Hayashi_LSG"
+      echo "   still stop() on unresolved metadata, see cohorts/<Study>/NEEDS_METADATA.md)"
       idx=$((idx+1)); continue
     fi
 
@@ -287,7 +303,12 @@ while [ $idx -lt $n ]; do
       *TaxaClass) tag="TaxaClass" ;;
       *DADA) tag="DADA" ;;
       *Kraken) tag="Kraken" ;;
-      *Metagenomics) tag="Metagenomics" ;;
+      # Gated on phase="4" too, not just the name suffix: BSMetagenomics/PallejaMetagenomics
+      # (phase 2) also end in "Metagenomics" and would otherwise start getting batched
+      # concurrently with each other for the first time — a real behavior change to
+      # existing phase-2 modules that CLAUDE.md's "never change phase 1-3 behavior while
+      # adding phase 4" rule forbids, even though no existing line was textually edited.
+      *Metagenomics) [ "$phase" = "4" ] && tag="Metagenomics" ;;
     esac
     # A later entry with a different tag ends the batch here without consuming it — the next
     # outer-loop iteration picks it up fresh.

@@ -144,6 +144,15 @@ for study, cfg in STUDIES.items():
         samples = [os.path.basename(p)[:-len(f'.{rank}.bracken')] for p in files]
         parsed, dropped = {}, 0
         for p, s in zip(files, samples):
+            # domain_maps.get(s, {}) falls back to an empty map if this sample's .bracken
+            # has no matching .k2report entry — which makes every read look non-Bacterial/
+            # Archaeal and silently zero the sample out, rather than erroring. Relies on
+            # 04b/04c's invariant that .k2report always exists before any .bracken file for
+            # the same sample (confirmed: 04b writes k2out synchronously before ever
+            # calling Bracken, and its Pass-0 backfill only ever adds missing .bracken
+            # files against an already-present .k2report, never the reverse) — if that
+            # invariant is ever broken, this would need to warn instead of silently falling
+            # back.
             parsed[s], d = parse_bracken(p, domain_maps.get(s, {}))
             dropped += d
         print(f"  non-bacterial/archaeal reads dropped before normalization: {dropped:,}")

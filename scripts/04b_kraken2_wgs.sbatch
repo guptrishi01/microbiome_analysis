@@ -65,6 +65,31 @@ declare -A READLEN=( [Penney_RYGB]=150 [Penney_SG]=150 [Oseberg_RYGB]=150 [Osebe
 RLEN=${READLEN[$STUDY]}
 
 n=0; skip=0; fail=0; t0=$SECONDS
+
+# Pass 0: backfill any sample that already has a Kraken2 report but is missing one or
+# more Bracken rank outputs — a prior Bracken failure for just some ranks. This must run
+# as its OWN pass over $OUT, independent of whether that sample's kneaddata directory
+# still exists under $KNEAD: the main loop below deletes $d unconditionally once Kraken2
+# succeeds (Bracken only ever needs the .k2report it already has, never the original
+# reads), so a sample whose Bracken partially failed would otherwise vanish from view on
+# every future run (the main loop only iterates over $KNEAD, and that sample's directory
+# is already gone) — this was a real gap: previously, only the .k2report gated the
+# "already done" skip check, so a Bracken failure would be silently permanent.
+for k2out in "$OUT"/*.k2report; do
+  [ -s "$k2out" ] || continue
+  run=$(basename "$k2out" .k2report)
+  bracken_ok=1
+  for code in P C O F G S; do
+    rank=${RANK_NAME[$code]}
+    [ -s "$OUT/$run.$rank.bracken" ] && continue
+    "$BRACKEN" -d "$KDB" -i "$k2out" \
+      -o "$OUT/$run.$rank.bracken" -w "$OUT/$run.$rank.breport" \
+      -r "$RLEN" -l "$code" > "$OUT/$run.$rank.bracken.log" 2>&1 \
+      || { echo "  !! bracken backfill failed for $run at rank $rank"; bracken_ok=0; }
+  done
+  [ "$bracken_ok" -eq 1 ] || fail=$((fail+1))
+done
+
 for d in "$KNEAD"/*/; do
   run=$(basename "$d")
   r1=$d/${run}_R1_kneaddata_paired_1.fastq
@@ -77,21 +102,27 @@ for d in "$KNEAD"/*/; do
   if kraken2 --db "$KDB" --threads "$THREADS" --memory-mapping --paired \
              --report "$k2out" --output "$OUT/$run.kraken2.out" \
              "$r1" "$r2" > "$OUT/$run.log" 2>&1; then
-    n=$((n+1))
-    [ "$n" -eq 1 ] && echo "first sample (includes index load): $((SECONDS-t0))s"
     # Bracken per rank, from this one Kraken2 report — no re-classification needed.
+    bracken_ok=1
     for code in P C O F G S; do
       rank=${RANK_NAME[$code]}
       "$BRACKEN" -d "$KDB" -i "$k2out" \
         -o "$OUT/$run.$rank.bracken" -w "$OUT/$run.$rank.breport" \
         -r "$RLEN" -l "$code" > "$OUT/$run.$rank.bracken.log" 2>&1 \
-        || echo "  !! bracken failed for $run at rank $rank"
+        || { echo "  !! bracken failed for $run at rank $rank"; bracken_ok=0; }
     done
+    if [ "$bracken_ok" -eq 1 ]; then
+      n=$((n+1))
+      [ "$n" -eq 1 ] && echo "first sample (includes index load): $((SECONDS-t0))s"
+    else
+      fail=$((fail+1))
+    fi
     # kneaddata's cleaned FASTQs are never needed again once Kraken2 has classified
     # them — the .k2report this just produced is Bracken's own input for every rank
-    # (including a retry of a failed rank above), never the reads themselves. $d lives
-    # under work/kneaddata/, entirely separate from $OUT (work/kraken_wgs/) where the
-    # .k2report/.bracken files this deletes nothing from actually live.
+    # (including the Pass-0 backfill above, on a future run), never the reads
+    # themselves. $d lives under work/kneaddata/, entirely separate from $OUT
+    # (work/kraken_wgs/) where the .k2report/.bracken files this deletes nothing from
+    # actually live.
     rm -rf "$d"
   else
     echo "FAIL $run"; tail -3 "$OUT/$run.log"; fail=$((fail+1))

@@ -82,6 +82,8 @@ for f1 in "$RAW"/*_R1.fastq.gz; do
   [ $(( h % N_CHUNKS + 1 )) -eq "$CHUNK" ] || continue
   f2=$RAW/${run}_R2.fastq.gz
   rundir=$OUT/$run
+  # Known, accepted gap — see 03b_kneaddata.sbatch's comment on this same check: only
+  # non-empty is verified, not complete.
   donefile=$rundir/${run}_R1_kneaddata_paired_1.fastq
   if [ -s "$donefile" ]; then skip=$((skip+1)); continue; fi
   if [ ! -s "$f2" ]; then echo "FAIL $run: missing R2"; fail=$((fail+1)); continue; fi
