@@ -18,7 +18,13 @@
 #
 # Phase 1 = the 16S half: Figures 1, 2, 4 and the diversity/SV supplements.
 # Modules needing metagenomic input (OppPathogens, *Metagenomics, *pathway*) are listed
-# but skipped until phase 2.
+# but skipped until phase 2 (RUN_PHASE2=1): BS/Palleja, the original authors' own WGS
+# cohorts, reusing their unmodified compareStudies_Metagenomics.R from $RSCRIPTS.
+# Phase 4 (PHASE4_WGS=1) adds this session's new WGS-taxonomy-track cohorts (Penney,
+# Oseberg, COCKTAIL_GBP, Hayashi_LSG) on top of BS/Palleja, through THIS repo's
+# generalized compareStudies_Metagenomics.R ($OUR_RSCRIPTS) — same relative path as the
+# phase-2 entry, different script content, see that file's own header comment. Most
+# phase-4 cohorts are not runnable yet; see cohorts/<Study>/NEEDS_METADATA.md.
 
 set -o pipefail
 SW_ROOT=${SW_ROOT:-$HOME/rygb}
@@ -56,6 +62,24 @@ phase3_included() {
     *)     return 1 ;;
   esac
 }
+# PHASE4_WGS=1 adds the WGS-taxonomy-track cohorts identified this session (Penney,
+# Oseberg, COCKTAIL_GBP, Hayashi_LSG — see cohorts/<Study>/NEEDS_METADATA.md; BS-WGS and
+# Palleja are already covered by the existing BSMetagenomics/PallejaMetagenomics phase-2
+# modules and need no new entry). Default (0): every phase-4 module is skipped, same
+# skip-before-numbering treatment as PHASE2_COHORTS/PHASE3_COHORTS. Most of these cohorts
+# are NOT actually runnable yet (see each NEEDS_METADATA.md) — this flag controls whether
+# their modules are SCAFFOLDED, not whether their metadata is resolved; running with
+# PHASE4_WGS=1 before resolving a given cohort's metadata will fail that cohort's module
+# rather than silently produce garbage — every per-cohort R script stop()s on UNKNOWN
+# time/ID/Arm (see each kraken2_Metagenomics/*.R file) for exactly this reason.
+PHASE4_WGS=${PHASE4_WGS:-0}
+
+# By default a phase-4 module failure stops the whole run, same as any other phase (see
+# the batch-wave loop below). Set PHASE4_ALLOW_PARTIAL=1 once SOME (not all) of the 4
+# phase-4 cohorts have real metadata, so a still-unresolved cohort's expected stop()
+# doesn't block CompareStudiesMetagenomicsWGS from running on whichever cohorts did
+# succeed — that module already skips any cohort it can't find output for.
+PHASE4_ALLOW_PARTIAL=${PHASE4_ALLOW_PARTIAL:-0}
 
 BIND="--bind $DATA_ROOT --bind $SW_ROOT"
 
@@ -106,6 +130,13 @@ MODULES=(
   "PallejaMetagenomics|kraken2_Metagenomics/Palleja_kraken2_Metagenomics.R|nlme||2"
   "OppPathogens|OpportunisticPathogens.R|pathogens||2"
   "CompareStudiesMetagenomics|compareStudies/compareStudies_Metagenomics.R|comparestudies||2"
+  "Penney_RYGBMetagenomics|kraken2_Metagenomics/Penney_RYGB_kraken2_Metagenomics.R|nlme||4"
+  "Penney_SGMetagenomics|kraken2_Metagenomics/Penney_SG_kraken2_Metagenomics.R|nlme||4"
+  "Oseberg_RYGBMetagenomics|kraken2_Metagenomics/Oseberg_RYGB_kraken2_Metagenomics.R|nlme||4"
+  "Oseberg_SGMetagenomics|kraken2_Metagenomics/Oseberg_SG_kraken2_Metagenomics.R|nlme||4"
+  "COCKTAIL_GBPMetagenomics|kraken2_Metagenomics/COCKTAIL_GBP_kraken2_Metagenomics.R|nlme||4"
+  "Hayashi_LSGMetagenomics|kraken2_Metagenomics/Hayashi_LSG_kraken2_Metagenomics.R|nlme||4"
+  "CompareStudiesMetagenomicsWGS|compareStudies/compareStudies_Metagenomics.R|comparestudies||4"
   "BSpathway|pathway/BS_pathway.R|nlme||2"
   "Pallejapathway|pathway/Palleja_pathway.R|nlme||2"
   "CompareStudiesPathways|compareStudies/compareStudies_pathways.R|comparestudies||2"
@@ -137,11 +168,12 @@ for entry in "${MODULES[@]}"; do
   # drift, not just zero content drift.
   [ "$phase" = "2c" ] && [ "$PHASE2_COHORTS" != "1" ] && continue
   { [ "$phase" = "3a" ] || [ "$phase" = "3b" ]; } && ! phase3_included "$phase" && continue
+  [ "$phase" = "4" ] && [ "$PHASE4_WGS" != "1" ] && continue
   num=$(printf "%02d" $i); i=$((i+1))
   [ "$phase" = "2" ] && [ "$RUN_PHASE2" != "1" ] && continue
   d=$PIPE/${num}_${name}
   mkdir -p "$d/script" "$d/output" "$d/resources" "$d/temp"
-  if [ "$phase" = "2c" ] || [ "$phase" = "3a" ] || [ "$phase" = "3b" ]; then
+  if [ "$phase" = "2c" ] || [ "$phase" = "3a" ] || [ "$phase" = "3b" ] || [ "$phase" = "4" ]; then
     cp "$OUR_RSCRIPTS/$script" "$d/script/"
   else
     cp "$RSCRIPTS/$script" "$d/script/"
@@ -223,7 +255,7 @@ i=0; ran=0; failed=0
 n=${#MODULES[@]}
 idx=0
 while [ $idx -lt $n ]; do
-  batch_nums=(); batch_names=(); batch_dirs=(); wave_tag=""
+  batch_nums=(); batch_names=(); batch_dirs=(); batch_phases=(); wave_tag=""
 
   while [ $idx -lt $n ] && [ ${#batch_dirs[@]} -lt $MAXPAR ]; do
     entry="${MODULES[$idx]}"
@@ -239,12 +271,23 @@ while [ $idx -lt $n ]; do
       echo "-- skip ${name} (phase $phase cohort: set PHASE3_COHORTS=$phase or =all to include)"
       idx=$((idx+1)); continue
     fi
+    if [ "$phase" = "4" ] && [ "$PHASE4_WGS" != "1" ]; then
+      echo "-- skip ${name} (phase 4 WGS-taxonomy cohort: set PHASE4_WGS=1 to include — most"
+      echo "   are not runnable yet, see cohorts/<Study>/NEEDS_METADATA.md)"
+      idx=$((idx+1)); continue
+    fi
 
     tag=""
     case "$name" in
+      # CompareStudies* names (including CompareStudiesMetagenomicsWGS) end in
+      # "Metagenomics" too, but they're downstream of the per-cohort modules below (they
+      # read those modules' gathered output) — must stay untagged (checked first) or
+      # they'd get incorrectly batched concurrently with modules they depend on.
+      CompareStudies*) tag="" ;;
       *TaxaClass) tag="TaxaClass" ;;
       *DADA) tag="DADA" ;;
       *Kraken) tag="Kraken" ;;
+      *Metagenomics) tag="Metagenomics" ;;
     esac
     # A later entry with a different tag ends the batch here without consuming it — the next
     # outer-loop iteration picks it up fresh.
@@ -258,7 +301,7 @@ while [ $idx -lt $n ]; do
     fi
 
     d=$PIPE/${num}_${name}
-    batch_nums+=("$num"); batch_names+=("$name"); batch_dirs+=("$d")
+    batch_nums+=("$num"); batch_names+=("$name"); batch_dirs+=("$d"); batch_phases+=("$phase")
     base=$(basename "$script")
     echo
     echo "======================================== ${num}_${name}  [$image] $(date +%H:%M:%S)$( [ -n "$tag" ] && echo '  (parallel batch)' )"
@@ -270,9 +313,9 @@ while [ $idx -lt $n ]; do
   done
 
   wait
-  batch_failed=0
+  fatal_failure=0
   for k in "${!batch_dirs[@]}"; do
-    d="${batch_dirs[$k]}"; nm="${batch_names[$k]}"; nb="${batch_nums[$k]}"
+    d="${batch_dirs[$k]}"; nm="${batch_names[$k]}"; nb="${batch_nums[$k]}"; ph="${batch_phases[$k]}"
     rc=$(cat "$d/exit_code" 2>/dev/null || echo 1)
     nout=$(find "$d/output" -type f 2>/dev/null | wc -l)
     if [ "$rc" -eq 0 ]; then
@@ -283,11 +326,22 @@ while [ $idx -lt $n ]; do
       echo "   --- last 25 lines of $d/module.log"
       tail -25 "$d/module.log" | sed 's/^/   /'
       failed=$((failed+1))
-      batch_failed=1
+      if [ "$ph" = "4" ] && [ "$PHASE4_ALLOW_PARTIAL" = "1" ]; then
+        echo "   (phase 4, PHASE4_ALLOW_PARTIAL=1 — not aborting the run for this one)"
+      else
+        fatal_failure=1
+      fi
     fi
   done
-  # dependencies are linear across waves; stop rather than cascade failures into the next one
-  [ "$batch_failed" -eq 1 ] && break
+  # Dependencies are linear across waves; stop rather than cascade failures into the next
+  # one — UNLESS every failure in this wave is a phase-4 cohort module and
+  # PHASE4_ALLOW_PARTIAL=1: compareStudies_Metagenomics.R (CompareStudiesMetagenomicsWGS)
+  # is specifically written to skip any cohort whose module didn't produce output rather
+  # than require all 4 (see its STUDIES gather loop's "SKIP ..." messages), so a failed
+  # cohort there doesn't need to block the comparison module from running on whatever did
+  # succeed. A non-phase-4 failure (or PHASE4_ALLOW_PARTIAL unset/0) still aborts exactly
+  # as before.
+  [ "$fatal_failure" -eq 1 ] && break
 done
 
 # ---------------------------------------------------------------- report

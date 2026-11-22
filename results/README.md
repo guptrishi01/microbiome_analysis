@@ -234,6 +234,106 @@ gastrectomy specifically, not gastric banding or duodenal switch) means
 this is evidence toward that conclusion, not a final word on
 bariatric-procedure specificity as a whole.
 
+## Phase 4 — WGS/shotgun metagenomics taxonomy track
+
+Pipeline output: `results/phase4/`. Cohorts used: Penney_RYGB (25 subjects),
+Penney_SG (31), Oseberg_RYGB (78), Oseberg_SG (76) — all shotgun (not 16S)
+cohorts, split into single-procedure cohorts per `CLAUDE.md`'s "one study,
+one procedure" rule once Arm was resolved from each source paper's own
+deposited metadata (Penney et al. 2022's Mendeley deposit; Olsson et al.
+2026's Zenodo deposit). COCKTAIL_GBP (408 runs) and Hayashi_LSG (38 runs)
+were downloaded and are wired into every stage, but remain blocked on
+unresolved per-sample Arm metadata — see each cohort's own
+`cohorts/<Study>/NEEDS_METADATA.md` — and correctly `stop()` rather than run
+on placeholder values; this is scope for a future session, not a gap in this
+one. This track is taxonomy-only (Kraken2+Bracken classification); pathway/
+functional profiling (HUMAnN2) is explicitly out of scope — see
+`scripts/00_setup.sh` section 3b's comment.
+
+### Pipeline run notes
+
+This track substitutes kneaddata (Trimmomatic + Bowtie2 host-read removal)
+for DADA2 — there's no ASV step for shotgun reads — followed by the same
+Kraken2 classification approach as the 16S track, plus Bracken for
+species-level read reassignment. Three real bugs were found and fixed only
+through direct execution against real data, not caught by code review alone:
+
+- **kneaddata's bundled `trf_parallel.py` has a real upstream bug**: it
+  splits each input into exactly `--nproc` chunks via integer division
+  regardless of actual sequence count, routinely leaving some chunks
+  completely empty for kneaddata's own small "orphaned reads" files — trf
+  always fails on an empty file ("Could not load sequence. Empty file or bad
+  format."). Confirmed via direct reproduction (a 1-sequence input and,
+  separately, a 50-sequence input at `nproc=16`, both left empty trailing
+  chunks) before patching the installed package directly to skip any chunk
+  that received no content.
+- **A stale-rundir bug**: retrying kneaddata on a sample whose working
+  directory still held partial files from an earlier crashed/killed attempt
+  (the project hit a real disk-full crash mid-run) confused
+  `kneaddata_trf_parallel` on retry. Fixed by always starting each attempt
+  from a freshly emptied directory.
+- **A chunk-assignment race condition** in the one-off parallelized
+  kneaddata/Kraken2 scripts (`03c`/`04c`, used to fit Oseberg's 154 samples
+  into the available time budget): chunk assignment was based on each
+  parallel task's own live position in a shared directory that sibling
+  tasks were concurrently deleting from, so a sample's apparent position —
+  and therefore its assigned chunk — could drift mid-run, letting it match
+  no chunk at all. Confirmed directly: two separate submissions each
+  completed with zero failed array tasks yet left real samples unprocessed
+  (7, then 1 more) with no error anywhere. Fixed by hashing each run's own
+  stable accession name instead of a live directory position, plus fixing a
+  related `break`-vs-`continue` bug in the same loop that let one sibling
+  task's deletion abort a second task's remaining work early.
+
+All 210 Penney+Oseberg samples were eventually classified cleanly (25/25,
+31/31, 78/78, 76/76) once these were fixed. Output format matches the 16S
+track's `*_taxaCount_norm_Log10_<Rank>.tsv` schema and log10 normalization
+formula exactly (datasets aside) — verified directly against
+`05_build_tables.sbatch`'s own formula, not assumed equivalent.
+
+### Species-level cross-cohort correlation
+
+The real `CompareStudiesMetagenomicsWGS` module ran against all 4 completed
+cohorts (COCKTAIL_GBP/Hayashi_LSG correctly excluded by their own `stop()`):
+
+| Pair type | Mean Spearman r | n pairs |
+|---|---|---|
+| Different-study | **0.194 ± 0.114** | 13 |
+| Same-study (across each cohort's own two timepoints) | **0.407 ± 0.083** | 2 |
+
+Breaking the 13 different-study pairs down by whether both cohorts share the
+same procedure:
+
+| Comparison | r |
+|---|---|
+| Penney_RYGB × Oseberg_RYGB (RYGB × RYGB, cross-study) | 0.427, 0.340 |
+| Oseberg_RYGB × Oseberg_SG (RYGB × SG, same study) | 0.310 |
+| Penney_SG × Oseberg_RYGB (SG × RYGB, cross-study+procedure) | 0.299, 0.225 |
+| Penney_SG × Oseberg_SG (SG × SG, cross-study) | 0.195, 0.022 |
+| Penney_RYGB × Penney_SG (RYGB × SG, same study) | 0.157, 0.127, 0.112, 0.108 |
+| Penney_RYGB × Oseberg_SG (RYGB × SG, cross-study+procedure) | 0.113, 0.088 |
+
+Full pairwise table: `results/phase4/pipeline/06_CompareStudiesMetagenomicsWGS/output/Species_PairwiseComaprison_MetagenomicsData.txt`.
+Scatterplots: `results/phase4/figures/Species_scatterPlots_MetagenomicsAllStudies.pdf`.
+
+### Interpretation (phase 4) — preliminary
+
+**This is a much smaller, noisier comparison than phases 1-3** (n=15 pairs
+total vs. 23-180 elsewhere; species-level WGS classification, not genus-level
+16S; only 2 cohorts' worth of within-study repeat pairs) — read as a
+preliminary signal, not a confirmed finding on the scale of the earlier
+phases. With that caveat: the highest cross-study correlation in the table is
+RYGB-to-RYGB (Penney_RYGB × Oseberg_RYGB, 0.427/0.340), while the same
+cohort's own RYGB-vs-SG comparison against its own SG arm is markedly lower
+(Penney: 0.157/0.127/0.112/0.108) — directionally consistent with phases 2-3's
+finding that this bariatric-surgery signature is RYGB-specific rather than a
+general "any bariatric procedure" effect, now observed independently in a
+second data domain (shotgun species-level, not 16S genus-level) and a second
+pair of source papers. This should be revisited once COCKTAIL_GBP (408 runs)
+and Hayashi_LSG (38 runs) have resolved metadata and can be added — both
+would substantially increase n and, being GBP/LSG rather than RYGB/SG,
+would test whether the pattern holds across more than two procedures.
+
 ## Top movers and antibiotic cross-reference
 
 Full report (heatmaps + scatterplots for every phase, plus this analysis in
