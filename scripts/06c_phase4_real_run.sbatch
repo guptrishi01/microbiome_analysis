@@ -19,18 +19,25 @@
 # Expected outcome, same shape as the fake test (now with real numbers behind it):
 #   Penney_RYGBMetagenomics, Penney_SGMetagenomics,
 #   Oseberg_RYGBMetagenomics, Oseberg_SGMetagenomics    -> succeed (rc 0)
-#   COCKTAIL_GBPMetagenomics, Hayashi_LSGMetagenomics    -> FAIL on purpose (rc != 0),
-#                                                            stop() on unresolved Arm
+#   COCKTAIL_GBPMetagenomics, Hayashi_LSGMetagenomics    -> FAIL on purpose (rc != 0)
 #   CompareStudiesMetagenomicsWGS                        -> succeed (rc 0), comparing
 #                                                            whichever of the 4 succeeded,
 #                                                            producing the real scatterplot
+#
+# Caveat on the two FAILs above, confirmed from this script's own module.log output:
+# right now they fail at read.table() on a missing Kraken2 taxaCount file (COCKTAIL_GBP/
+# Hayashi_LSG have no Kraken2 output yet at all — see 02b_download_wgs.sbatch), NOT at
+# the per-cohort script's own documented UNKNOWN-metadata stop() guard a few lines later
+# in the same file. The "PASS (expected stop())" label below only checks rc != 0, so it
+# can't tell these apart — that guard has never actually been exercised end to end. Once
+# these cohorts have real Kraken2/Bracken output, re-verify the guard fires as intended
+# (and produces this same expected-FAIL outcome) before trusting it on real metadata.
 
 set -o pipefail
-REPO=/users/rgupta25/rygb
 SW_ROOT=${SW_ROOT:-$HOME/rygb}
 DATA_ROOT=${DATA_ROOT:-/scratch/$USER/rygb}
 CLONE_RSCRIPTS=$DATA_ROOT/RYGB_IntegratedAnalysis2020/Analysis/RScripts   # read-only; only read from
-OUR_RSCRIPTS=$REPO/analysis/RScripts
+OUR_RSCRIPTS=$SW_ROOT/analysis/RScripts
 PIPE=$DATA_ROOT/pipeline_phase4   # ISOLATED from the real, shared $DATA_ROOT/pipeline
 IMG=$SW_ROOT/images
 BIND="--bind $DATA_ROOT"
@@ -125,3 +132,9 @@ fi
 echo
 echo "=== CompareStudiesMetagenomicsWGS output (the scatterplot + friends) ==="
 find "$PIPE"/*CompareStudiesMetagenomicsWGS/output -type f 2>/dev/null | sed 's/^/  /'
+
+# Without this, the script's own pass/fail verdict above was only ever printed, never
+# turned into a process exit code — SLURM/sacct would report rc=0 (success) regardless
+# of whether expectations were actually met, so a future regression would only be
+# caught by a human reading the log, not by anything automated.
+[ "$overall_ok" -eq 1 ] || exit 1

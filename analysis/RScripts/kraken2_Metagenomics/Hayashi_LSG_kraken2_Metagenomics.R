@@ -35,10 +35,22 @@ for (t in taxa){
   meta<-meta[meta$Run %in% rownames(kraken),]
   kraken<-kraken[match(meta$Run,rownames(kraken)),]
 
+  # R's any() on a zero-length logical vector returns FALSE, not NA/error — so if the
+  # join above produced 0 matching rows, every UNKNOWN/Arm check below would silently
+  # evaluate to FALSE and this stop() would never fire. Guard it explicitly first.
+  if (nrow(meta) == 0) {
+    stop("metaData.txt has 0 rows matching this rank's count table's sample IDs — ",
+         "check cohorts/Hayashi_LSG/metaData.txt's Run column against the Kraken2 output.")
+  }
   if (any(meta$time == "UNKNOWN") || any(meta$ID == "UNKNOWN") || any(meta$Arm == "UNKNOWN")) {
     stop("metaData.txt still has UNKNOWN time/ID/Arm values — see cohorts/Hayashi_LSG/",
          "NEEDS_METADATA.md. Resolve the subject/timepoint/arm mapping (and filter to ",
          "LSG-only) before running this script.")
+  }
+  if (any(meta$Arm != "LSG")) {
+    stop("cohorts/Hayashi_LSG/metaData.txt has a non-LSG Arm value — this cohort should ",
+         "be LSG-only (the IGBP arm is explicitly out of scope, see this file's own header ",
+         "comment); check metaData.txt wasn't filled in with the unfiltered BioProject.")
   }
   meta$time<-factor(meta$time,levels = c("Pre","Post"))
 
@@ -53,7 +65,7 @@ for (t in taxa){
   bugName<-vector()
   index<-1
 
-  for (i in 1:ncol(kraken)){
+  for (i in seq_len(ncol(kraken))){
 
     bug<-kraken[,i]
 

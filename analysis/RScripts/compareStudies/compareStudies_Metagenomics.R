@@ -54,10 +54,13 @@ source(funcScript)
 STUDIES <- list(
   BS      = list(module="BSMetagenomics",      timepoints=list(c("p1M","BS-1 month"), c("p6M","BS-6 months"), c("p1Y","BS-1 year"))),
   Palleja = list(module="PallejaMetagenomics", timepoints=list(c("p3M","Palleja-3 months"), c("p1Y","Palleja-1 year"))),
-  # New WGS cohorts, identified this session (see MACRIB_Research_Statement.docx's
-  # "Planned Future Work" section). NOT YET RUNNABLE — see cohorts/<Study>/
-  # NEEDS_METADATA.md for each. Listed here so adding them once metadata resolves is a
-  # one-line uncomment / PHASE4_WGS_STUDIES addition, not new script-writing.
+  # New WGS cohorts, identified this session — see cohorts/<Study>/NEEDS_METADATA.md for
+  # each one's metadata status. Penney_RYGB/SG and Oseberg_RYGB/SG are fully resolved and
+  # have run successfully (see results/phase4/); COCKTAIL_GBP and Hayashi_LSG remain
+  # blocked on unresolved Arm metadata and correctly SKIP below (module directory exists,
+  # but its per-cohort script stop()s before producing output — see each
+  # kraken2_Metagenomics/*.R). All 6 are listed unconditionally (not gated behind
+  # PHASE4_WGS_STUDIES) since the gather loop below already skips whichever aren't ready.
   Penney_RYGB      = list(module="Penney_RYGBMetagenomics",      timepoints=list(c("pPOST","Penney RYGB-Post"), c("p1YrPOST","Penney RYGB-1 year"))),
   Penney_SG        = list(module="Penney_SGMetagenomics",        timepoints=list(c("pPOST","Penney SG-Post"), c("p1YrPOST","Penney SG-1 year"))),
   Oseberg_RYGB     = list(module="Oseberg_RYGBMetagenomics",     timepoints=list(c("p12M","Oseberg RYGB-12 months"))),

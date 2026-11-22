@@ -68,7 +68,9 @@ if [ "$SETUP_METAGENOMICS" = "1" ]; then
     echo "  bracken present"
   else
     echo "  !! bracken missing from an existing rygb-kneaddata env — installing into it"
-    mamba install -y -p "$ENV_DIR/rygb-kneaddata" $CH bracken=2.9
+    mamba install -y -p "$ENV_DIR/rygb-kneaddata" $CH bracken=2.9 || \
+      echo "  !! bracken install failed too — if the env itself never got created above, this" \
+           "was always going to fail the same way; check the original mamba create error, not this one"
   fi
 
   # kneaddata's --trimmomatic expects a DIRECTORY it globs "trimmomatic*" in via Python's
@@ -240,7 +242,14 @@ def run_trf(input,trf_path,trf_options,nproc,output,verbose=True):
                 output_file_number+=1
                 file_handle_write = open(tempfile_list[output_file_number],"wt")
 
-        file_handle_write.close()
+        # RYGB patch: file_handle_write is only ever assigned inside the loop above, so a
+        # completely empty input (0 lines — a real, reachable case: kneaddata's own
+        # "trimmed.single.*" orphaned-read files can genuinely be empty for a sample with
+        # no orphaned reads after paired trimming) leaves it at its None initializer, and
+        # the original code's unconditional close() here raised AttributeError instead of
+        # the empty-chunk error this patch otherwise fixes. Guard it.
+        if file_handle_write:
+            file_handle_write.close()
 
         # RYGB patch: when total_lines doesn't divide evenly across nproc chunks (routine
         # whenever the input is small — e.g. kneaddata's "trimmed.single.*" orphaned-read

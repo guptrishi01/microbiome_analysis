@@ -10,8 +10,7 @@
 #SBATCH --error=/scratch/%u/rygb/logs/download_wgs_%A_%a.out
 #
 # WGS taxonomy-track downloads: the 4 NEW shotgun-metagenomic cohorts identified this
-# session (see MACRIB_Research_Statement.docx's "Planned Future Work" section and
-# cohorts/<Study>/NEEDS_METADATA.md). Unlike 02_download.sbatch (16S, forward-reads-only,
+# session (see cohorts/<Study>/NEEDS_METADATA.md). Unlike 02_download.sbatch (16S, forward-reads-only,
 # matching the original authors' DADA2-on-forward-reads convention), this keeps BOTH
 # paired-end reads — shotgun classification (Kraken2/Bracken) and kneaddata both expect
 # paired input, and discarding R2 would throw away half the sequencing depth for no reason.
@@ -100,7 +99,14 @@ while IFS=$'\t' read -r run; do
   [ -z "$run" ] && continue
   target1=$OUT/${run}_R1.fastq.gz
   target2=$OUT/${run}_R2.fastq.gz
-  if [ -s "$target1" ] && [ -s "$target2" ]; then skip=$((skip+1)); continue; fi
+  # `gzip -t` (not just non-empty) catches a kill mid-write (24h walltime, OOM,
+  # disk-full) leaving a truncated .gz that would otherwise get accepted as done on
+  # every future resume — cheap integrity check, worth it since output here actually is
+  # gzipped (unlike 03b_kneaddata.sbatch's plain-fastq donefile one stage later, which
+  # has the same class of risk but no equally cheap check available).
+  if [ -s "$target1" ] && [ -s "$target2" ] && gzip -t "$target1" 2>/dev/null && gzip -t "$target2" 2>/dev/null; then
+    skip=$((skip+1)); continue
+  fi
 
   if ! prefetch --max-size 100G -O "$TMP" "$run" >"$TMP/$run.prefetch.log" 2>&1; then
     echo "FAIL prefetch $run"; tail -3 "$TMP/$run.prefetch.log"; fail=$((fail+1)); continue

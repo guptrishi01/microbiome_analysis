@@ -47,9 +47,24 @@ for (t in taxa){
   meta<-meta[meta$Run %in% rownames(kraken),]
   kraken<-kraken[match(meta$Run,rownames(kraken)),]
 
+  # R's any() on a zero-length logical vector returns FALSE, not NA/error — so if the
+  # join above produced 0 matching rows (e.g. a renamed/typo'd Run column, or a count
+  # table built for a different sample set), every UNKNOWN/Arm check below would
+  # silently evaluate to FALSE and this stop() would never fire, continuing into
+  # mean(bug>0) on a 0-row column (NaN) and if(NA) deep in the per-taxon loop instead of
+  # this clear message. Guard it explicitly first.
+  if (nrow(meta) == 0) {
+    stop("metaData.txt has 0 rows matching this rank's count table's sample IDs — ",
+         "check cohorts/COCKTAIL_GBP/metaData.txt's Run column against the Kraken2 output.")
+  }
   if (any(meta$time == "UNKNOWN") || any(meta$ID == "UNKNOWN") || any(meta$Arm == "UNKNOWN")) {
     stop("metaData.txt still has UNKNOWN time/ID/Arm values — see cohorts/COCKTAIL_GBP/",
          "NEEDS_METADATA.md. Resolve the subject/timepoint mapping before running this script.")
+  }
+  if (any(meta$Arm != "GBP")) {
+    stop("cohorts/COCKTAIL_GBP/metaData.txt has a non-GBP Arm value — this cohort should ",
+         "be GBP-only (the VLED diet arm is explicitly out of scope, see this file's own ",
+         "header comment); check metaData.txt wasn't filled in with the unfiltered BioProject.")
   }
   meta$time<-factor(meta$time,levels = TIME_LEVELS)
 
@@ -65,7 +80,7 @@ for (t in taxa){
   bugName<-vector()
   index<-1
 
-  for (i in 1:ncol(kraken)){
+  for (i in seq_len(ncol(kraken))){
 
     bug<-kraken[,i]
 

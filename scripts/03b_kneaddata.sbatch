@@ -77,6 +77,13 @@ for f1 in "$RAW"/*_R1.fastq.gz; do
   run=$(basename "$f1" _R1.fastq.gz)
   f2=$RAW/${run}_R2.fastq.gz
   rundir=$OUT/$run
+  # Known, accepted gap: this only checks non-empty, not complete. A process killed
+  # mid-write (OOM, walltime, disk-full) leaves a truncated-but-nonempty donefile that
+  # gets permanently accepted as done on every future resume, silently feeding reduced
+  # read depth into Kraken2/Bracken. Same class of risk as 02b_download_wgs.sbatch's
+  # resume check one stage earlier. Not hardened further here — a real fix needs either
+  # an atomic write (temp name + rename only on confirmed success) or a read-count
+  # cross-check, more than this project's scale currently warrants.
   donefile=$rundir/${run}_R1_kneaddata_paired_1.fastq
   if [ -s "$donefile" ]; then skip=$((skip+1)); continue; fi
   if [ ! -s "$f2" ]; then echo "FAIL $run: missing R2"; fail=$((fail+1)); continue; fi
