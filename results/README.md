@@ -314,7 +314,26 @@ same procedure:
 | Penney_RYGB × Oseberg_SG (RYGB × SG, cross-study+procedure) | 0.113, 0.088 |
 
 Full pairwise table: `results/phase4/pipeline/06_CompareStudiesMetagenomicsWGS/output/Species_PairwiseComaprison_MetagenomicsData.txt`.
-Scatterplots: `results/phase4/figures/Species_scatterPlots_MetagenomicsAllStudies.pdf`.
+Scatterplots: `results/phase4/figures/Species_scatterPlots_MetagenomicsAllStudies.pdf` — each
+panel is one of the 15 study/timepoint pairs, with every point a single species-level taxon
+(the WGS-track equivalent of the 16S track's genus-level pairwise scatterplots).
+
+**Combined report:** `results/phase4/report/pairwise_comparison_report.pdf` (8 pages) — same
+front-matter treatment as `results/phase3/report/pairwise_comparison_report.pdf` (title,
+full dataset table, plain-language methodology), plus:
+- A 6×6 study-timepoint heatmap of the same r/p values above (`analysis/RScripts/pairwiseHeatmapMetagenomics.R`;
+  CSV matrices in `results/phase4/report/species_r.csv` / `species_p_BHadjusted.csv`).
+- The 15 scatterplots **with standout species labeled by name** (significant in the same
+  direction in both cohorts — `analysis/RScripts/labeledScatterplotsMetagenomics.R`, same
+  method as the 16S track's `plotPairwiseStudies()`, capped at the 25 most robust labels per
+  panel where the concordant set is too large to read, e.g. Oseberg_RYGB×Oseberg_SG's 860).
+- A "top movers" table (`analysis/RScripts/topMoversMetagenomics.R`): species significant
+  (BH-adjusted p<0.05) in the most of the 6 cohort-timepoints. **Caveat, printed directly on
+  that page:** nothing here reaches phase 3's 16S-track consistency (up to 10/12) — the
+  ceiling is 2/6 for increasers and 1/6 for decreasers, and every 2/6 entry is specifically
+  Oseberg_RYGB+Oseberg_SG (by far the largest cohorts here, 78+76 vs. Penney's 25+31), most
+  likely reflecting statistical power rather than a more real biological effect. Read as
+  illustrative, not a ranked finding, at this track's current sample size.
 
 ### Interpretation (phase 4) — preliminary
 
