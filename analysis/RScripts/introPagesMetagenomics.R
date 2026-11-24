@@ -89,12 +89,21 @@ lines <- c(
 "",
 "5. The tightness of that diagonal trend is summarized as a single number, the Spearman",
 "   correlation (r), printed above each scatterplot along with a p-value for r itself.",
-"   r near 1 = strong agreement between cohorts; r near 0 = no agreement.",
+"   r near 1 = strong agreement between cohorts; r near 0 = no agreement. Standout species",
+"   (significant in the SAME direction in both cohorts) are labeled by name on each plot.",
+"",
+"6. HEATMAP: the same 15 pairwise r/p values, laid out as one grid (every cohort-timepoint",
+"   against every other) instead of 15 separate plots -- a compact way to see every",
+"   comparison at once. Grey cells compare a cohort's own two timepoints to each other and",
+"   are excluded from the headline numbers, since the real test is agreement BETWEEN",
+"   independent cohorts, not within one.",
+"",
+"7. TOP MOVERS: beyond pairwise agreement, which specific species show up as significant",
+"   (BH-adjusted p<0.05) most consistently across the 6 cohort-timepoints analyzed here?",
+"   See the final pages for that list and an important caveat about reading it.",
 "",
 "This is the same method the main 16S report uses (see its own methods page) -- the only",
-"difference is the unit being compared is a WGS-classified species rather than a 16S",
-"genus, and there is no equivalent heatmap yet (only 4 cohorts are analyzed so far, vs.",
-"12 in the 16S track -- a heatmap adds value once more pairs exist to compare at once)."
+"difference is the unit being compared is a WGS-classified species rather than a 16S genus."
 )
 n_lines <- length(lines)
 yy_top <- 0.89
