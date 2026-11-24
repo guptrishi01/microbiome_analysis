@@ -62,53 +62,68 @@ decTbl <- mkTable(decreases)
 
 pdf(outFile, width=11, height=8.5)
 
+# Same serif "paper" style as introPagesMetagenomics.R's title/subtitle/body hierarchy
+# (title bold, subtitle italic, caveat as regular body text) -- only the actual data
+# grid stays monospace, which column alignment genuinely requires.
+PAPER_FONT <- "serif"
+
 drawTablePage <- function(title, subtitle, df, topN) {
   plot.new()
-  text(0.5, 0.97, title, cex=1.4, font=2, family="sans")
-  text(0.5, 0.935, subtitle, cex=0.8, family="sans")
+  text(0.5, 0.97, title, cex=1.6, font=2, family=PAPER_FONT)
+  text(0.5, 0.925, subtitle, cex=0.95, font=3, family=PAPER_FONT)
   maxN <- if (nrow(df) > 0) max(df$n) else 0
   caveat <- if (maxN <= 1) {
-    paste0("CAVEAT: nothing here reaches significance in more than 1 of ", length(COHORT_TIMEPOINTS),
+    paste0("Caveat: nothing here reaches significance in more than 1 of ", length(COHORT_TIMEPOINTS),
            " cohort-timepoints -- this list is NOT a ranked finding, just every species that",
            " was significant anywhere, alphabetically ordered within that tie. At current sample",
            " sizes, no cross-cohort consistency was found for this direction.")
   } else {
-    paste0("CAVEAT: max consistency found is ", maxN, " of ", length(COHORT_TIMEPOINTS),
+    paste0("Caveat: max consistency found is ", maxN, " of ", length(COHORT_TIMEPOINTS),
            " cohort-timepoints, and every entry at that max is Oseberg_RYGB + Oseberg_SG",
            " specifically (by far the largest cohorts here, 78+76 vs. Penney's 25+31 -- more",
            " statistical power to detect species-level significance, not necessarily a more",
            " real biological effect). Read as preliminary given this track's small n overall",
            " (see results/README.md's phase 4 section), not yet a phase-3-style 10/12 finding.")
   }
-  caveatLines <- strwrap(caveat, width=130)
-  yy_cav <- 0.895
+  cex_cav <- 0.76
+  lineH_cav <- strheight("Ag", cex=cex_cav, family=PAPER_FONT) * 1.45
+  caveatLines <- strwrap(caveat, width=118)
+  yy_cav <- 0.87
   for (cl in caveatLines) {
-    text(0.5, yy_cav, cl, cex=0.62, family="sans")
-    yy_cav <- yy_cav - 0.022
+    text(0.07, yy_cav, cl, adj=0, cex=cex_cav, family=PAPER_FONT)
+    yy_cav <- yy_cav - lineH_cav
   }
+  yy_cav <- yy_cav - lineH_cav * 0.6
   df <- head(df, topN)
   if (nrow(df) == 0) {
-    text(0.5, 0.5, "(none found)", cex=0.9, family="sans")
+    text(0.5, 0.5, "(none found)", cex=0.9, family=PAPER_FONT)
     return(invisible())
   }
-  par(family="mono")
   hdr <- c("Species", "# cohort-timepoints", "Which cohort-timepoints")
-  rows <- rbind(hdr, as.matrix(data.frame(
+  body <- as.matrix(data.frame(
     sub("^$", " ", substr(df$bugName, 1, 38)),
     as.character(df$n),
     substr(df$cohorts, 1, 55)
-  )))
-  cex_tbl <- 0.68
+  ))
+  cex_tbl <- 0.74
   gap <- 0.015
   colx <- numeric(3)
-  colx[1] <- 0.03
-  colx[2] <- colx[1] + max(strwidth(rows[,1], cex=cex_tbl, family="mono", font=2)) + gap
-  colx[3] <- colx[2] + max(strwidth(rows[,2], cex=cex_tbl, family="mono", font=2)) + gap
-  yy <- yy_cav - 0.02
-  for (r in seq_len(nrow(rows))) {
-    fw <- if (r==1) 2 else 1
-    text(colx, yy, rows[r,], adj=0, cex=cex_tbl, font=fw, family="mono")
-    yy <- yy - (0.80 / (nrow(rows)+2))
+  colx[1] <- 0.07
+  colx[2] <- colx[1] + max(strwidth(c(hdr[1],body[,1]), cex=cex_tbl, family="mono", font=2)) + gap
+  colx[3] <- colx[2] + max(strwidth(c(hdr[2],body[,2]), cex=cex_tbl, family="mono", font=2)) + gap
+  lineH_tbl <- strheight("Ag", cex=cex_tbl, family="mono") * 1.6
+  yy <- yy_cav
+  text(colx, yy, hdr, adj=0, cex=cex_tbl, font=2, family="mono")
+  yy <- yy - lineH_tbl * 0.35
+  segments(colx[1], yy, colx[3] + strwidth(hdr[3], cex=cex_tbl, family="mono", font=2), yy, lwd=0.6)
+  yy <- yy - lineH_tbl * 0.75
+  for (r in seq_len(nrow(body))) {
+    text(colx, yy, body[r,], adj=0, cex=cex_tbl, family="mono")
+    yy <- yy - lineH_tbl
+  }
+  if (yy < 0.02) {
+    warning("drawTablePage (", title, "): table ran past the bottom margin (ended at y=",
+            round(yy,3), ") -- reduce topN or cex_tbl")
   }
 }
 
