@@ -314,7 +314,11 @@ same procedure:
 | Penney_RYGB × Oseberg_SG (RYGB × SG, cross-study+procedure) | 0.113, 0.088 |
 
 Full pairwise table: `results/phase4/pipeline/06_CompareStudiesMetagenomicsWGS/output/Species_PairwiseComaprison_MetagenomicsData.txt`.
-Scatterplots: `results/phase4/figures/Species_scatterPlots_MetagenomicsAllStudies.pdf`.
+Scatterplots: `results/phase4/figures/Species_scatterPlots_MetagenomicsAllStudies.pdf` — each
+panel is one of the 15 study/timepoint pairs, with every point a single species-level taxon
+(the WGS-track equivalent of the 16S track's genus-level pairwise scatterplots). Combined
+with a title page and full dataset table into `results/phase4/report/pairwise_comparison_report.pdf`,
+same front-matter treatment as `results/phase3/report/pairwise_comparison_report.pdf`.
 
 ### Interpretation (phase 4) — preliminary
 
